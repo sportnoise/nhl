@@ -1,9 +1,9 @@
-<a href="https://brekot.github.io/nhl-webpack/dist/index.html">Главная страница</a><br>
-<a href="https://brekot.github.io/nhl-webpack/dist/index-window.html">Главная страница (с окнами)</a><br>
-<a href="https://brekot.github.io/nhl-webpack/dist/soon.html">Скоро всё заработает</a><br>
-<a href="https://brekot.github.io/nhl-webpack/dist/404.html">404</a><br>
-<a href="https://brekot.github.io/nhl-webpack/dist/protocols.html">Протоколы СДК</a><br>
-<a href="https://brekot.github.io/nhl-webpack/dist/protocol.html">Протокол</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/index.html">Главная страница</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/index-window.html">Главная страница (с окнами)</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/soon.html">Скоро всё заработает</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/404.html">404</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/protocols.html">Протоколы СДК</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/protocol.html">Протокол</a><br>
 
 <hr>
 
