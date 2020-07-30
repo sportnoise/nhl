@@ -1,0 +1,27 @@
+<% var data = {
+   title: "404",
+   htmlClass: "fix-html",
+   bodyClass: "error-page"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<div class="error-block">
+    <div class="error-block__block">
+        <div class="container">
+            <a href="/" class="error-block__logo">
+                <img src="./local/img/logo.svg" alt="" class="error-block__logo-img">
+            </a>
+            <div class="error-block__title">
+                Гоооол 404!<br>
+                Страница не найдена
+            </div>
+            <div class="error-block__text">
+                Вы находитесь здесь, потому что ввели адрес страницы, которая уже не существует или была перемещена по другому адресу
+            </div>
+            <a href="/" class="btn-one">Перейти на главную страницу</a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/foot.html'))() %>

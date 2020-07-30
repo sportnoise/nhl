@@ -1,0 +1,86 @@
+.protocol-detail {
+    position: relative;
+
+    &__head {
+        margin: 0 0 30px;
+    }
+    &__icon {
+        width: 55px;
+        height: 25px;
+        margin: 0 0 10px;
+        fill: var(--blacksuper);
+    }
+    &__date {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+        margin: 5px 0 0;
+    }
+    &__foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0 0;
+    }
+    &__download {
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        fill: var(--link);
+
+        &:hover {
+            fill: var(--black);
+        }
+        &-icon {
+            width: 19px;
+            height: 18px;
+            margin: 0 10px 0 0;
+            transition: all .3s;
+        }
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__back {
+            stroke: var(--link);
+            position: absolute;
+            top: 5px;
+            left: -75px;
+
+            &:hover {
+                stroke: var(--black);
+            }
+            &-icon {
+                fill: none;
+                width: 22px;
+                height: 13px;
+                transition: all .3s;
+                position: relative;
+                transform: rotate(180deg);
+                display: block;
+                left: 0;
+                transition: all .3s;
+            }
+            &:hover &-icon {
+                left: -10px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg)
+    {
+        &__back {
+            display: none;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__foot {
+            flex-direction: column;
+
+            &-center {
+                margin: 15px 0;
+            }
+        }
+    }
+}

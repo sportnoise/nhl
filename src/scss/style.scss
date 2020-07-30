@@ -1,0 +1,54 @@
+// Основное
+@import "./main/fonts"; // Шрифты
+@import "./main/variables"; // Переменные
+@import "./main/grid"; // Сетка
+@import "./main/reboot"; // Сброс стилей
+
+// Общие элементы
+@import "./elem/swiper"; // Общие стили сайдера
+@import "./elem/pict.shadow"; // Тень на картинках
+@import "./elem/btn"; // Кнопки
+@import "./elem/btn.close"; // Кнопка закрыть
+@import "./elem/link.str"; // Ссылка со стрелкой
+@import "./elem/rss"; // Иконка RSS
+@import "./elem/block.title"; // Заголовки блоков
+@import "./elem/lighthouse"; // Маяк
+@import "./elem/icons"; // Иконки
+@import "./elem/tabs"; // Вкладки
+@import "./elem/jquery.jscrollpane"; // Полоса прокрутки
+@import "./elem/tippy"; // Подсказки
+
+// Шаблон
+@import "./template/region.selection"; // Выбор региона
+@import "./template/region.select"; // Окно выбора региона
+@import "./template/header"; // Шапка сайта
+@import "./template/search.form"; // Шапка сайта
+@import "./template/menu.top"; // Главное меню
+@import "./template/main"; // Рабочая область
+@import "./template/menu.section"; // Меню раздела
+@import "./template/footer"; // Подвал сайта
+@import "./template/face.line"; // Полоса с лицами
+@import "./template/menu.footer"; // Меню подвала
+@import "./template/window"; // Всплывающие окна
+
+// Главная страница
+@import "./pages/index/slider"; // Главный слайдер
+@import "./pages/index/match"; // Матчи
+@import "./pages/index/tournament.table"; // Турнирная таблица
+@import "./pages/index/news"; // Новости
+@import "./pages/index/info"; // Информация
+@import "./pages/index/leader"; // Лидеры
+@import "./pages/index/broadcasts"; // Прямые трансляции
+@import "./pages/index/video"; // Видео
+@import "./pages/index/photo"; // Альбомы
+@import "./pages/index/we.hockey"; // Мы — хоккейная страна
+
+// Скоро всё заработает
+@import "./pages/soon/block"; // Блок
+
+// 404
+@import "./pages/error/block"; // 404
+
+// Протокол
+@import "./pages/protocol/list"; // Список протоколов
+@import "./pages/protocol/detail"; // Протокол детально

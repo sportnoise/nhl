@@ -1,0 +1,54 @@
+.error-page {
+    background-color: var(--white);
+    height: 100%;
+}
+
+.error-block {
+    background-image: url(img/bg.error.jpg);
+    background-repeat: no-repeat;
+    background-position: center -280px;
+    text-align: center;
+    height: 100%;
+    color: var(--blacksuper);
+
+    &__block {
+        height: 100%;
+        display: flex;
+        max-height: 650px;
+    }
+    &__logo {
+        display: inline-block;
+        margin: 0 auto 20px;
+
+        &-img {
+            width: 75px;
+            display: block;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: -.14px;
+        margin: 0 0 25px;
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 26px;
+        letter-spacing: .19px;
+        margin: 0 auto 40px;
+        max-width: 470px;
+    }
+
+    @include media-breakpoint-down(xs)
+    {
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

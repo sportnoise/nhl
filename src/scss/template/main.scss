@@ -1,0 +1,15 @@
+.white-block {
+    background-color: var(--white);
+    padding: 35px 35px 45px 105px;
+    border-radius: 4px;
+}
+.main-margin {
+    margin: 0 0 45px;
+}
+
+@include media-breakpoint-down(lg)
+{
+    .white-block {
+        padding: 30px 20px;
+    }
+}

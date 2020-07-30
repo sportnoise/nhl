@@ -1,0 +1,41 @@
+.menu-footer {
+    line-height: 17px;
+    margin: 0 0 40px;
+
+    &__title {
+        color: var(--white_contur);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    &__link {
+        font-size: 13px;
+        display: block;
+        color: var(--white_contur);
+        margin: 10px 0 0;
+
+        &:hover {
+            color: var(--white_contur);
+            text-decoration: underline;
+        }
+    }
+}
+
+@include media-breakpoint-only(md)
+{
+    .menu-footer {
+        width: 25%;
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .menu-footer {
+        width: calc(100% / 3);
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .menu-footer {
+        width: 50%;
+        text-align: center;
+    }
+}

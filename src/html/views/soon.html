@@ -1,0 +1,45 @@
+<% var data = {
+   title: "Soon",
+   htmlClass: "fix-html",
+   bodyClass: "soon-page"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<div class="soon-block">
+    <div class="container">
+        <div class="soon-block__title">Скоро всё заработает</div>
+        <div class="soon-block__desc">
+            Мы стараемся сделать сайт nhliga.org лучше для вас,<br>
+            поэтому в данный момент ведутся технические работы.<br>
+            А пока, вы можете посетить наши социальные сети:
+        </div>
+        <div class="soon-social">
+            <a href="javascript:;" class="soon-social__link">
+                <span class="soon-social__icon soon-social__icon_fb"></span>
+                /nhliga
+            </a>
+            <a href="javascript:;" class="soon-social__link">
+                <span class="soon-social__icon soon-social__icon_vk"></span>
+                /nighthockeyleague
+            </a>
+            <a href="javascript:;" class="soon-social__link">
+                <span class="soon-social__icon soon-social__icon_ig"></span>
+                /nhliga
+            </a>
+            <a href="javascript:;" class="soon-social__link">
+                <span class="soon-social__icon soon-social__icon_yt"></span>
+                /RLHLmedia
+            </a>
+        </div>
+        <div class="soon-block__text">
+            Делитесь новыми победами и жаркими эмоциями с хештегом #NHLIGA
+        </div>
+        <div class="soon-block__copy">
+            © 2011–2020, Фонд развития любительского хоккея 
+            «Ночная Хоккейная Лига»
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/foot.html'))() %>

@@ -1,0 +1,10 @@
+.face-line {
+
+    &__wrapper {
+        transition-timing-function: linear;
+    }
+    &__img {
+        max-width: 3000px;
+        display: block;
+    }
+}

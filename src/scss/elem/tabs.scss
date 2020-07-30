@@ -1,0 +1,101 @@
+.tabs-panel {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .23px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link {
+        position: relative;
+        margin: 0 15px 0 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            height: 2px;
+            width: 0;
+            background-color: var(--black);
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: all .3s;
+        }
+        &_active {
+            color: var(--black);
+            font-weight: 600;
+        }
+        &:hover:after,
+        &_active:after {
+            width: 100%;
+        }
+    }
+}
+
+.tabs-items {
+
+    &__item {
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .tabs-panel__link {
+        margin: 5px 10px 0 0;
+    }
+}
+
+.tabs-num {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        fill: var(--gray_contur);
+        margin: 0 20px 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+        &:hover,
+        &_active {
+            fill: var(--blacksuper);
+        }
+    }
+    &__icon {
+        height: 18px;
+
+        &_f {
+            width: 47px;
+        }
+        &_fa {
+            width: 68px;
+        }
+        &_fb {
+            width: 66px;
+        }
+        &_lm {
+            width: 39px;
+        }
+        &_ln {
+            width: 35px;
+        }
+    }
+}
+
+@include media-breakpoint-only(xs)
+{
+    .tabs-num {
+        margin: 5px 0;
+
+        &__link {
+            margin: 0 10px 0 0;
+        }
+    }
+}

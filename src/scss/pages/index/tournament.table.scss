@@ -1,0 +1,107 @@
+.tournament-table-title {
+    color: var(--blacksuper);
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 33px;
+    letter-spacing: .19px;
+    margin: 0 0 20px;
+}
+
+.tournament-index {
+    background-color: var(--white);
+    border-radius: 4px;
+    margin: 0 0 70px;
+    padding: 10px 10px 15px 25px;
+
+    &__head {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 22px);
+
+        &-span {
+            margin: 0 auto 0 0;
+        }
+        &-link {
+            width: 30px;
+            text-align: center;
+        }
+    }
+    &__block {
+        height: 290px;
+        overflow: auto;
+    }
+    &__table {
+        width: calc(100% - 10px);
+        margin: -10px 0 0;
+        display: block;
+
+        & tbody {
+            display: block;
+            width: 100%;
+        }
+        tr {
+            border-bottom: 1px solid var(--gray_contur);
+            display: flex;
+            align-items: center;
+            height: 61px;
+
+            &:last-child {
+                border: none;
+            }
+        }
+        & td {
+            padding: 0;
+            width: 30px;
+            text-align: center;
+
+            &:first-child {
+                padding: 0;
+                width: 25px;
+                text-align: left;
+            }
+            &:nth-child(2) {
+                width: calc(100% - 140px);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin: 0 auto 0 0;
+                text-align: left;
+            }
+            &:last-child {
+                font-weight: 600;
+            }
+        }
+    }
+    &__bottom {
+        margin: 15px 25px 0 0;
+    }
+}
+
+@include media-breakpoint-down(lg)
+{
+    .tournament-index {
+        margin: 0 0 50px;
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .tournament-index {
+        padding: 10px 10px 15px 15px;
+
+        &__bottom {
+            margin: 15px 15px 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(xs)
+{
+    .tournament-index {
+        font-size: 14px;
+        margin: 0 -15px 50px;
+    }
+}

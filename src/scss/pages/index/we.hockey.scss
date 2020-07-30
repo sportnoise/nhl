@@ -1,0 +1,104 @@
+.we-hockey {
+    background: url(img/bg.star.rotate.png) repeat-x bottom;
+    padding: 0 0 75px;
+    text-align: center;
+
+    &__block {
+        background: url(img/bg.we.hockey.jpg) repeat-x center / cover;
+        color: var(--white);
+        padding: 55px 110px 50px;
+        border-radius: 4px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -.15px;
+        margin: 0 0 20px;
+    }
+    &__desc {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: .2px;
+        margin: 0 0 30px;
+    }
+    &__inner {
+        margin: 0 0 30px;
+    }
+    &__table {
+        font-size: 14px;
+        line-height: 19px;
+        width: 100%;
+
+        & th {
+            padding: 0 5px 15px;
+        }
+        & td {
+            padding: 7px 5px;
+
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+    &__xl {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -.15px;
+    }
+    &__lg {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: .2px;
+    }
+    &__btn {
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-between(md, lg)
+{
+    .we-hockey__block {
+        padding: 50px 25px;
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .we-hockey {
+
+        &__block {
+            padding: 35px 15px;
+        }
+        &__inner {
+            overflow-x: auto;
+        }
+        &__table {
+
+            & th {
+                padding: 0 10px 15px;
+            }
+            & td {
+                padding: 7px 10px;
+            }
+        }
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .we-hockey {
+
+        &__block {
+            margin: 0 -15px;
+            border-radius: 0;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__desc {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}

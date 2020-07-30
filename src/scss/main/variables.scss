@@ -1,0 +1,35 @@
+:root {
+    --black: #2A313C;
+    --white: #FFF;
+
+    --background: #F3F4F6;
+    --link: #586C78;
+    --white_contur: #DADCE1;
+    --gray_contur: #B5BAC3;
+    --blacksuper: #383F4B;
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+	xl: 1300px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+	xl: 1260px
+);
+
+$gutter: 30px;
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.fix-html {
+    height: 100%;
+}
