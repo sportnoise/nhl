@@ -44,7 +44,7 @@ $(function() {
     });
     
     // Полоса прокрутки
-    $('.scroll-pane').jScrollPane();
+    $('.scroll-pane').jScrollPane({autoReinitialise: true});
 
     // Подсказки
     tippy('[data-tippy-content]', {
@@ -67,6 +67,19 @@ $(function() {
 
         elem.find('.tabs-panel__link_active').removeClass('tabs-panel__link_active');
         $(this).addClass('tabs-panel__link_active');
+
+        $('#' + elem.data('for')).find('.tabs-items__item_active').removeClass('tabs-items__item_active');
+        $('#' + $(this).data('id')).addClass('tabs-items__item_active');
+
+        return false;
+    });
+
+    $('.tabs-num_active a').click(function(){
+
+        let elem = $(this).parent('.tabs-num');
+
+        elem.find('.tabs-num__link_active').removeClass('tabs-num__link_active');
+        $(this).addClass('tabs-num__link_active');
 
         $('#' + elem.data('for')).find('.tabs-items__item_active').removeClass('tabs-items__item_active');
         $('#' + $(this).data('id')).addClass('tabs-items__item_active');

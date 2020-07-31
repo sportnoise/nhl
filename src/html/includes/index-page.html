@@ -134,469 +134,832 @@
                     </svg>
                     Матчи
                 </a>
-                <div class="tabs-num">
-                    <a href="javascript:;" class="tabs-num__link tabs-num__link_active">
+                <div class="tabs-num tabs-num_active" data-for="match">
+                    <a href="javascript:;" data-id="match1" class="tabs-num__link tabs-num__link_active">
                         <svg class="tabs-num__icon tabs-num__icon_f">
                             <use xlink:href="./local/img/sprite.num.svg#f"></use>
                         </svg>
                     </a>
-                    <a href="javascript:;" class="tabs-num__link">
+                    <a href="javascript:;" data-id="match2" class="tabs-num__link">
                         <svg class="tabs-num__icon tabs-num__icon_fa">
                             <use xlink:href="./local/img/sprite.num.svg#fa"></use>
                         </svg>
                     </a>
-                    <a href="javascript:;" class="tabs-num__link">
+                    <a href="javascript:;" data-id="match3" class="tabs-num__link">
                         <svg class="tabs-num__icon tabs-num__icon_fb">
                             <use xlink:href="./local/img/sprite.num.svg#fb"></use>
                         </svg>
                     </a>
-                    <a href="javascript:;" class="tabs-num__link">
+                    <a href="javascript:;" data-id="match4" class="tabs-num__link">
                         <svg class="tabs-num__icon tabs-num__icon_lm">
                             <use xlink:href="./local/img/sprite.num.svg#lm"></use>
                         </svg>
                     </a>
-                    <a href="javascript:;" class="tabs-num__link">
+                    <a href="javascript:;" data-id="match5" class="tabs-num__link">
                         <svg class="tabs-num__icon tabs-num__icon_ln">
                             <use xlink:href="./local/img/sprite.num.svg#ln"></use>
                         </svg>
                     </a>
                 </div>
-                <div class="tabs-panel tabs-panel_active" data-for="gallery">
-                    <a href="javascript:;" data-id="gallery1" class="tabs-panel__link tabs-panel__link_active">Завершенные</a>
-                    <a href="javascript:;" data-id="gallery2" class="tabs-panel__link">Ближайшие</a>
+                <div class="tabs-panel tabs-panel_active" data-for="match">
+                    <a href="javascript:;" data-id="match1" class="tabs-panel__link tabs-panel__link_active">Завершенные</a>
+                    <a href="javascript:;" data-id="match2" class="tabs-panel__link">Ближайшие</a>
                 </div>
             </div>
 
             <!-- Матчи -->
-            <div class="match-index">
-                <div class="match-index__block scroll-pane">
-                    <table class="match-index__table">
-                        <tr>
-                            <td>
-                                13 октября<br>
-                                19:00
-                            </td>
-                            <td>
-                                №236<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Седые Волки
-                            </td>
-                            <td>
-                                8 : <span class="match-index__min">2</span>
-                            </td>
-                            <td>
-                                Казанские Драконы
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                13 октября<br>
-                                20:30
-                            </td>
-                            <td>
-                                №237<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Скоростная Машина
-                            </td>
-                            <td>
-                                <span class="match-index__min">0</span> : 3
-                            </td>
-                            <td>
-                                Армеец
-                                <div class="match-index__info">
-                                    <svg class="match-index__info-icon">
-                                        <use xlink:href="./local/img/sprite.svg#warning"></use>
-                                    </svg>
-                                    <div class="match-index__info-right">
-                                        <div class="match-index__info-top">
-                                            <div class="match-index__info-match">
-                                                Перенос матча «Лиги Надежды»
-                                            </div>
-                                            <div class="match-index__info-team">
-                                                «Львы» — «Крылья Белогорья»
-                                            </div>
-                                        </div>
-                                        <div class="match-index__info-text">
-                                            Матч состоится 30 января. Начало матча — 21:15. Место проведения — ЛА «Серебряный Донец»
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                14 октября<br>
-                                <a href="javascript:;" class="match-index__broadcast">
-                                    <svg class="match-index__broadcast-icon">
-                                        <use xlink:href="./local/img/sprite.svg#broadcast"></use>
-                                    </svg>
-                                    Эфир
-                                </a>
-                            </td>
-                            <td>
-                                №238<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Русский Двор
-                            </td>
-                            <td>
-                                8 : <span class="match-index__min">0</span>
-                            </td>
-                            <td>
-                                Ярославская Легенда
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                14 октября<br>
-                                <a href="javascript:;" class="match-index__broadcast">
-                                    <svg class="match-index__broadcast-icon">
-                                        <use xlink:href="./local/img/sprite.svg#broadcast"></use>
-                                    </svg>
-                                    Эфир
-                                </a>
-                            </td>
-                            <td>
-                                №239<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Ярославская Легенда 17
-                            </td>
-                            <td>
-                                5 : <span class="match-index__min">3</span>
-                            </td>
-                            <td>
-                                Невский Легион
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                14 октября<br>
-                                19:00
-                            </td>
-                            <td>
-                                №240<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Морпорт
-                            </td>
-                            <td>
-                                <span class="match-index__min">1</span> : 2
-                            </td>
-                            <td>
-                                Невский Легион
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
+            <div class="tabs-items" id="match">
+                <div class="tabs-items__item tabs-items__item_active" id="match1">
 
-                        <tr>
-                            <td>
-                                13 октября<br>
-                                19:00
-                            </td>
-                            <td>
-                                №236<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Седые Волки
-                            </td>
-                            <td>
-                                8 : <span class="match-index__min">2</span>
-                            </td>
-                            <td>
-                                Казанские Драконы
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                13 октября<br>
-                                20:30
-                            </td>
-                            <td>
-                                №237<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Скоростная Машина
-                            </td>
-                            <td>
-                                <span class="match-index__min">0</span> : 3
-                            </td>
-                            <td>
-                                Армеец
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                14 октября<br>
-                                20:30
-                            </td>
-                            <td>
-                                №238<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Русский Двор
-                            </td>
-                            <td>
-                                8 : <span class="match-index__min">0</span>
-                            </td>
-                            <td>
-                                Ярославская Легенда
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                14 октября<br>
-                                20:30
-                            </td>
-                            <td>
-                                №239<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Ярославская Легенда 17
-                            </td>
-                            <td>
-                                5 : <span class="match-index__min">3</span>
-                            </td>
-                            <td>
-                                Невский Легион
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                14 октября<br>
-                                19:00
-                            </td>
-                            <td>
-                                №240<br>
-                                11 тур
-                            </td>
-                            <td>
-                                Морпорт
-                            </td>
-                            <td>
-                                <span class="match-index__min">1</span> : 2
-                            </td>
-                            <td>
-                                Невский Легион
-                                <div class="match-index__btns">
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_1">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_2">
-                                            <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_3">
-                                            <use xlink:href="./local/img/sprite.svg#video"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="javascript:;" class="match-index__btn">
-                                        <svg class="match-index__icon match-index__icon_4">
-                                            <use xlink:href="./local/img/sprite.svg#photo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="match-index">
+                        <div class="match-index__block scroll-pane">
+                            <table class="match-index__table">
+                                <tr>
+                                    <td>
+                                        13 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №236<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Седые Волки
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">2</span>
+                                    </td>
+                                    <td>
+                                        Казанские Драконы
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        13 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №237<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Скоростная Машина
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">0</span> : 3
+                                    </td>
+                                    <td>
+                                        Армеец
+                                        <div class="match-index__info">
+                                            <svg class="match-index__info-icon">
+                                                <use xlink:href="./local/img/sprite.svg#warning"></use>
+                                            </svg>
+                                            <div class="match-index__info-right">
+                                                <div class="match-index__info-top">
+                                                    <div class="match-index__info-match">
+                                                        Перенос матча «Лиги Надежды»
+                                                    </div>
+                                                    <div class="match-index__info-team">
+                                                        «Львы» — «Крылья Белогорья»
+                                                    </div>
+                                                </div>
+                                                <div class="match-index__info-text">
+                                                    Матч состоится 30 января. Начало матча — 21:15. Место проведения — ЛА «Серебряный Донец»
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        <a href="javascript:;" class="match-index__broadcast">
+                                            <svg class="match-index__broadcast-icon">
+                                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                                            </svg>
+                                            Эфир
+                                        </a>
+                                    </td>
+                                    <td>
+                                        №238<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Русский Двор
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">0</span>
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        <a href="javascript:;" class="match-index__broadcast">
+                                            <svg class="match-index__broadcast-icon">
+                                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                                            </svg>
+                                            Эфир
+                                        </a>
+                                    </td>
+                                    <td>
+                                        №239<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда 17
+                                    </td>
+                                    <td>
+                                        5 : <span class="match-index__min">3</span>
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №240<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Морпорт
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">1</span> : 2
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        13 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №236<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Седые Волки
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">2</span>
+                                    </td>
+                                    <td>
+                                        Казанские Драконы
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        13 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №237<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Скоростная Машина
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">0</span> : 3
+                                    </td>
+                                    <td>
+                                        Армеец
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №238<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Русский Двор
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">0</span>
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №239<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда 17
+                                    </td>
+                                    <td>
+                                        5 : <span class="match-index__min">3</span>
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №240<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Морпорт
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">1</span> : 2
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="match-index__bottom">
+                            <a href="javascript:;" class="link-str">
+                                Все лидеры
+                                <svg class="link-str__icon">
+                                    <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="match-index__bottom">
-                    <a href="javascript:;" class="link-str">
-                        Все лидеры
-                        <svg class="link-str__icon">
-                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                        </svg>
-                    </a>
+                <div class="tabs-items__item" id="match2">
+
+                    <div class="match-index">
+                        <div class="match-index__block scroll-pane">
+                            <table class="match-index__table">
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        <a href="javascript:;" class="match-index__broadcast">
+                                            <svg class="match-index__broadcast-icon">
+                                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                                            </svg>
+                                            Эфир
+                                        </a>
+                                    </td>
+                                    <td>
+                                        №238<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Русский Двор
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">0</span>
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        <a href="javascript:;" class="match-index__broadcast">
+                                            <svg class="match-index__broadcast-icon">
+                                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                                            </svg>
+                                            Эфир
+                                        </a>
+                                    </td>
+                                    <td>
+                                        №239<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда 17
+                                    </td>
+                                    <td>
+                                        5 : <span class="match-index__min">3</span>
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №240<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Морпорт
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">1</span> : 2
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        13 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №236<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Седые Волки
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">2</span>
+                                    </td>
+                                    <td>
+                                        Казанские Драконы
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        13 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №237<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Скоростная Машина
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">0</span> : 3
+                                    </td>
+                                    <td>
+                                        Армеец
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №238<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Русский Двор
+                                    </td>
+                                    <td>
+                                        8 : <span class="match-index__min">0</span>
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        20:30
+                                    </td>
+                                    <td>
+                                        №239<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Ярославская Легенда 17
+                                    </td>
+                                    <td>
+                                        5 : <span class="match-index__min">3</span>
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14 октября<br>
+                                        19:00
+                                    </td>
+                                    <td>
+                                        №240<br>
+                                        11 тур
+                                    </td>
+                                    <td>
+                                        Морпорт
+                                    </td>
+                                    <td>
+                                        <span class="match-index__min">1</span> : 2
+                                    </td>
+                                    <td>
+                                        Невский Легион
+                                        <div class="match-index__btns">
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_1">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_2">
+                                                    <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_3">
+                                                    <use xlink:href="./local/img/sprite.svg#video"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="match-index__btn">
+                                                <svg class="match-index__icon match-index__icon_4">
+                                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="match-index__bottom">
+                            <a href="javascript:;" class="link-str">
+                                Все лидеры
+                                <svg class="link-str__icon">
+                                    <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -982,354 +1345,674 @@
             </svg>
             Лидеры
         </a>
-        <div class="tabs-num">
-            <a href="javascript:;" class="tabs-num__link tabs-num__link_active">
+        <div class="tabs-num tabs-num_active" data-for="leader">
+            <a href="javascript:;" data-id="leader1" class="tabs-num__link tabs-num__link_active">
                 <svg class="tabs-num__icon tabs-num__icon_f">
                     <use xlink:href="./local/img/sprite.num.svg#f"></use>
                 </svg>
             </a>
-            <a href="javascript:;" class="tabs-num__link">
+            <a href="javascript:;" data-id="leader2" class="tabs-num__link">
                 <svg class="tabs-num__icon tabs-num__icon_fa">
                     <use xlink:href="./local/img/sprite.num.svg#fa"></use>
                 </svg>
             </a>
-            <a href="javascript:;" class="tabs-num__link">
+            <a href="javascript:;" data-id="leader3" class="tabs-num__link">
                 <svg class="tabs-num__icon tabs-num__icon_fb">
                     <use xlink:href="./local/img/sprite.num.svg#fb"></use>
                 </svg>
             </a>
-            <a href="javascript:;" class="tabs-num__link">
+            <a href="javascript:;" data-id="leader4" class="tabs-num__link">
                 <svg class="tabs-num__icon tabs-num__icon_lm">
                     <use xlink:href="./local/img/sprite.num.svg#lm"></use>
                 </svg>
             </a>
-            <a href="javascript:;" class="tabs-num__link">
+            <a href="javascript:;" data-id="leader5" class="tabs-num__link">
                 <svg class="tabs-num__icon tabs-num__icon_ln">
                     <use xlink:href="./local/img/sprite.num.svg#ln"></use>
                 </svg>
             </a>
         </div>
-        <div class="tabs-panel tabs-panel_active" data-for="gallery">
-            <a href="javascript:;" data-id="gallery1" class="tabs-panel__link tabs-panel__link_active">Бомбардиры</a>
-            <a href="javascript:;" data-id="gallery2" class="tabs-panel__link">Снайперы</a>
-            <a href="javascript:;" data-id="gallery3" class="tabs-panel__link">Ассистенты</a>
-            <a href="javascript:;" data-id="gallery4" class="tabs-panel__link">Вратари</a>
-            <a href="javascript:;" data-id="gallery5" class="tabs-panel__link">Защитники</a>
-            <a href="javascript:;" data-id="gallery6" class="tabs-panel__link">Нападающие</a>
+        <div class="tabs-panel tabs-panel_active" data-for="leader">
+            <a href="javascript:;" data-id="leader1" class="tabs-panel__link tabs-panel__link_active">Бомбардиры</a>
+            <a href="javascript:;" data-id="leader2" class="tabs-panel__link">Снайперы</a>
+            <a href="javascript:;" data-id="leader3" class="tabs-panel__link">Ассистенты</a>
+            <a href="javascript:;" data-id="leader4" class="tabs-panel__link">Вратари</a>
+            <a href="javascript:;" data-id="leader5" class="tabs-panel__link">Защитники</a>
+            <a href="javascript:;" data-id="leader6" class="tabs-panel__link">Нападающие</a>
         </div>
     </div>
 </div>
 
 <!-- Лидеры -->
 <div class="leader-index d-none d-sm-block">
-    <div class="container">
-        <div class="leader-index__items">
-            <div class="leader-index__item leader-index__item_left">
+    
+    <div class="tabs-items" id="leader">
+        <div class="tabs-items__item tabs-items__item_active" id="leader1">
 
-                <div class="leader-one">
-                    <div class="leader-one__left">
-                        <div class="leader-one__pict">
-                            <img class="leader-one__img" src="./local/uploads/leader.one.jpg" alt="">
+            <div class="container">
+                <div class="leader-index__items">
+                    <div class="leader-index__item leader-index__item_left">
+
+                        <div class="leader-one">
+                            <div class="leader-one__left">
+                                <div class="leader-one__pict">
+                                    <img class="leader-one__img" src="./local/uploads/leader.one.jpg" alt="">
+                                </div>
+                                <div class="leader-one__info">
+                                    <div class="leader-one__info-left">1</div>
+                                    <div class="leader-one__info-right">19</div>
+                                </div>
+                            </div>
+                            <div class="leader-one__right">
+                                <div class="leader-one__name">
+                                    Андреев<br>
+                                    Александр
+                                </div>
+                                <div class="leader-one__desc">
+                                    Нападающий
+                                </div>
+                                <div class="leader-one__bold">
+                                    Ночной Металлург
+                                </div>
+                                <div class="leader-one__text">
+                                    Лига Надежды 18+ Малый кубок
+                                </div>
+                                <div class="leader-one__bold">
+                                    Сибирь
+                                </div>
+                                <div class="leader-one__text">
+                                    Новокузнецк, Кемеровская область
+                                </div>
+                                <div class="leader-one__line">
+                                    <span>Очки</span>
+                                    <span class="leader-one__line-bold">54</span>
+                                    <span>Шайбы</span>
+                                    <span class="leader-one__line-bold">28</span>
+                                    <span>Игры</span>
+                                    <span class="leader-one__line-bold">18</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__info">
-                            <div class="leader-one__info-left">1</div>
-                            <div class="leader-one__info-right">19</div>
-                        </div>
+
                     </div>
-                    <div class="leader-one__right">
-                        <div class="leader-one__name">
-                            Андреев<br>
-                            Александр
+                    <div class="leader-index__item leader-index__item_center">
+
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">2</div>
+                                    <div class="leader-item__info-right">90</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Савчук Николай
+                                </div>
+                                <div class="leader-item__desc">
+                                    Н. Эд Машина
+                                </div>
+                                <div class="leader-item__text">
+                                    Республика Башкортостан
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 45</span>
+                                    <span class="leader-item__part">Ш: 15</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__desc">
-                            Нападающий
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.2.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">3</div>
+                                    <div class="leader-item__info-right">14</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Чуриков Евгений
+                                </div>
+                                <div class="leader-item__desc">
+                                    Дельта
+                                </div>
+                                <div class="leader-item__text">
+                                    Самарская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 44</span>
+                                    <span class="leader-item__part">Ш: 13</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__bold">
-                            Ночной Металлург
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.3.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">4</div>
+                                    <div class="leader-item__info-right">37</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Прозоров Максим
+                                </div>
+                                <div class="leader-item__desc">
+                                    Дуга
+                                </div>
+                                <div class="leader-item__text">
+                                    Ульяновская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 42</span>
+                                    <span class="leader-item__part">Ш: 15</span>
+                                    <span class="leader-item__part">И: 15</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__text">
-                            Лига Надежды 18+ Малый кубок
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.4.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">5</div>
+                                    <div class="leader-item__info-right">67</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Левашов Виктор
+                                </div>
+                                <div class="leader-item__desc">
+                                    Армада
+                                </div>
+                                <div class="leader-item__text">
+                                    Оренбургская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 41</span>
+                                    <span class="leader-item__part">Ш: 15</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__bold">
-                            Сибирь
+
+                    </div>
+                    <div class="leader-index__item leader-index__item_right">
+
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">6</div>
+                                    <div class="leader-item__info-right">27</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Акимов Алексей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Витязь
+                                </div>
+                                <div class="leader-item__text">
+                                    Кировская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 39</span>
+                                    <span class="leader-item__part">Ш: 12</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__text">
-                            Новокузнецк, Кемеровская область
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">7</div>
+                                    <div class="leader-item__info-right">32</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Бабушкин Михаил
+                                </div>
+                                <div class="leader-item__desc">
+                                    Курск
+                                </div>
+                                <div class="leader-item__text">
+                                    Нижегородская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 38</span>
+                                    <span class="leader-item__part">Ш: 10</span>
+                                    <span class="leader-item__part">И: 15</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="leader-one__line">
-                            <span>Очки</span>
-                            <span class="leader-one__line-bold">54</span>
-                            <span>Шайбы</span>
-                            <span class="leader-one__line-bold">28</span>
-                            <span>Игры</span>
-                            <span class="leader-one__line-bold">18</span>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">8</div>
+                                    <div class="leader-item__info-right">87</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Хаустов Андрей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Автодор
+                                </div>
+                                <div class="leader-item__text">
+                                    Республика Татарстан
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 35</span>
+                                    <span class="leader-item__part">Ш: 8</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
                         </div>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">9</div>
+                                    <div class="leader-item__info-right">28</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Шуклин Андрей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Электром
+                                </div>
+                                <div class="leader-item__text">
+                                    Пермский край
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 29</span>
+                                    <span class="leader-item__part">Ш: 8</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">10</div>
+                                    <div class="leader-item__info-right">35</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Кукин Сергей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Энергия ХХ Век
+                                </div>
+                                <div class="leader-item__text">
+                                    Саратовская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 22</span>
+                                    <span class="leader-item__part">Ш: 5</span>
+                                    <span class="leader-item__part">И: 13</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leader-index__bottom">
+                            <a href="javascript:;" class="link-str">
+                                Все лидеры
+                                <svg class="link-str__icon">
+                                    <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
-            <div class="leader-index__item leader-index__item_center">
 
-                <div class="leader-item">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">2</div>
-                            <div class="leader-item__info-right">90</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Савчук Николай
-                        </div>
-                        <div class="leader-item__desc">
-                            Н. Эд Машина
-                        </div>
-                        <div class="leader-item__text">
-                            Республика Башкортостан
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 45</span>
-                            <span class="leader-item__part">Ш: 15</span>
-                            <span class="leader-item__part">И: 14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.2.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">3</div>
-                            <div class="leader-item__info-right">14</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Чуриков Евгений
-                        </div>
-                        <div class="leader-item__desc">
-                            Дельта
-                        </div>
-                        <div class="leader-item__text">
-                            Самарская область
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 44</span>
-                            <span class="leader-item__part">Ш: 13</span>
-                            <span class="leader-item__part">И: 14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.3.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">4</div>
-                            <div class="leader-item__info-right">37</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Прозоров Максим
-                        </div>
-                        <div class="leader-item__desc">
-                            Дуга
-                        </div>
-                        <div class="leader-item__text">
-                            Ульяновская область
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 42</span>
-                            <span class="leader-item__part">Ш: 15</span>
-                            <span class="leader-item__part">И: 15</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.4.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">5</div>
-                            <div class="leader-item__info-right">67</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Левашов Виктор
-                        </div>
-                        <div class="leader-item__desc">
-                            Армада
-                        </div>
-                        <div class="leader-item__text">
-                            Оренбургская область
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 41</span>
-                            <span class="leader-item__part">Ш: 15</span>
-                            <span class="leader-item__part">И: 14</span>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="tabs-items__item" id="leader2">
 
+            <div class="container">
+                <div class="leader-index__items">
+                    <div class="leader-index__item leader-index__item_left">
+
+                        <div class="leader-one">
+                            <div class="leader-one__left">
+                                <div class="leader-one__pict">
+                                    <img class="leader-one__img" src="./local/uploads/leader.one.jpg" alt="">
+                                </div>
+                                <div class="leader-one__info">
+                                    <div class="leader-one__info-left">1</div>
+                                    <div class="leader-one__info-right">19</div>
+                                </div>
+                            </div>
+                            <div class="leader-one__right">
+                                <div class="leader-one__name">
+                                    Андреев<br>
+                                    Александр
+                                </div>
+                                <div class="leader-one__desc">
+                                    Нападающий
+                                </div>
+                                <div class="leader-one__bold">
+                                    Ночной Металлург
+                                </div>
+                                <div class="leader-one__text">
+                                    Лига Надежды 18+ Малый кубок
+                                </div>
+                                <div class="leader-one__bold">
+                                    Сибирь
+                                </div>
+                                <div class="leader-one__text">
+                                    Новокузнецк, Кемеровская область
+                                </div>
+                                <div class="leader-one__line">
+                                    <span>Очки</span>
+                                    <span class="leader-one__line-bold">54</span>
+                                    <span>Шайбы</span>
+                                    <span class="leader-one__line-bold">28</span>
+                                    <span>Игры</span>
+                                    <span class="leader-one__line-bold">18</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="leader-index__item leader-index__item_center">
+
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.2.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">3</div>
+                                    <div class="leader-item__info-right">14</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Чуриков Евгений
+                                </div>
+                                <div class="leader-item__desc">
+                                    Дельта
+                                </div>
+                                <div class="leader-item__text">
+                                    Самарская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 44</span>
+                                    <span class="leader-item__part">Ш: 13</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">2</div>
+                                    <div class="leader-item__info-right">90</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Савчук Николай
+                                </div>
+                                <div class="leader-item__desc">
+                                    Н. Эд Машина
+                                </div>
+                                <div class="leader-item__text">
+                                    Республика Башкортостан
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 45</span>
+                                    <span class="leader-item__part">Ш: 15</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.3.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">4</div>
+                                    <div class="leader-item__info-right">37</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Прозоров Максим
+                                </div>
+                                <div class="leader-item__desc">
+                                    Дуга
+                                </div>
+                                <div class="leader-item__text">
+                                    Ульяновская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 42</span>
+                                    <span class="leader-item__part">Ш: 15</span>
+                                    <span class="leader-item__part">И: 15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.4.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">5</div>
+                                    <div class="leader-item__info-right">67</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Левашов Виктор
+                                </div>
+                                <div class="leader-item__desc">
+                                    Армада
+                                </div>
+                                <div class="leader-item__text">
+                                    Оренбургская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 41</span>
+                                    <span class="leader-item__part">Ш: 15</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="leader-index__item leader-index__item_right">
+
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">6</div>
+                                    <div class="leader-item__info-right">27</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Акимов Алексей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Витязь
+                                </div>
+                                <div class="leader-item__text">
+                                    Кировская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 39</span>
+                                    <span class="leader-item__part">Ш: 12</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">7</div>
+                                    <div class="leader-item__info-right">32</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Бабушкин Михаил
+                                </div>
+                                <div class="leader-item__desc">
+                                    Курск
+                                </div>
+                                <div class="leader-item__text">
+                                    Нижегородская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 38</span>
+                                    <span class="leader-item__part">Ш: 10</span>
+                                    <span class="leader-item__part">И: 15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">8</div>
+                                    <div class="leader-item__info-right">87</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Хаустов Андрей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Автодор
+                                </div>
+                                <div class="leader-item__text">
+                                    Республика Татарстан
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 35</span>
+                                    <span class="leader-item__part">Ш: 8</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">9</div>
+                                    <div class="leader-item__info-right">28</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Шуклин Андрей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Электром
+                                </div>
+                                <div class="leader-item__text">
+                                    Пермский край
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 29</span>
+                                    <span class="leader-item__part">Ш: 8</span>
+                                    <span class="leader-item__part">И: 14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-item leader-item_small">
+                            <div class="leader-item__left">
+                                <div class="leader-item__pict">
+                                    <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
+                                </div>
+                                <div class="leader-item__info">
+                                    <div class="leader-item__info-left">10</div>
+                                    <div class="leader-item__info-right">35</div>
+                                </div>
+                            </div>
+                            <div class="leader-item__right">
+                                <div class="leader-item__name">
+                                    Кукин Сергей
+                                </div>
+                                <div class="leader-item__desc">
+                                    Энергия ХХ Век
+                                </div>
+                                <div class="leader-item__text">
+                                    Саратовская область
+                                </div>
+                                <div class="leader-item__line">
+                                    <span class="leader-item__part">О: 22</span>
+                                    <span class="leader-item__part">Ш: 5</span>
+                                    <span class="leader-item__part">И: 13</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leader-index__bottom">
+                            <a href="javascript:;" class="link-str">
+                                Все лидеры
+                                <svg class="link-str__icon">
+                                    <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="leader-index__item leader-index__item_right">
 
-                <div class="leader-item leader-item_small">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">6</div>
-                            <div class="leader-item__info-right">27</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Акимов Алексей
-                        </div>
-                        <div class="leader-item__desc">
-                            Витязь
-                        </div>
-                        <div class="leader-item__text">
-                            Кировская область
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 39</span>
-                            <span class="leader-item__part">Ш: 12</span>
-                            <span class="leader-item__part">И: 14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item leader-item_small">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">7</div>
-                            <div class="leader-item__info-right">32</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Бабушкин Михаил
-                        </div>
-                        <div class="leader-item__desc">
-                            Курск
-                        </div>
-                        <div class="leader-item__text">
-                            Нижегородская область
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 38</span>
-                            <span class="leader-item__part">Ш: 10</span>
-                            <span class="leader-item__part">И: 15</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item leader-item_small">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">8</div>
-                            <div class="leader-item__info-right">87</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Хаустов Андрей
-                        </div>
-                        <div class="leader-item__desc">
-                            Автодор
-                        </div>
-                        <div class="leader-item__text">
-                            Республика Татарстан
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 35</span>
-                            <span class="leader-item__part">Ш: 8</span>
-                            <span class="leader-item__part">И: 14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item leader-item_small">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">9</div>
-                            <div class="leader-item__info-right">28</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Шуклин Андрей
-                        </div>
-                        <div class="leader-item__desc">
-                            Электром
-                        </div>
-                        <div class="leader-item__text">
-                            Пермский край
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 29</span>
-                            <span class="leader-item__part">Ш: 8</span>
-                            <span class="leader-item__part">И: 14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader-item leader-item_small">
-                    <div class="leader-item__left">
-                        <div class="leader-item__pict">
-                            <img class="leader-item__img" src="./local/uploads/leader.two.1.jpg" alt="">
-                        </div>
-                        <div class="leader-item__info">
-                            <div class="leader-item__info-left">10</div>
-                            <div class="leader-item__info-right">35</div>
-                        </div>
-                    </div>
-                    <div class="leader-item__right">
-                        <div class="leader-item__name">
-                            Кукин Сергей
-                        </div>
-                        <div class="leader-item__desc">
-                            Энергия ХХ Век
-                        </div>
-                        <div class="leader-item__text">
-                            Саратовская область
-                        </div>
-                        <div class="leader-item__line">
-                            <span class="leader-item__part">О: 22</span>
-                            <span class="leader-item__part">Ш: 5</span>
-                            <span class="leader-item__part">И: 13</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="leader-index__bottom">
-                    <a href="javascript:;" class="link-str">
-                        Все лидеры
-                        <svg class="link-str__icon">
-                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                        </svg>
-                    </a>
-                </div>
-
-            </div>
         </div>
     </div>
+
 </div>
 
 <!-- Заголовок блока -->
