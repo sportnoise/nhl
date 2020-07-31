@@ -1,0 +1,51 @@
+<% var data = {
+    title: "Index",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<br><br>
+<div class="container">
+    <div class="white-block main-margin">
+
+        <div class="tabs-panel tabs-panel_active" data-for="some-tab">
+            <a href="javascript:;" data-id="some-tab1" class="tabs-panel__link tabs-panel__link_active">Первая вкладка</a>
+            <a href="javascript:;" data-id="some-tab2" class="tabs-panel__link">Вторая вкладка</a>
+        </div>
+
+        <br>
+
+        <div class="tabs-items" id="some-tab">
+            <div class="tabs-items__item tabs-items__item_active" id="some-tab1">
+                Содержимое первой вкладки
+            </div>
+            <div class="tabs-items__item" id="some-tab2">
+                Содержимое второй вкладки
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="main-footer__bg">
+        <div class="container">
+
+            <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+            <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+        </div>
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/foot.html'))() %>
