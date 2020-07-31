@@ -34,4 +34,4 @@
 
 <hr>
 
-Tab-панели (.tabs-num и .tabs-panel) могут применться как простые ссылки, допустим для подгрузки ajax контента, так и для переключения вкладок. Для этого должны иметь класс *_active (.tabs-num_active и .tabs-panel_active) Пример кода <a href="https://sportnoise.github.io/nhl/dist/удуь.html">здесь</a>
+Tab-панели (.tabs-num и .tabs-panel) могут применться как простые ссылки, допустим для подгрузки ajax контента, так и для переключения вкладок. Для этого должны иметь класс *_active (.tabs-num_active и .tabs-panel_active) Пример кода <a href="https://sportnoise.github.io/nhl/dist/elem.html">здесь</a>
