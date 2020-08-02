@@ -108,6 +108,7 @@
         margin: 0 0 0 auto;
         display: flex;
         align-items: center;
+        padding: 10px 0;
 
         &__icon,
         &__icon:before,
@@ -129,11 +130,6 @@
         }
         &__icon:after {
             bottom: -5px;
-        }
-        &__name {
-            font-weight: 600;
-            color: var(--black);
-            margin: 0 0 0 10px;
         }
     }
 }

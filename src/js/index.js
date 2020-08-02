@@ -44,7 +44,10 @@ $(function() {
     });
     
     // Полоса прокрутки
-    $('.scroll-pane').jScrollPane({autoReinitialise: true});
+    if ($(window).width() > 575)
+    {
+        $('.scroll-pane').jScrollPane({autoReinitialise: true});
+    }
 
     // Подсказки
     tippy('[data-tippy-content]', {
@@ -91,10 +94,15 @@ $(function() {
     $('.slider-index__progressbar-count_last').text('0' + $('.slider-index__item').length);
 
     let mainSlider = new Swiper('.slider-index__slider', {
-        spaceBetween: 30,
+        spaceBetween: 10,
         loop: true,
         loopAdditionalSlides: 1,
         slideActiveClass: 'slider-index__item_active',
+        breakpoints: {
+            576: {
+                spaceBetween: 30
+            }
+        },
         pagination: {
             el: '.slider-index__progressbar',
             type: 'progressbar',
@@ -114,6 +122,7 @@ $(function() {
         autoplay: {
             delay: 0,
         },
-        speed: 30000,
+        width: 2560,
+        speed: 60000,
     });
 });

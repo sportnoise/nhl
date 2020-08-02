@@ -26,6 +26,7 @@
     <li>.container</li>
     <li>.row</li>
     <li>.col-*</li>
+    <li>.order-*</li>
     <li>.d-*-none</li>
     <li>.d-*-inline-block</li>
     <li>.d-*-block</li>

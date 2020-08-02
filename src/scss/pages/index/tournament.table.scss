@@ -80,28 +80,32 @@
     &__bottom {
         margin: 15px 25px 0 0;
     }
-}
 
-@include media-breakpoint-down(lg)
-{
-    .tournament-index {
-        margin: 0 0 50px;
-    }
-}
-@include media-breakpoint-down(sm)
-{
-    .tournament-index {
-        padding: 10px 10px 15px 15px;
-
-        &__bottom {
-            margin: 15px 15px 0 0;
+    @include media-breakpoint-down(lg)
+    {
+        & {
+            margin: 0 0 50px;
         }
     }
-}
-@include media-breakpoint-down(xs)
-{
-    .tournament-index {
-        font-size: 14px;
-        margin: 0 -15px 50px;
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            padding: 10px 10px 15px 15px;
+
+            &__bottom {
+                margin: 15px 15px 0 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(xs)
+    {
+        & {
+            font-size: 14px;
+            margin: 0 -15px 50px;
+
+            &__block {
+                overflow: hidden;
+            }
+        }
     }
 }

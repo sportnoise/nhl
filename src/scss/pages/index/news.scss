@@ -163,21 +163,15 @@
             margin: 0 25px 0 0;
         }
     }
-}
 
-@include media-breakpoint-only(xl)
-{
-    .news-index {
-
+    @include media-breakpoint-only(xl)
+    {
         &-top {
             margin: 0 -15px 40px;
         }
     }
-}
-@include media-breakpoint-only(lg)
-{
-    .news-index {
-
+    @include media-breakpoint-only(lg)
+    {
         &-left {
             width: 450px;
 
@@ -189,11 +183,8 @@
             width: 210px;
         }
     }
-}
-@include media-breakpoint-between(sm, md)
-{
-    .news-index {
-
+    @include media-breakpoint-between(sm, md)
+    {
         &-middle {
             margin: 0 -15px;
         }
@@ -210,40 +201,46 @@
             width: 50%;
         }
     }
-}
-@include media-breakpoint-down(sm)
-{
-    .news-index {
-
+    @include media-breakpoint-down(sm)
+    {
         &-top__item {
             width: 100%;
         }
     }
-}
-@include media-breakpoint-only(xs)
-{
-    .news-index {
-        padding: 30px 0 50px;
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 30px 0 50px;
 
-        &-left {
-            width: calc(100% + 30px);
-            margin: 0 -15px 30px;
+            &-left {
+                width: calc(100% + 30px);
+                margin: 0 -15px 30px;
 
-            &__block {
-                left: 15px;
-                bottom: 15px;
-                right: 15px;
+                &__block {
+                    left: 15px;
+                    bottom: 15px;
+                    right: 15px;
+                }
+                &__name {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
             }
-        }
-        &-right {
-            width: 100%;
-            margin: 0 0 30px;
-        }
-        &-bottom__item {
-            width: 100%;
-        }
-        &__btns-icon {
-            display: none;
+            &-right {
+                width: 100%;
+                margin: 0 0 30px;
+
+                &__text {
+                    display: none;
+                }
+            }
+            &-bottom__item {
+                width: 100%;
+            }
+            &__btns-icon {
+                display: none;
+            }
         }
     }
 }

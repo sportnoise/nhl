@@ -32,6 +32,13 @@
             width: 100%;
         }
     }
+
+    @include media-breakpoint-down(md)
+    {
+       &__link {
+            margin: 0 10px 0 0;
+        }
+    }
 }
 
 .tabs-items {
@@ -42,13 +49,6 @@
         &_active {
             display: block;
         }
-    }
-}
-
-@include media-breakpoint-down(md)
-{
-    .tabs-panel__link {
-        margin: 5px 10px 0 0;
     }
 }
 
@@ -87,15 +87,15 @@
             width: 35px;
         }
     }
-}
 
-@include media-breakpoint-only(xs)
-{
-    .tabs-num {
-        margin: 5px 0;
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 5px 0 0;
 
-        &__link {
-            margin: 0 10px 0 0;
+            &__link {
+                margin: 0 10px 0 0;
+            }
         }
     }
 }
