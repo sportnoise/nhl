@@ -14,11 +14,13 @@ $(function() {
     $('.menu-top-btn').click(function(){
 
         $('.menu-mobile').addClass('menu-mobile_open');
+        $('body').css({'overflow': 'hidden'});
     });
 
     $('.menu-mobile__close').click(function(){
 
         $('.menu-mobile').removeClass('menu-mobile_open');
+        $('body').css({'overflow': 'auto'});
     });
 
     // Показать / Скрыть Выбор региона
