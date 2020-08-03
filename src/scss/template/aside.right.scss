@@ -1,0 +1,18 @@
+.aside-right {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .23px;
+    margin: 0 0 50px;
+    padding: 40px 0 0;
+
+    p {
+        margin: 0 0 8px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 0;
+        }
+    }
+}

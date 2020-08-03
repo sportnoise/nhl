@@ -1,0 +1,289 @@
+<% var data = {
+    title: "Index",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Чемпионат
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Протоколы СДК
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Платежи
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Документы
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Контакты
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-30">
+                <div class="h1-and-link">
+                    <h1 class="h-no-margin">Контакты</h1>
+                    <a href="javascript:;" class="link-str">
+                        Представители всех регионов
+                        <svg class="link-str__icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-main">
+                    <div class="contact-main__pict">
+                        <img class="contact-main__img" src="./local/img/obl.1.png" alt="">
+                    </div>
+                    <div class="h2">Региональные представители</div>
+                    <div class="row black-link">
+                        <div class="col-md-6">
+                            <div class="mb-45">
+                                <div class="contact-main__title">Дивизион 40+</div>
+                                <b>Ларин Дмитрий Юрьевич</b><br>
+                                <a href="tel:+79308272828">+7 (930) 827-28-28</a><br>
+                                <a href="mailto:bryansk@nhliga.com">bryansk@nhliga.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-45">
+                                <div class="contact-main__title">Лига Надежды</div>
+                                <b>Алексеев Сергей Николаевич</b><br>
+                                <a href="tel:+79208401122">+7 (920) 840-11-22</a><br>
+                                <a href="mailto:bryansk18@nhliga.com">bryansk18@nhliga.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h2">Главный судья</div>
+                    <div class="row black-link">
+                        <div class="col-md-6">
+                            <div>
+                                <div class="contact-main__title">Дивизион 40+</div>
+                                <b>Старченкова Вилена Сергеевна</b><br>
+                                <a href="tel:+79803330838">+7 (980) 333-08-38</a><br>
+                                <a href="mailto:vilena_st@nhliga.com">vilena_st@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="text-sm">Все арбитры региона</a>
+                </div>
+
+            </div>
+            <div class="white-block mb-30">
+
+                <div class="contact-list">
+                    <div class="contact-list__title">
+                        <div class="contact-list__title-pict">
+                            <img class="contact-list__title-img" src="./local/img/arena.svg" alt="">
+                        </div>
+                        <div class="h2">Арены</div>
+                    </div>
+                    <div class="contact-list__block black-link">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Айс</b><br>
+                                    Екатеринбург, ул.Щербакова 2Д
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>КРК «Уралец»</b><br>
+                                    Екатеринбург, ул.Большакова 90 ЛДС
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Арена «Авто»</b><br>
+                                    Екатеринбург, ул.Счастливая, 14
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>«Снежинка»</b><br>
+                                    Екатеринбург, ул. Куйбышева, 32А
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Дацюк-Арена</b><br>
+                                    Екатеринбург, ул.Куйбышева 32А, стр.2
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Спартаковец</b><br>
+                                    Екатеринбург, Ул. Энгельса, 31А
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="white-block mb-45">
+
+                <div class="contact-list">
+                    <div class="contact-list__title">
+                        <div class="contact-list__title-pict">
+                            <img class="contact-list__title-img" src="./local/img/medicina.svg" alt="">
+                        </div>
+                        <div class="h2">Медицина</div>
+                    </div>
+                    <div class="contact-list__block black-link">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Врачебно-спортивный диспансер</b><br>
+                                    <a href="tel:+74951790942">+7 (495) 179-09-42</a><br>
+                                    Москва, Ленинградский проспект, 39
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Врачебно-физкультурный диспансер</b><br>
+                                    <a href="tel:+74956137749">+7 (495) 613-77-49</a><br>
+                                    Москва, Ленинградский проспект, 36 м
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Врачебно-физкультурный диспансер</b><br>
+                                    <a href="tel:+74967541901">+7 (4967) 54-19-01</a><br>
+                                    Москва, улица Большая Серпуховская, 56
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Врачебно-физкультурный диспансер №16</b><br>
+                                    <a href="tel:+74953042063">+7 (495) 304-20-63</a><br>
+                                    Москва, Ленинградский проспект, 36 м
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Врачебно-физкультурный диспансер №17</b><br>
+                                    <a href="tel:+74956024660">+7 (495) 602-46-60</a><br>
+                                    Москва, Мира проспект, 99
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-30">
+                                    <b>Спартаковец</b><br>
+                                    <a href="tel:+74956137749">+7 (495) 613-77-49</a><br>
+                                    Москва, Ленинградский проспект, 36 м
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <aside class="aside-right black-link">
+                <div class="h2">Ночная Лига</div>
+                <div class="mb-15">
+                    Центральный офис (Москва)
+                </div>
+                <p>
+                    <a href="tel:+74957486210">+7 (495) 748-62-10</a>
+                </p>
+                <p>
+                    <a href="mailto:liga@nhliga.com">liga@nhliga.com</a>
+                </p>
+                <p>
+                    119048, Москва, ул. Усачева, д. 33, стр. 2, 8 этаж
+                </p>
+                <hr>
+                <div class="h2">Сектор по спортивной и региональной работе</div>
+                <div class="mb-20">
+                    <b>Сергей Пилюгин</b><br>
+                    Руководитель сектора.<br>
+                    Заместитель исполнительного директора по спортивной работе<br>
+                    <a href="mailto:psv@nhliga.com">psv@nhliga.com</a>
+                </div>
+                <div class="mb-20">
+                    <b>Вероника Барышева</b><br>
+                    Москва<br>
+                    <a href="mailto:barysheva@nhliga.com">barysheva@nhliga.com</a>
+                </div>
+                <div class="mb-20">
+                    <b>Константин Смирнов</b><br>
+                    Центр<br>
+                    <a href="mailto:smirnov@nhliga.com">smirnov@nhliga.com</a>
+                </div>
+                <div class="mb-20">
+                    <b>Александр Никульшин</b><br>
+                    Санкт-Петербург, Северо-Запад, Сибирь и Забайкальский край<br>
+                    <a href="mailto:nikula@nhliga.com">nikula@nhliga.com</a>
+                </div>
+                <div class="mb-20">
+                    <b>Герман Марьин</b><br>
+                    Приволжье, Юг и Северный Кавказ<br>
+                    <a href="mailto:marin@nhliga.com">marin@nhliga.com</a>
+                </div>
+                <div class="mb-20">
+                    <b>Артем Павлов</b><br>
+                    Урал, Дальний Восток<br>
+                    <a href="mailto:pavlov@nhliga.com">pavlov@nhliga.com</a>
+                </div>
+                <hr>
+                <div class="h2">Пресс-служба</div>
+                <div class="mb-30">
+                    <b>Дарья Костина</b><br>
+                    <a href="mailto:kostina@nhliga.com">kostina@nhliga.com</a>
+                </div>
+                <div class="h2">Маркетинг и проведение мероприятий</div>
+                <div class="mb-30">
+                    <b>Дмитрий Иванов</b><br>
+                    <a href="mailto:dvi@nhliga.com">dvi@nhliga.com</a>
+                </div>
+                <div class="h2">Работа со спонсорами и партнёрами</div>
+                <div>
+                    <b>Марина Богомолова</b><br>
+                    <a href="mailto:bogomolova@nhliga.com">bogomolova@nhliga.com</a>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

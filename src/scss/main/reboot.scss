@@ -24,9 +24,11 @@ body {
 }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
+    border: none;
+    background-color: var(--white_contur);
+    height: 2px;
+    width: 100%;
+    margin: 30px 0;
 }
 
 h2, h3, h4, h5, h6,
@@ -184,14 +186,4 @@ input[type="checkbox"] {
 textarea {
 	overflow: auto;
 	resize: vertical;
-}
-
-.text-lg {
-    font-size: 19px;
-    line-height: 27px;
-    letter-spacing: .19px;
-}
-.text-sm {
-    font-size: 15px;
-    line-height: 27px;
 }

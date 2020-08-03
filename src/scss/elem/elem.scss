@@ -1,0 +1,27 @@
+/* Черные ссылки */
+.black-link {
+
+    a {
+        color: var(--black);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Position relative */
+.position-relative {
+    position: relative;
+}
+
+/* Размеры текстов */
+.text-lg {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: .19px;
+}
+.text-sm {
+    font-size: 15px;
+    line-height: 27px;
+}

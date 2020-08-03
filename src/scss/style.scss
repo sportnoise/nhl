@@ -6,6 +6,7 @@
 
 // Общие элементы
 @import "./elem/swiper"; // Общие стили сайдера
+@import "./elem/elem"; // Незначительные элементы
 @import "./elem/pict.shadow"; // Тень на картинках
 @import "./elem/btn"; // Кнопки
 @import "./elem/btn.close"; // Кнопка закрыть
@@ -17,6 +18,7 @@
 @import "./elem/tabs"; // Вкладки
 @import "./elem/jquery.jscrollpane"; // Полоса прокрутки
 @import "./elem/tippy"; // Подсказки
+@import "./elem/h1.and.link"; // H1 с ссылкой
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -32,6 +34,7 @@
 @import "./template/menu.footer"; // Меню подвала
 @import "./template/window"; // Всплывающие окна
 @import "./template/menu.mobile"; // Меню на мобильнике
+@import "./template/aside.right"; // Правая область
 
 // Главная страница
 @import "./pages/index/slider"; // Главный слайдер
@@ -54,3 +57,7 @@
 // Протокол
 @import "./pages/protocol/list"; // Список протоколов
 @import "./pages/protocol/detail"; // Протокол детально
+
+// Контакты
+@import "./pages/contact/main"; // Главный блок
+@import "./pages/contact/list"; // Список

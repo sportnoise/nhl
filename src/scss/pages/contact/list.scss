@@ -1,0 +1,33 @@
+.contact-list {
+
+    &__title {
+        margin: 0 0 35px;
+
+        &-pict {
+            display: none;
+        }
+    }
+    &__block {
+        margin: 0 0 -30px;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__title {
+            position: relative;
+
+            &-pict {
+                position: absolute;
+                left: -105px;
+                width: 105px;
+                top: 50%;
+                transform: translate(0, -50%);
+                display: block;
+            }
+            &-img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
