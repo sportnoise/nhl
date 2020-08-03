@@ -11,14 +11,14 @@ import b from './jquery.jscrollpane.js';
 $(function() {
 
     // Раскрытие меню на мобиле
-    $('.memu-top-btn').click(function(){
+    $('.menu-top-btn').click(function(){
 
-        $('.memu-top').addClass('memu-top_open');
+        $('.menu-mobile').addClass('menu-mobile_open');
     });
 
-    $('.memu-top__close').click(function(){
+    $('.menu-mobile__close').click(function(){
 
-        $('.memu-top').removeClass('memu-top_open');
+        $('.menu-mobile').removeClass('menu-mobile_open');
     });
 
     // Показать / Скрыть Выбор региона
@@ -115,14 +115,17 @@ $(function() {
     });
 
     // Линия фотографий
-    new Swiper('.face-line', {
-        loop: true,
-        simulateTouch: false,
-        loopAdditionalSlides: 1,
-        autoplay: {
-            delay: 0,
-        },
-        width: 2560,
-        speed: 60000,
-    });
+    if ($(window).width() > 767)
+    {
+        new Swiper('.face-line', {
+            loop: true,
+            simulateTouch: false,
+            loopAdditionalSlides: 1,
+            autoplay: {
+                delay: 0,
+            },
+            width: 2560,
+            speed: 60000,
+        });
+    }
 });

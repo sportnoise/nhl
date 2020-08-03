@@ -1,6 +1,6 @@
 @include media-breakpoint-up(md)
 {
-    .memu-top {
+    .menu-top {
         display: flex;
 
         &__close {
@@ -27,14 +27,10 @@
             }
         }
     }
-
-    .memu-top-btn {
-        display: none;
-    }
 }
 @include media-breakpoint-only(lg)
 {
-    .memu-top {
+    .menu-top {
 
         &__link {
             font-size: 14px;
@@ -43,7 +39,7 @@
 }
 @include media-breakpoint-only(md)
 {
-    .memu-top {
+    .menu-top {
         margin: 0 -10px;
         justify-content: space-between;
 
@@ -54,82 +50,18 @@
 }
 @include media-breakpoint-down(sm)
 {
-    .memu-top {
+    .menu-top {
         display: flex;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: -100%;
-        background-color: var(--white);
-        z-index: 50;
-        align-items: center;
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        transition: all .3s;
+        padding: 0 0 0 75px;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--blacksuper);
+        line-height: 1;
+        margin: 0 0 40px;
 
-        &_open {
-            left: 0;
-        }
-        &__close {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            height: 30px;
-            width: 30px;
-
-            &:after,
-            &:before {
-                content: "";
-                width: 100%;
-                height: 3px;
-                position: absolute;
-                background-color: var(--black);
-                top: 12px;
-            }
-            &:after {
-                transform: rotate(-45deg);
-            }
-            &:before {
-                transform: rotate(45deg);
-            }
-        }
         &__link {
-            padding: 5px 10px;
-
-            &_active {
-                background-color: var(--background);
-                border-radius: 4px;
-            }
-        }
-    }
-
-    .memu-top-btn {
-        margin: 0 0 0 auto;
-        display: flex;
-        align-items: center;
-        padding: 10px 0;
-
-        &__icon,
-        &__icon:before,
-        &__icon:after {
-            height: 2px;
-            width: 20px;
-            background-color: var(--black);
-        }
-        &__icon {
-            position: relative;
-        }
-        &__icon:before,
-        &__icon:after {
-            content: "";
-            position: absolute;
-        }
-        &__icon:before {
-            top: -5px;
-        }
-        &__icon:after {
-            bottom: -5px;
+            margin: 0 0 20px;
         }
     }
 }

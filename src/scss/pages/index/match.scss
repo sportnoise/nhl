@@ -209,19 +209,27 @@
 
             &__table {
                 width: 100%;
+                font-size: 15px;
+                line-height: 20px;
 
                 & tr {
-                    flex-wrap: wrap;
                     height: auto;
                     padding: 10px 0;
-                    text-align: center;
+                    justify-content: space-between;
                 }
                 & td {
-                    width: 100%;
 
-                    &:first-child,
-                    &:nth-child(2) {
-                        width: 50%;
+                    &:nth-child(1) {
+                        order: 2;
+                        text-align: right;
+                    }
+                    &:nth-child(2),
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        order: 1;
                     }
                 }
             }
@@ -256,11 +264,14 @@
     @include media-breakpoint-down(xs)
     {
         & {
-            margin: 0 -15px 50px;
+            margin: 0 -15px 30px;
             width: calc(100% + 30px);
 
             &__block {
-                overflow: hidden;
+                height: auto;
+            }
+            &__bottom {
+                margin: 15px 0 0;
             }
         }
     }

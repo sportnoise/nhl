@@ -24,12 +24,14 @@
 @import "./template/header"; // Шапка сайта
 @import "./template/search.form"; // Шапка сайта
 @import "./template/menu.top"; // Главное меню
+@import "./template/menu.top.btn"; // Главное меню
 @import "./template/main"; // Рабочая область
 @import "./template/menu.section"; // Меню раздела
 @import "./template/footer"; // Подвал сайта
 @import "./template/face.line"; // Полоса с лицами
 @import "./template/menu.footer"; // Меню подвала
 @import "./template/window"; // Всплывающие окна
+@import "./template/menu.mobile"; // Меню на мобильнике
 
 // Главная страница
 @import "./pages/index/slider"; // Главный слайдер

@@ -8,9 +8,10 @@
 }
 
 .header-top {
-    padding: 20px 0 10px;
+    padding: 10px 0 0;
     display: flex;
     align-items: center;
+    height: 100px;
 
     &__logo {
         width: 45px;
@@ -63,7 +64,7 @@
     }
     &__region {
         margin: 0 0 0 20px;
-        width: 80px;
+        max-width: 80px;
 
         &-img {
             display: block;
@@ -90,6 +91,8 @@
         & {
             flex-wrap: wrap;
             justify-content: space-between;
+            height: auto;
+            padding: 10px 0;
 
             &__info {
                 width: calc(100% - 75px);
@@ -104,6 +107,7 @@
     @include media-breakpoint-down(sm)
     {
         & {
+            height: auto;
             padding: 15px 0 5px;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -211,12 +215,7 @@
     @include media-breakpoint-down(sm)
     {
         & {
-            padding: 0;
-
-            &__search,
-            &__broadcast {
-                display: none;
-            }
+            display: none;
         }
     }
 }
@@ -278,7 +277,13 @@
     @include media-breakpoint-down(sm)
     {
         & {
-            display: none;
+            margin: 0;
+            justify-content: space-between;
+
+            &__link {
+                margin: 0;
+                transform: scale(1.7);
+            }
         }
     }
 }

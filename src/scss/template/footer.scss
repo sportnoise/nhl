@@ -1,10 +1,14 @@
 .main-footer {
+    background-color: var(--black);
+    background-image: url(img/bg.footer.jpg);
+    background-position: top center;
+    padding: 30px 0 40px;
 
-    &__bg {
-        background-color: var(--black);
-        background-image: url(img/bg.footer.jpg);
-        background-position: top center;
-        padding: 30px 0 40px;
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            display: none;
+        }
     }
 }
 
@@ -34,6 +38,34 @@
     &__name {
         font-size: 13px;
         line-height: 17px;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            padding: 40px 0 15px;
+
+            &__items {
+                flex-wrap: wrap;
+            }
+            &__item {
+                width: 50%;
+                margin: 0 0 30px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 30px 0 0;
+
+            &__pict {
+                margin: 0;
+            }
+            &__name {
+                display: none;
+            }
+        }
     }
 }
 
@@ -103,12 +135,38 @@
             width: 31px;
         }
     }
+
+    @include media-breakpoint-down(md)
+    {
+        &__link {
+            padding: 0 15px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            flex-wrap: wrap;
+            margin: 0;
+
+            &__link {
+                padding: 0 15px;
+                margin: 0 10px 20px;
+            }
+        }
+    }
 }
 
 .footer-middle {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            justify-content: center;
+        }
+    }
 }
 
 .footer-bottom {
@@ -148,6 +206,27 @@
             width: 13px;
             fill: var(--gray_contur);
             margin: 0 5px;
+        }
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__left {
+            max-width: 720px;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__left {
+                margin: 0 0 20px;
+            }
+            &__right {
+                width: 100%;
+            }
         }
     }
 }
@@ -203,6 +282,13 @@
             }
         }
     }
+
+    @include media-breakpoint-down(md)
+    {
+        .footer-social-inner {
+            justify-content: center;
+        }
+    }
 }
 
 .to-top {
@@ -230,79 +316,47 @@
     &:hover:before {
         border-color: var(--white);
     }
-}
 
-@include media-breakpoint-down(md)
-{
-    .to-top {
-        display: none;
-    }
-}
-@include media-breakpoint-only(lg)
-{
-    .footer-bottom__left {
-        max-width: 720px;
-    }
-}
-@include media-breakpoint-down(md)
-{
-    .footer-social__link {
-        padding: 0 15px;
-    }
-
-    .footer-middle {
-        justify-content: center;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-
-        &__left {
-            margin: 0 0 20px;
-        }
-        &__right {
-            width: 100%;
-        }
-    }
-
-    .footer-social-inner {
-        justify-content: center;
-    }
-}
-@include media-breakpoint-down(sm)
-{
-    .footer-partner-list {
-        padding: 40px 0 15px;
-
-        &__items {
-            flex-wrap: wrap;
-        }
-        &__item {
-            width: 50%;
-            margin: 0 0 30px;
-        }
-    }
-
-    .footer-social {
-        flex-wrap: wrap;
-        margin: 0;
-
-        &__link {
-            padding: 0 15px;
-            margin: 0 10px 20px;
-        }
-    }
-}
-@include media-breakpoint-only(xs)
-{
-    .footer-partner-list {
-        padding: 30px 0 0;
-
-        &__pict {
+    @include media-breakpoint-down(md)
+    {
+        & {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
             margin: 0;
+
+            &:before {
+                height: 15px;
+                width: 15px;
+                left: 11px;
+                top: 15px;
+            }
         }
-        &__name {
-            display: none;
+    }
+}
+
+.main-footer-mobile {
+    display: none;
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            background-color: var(--blacksuper);
+            display: block;
+            padding: 35px 0 20px;
+
+            &__btn {
+                position: relative;
+                text-align: center;
+                margin: 0 0 35px;
+            }
+            &__copy {
+                font-size: 13px;
+                line-height: 15px;
+                color: var(--gray_contur);
+            }
         }
     }
 }

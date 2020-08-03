@@ -103,15 +103,17 @@
 
 <!-- Подвал сайта -->
 <footer class="main-footer">
-    <div class="main-footer__bg">
-        <div class="container">
+    <div class="container">
 
-            <%= _.template(require('./../includes/footer-middle.html'))() %>
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
 
-            <%= _.template(require('./../includes/footer-bottom.html'))() %>
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
 
-        </div>
     </div>
 </footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
 
 <%= _.template(require('./../includes/foot.html'))() %>

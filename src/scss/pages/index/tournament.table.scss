@@ -65,7 +65,7 @@
                 text-align: left;
             }
             &:nth-child(2) {
-                width: calc(100% - 140px);
+                width: calc(100% - 145px);
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
@@ -101,10 +101,29 @@
     {
         & {
             font-size: 14px;
-            margin: 0 -15px 50px;
+            margin: 0 -15px 30px;
 
+            &__head {
+                justify-content: flex-end;
+                width: 100%;
+
+                &-span {
+                    display: none;
+                }
+            }
             &__block {
-                overflow: hidden;
+                height: auto;
+            }
+            &__table {
+                width: 100%;
+                margin: 0;
+
+                tr {
+                    height: 31px;
+                }
+            }
+            &__bottom {
+                margin: 15px 0 0;
             }
         }
     }

@@ -20,18 +20,20 @@
 
 <!-- Подвал сайта -->
 <footer class="main-footer">
-    <div class="main-footer__bg">
-        <div class="container">
+    <div class="container">
 
-            <%= _.template(require('./../includes/footer-top.html'))() %>
+        <%= _.template(require('./../includes/footer-top.html'))() %>
 
-            <%= _.template(require('./../includes/footer-middle.html'))() %>
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
 
-            <%= _.template(require('./../includes/footer-bottom-index.html'))() %>
+        <%= _.template(require('./../includes/footer-bottom-index.html'))() %>
 
-        </div>
     </div>
 </footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
 
 <%= _.template(require('./../includes/window.html'))() %>
 
