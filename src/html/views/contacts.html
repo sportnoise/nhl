@@ -1,5 +1,5 @@
 <% var data = {
-    title: "Index",
+    title: "Contacts",
     htmlClass: "",
     bodyClass: ""
 }; %>
@@ -198,70 +198,7 @@
         </div>
         <div class="col-lg-3">
 
-            <aside class="aside-right black-link">
-                <div class="h2">Ночная Лига</div>
-                <div class="mb-15">
-                    Центральный офис (Москва)
-                </div>
-                <p>
-                    <a href="tel:+74957486210">+7 (495) 748-62-10</a>
-                </p>
-                <p>
-                    <a href="mailto:liga@nhliga.com">liga@nhliga.com</a>
-                </p>
-                <p>
-                    119048, Москва, ул. Усачева, д. 33, стр. 2, 8 этаж
-                </p>
-                <hr>
-                <div class="h2">Сектор по спортивной и региональной работе</div>
-                <div class="mb-20">
-                    <b>Сергей Пилюгин</b><br>
-                    Руководитель сектора.<br>
-                    Заместитель исполнительного директора по спортивной работе<br>
-                    <a href="mailto:psv@nhliga.com">psv@nhliga.com</a>
-                </div>
-                <div class="mb-20">
-                    <b>Вероника Барышева</b><br>
-                    Москва<br>
-                    <a href="mailto:barysheva@nhliga.com">barysheva@nhliga.com</a>
-                </div>
-                <div class="mb-20">
-                    <b>Константин Смирнов</b><br>
-                    Центр<br>
-                    <a href="mailto:smirnov@nhliga.com">smirnov@nhliga.com</a>
-                </div>
-                <div class="mb-20">
-                    <b>Александр Никульшин</b><br>
-                    Санкт-Петербург, Северо-Запад, Сибирь и Забайкальский край<br>
-                    <a href="mailto:nikula@nhliga.com">nikula@nhliga.com</a>
-                </div>
-                <div class="mb-20">
-                    <b>Герман Марьин</b><br>
-                    Приволжье, Юг и Северный Кавказ<br>
-                    <a href="mailto:marin@nhliga.com">marin@nhliga.com</a>
-                </div>
-                <div class="mb-20">
-                    <b>Артем Павлов</b><br>
-                    Урал, Дальний Восток<br>
-                    <a href="mailto:pavlov@nhliga.com">pavlov@nhliga.com</a>
-                </div>
-                <hr>
-                <div class="h2">Пресс-служба</div>
-                <div class="mb-30">
-                    <b>Дарья Костина</b><br>
-                    <a href="mailto:kostina@nhliga.com">kostina@nhliga.com</a>
-                </div>
-                <div class="h2">Маркетинг и проведение мероприятий</div>
-                <div class="mb-30">
-                    <b>Дмитрий Иванов</b><br>
-                    <a href="mailto:dvi@nhliga.com">dvi@nhliga.com</a>
-                </div>
-                <div class="h2">Работа со спонсорами и партнёрами</div>
-                <div>
-                    <b>Марина Богомолова</b><br>
-                    <a href="mailto:bogomolova@nhliga.com">bogomolova@nhliga.com</a>
-                </div>
-            </aside>
+            <%= _.template(require('./../includes/aside-contact.html'))() %>
 
         </div>
     </div>

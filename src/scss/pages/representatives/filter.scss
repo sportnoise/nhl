@@ -1,0 +1,30 @@
+.representatives-filter {
+    max-width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 40px;
+
+    &__link {
+        color: var(--gray_contur);
+        font-weight: 600;
+        margin: 0 25px 10px 0;
+        letter-spacing: .26px;
+
+        &_active {
+            color: var(--blacksuper);
+        }
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 30px;
+            font-size: 15px;
+            line-height: 20px;
+
+            &__link {
+                margin: 0 10px 5px 0;
+            }
+        }
+    }
+}

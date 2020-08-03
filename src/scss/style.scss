@@ -13,6 +13,7 @@
 @import "./elem/link.str"; // Ссылка со стрелкой
 @import "./elem/rss"; // Иконка RSS
 @import "./elem/block.title"; // Заголовки блоков
+@import "./elem/title.back"; // Ссылка назад в заголовках
 @import "./elem/lighthouse"; // Маяк
 @import "./elem/icons"; // Иконки
 @import "./elem/tabs"; // Вкладки
@@ -61,3 +62,7 @@
 // Контакты
 @import "./pages/contact/main"; // Главный блок
 @import "./pages/contact/list"; // Список
+
+// Контакты
+@import "./pages/representatives/filter"; // Фильтр по регионам
+@import "./pages/representatives/list"; // Список

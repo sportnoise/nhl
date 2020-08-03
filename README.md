@@ -5,6 +5,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/protocols.html">Протоколы СДК</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/protocol.html">Протокол</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/contacts.html">Контакты</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/representatives.html">Представители всех регионов</a><br>
 
 <hr>
 

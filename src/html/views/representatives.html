@@ -1,0 +1,220 @@
+<% var data = {
+    title: "Representatives",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Чемпионат
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Протоколы СДК
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Платежи
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Документы
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Контакты
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <div class="title-back mb-20">
+                    <a href="javascript:;" class="title-back__back">
+                        <svg class="title-back__back-icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                    <h1 class="h-no-margin">Представители всех регионов</h1>
+                </div>
+
+                <div class="representatives-filter">
+                    <a href="javascript:;" class="representatives-filter__link">Москва</a>
+                    <a href="javascript:;" class="representatives-filter__link">Санкт-Петербург</a>
+                    <a href="javascript:;" class="representatives-filter__link">Центр</a>
+                    <a href="javascript:;" class="representatives-filter__link">Северо-Запад</a>
+                    <a href="javascript:;" class="representatives-filter__link representatives-filter__link_active">Поволжье</a>
+                    <a href="javascript:;" class="representatives-filter__link">Юг и Северный Кавказ</a>
+                    <a href="javascript:;" class="representatives-filter__link">Урал</a>
+                    <a href="javascript:;" class="representatives-filter__link">Сибирь</a>
+                    <a href="javascript:;" class="representatives-filter__link">Дальний Восток</a>
+                </div>
+
+                <div class="h1">Конференция: Приволжье</div>
+
+                <div class="representatives-list black-link">
+                    <div class="representatives-list__line">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="representatives-list__item position-relative">
+                                    <div class="representatives-list__pict">
+                                        <img class="representatives-list__img" src="./local/uploads/representatives.1.jpg" alt="">
+                                    </div>
+                                    <div class="representatives-list__region h2">Кировская область</div>
+                                    <div class="representatives-list__name">Дивизион 40+, Лига Надежды</div>
+                                    <b>Мезенцев Алексей Юрьевич</b><br>
+                                    <a href="tel:+79127319818">+7 (912) 731-98-18</a><br>
+                                    <a href="mailto:saratov40@nhliga.com">43@nhliga.com</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="representatives-list__item position-relative">
+                                    <div class="representatives-list__pict">
+                                        <img class="representatives-list__img" src="./local/uploads/representatives.2.jpg" alt="">
+                                    </div>
+                                    <div class="representatives-list__region h2">Кировская область</div>
+                                    <div class="representatives-list__name">Дивизион 40+, Лига Надежды</div>
+                                    <b>Злобин Дмитрий Сергеевич</b><br>
+                                    <a href="tel:+79616394444">+7 (961) 639-44-44</a><br>
+                                    <a href="mailto:no@nhliga.com">no@nhliga.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="representatives-list__line">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="representatives-list__item position-relative">
+                                    <div class="representatives-list__pict">
+                                        <img class="representatives-list__img" src="./local/uploads/representatives.3.jpg" alt="">
+                                    </div>
+                                    <div class="representatives-list__region h2">Оренбургская область</div>
+                                    <div class="representatives-list__name">Дивизион 40+</div>
+                                    <b>Макаров Игорь Евгеньевич</b><br>
+                                    <a href="tel:+79058964922">+7 (905) 896-49-22</a><br>
+                                    <a href="mailto:56@nhliga.com">56@nhliga.com</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="representatives-list__item position-relative">
+                                    <div class="representatives-list__pict">
+                                        <img class="representatives-list__img" src="./local/uploads/representatives.4.jpg" alt="">
+                                    </div>
+                                    <div class="representatives-list__region h2">Пензенская область</div>
+                                    <div class="representatives-list__name">Любитель 40+, Лига Мечты, Лига Надежды</div>
+                                    <b>Лосев Дмитрий Юрьевич</b><br>
+                                    <a href="tel:+79648707888">+7 (964) 870-78-88</a><br>
+                                    <a href="mailto:penza@nhliga.com">penza@nhliga.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="representatives-list__line">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="representatives-list__item position-relative">
+                                    <div class="representatives-list__pict">
+                                        <img class="representatives-list__img" src="./local/uploads/representatives.5.jpg" alt="">
+                                    </div>
+                                    <div class="representatives-list__region h2">Пермский край</div>
+                                    <div class="representatives-list__name">Любитель 40+, Лига Мечты, Лига Надежды</div>
+                                    <b>Зинин Александр Анатольевич</b><br>
+                                    <a href="tel:+79194625147">+7 (919) 462-51-47</a><br>
+                                    <a href="mailto:permkrai@nhliga.com">permkrai@nhliga.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="representatives-list__line">
+                        <div class="position-relative">
+                            <div class="representatives-list__pict">
+                                <img class="representatives-list__img" src="./local/uploads/representatives.6.jpg" alt="">
+                            </div>
+                            <div class="representatives-list__region h2">Республика Башкортостан</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="representatives-list__item">
+                                        <div class="representatives-list__name">Дивизион 40+</div>
+                                        <b>Афиногенов Денис Александрович</b><br>
+                                        <a href="tel:+79170451888">+7 (917) 045-18-88</a><br>
+                                        <a href="mailto:rb@nhliga.com">rb@nhliga.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="representatives-list__item">
+                                        <div class="representatives-list__name">Лига Мечты, Лига Надежды</div>
+                                        <b>Гиндуллин Артур Альбертович</b><br>
+                                        <a href="tel:+79174245554">+7 (917) 424-55-54</a><br>
+                                        <a href="mailto:rb@nhliga.com">rb@nhliga.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="representatives-list__line">
+                        <div class="position-relative">
+                            <div class="representatives-list__pict">
+                                <img class="representatives-list__img" src="./local/uploads/representatives.7.jpg" alt="">
+                            </div>
+                            <div class="representatives-list__region h2">Саратовская область</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="representatives-list__item">
+                                        <div class="representatives-list__name">Дивизион 40+</div>
+                                        <b>Козлачков Дмитрий Владимирович</b><br>
+                                        <a href="tel:+79272776991">+7 (927) 277-69-91</a><br>
+                                        <a href="mailto:saratov@nhliga.com">saratov@nhliga.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="representatives-list__item">
+                                        <div class="representatives-list__name">Лига Надежды</div>
+                                        <b>Петраков Вячеслав Алексеевич</b><br>
+                                        <a href="tel:+79272231187">+7 (927) 223-11-87</a><br>
+                                        <a href="mailto:saratov40@nhliga.com">saratov40@nhliga.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-contact.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

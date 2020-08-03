@@ -1,0 +1,51 @@
+.representatives-list {
+
+    &__item {
+        margin: 0 0 40px;
+    }
+    &__pict {
+        display: none;
+    }
+    &__region {
+        margin: 0 0 15px;
+    }
+    &__name {
+        font-size: 19px;
+        letter-spacing: .19px;
+        margin: 0 0 15px;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__item {
+            padding: 0 50px 0 0;
+        }
+        &__pict {
+            position: absolute;
+            left: -70px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            top: 0px;
+        }
+    }
+    @include media-breakpoint-up(md)
+    {
+        &__line {
+            margin: 0 0 40px;
+            border-bottom: 1px solid var(--gray_contur);
+
+            &:last-child {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 -30px;
+        }
+    }
+}
