@@ -44,7 +44,7 @@ $(function() {
 
         $('.search-form').slideUp();
     });
-    
+
     // Полоса прокрутки
     if ($(window).width() > 575)
     {
