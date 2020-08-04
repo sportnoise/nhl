@@ -121,6 +121,9 @@ $(function() {
         loop: true,
         loopAdditionalSlides: 1,
         slideActiveClass: 'slider-index__item_active',
+        autoplay: {
+            delay: 10000,
+        },
         breakpoints: {
             576: {
                 spaceBetween: 30

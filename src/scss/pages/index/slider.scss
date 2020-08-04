@@ -9,6 +9,21 @@
     &__slider {
         overflow: visible;
     }
+    &__link {
+        position: relative;
+        display: block;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, transparent, var(--black));
+        }
+    }
     &__img {
         display: block;
     }
@@ -23,6 +38,7 @@
         max-width: 555px;
         transition: all 1s;
         opacity: 0;
+        z-index: 2;
     }
     &__item_active .slider-index__inner {
         opacity: 1;
