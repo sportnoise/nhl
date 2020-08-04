@@ -14,6 +14,7 @@
 @import "./elem/rss"; // Иконка RSS
 @import "./elem/block.title"; // Заголовки блоков
 @import "./elem/title.back"; // Ссылка назад в заголовках
+@import "./elem/title.icon"; // Иконка в заголовках
 @import "./elem/lighthouse"; // Маяк
 @import "./elem/icons"; // Иконки
 @import "./elem/tabs"; // Вкладки
@@ -66,3 +67,6 @@
 // Контакты
 @import "./pages/representatives/filter"; // Фильтр по регионам
 @import "./pages/representatives/list"; // Список
+
+// Документы
+@import "./pages/docs/list"; // Список

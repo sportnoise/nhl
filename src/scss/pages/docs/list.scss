@@ -1,0 +1,25 @@
+.doc-list {
+    font-size: 15px;
+    line-height: 20px;
+
+    &__items {
+        margin: 0 0 -20px;
+    }
+    &__link {
+        display: block;
+        margin: 0 0 20px;
+        max-width: 310px;
+
+        &_bold {
+            font-weight: 600;
+        }
+    }
+    &__size {
+        font-size: 13px;
+        color: var(--link);
+        font-weight: normal;
+    }
+    &__bottom {
+        margin: 10px 0 0;
+    }
+}
