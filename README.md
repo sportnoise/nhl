@@ -9,6 +9,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/representatives.html">Представители всех регионов</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/docs.html">Документы</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/archive.html">Архив</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/council.html">Совет</a><br>
 
 <hr>
 

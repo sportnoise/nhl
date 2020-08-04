@@ -1,0 +1,45 @@
+.council-list {
+    margin: 40px 0 -40px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 40px;
+    }
+    &__img {
+        border: 4px solid var(--background);
+        display: block;
+        border-radius: 50%;
+    }
+    &__block {
+        width: calc(100% - 190px);
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: .2px;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: .26px;
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 0 0 -30px;
+
+            &__item {
+                margin: 0 0 30px;
+            }
+            &__img {
+                width: 100px;
+                height: 100px;
+            }
+            &__block {
+                width: calc(100% - 115px);
+            }
+        }
+    }
+}

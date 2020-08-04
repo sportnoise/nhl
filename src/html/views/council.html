@@ -1,0 +1,149 @@
+<% var data = {
+    title: "Council",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                О Лиге
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Управление
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Совет Легенд
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Сотрудничество
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Вопросы-ответы
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45 bg-star">
+
+                <div class="h2 mb-40">Совет Легенд</div>
+                <div class="council-list">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="council-list__item">
+                                <div class="council-list__pict">
+                                    <img class="council-list__img" src="./local/uploads/council.jpg" alt="">
+                                </div>
+                                <div class="council-list__block">
+                                    <div class="council-list__name">Якушев Александр Сергеевич</div>
+                                    <div class="council-list__text">
+                                        Председатель Совета Легенд Ночной Хоккейной Лиги 2‑кратный Олимпийский чемпион, 7‑кратный чемпион мира
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="council-list__item">
+                                <div class="council-list__pict">
+                                    <img class="council-list__img" src="./local/uploads/council.jpg" alt="">
+                                </div>
+                                <div class="council-list__block">
+                                    <div class="council-list__name">Бабинов Сергей Пантилимонович</div>
+                                    <div class="council-list__text">
+                                        Олимпийский чемпион, 4‑кратный чемпион мира
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="council-list__item">
+                                <div class="council-list__pict">
+                                    <img class="council-list__img" src="./local/uploads/council.jpg" alt="">
+                                </div>
+                                <div class="council-list__block">
+                                    <div class="council-list__name">Болдин Игорь Петрович</div>
+                                    <div class="council-list__text">
+                                        Олимпийский чемпион
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="council-list__item">
+                                <div class="council-list__pict">
+                                    <img class="council-list__img" src="./local/uploads/council.jpg" alt="">
+                                </div>
+                                <div class="council-list__block">
+                                    <div class="council-list__name">Буре Павел Владимирович</div>
+                                    <div class="council-list__text">
+                                        Серебряный призер Олимпиады, чемпион мира
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="council-list__item">
+                                <div class="council-list__pict">
+                                    <img class="council-list__img" src="./local/uploads/council.jpg" alt="">
+                                </div>
+                                <div class="council-list__block">
+                                    <div class="council-list__name">Буцаев Вячеслав Геннадьевич</div>
+                                    <div class="council-list__text">
+                                        Олимпийский чемпион, чемпион мира
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="council-list__item">
+                                <div class="council-list__pict">
+                                    <img class="council-list__img" src="./local/uploads/council.jpg" alt="">
+                                </div>
+                                <div class="council-list__block">
+                                    <div class="council-list__name">Бякин Илья Владимирович</div>
+                                    <div class="council-list__text">
+                                        Олимпийский чемпион, 3‑кратный чемпион мира
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
