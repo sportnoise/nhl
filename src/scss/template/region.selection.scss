@@ -16,9 +16,12 @@
         margin: 0 20px;
         padding: 0 20px;
         font-weight: 600;
+        color: var(--link);
 
         &:hover {
             opacity: .5;
+            color: var(--black);
+            text-decoration: none;
         }
     }
     &__link {
@@ -29,6 +32,7 @@
         &:hover {
             color: var(--white);
             border-color: transparent;
+            text-decoration: none;
         }
     }
 }

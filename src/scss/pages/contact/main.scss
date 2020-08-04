@@ -9,6 +9,14 @@
         line-height: 26px;
         margin: 0 0 15px;
     }
+    &__all {
+        color: var(--link);
+
+        &:hover {
+            color: var(--black);
+            text-decoration: none;
+        }
+    }
 
     @include media-breakpoint-only(xl)
     {

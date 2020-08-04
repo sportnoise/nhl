@@ -4,9 +4,12 @@
     align-items: center;
     justify-content: flex-end;
     stroke: var(--link);
+    color: var(--link);
 
     &:hover {
         stroke: var(--black);
+        color: var(--black);
+        text-decoration: none;
     }
     &__icon {
         fill: none;

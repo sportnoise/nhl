@@ -12,6 +12,7 @@
         letter-spacing: .23px;
         margin: 0 20px 5px 0;
         position: relative;
+        color: var(--link);
 
         &:after {
             content: "";
@@ -27,9 +28,14 @@
         &_active {
             font-weight: 600;
         }
-        &:hover:after,
-        &_active:after {
-            width: 100%;
+        &:hover,
+        &_active {
+            color: var(--black);
+            text-decoration: none;
+
+            &:after {
+                width: 100%;
+            }
         }
     }
 }

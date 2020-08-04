@@ -27,6 +27,10 @@
         letter-spacing: .23px;
         margin: 0 0 10px;
         display: block;
+
+        &:hover {
+            color: var(--black);
+        }
     }
     &__place,
     &__date {

@@ -30,6 +30,10 @@
         letter-spacing: .23px;
         margin: 0 0 10px;
         display: block;
+
+        &:hover {
+            color: var(--black);
+        }
     }
     &__place,
     &__date {
@@ -46,6 +50,12 @@
         &-link {
             font-size: 15px;
             margin: 0 30px 0 0;
+            color: var(--link);
+
+            &:hover {
+                color: var(--black);
+                text-decoration: none;
+            }
         }
     }
 }

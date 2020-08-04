@@ -29,6 +29,12 @@
         &-link {
             width: 30px;
             text-align: center;
+            color: var(--link);
+
+            &:hover {
+                color: var(--black);
+                text-decoration: none;
+            }
         }
     }
     &__block {

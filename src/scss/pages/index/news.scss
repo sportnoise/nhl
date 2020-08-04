@@ -26,6 +26,7 @@
             letter-spacing: .19px;
 
             &:hover {
+                color: var(--black);
                 text-decoration: underline;
             }
         }
@@ -90,6 +91,7 @@
             font-weight: 600;
 
             &:hover {
+                color: var(--black);
                 text-decoration: underline;
             }
         }
@@ -136,6 +138,7 @@
             font-weight: 600;
 
             &:hover {
+                color: var(--black);
                 text-decoration: underline;
             }
         }

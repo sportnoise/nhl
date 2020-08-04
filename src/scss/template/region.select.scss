@@ -59,8 +59,10 @@
         letter-spacing: .2px;
         display: block;
         margin: 0 0 10px;
+        color: var(--link);
 
         &:hover {
+            color: var(--black);
             text-decoration: underline;
         }
     }

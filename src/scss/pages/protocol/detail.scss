@@ -27,9 +27,12 @@
         display: flex;
         font-size: 15px;
         fill: var(--link);
+        color: var(--link);
 
         &:hover {
             fill: var(--black);
+            color: var(--black);
+            text-decoration: none;
         }
         &-icon {
             width: 19px;

@@ -24,6 +24,12 @@
     &__item {
         width: 25%;
         max-width: 245px;
+        color: var(--link);
+
+        &:hover {
+            color: var(--black);
+            text-decoration: none;
+        }
     }
     &__pict {
         margin: 0 0 10px;
@@ -107,6 +113,8 @@
 
         &:hover {
             opacity: .5;
+            color: var(--black);
+            text-decoration: none;
         }
     }
     &__icon {
@@ -190,6 +198,7 @@
 
         &:hover {
             color: var(--gray_contur);
+            text-decoration: none;
         }
     }
     &__dev {

@@ -8,6 +8,8 @@
 
     &:hover {
         fill: var(--black);
+        color: var(--black);
+        text-decoration: none;
     }
     &__icon {
         height: 14px;

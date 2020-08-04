@@ -10,8 +10,21 @@
         margin: 0 25px 10px 0;
         letter-spacing: .26px;
 
+        &:hover,
         &_active {
             color: var(--blacksuper);
+            text-decoration: none;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            height: 2px;
+            width: 0;
+            background-color: var(--black);
+            left: 50%;
+            transform: translate(-50%);
+            transition: all .3s;
         }
     }
 

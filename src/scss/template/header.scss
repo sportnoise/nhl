@@ -36,6 +36,12 @@
         font-size: 15px;
         line-height: 20px;
         margin: 0 0 0 auto;
+        color: var(--link);
+
+        &:hover {
+            color: var(--black);
+            text-decoration: none;
+        }
     }
     &__region-selection {
         font-size: 15px;
@@ -44,7 +50,12 @@
         width: 195px;
         position: relative;
         padding: 0 15px 0 0;
+        color: var(--link);
 
+        &:hover {
+            color: var(--black);
+            text-decoration: none;
+        }
         &:after {
             content: '';
             border: 4px solid transparent;
@@ -177,6 +188,7 @@
         &:hover {
             background-color: var(--link);
             color: var(--white);
+            text-decoration: none;
         }
         &-icon {
             width: 16px;

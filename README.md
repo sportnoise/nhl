@@ -1,3 +1,4 @@
+<a href="https://sportnoise.github.io/nhl/dist/elem.html">Элементы дизайна</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/index.html">Главная страница</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/index-window.html">Главная страница (с окнами)</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/soon.html">Скоро всё заработает</a><br>
