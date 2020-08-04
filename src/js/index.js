@@ -92,6 +92,27 @@ $(function() {
         return false;
     });
 
+    // Аккордеон
+    $('.accordion-list__link').click(function(){
+
+        $(this).toggleClass('accordion-list__link_open');
+
+        if ($(this).hasClass('accordion-list__link_open'))
+        {
+            $(this).next('.accordion-list__block').slideDown(300, function(){
+
+                $(this).addClass('accordion-list__block_open');
+            });
+        }
+        else
+        {
+            $(this).next('.accordion-list__block').slideUp(300, function(){
+
+                $(this).removeClass('accordion-list__block_open');
+            });
+        }
+    });
+    
     // Главный слайдер
     $('.slider-index__progressbar-count_last').text('0' + $('.slider-index__item').length);
 

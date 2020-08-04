@@ -21,6 +21,7 @@
 @import "./elem/jquery.jscrollpane"; // Полоса прокрутки
 @import "./elem/tippy"; // Подсказки
 @import "./elem/h1.and.link"; // H1 с ссылкой
+@import "./elem/accordion"; // Аккордеон
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -70,3 +71,6 @@
 
 // Документы
 @import "./pages/docs/list"; // Список
+
+// Архив
+@import "./pages/archive/list"; // Список

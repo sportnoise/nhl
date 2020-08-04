@@ -1,0 +1,26 @@
+.archive-list {
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 -20px;
+
+    &__part {
+        width: 285px;
+    }
+    &__link {
+        display: block;
+        margin: 0 0 20px;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            flex-direction: column;
+
+            &__part {
+                width: 100%;
+            }
+        }
+    }
+}
