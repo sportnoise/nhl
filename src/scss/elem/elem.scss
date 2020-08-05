@@ -25,8 +25,17 @@
     font-size: 15px;
     line-height: 27px;
 }
+.text-xs {
+    font-size: 13px;
+    line-height: 17px;
+}
 
 /* Фон в звездочках */
 .bg-star {
     background: url(img/bg.star.jpg) repeat left top;
+}
+
+/* Светлый текст */
+.color-link {
+    color: var(--link);
 }

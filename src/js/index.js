@@ -1,14 +1,34 @@
 import $ from "jquery";
 import tippy from 'tippy.js';
 import Swiper from './swiper.js';
+import formstyler from './jquery.formstyler.js';
 
 window.jQuery = $;
 window.$ = $;
 
 import a from './jquery.mousewheel.js';
 import b from './jquery.jscrollpane.js';
+import с from './datepicker.js';
 
 $(function() {
+
+    // Стилизация элементов
+    $('.select-btn').styler();
+
+    // Выбор даты
+    $('.our-datepicker').datepicker({
+
+        onSelect: function(formattedDate, date, inst) {
+
+            if (inst.$el.val().length >= 1) inst.$el.addClass('filter-panel__date-input_active');
+            else inst.$el.removeClass('filter-panel__date-input_active');
+        }
+    });
+
+    $('.our-datepicker').each(function(){
+
+        if ($(this).val().length >= 1) $(this).addClass('filter-panel__date-input_active');
+    });
 
     // Раскрытие меню на мобиле
     $('.menu-top-btn').click(function(){

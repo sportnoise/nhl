@@ -48,4 +48,18 @@
             }
         }
     }
+    &_grey {
+
+        &:after,
+        &:before {
+            background-color: var(--gray_contur);
+        }
+        &:hover {
+
+            &:after,
+            &:before {
+                background-color: var(--link);
+            }
+        }
+    }
 }

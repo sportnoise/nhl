@@ -6,6 +6,7 @@
 
 // Общие элементы
 @import "./elem/swiper"; // Общие стили сайдера
+@import "./elem/datepicker"; // Календарь
 @import "./elem/elem"; // Незначительные элементы
 @import "./elem/pict.shadow"; // Тень на картинках
 @import "./elem/btn"; // Кнопки
@@ -22,6 +23,11 @@
 @import "./elem/tippy"; // Подсказки
 @import "./elem/h1.and.link"; // H1 с ссылкой
 @import "./elem/accordion"; // Аккордеон
+@import "./elem/table.sort"; // Сортировка таблиц
+@import "./elem/table.one"; // Таблица №1
+@import "./elem/checkbox.icon"; // Чекбоксы в виде иконок
+@import "./elem/select.btn"; // Селекты в виде кнопок
+@import "./elem/filter.panel"; // Панель фильтров
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -77,3 +83,6 @@
 
 // Совет
 @import "./pages/council/list"; // Список
+
+// Регионы
+@import "./pages/regions/table"; // Таблица

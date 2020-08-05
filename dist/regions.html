@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>Ночная Хоккейная Лига - Elements</title>
+        <title>Ночная Хоккейная Лига - Regions</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <link href="./local/template_styles.css?3d33bd67532e561006fe" rel="stylesheet" />
     </head>
@@ -226,153 +226,253 @@
 
         <!-- Рабочая область -->
         <main class="main-main">
-            <br /><br />
+            <!-- Меню раздела -->
+            <nav class="menu-section">
+                <div class="container">
+                    <div class="menu-section__block">
+                        <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                            Регионы
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Таблица
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Призёры
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Победители
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Все команды
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Все игроки
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
             <div class="container">
-                <div class="white-block mb-45">
-                    <h1>
-                        H1 Super (Заголовок №1)
-                    </h1>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="white-block mb-45">
+                            <h1>Регионы</h1>
 
-                    <h2>
-                        H2 Lead Bold (Заголовок №2)
-                    </h2>
+                            <div class="filter-panel">
+                                <div>
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">Конференция</option>
+                                        <option value="">Конференция #1</option>
+                                        <option value="">Конференция с названием</option>
+                                        <option value="">Конференция с очень длинным названием</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div class="checkbox-icon">
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked="checked" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                                <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                            </svg>
+                                        </label>
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                                <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                            </svg>
+                                        </label>
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                                <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">Статус</option>
+                                        <option value="">Старт турнира</option>
+                                        <option value="">Турнир запущен</option>
+                                        <option value="">Турнир завершен</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">Все команды</option>
+                                        <option value="">Команда</option>
+                                        <option value="">Команда с названием</option>
+                                        <option value="">Команда с очень длинным названием</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">Тип</option>
+                                        <option value="">Тип №1</option>
+                                        <option value="">Тип №2</option>
+                                        <option value="">Тип №3</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div class="filter-panel__date">
+                                        <input type="text" class="filter-panel__date-input our-datepicker" value="" />
+                                        <svg class="filter-panel__date-icon">
+                                            <use xlink:href="./local/img/sprite.svg#date"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                                </div>
+                            </div>
 
-                    <h3>
-                        H3 Bold (Заголовок №3)
-                    </h3>
+                            <div class="mb-5">
+                                <div class="h2 h-no-margin">Статус турнира</div>
+                            </div>
+                            <div class="text-xs color-link mb-30">Данные на 19 марта 2020</div>
 
-                    <h4>
-                        H4 Link Active (Заголовок №4)
-                    </h4>
-
-                    <h5>
-                        H5 Add Bold (Заголовок №5)
-                    </h5>
-
-                    <p>
-                        Lorem Ipsum - это текст-"рыба", часто <a href="javascript:;">используемый в печати и вэб-дизайне</a>. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
-                        Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется
-                        Lorem Ipsum.
-                    </p>
-
-                    <p>
-                        <a href="javascript:;">Lorem Ipsum</a> - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                        печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
-                        Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется
-                        Lorem Ipsum.
-                    </p>
-
-                    <p>
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-                        коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-                        новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-                    </p>
-
-                    <hr />
-
-                    <div class="h2">Button</div>
-
-                    <a href="javascript:;" class="btn-one">Все альбомы</a>
-                    <a href="javascript:;" class="btn-two">Все альбомы</a>
-                    <a href="javascript:;" class="btn-three">Все альбомы</a>
-                    <a href="javascript:;" class="btn-four">Все альбомы</a>
-                    <a href="javascript:;" class="btn-five">Все альбомы</a>
-
-                    <hr />
-
-                    <div class="h2">Tabs (1)</div>
-
-                    <div class="tabs-panel tabs-panel_active" data-for="some-tab">
-                        <a href="javascript:;" data-id="some-tab1" class="tabs-panel__link tabs-panel__link_active">Первая вкладка</a>
-                        <a href="javascript:;" data-id="some-tab2" class="tabs-panel__link">Вторая вкладка</a>
-                    </div>
-
-                    <br />
-
-                    <div class="tabs-items" id="some-tab">
-                        <div class="tabs-items__item tabs-items__item_active" id="some-tab1">
-                            Содержимое первой вкладки
+                            <div class="regions-table">
+                                <table class="table-one">
+                                    <thead>
+                                        <tr>
+                                            <th>Регион</th>
+                                            <th>
+                                                <span class="table-one__rotate">Дивизион</span>
+                                            </th>
+                                            <th>
+                                                <span class="table-one__rotate">Команд</span>
+                                            </th>
+                                            <th>
+                                                <span class="table-one__rotate">Игроков</span>
+                                            </th>
+                                            <th>
+                                                <span class="table-one__rotate">Игр</span>
+                                            </th>
+                                            <th>Начало</th>
+                                            <th>Конец</th>
+                                            <th class="table-one__text-left">Статус</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-one__sort">
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up table-sort__link_active"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td class="table-one__text-left">
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="table-one__num">1</span>
+                                                Алтайский край
+                                            </td>
+                                            <td>40+</td>
+                                            <td>3</td>
+                                            <td>64</td>
+                                            <td>24</td>
+                                            <td>19.10.19</td>
+                                            <td>15.03.20</td>
+                                            <td class="table-one__text-left">Старт турнира</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="table-one__num">2</span>
+                                                Амурская область
+                                            </td>
+                                            <td>ЛМ</td>
+                                            <td>4</td>
+                                            <td>64</td>
+                                            <td>24</td>
+                                            <td>28.10.19</td>
+                                            <td>15.03.20</td>
+                                            <td class="table-one__text-left">Старт турнира</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="table-one__num">3</span>
+                                                Архангельская область
+                                            </td>
+                                            <td>ЛН</td>
+                                            <td>7</td>
+                                            <td>64</td>
+                                            <td>24</td>
+                                            <td>19.10.19</td>
+                                            <td>28.10.19</td>
+                                            <td class="table-one__text-left">Турнир запущен</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="table-one__num">4</span>
+                                                Кабардино-Балкарская
+                                            </td>
+                                            <td>40+</td>
+                                            <td>5</td>
+                                            <td>64</td>
+                                            <td>24</td>
+                                            <td>24.10.19</td>
+                                            <td>15.03.20</td>
+                                            <td class="table-one__text-left">Старт турнира</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="table-one__num">5</span>
+                                                Северная Осетия
+                                            </td>
+                                            <td>ЛМ</td>
+                                            <td>2</td>
+                                            <td>64</td>
+                                            <td>24</td>
+                                            <td>19.10.19</td>
+                                            <td>24.10.19</td>
+                                            <td class="table-one__text-left">Старт турнира</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div class="tabs-items__item" id="some-tab2">
-                            Содержимое второй вкладки
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div class="h2">Tabs (2)</div>
-
-                    <div class="tabs-num tabs-num_active" data-for="match">
-                        <a href="javascript:;" data-id="match1" class="tabs-num__link tabs-num__link_active">
-                            <svg class="tabs-num__icon tabs-num__icon_f">
-                                <use xlink:href="./local/img/sprite.num.svg#f"></use>
-                            </svg>
-                        </a>
-                        <a href="javascript:;" data-id="match2" class="tabs-num__link">
-                            <svg class="tabs-num__icon tabs-num__icon_fa">
-                                <use xlink:href="./local/img/sprite.num.svg#fa"></use>
-                            </svg>
-                        </a>
-                        <a href="javascript:;" data-id="match3" class="tabs-num__link">
-                            <svg class="tabs-num__icon tabs-num__icon_fb">
-                                <use xlink:href="./local/img/sprite.num.svg#fb"></use>
-                            </svg>
-                        </a>
-                        <a href="javascript:;" data-id="match4" class="tabs-num__link">
-                            <svg class="tabs-num__icon tabs-num__icon_lm">
-                                <use xlink:href="./local/img/sprite.num.svg#lm"></use>
-                            </svg>
-                        </a>
-                        <a href="javascript:;" data-id="match5" class="tabs-num__link">
-                            <svg class="tabs-num__icon tabs-num__icon_ln">
-                                <use xlink:href="./local/img/sprite.num.svg#ln"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <br />
-
-                    <div class="tabs-items" id="match">
-                        <div class="tabs-items__item tabs-items__item_active" id="match1">
-                            Содержимое 1 вкладки
-                        </div>
-                        <div class="tabs-items__item" id="match2">
-                            Содержимое 2 вкладки
-                        </div>
-                        <div class="tabs-items__item" id="match3">
-                            Содержимое 3 вкладки
-                        </div>
-                        <div class="tabs-items__item" id="match4">
-                            Содержимое 4 вкладки
-                        </div>
-                        <div class="tabs-items__item" id="match5">
-                            Содержимое 5 вкладки
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div class="h2">Next link</div>
-
-                    <a href="javascript:;" class="link-str">
-                        Вся таблица
-                        <svg class="link-str__icon">
-                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                        </svg>
-                    </a>
-
-                    <hr />
-
-                    <div class="h2">Block title</div>
-
-                    <div class="block-title">
-                        <a href="javascript:;" class="block-title__name">
-                            <svg class="block-title__icon block-title__icon_star">
-                                <use xlink:href="./local/img/sprite.svg#star"></use>
-                            </svg>
-                            Лидеры
-                        </a>
                     </div>
                 </div>
             </div>

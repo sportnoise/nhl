@@ -1,0 +1,39 @@
+.table-sort {
+    display: inline-flex;
+    align-items: center;
+
+    &__link {
+        content: "";
+        border: 5px solid transparent;
+        width: 0;
+        height: 0;
+        position: relative;
+
+        &_down {
+            border-top: 8px solid var(--gray_contur);
+            top: 2px;
+
+            &:hover {
+                border-top-color: var(--blacksuper);
+            }
+        }
+        &_up {
+            border-bottom: 8px solid var(--gray_contur);
+            top: -2px;
+            margin: 0 0 0 2px;
+
+            &:hover {
+                border-bottom-color: var(--blacksuper);
+            }
+        }
+        &_active {
+
+            &.table-sort__link_down {
+                border-top-color: var(--blacksuper);
+            }
+            &.table-sort__link_up {
+                border-bottom-color: var(--blacksuper);
+            }
+        }
+    }
+}
