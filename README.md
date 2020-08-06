@@ -11,7 +11,8 @@
 <a href="https://sportnoise.github.io/nhl/dist/archive.html">Архив</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/council.html">Совет</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/regions.html">Регионы</a><br>
-<a href="https://sportnoise.github.io/nhl/dist/team.html">Команды</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/teams.html">Команды</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/players.html">Игроки</a><br>
 
 <hr>
 

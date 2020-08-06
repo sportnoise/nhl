@@ -1,5 +1,5 @@
 <% var data = {
-    title: "Team table",
+    title: "Players table",
     htmlClass: "",
     bodyClass: ""
 }; %>
@@ -24,10 +24,10 @@
             <a href="javascript:;" class="menu-section__link">
                 Победители
             </a>
-            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+            <a href="javascript:;" class="menu-section__link">
                 Все команды
             </a>
-            <a href="javascript:;" class="menu-section__link">
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
                 Все игроки
             </a>
         </div>
@@ -40,7 +40,7 @@
 
             <div class="white-block mb-45">
 
-                <h1>Все команды Ночной Лиги</h1>
+                <h1>Все игроки Ночной Лиги</h1>
 
                 <div class="search-panel">
                     <form>
@@ -51,7 +51,7 @@
                                     <use xlink:href="./local/img/sprite.svg#loop"></use>
                                 </svg>
                             </button>
-                            <label class="search-panel__label">Укажите название команды или город</label>
+                            <label class="search-panel__label">Укажите фамилию или имя игрока</label>
                         </div>
                     </form>
                 </div>
@@ -140,16 +140,16 @@
                     </div>
                 </div>
 
-                <div class="team-table">
+                <div class="teams-table">
                     <table class="table-one">
                         <thead>
                             <tr>
                                 <th class="d-none d-md-table-cell"></th>
-                                <th>Команда</th>
-                                <th class="d-none d-md-table-cell">Город</th>
+                                <th>Игрок</th>
+                                <th class="d-none d-md-table-cell">Команда</th>
                                 <th>
                                     Регион
-                                    <div class="d-md-none">Город</div>
+                                    <div class="d-md-none">Команда</div>
                                 </th>
                             </tr>
                         </thead>
@@ -182,59 +182,59 @@
                             </tr>
                             <tr>
                                 <td class="d-none d-md-table-cell">40+</td>
-                                <td>А Мега</td>
-                                <td class="d-none d-md-table-cell">Южно-Сахалинск</td>
+                                <td>Абадонов Михаил</td>
+                                <td class="d-none d-md-table-cell">А Мега</td>
                                 <td>
                                     Тюменская область
-                                    <div class="table-one__light d-md-none">Город</div>
+                                    <div class="table-one__light d-md-none">А Мега</div>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="d-none d-md-table-cell">40+</td>
-                                <td>Баня на Карбышева</td>
-                                <td class="d-none d-md-table-cell">Черноголовка</td>
+                                <td>Бабайлов Андрей</td>
+                                <td class="d-none d-md-table-cell">Баня на Карбышева</td>
                                 <td>
                                     Республика Северная Осетия
-                                    <div class="table-one__light d-md-none">Черноголовка</div>
+                                    <div class="table-one__light d-md-none">Баня на Карбышева</div>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="d-none d-md-table-cell">ЛМ</td>
-                                <td>Ак Барс страхование</td>
-                                <td class="d-none d-md-table-cell">Великий Новгород</td>
+                                <td>Вавилов Владимир</td>
+                                <td class="d-none d-md-table-cell">Ак Барс страхование</td>
                                 <td>
                                     Забайкальский край
-                                    <div class="table-one__light d-md-none">Великий Новгород</div>
+                                    <div class="table-one__light d-md-none">Ак Барс страхование</div>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="d-none d-md-table-cell">40+</td>
-                                <td>Башкирские Беркуты</td>
-                                <td class="d-none d-md-table-cell">Железногорск</td>
+                                <td>Вавренюк Михаил</td>
+                                <td class="d-none d-md-table-cell">Башкирские Беркуты</td>
                                 <td>
                                     Республика Башкортостан
-                                    <div class="table-one__light d-md-none">Железногорск</div>
+                                    <div class="table-one__light d-md-none">Башкирские Беркуты</div>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="d-none d-md-table-cell">ЛН</td>
-                                <td>Белый Шквал Север</td>
-                                <td class="d-none d-md-table-cell">пгт. Шексна</td>
+                                <td>Габдрахманов Артём</td>
+                                <td class="d-none d-md-table-cell">Белый Шквал Север</td>
                                 <td>
                                     Новосибирская область
-                                    <div class="table-one__light d-md-none">пгт. Шексна</div>
+                                    <div class="table-one__light d-md-none">Белый Шквал Север</div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="team-table__bottom">
-                        <div class="team-table__bottom-part"></div>
-                        <div class="team-table__bottom-center">
+                    <div class="teams-table__bottom">
+                        <div class="teams-table__bottom-left"></div>
+                        <div class="teams-table__bottom-center">
                             <a href="javascript:;" class="btn-four">Показать еще</a>
                         </div>
-                        <div class="team-table__bottom-part">
+                        <div class="teams-table__bottom-right">
                             <a href="javascript:;" class="link-str">
-                                Все игроки Ночной Лиги
+                                Все команды Ночной Лиги
                                 <svg class="link-str__icon">
                                     <use xlink:href="./local/img/sprite.svg#str-next"></use>
                                 </svg>

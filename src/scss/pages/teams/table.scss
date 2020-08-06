@@ -1,4 +1,4 @@
-.team-filter {
+.teams-filter {
 
     &__calc {
         width: calc(100% - 430px);
@@ -12,7 +12,7 @@
     }
 }
 
-.team-table {
+.teams-table {
 
     &__bottom {
         margin: 40px 0 0;
@@ -20,11 +20,26 @@
         justify-content: space-between;
         align-items: center;
 
-        &-part {
-            width: 220px;
+        &-left {
+            display: none;
         }
     }
 
+    @include media-breakpoint-only(xl)
+    {
+        &__bottom {
+            margin: 40px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-left,
+            &-right {
+                display: block;
+                width: 235px;
+            }
+        }
+    }
     @include media-breakpoint-down(sm)
     {
         &__bottom {
