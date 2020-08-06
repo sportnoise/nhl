@@ -1,0 +1,42 @@
+.team-filter {
+
+    &__calc {
+        width: calc(100% - 430px);
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__calc {
+            width: calc(100% - 285px);
+        }
+    }
+}
+
+.team-table {
+
+    &__bottom {
+        margin: 40px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-part {
+            width: 220px;
+        }
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__bottom {
+            margin: 20px 0 0;
+            flex-direction: column-reverse;
+
+            &-part {
+                width: auto;
+            }
+            &-center {
+                margin: 25px 0 0;
+            }
+        }
+    }
+}

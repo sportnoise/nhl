@@ -44,7 +44,7 @@ $(function() {
         if ($(this).val().length >= 1) $(this).addClass('filter-panel__date-input_active');
     });
 
-    if (eventDates)
+    if (typeof eventDates !== 'undefined')
     {
         $('.our-datepicker').datepicker({
             onRenderCell: function (date, cellType) {

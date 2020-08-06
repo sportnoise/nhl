@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>Ночная Хоккейная Лига - Representatives</title>
+        <title>Ночная Хоккейная Лига - Team table</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <link href="./local/template_styles.css?bc482ad57f50f1305d3f" rel="stylesheet" />
     </head>
@@ -231,19 +231,22 @@
                 <div class="container">
                     <div class="menu-section__block">
                         <a href="javascript:;" class="menu-section__link">
-                            Чемпионат
+                            Регионы
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Протоколы СДК
+                            Таблица
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Платежи
+                            Призёры
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Документы
+                            Победители
                         </a>
                         <a href="javascript:;" class="menu-section__link menu-section__link_active">
-                            Контакты
+                            Все команды
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Все игроки
                         </a>
                     </div>
                 </div>
@@ -253,222 +256,209 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="white-block mb-45">
-                            <div class="title-back mb-20">
-                                <a href="javascript:;" class="title-back__back">
-                                    <svg class="title-back__back-icon">
-                                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                                    </svg>
-                                </a>
-                                <h1 class="h-no-margin">Представители всех регионов</h1>
+                            <h1>Все команды Ночной Лиги</h1>
+
+                            <div class="search-panel">
+                                <form>
+                                    <div class="search-panel__form">
+                                        <input class="search-panel__input" type="text" value="" />
+                                        <button class="search-panel__submit">
+                                            <svg class="search-panel__submit-icon">
+                                                <use xlink:href="./local/img/sprite.svg#loop"></use>
+                                            </svg>
+                                        </button>
+                                        <label class="search-panel__label">Укажите название команды или город</label>
+                                    </div>
+                                </form>
                             </div>
 
-                            <div class="representatives-filter">
-                                <a href="javascript:;" class="representatives-filter__link">Москва</a>
-                                <a href="javascript:;" class="representatives-filter__link">Санкт-Петербург</a>
-                                <a href="javascript:;" class="representatives-filter__link">Центр</a>
-                                <a href="javascript:;" class="representatives-filter__link">Северо-Запад</a>
-                                <a href="javascript:;" class="representatives-filter__link representatives-filter__link_active">Поволжье</a>
-                                <a href="javascript:;" class="representatives-filter__link">Юг и Северный Кавказ</a>
-                                <a href="javascript:;" class="representatives-filter__link">Урал</a>
-                                <a href="javascript:;" class="representatives-filter__link">Сибирь</a>
-                                <a href="javascript:;" class="representatives-filter__link">Дальний Восток</a>
+                            <div class="letters-panel d-none d-sm-flex">
+                                <a href="javascript:;" class="letters-panel__link">А</a>
+                                <a href="javascript:;" class="letters-panel__link">Б</a>
+                                <a href="javascript:;" class="letters-panel__link letters-panel__link_active">В</a>
+                                <a href="javascript:;" class="letters-panel__link">Г</a>
+                                <a href="javascript:;" class="letters-panel__link">Д</a>
+                                <a href="javascript:;" class="letters-panel__link">Е</a>
+                                <a href="javascript:;" class="letters-panel__link">Ж</a>
+                                <a href="javascript:;" class="letters-panel__link">З</a>
+                                <a href="javascript:;" class="letters-panel__link">И</a>
+                                <a href="javascript:;" class="letters-panel__link">К</a>
+                                <a href="javascript:;" class="letters-panel__link">Л</a>
+                                <a href="javascript:;" class="letters-panel__link">М</a>
+                                <a href="javascript:;" class="letters-panel__link">Н</a>
+                                <a href="javascript:;" class="letters-panel__link">О</a>
+                                <a href="javascript:;" class="letters-panel__link">П</a>
+                                <a href="javascript:;" class="letters-panel__link">Р</a>
+                                <a href="javascript:;" class="letters-panel__link">С</a>
+                                <a href="javascript:;" class="letters-panel__link">Т</a>
+                                <a href="javascript:;" class="letters-panel__link">У</a>
+                                <a href="javascript:;" class="letters-panel__link">Ф</a>
+                                <a href="javascript:;" class="letters-panel__link">Х</a>
+                                <a href="javascript:;" class="letters-panel__link">Ц</a>
+                                <a href="javascript:;" class="letters-panel__link">Ч</a>
+                                <a href="javascript:;" class="letters-panel__link">Ш</a>
+                                <a href="javascript:;" class="letters-panel__link">Щ</a>
+                                <a href="javascript:;" class="letters-panel__link">Э</a>
+                                <a href="javascript:;" class="letters-panel__link">Ю</a>
+                                <a href="javascript:;" class="letters-panel__link">Я</a>
                             </div>
 
-                            <div class="h1">Конференция: Приволжье</div>
+                            <div class="team-filter filter-panel">
+                                <div class="filter-panel__part filter-panel__part_90">
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">IX. 19/20</option>
+                                        <option value="">VIII. 18/19</option>
+                                        <option value="">VII. 17/18</option>
+                                        <option value="">VI. 16/17</option>
+                                    </select>
+                                </div>
+                                <div class="filter-panel__part filter-panel__part_145 d-none d-md-block">
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">Конференция</option>
+                                        <option value="">Конференция #1</option>
+                                        <option value="">Конференция с названием</option>
+                                        <option value="">Конференция с очень длинным названием</option>
+                                    </select>
+                                </div>
+                                <div class="filter-panel__part team-filter__calc d-none d-md-block">
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">Регион</option>
+                                        <option value="">Регион #1</option>
+                                        <option value="">Регион #2</option>
+                                        <option value="">Регион #3</option>
+                                    </select>
+                                </div>
+                                <div class="filter-panel__part filter-panel__part_145">
+                                    <div class="checkbox-icon">
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked="checked" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                                <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                            </svg>
+                                        </label>
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                                <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                            </svg>
+                                        </label>
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                                <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter-panel__part regions-filter__calc d-md-none"></div>
+                                <div class="filter-panel__part filter-panel__part_50">
+                                    <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                                </div>
+                            </div>
 
-                            <div class="representatives-list black-link">
-                                <div class="representatives-list__line">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="representatives-list__item position-relative">
-                                                <div class="representatives-list__pict">
-                                                    <img class="representatives-list__img" src="./local/uploads/representatives.1.jpg" alt="" />
+                            <div class="team-table">
+                                <table class="table-one">
+                                    <thead>
+                                        <tr>
+                                            <th class="d-none d-md-table-cell"></th>
+                                            <th>Команда</th>
+                                            <th class="d-none d-md-table-cell">Город</th>
+                                            <th>
+                                                Регион
+                                                <div class="d-md-none">Город</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-one__sort">
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
                                                 </div>
-                                                <div class="representatives-list__region h2">Кировская область</div>
-                                                <div class="representatives-list__name">Дивизион 40+, Лига Надежды</div>
-                                                <b>Мезенцев Алексей Юрьевич</b><br />
-                                                <a href="tel:+79127319818">+7 (912) 731-98-18</a><br />
-                                                <a href="mailto:saratov40@nhliga.com">43@nhliga.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="representatives-list__item position-relative">
-                                                <div class="representatives-list__pict">
-                                                    <img class="representatives-list__img" src="./local/uploads/representatives.2.jpg" alt="" />
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
                                                 </div>
-                                                <div class="representatives-list__region h2">Кировская область</div>
-                                                <div class="representatives-list__name">Дивизион 40+, Лига Надежды</div>
-                                                <b>Злобин Дмитрий Сергеевич</b><br />
-                                                <a href="tel:+79616394444">+7 (961) 639-44-44</a><br />
-                                                <a href="mailto:no@nhliga.com">no@nhliga.com</a>
-                                            </div>
-                                        </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-none d-md-table-cell">40+</td>
+                                            <td>А Мега</td>
+                                            <td class="d-none d-md-table-cell">Южно-Сахалинск</td>
+                                            <td>
+                                                Тюменская область
+                                                <div class="table-one__light d-md-none">Город</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-none d-md-table-cell">40+</td>
+                                            <td>Баня на Карбышева</td>
+                                            <td class="d-none d-md-table-cell">Черноголовка</td>
+                                            <td>
+                                                Республика Северная Осетия
+                                                <div class="table-one__light d-md-none">Черноголовка</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-none d-md-table-cell">ЛМ</td>
+                                            <td>Ак Барс страхование</td>
+                                            <td class="d-none d-md-table-cell">Великий Новгород</td>
+                                            <td>
+                                                Забайкальский край
+                                                <div class="table-one__light d-md-none">Великий Новгород</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-none d-md-table-cell">40+</td>
+                                            <td>Башкирские Беркуты</td>
+                                            <td class="d-none d-md-table-cell">Железногорск</td>
+                                            <td>
+                                                Республика Башкортостан
+                                                <div class="table-one__light d-md-none">Железногорск</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-none d-md-table-cell">ЛН</td>
+                                            <td>Белый Шквал Север</td>
+                                            <td class="d-none d-md-table-cell">пгт. Шексна</td>
+                                            <td>
+                                                Новосибирская область
+                                                <div class="table-one__light d-md-none">пгт. Шексна</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="team-table__bottom">
+                                    <div class="team-table__bottom-part"></div>
+                                    <div class="team-table__bottom-center">
+                                        <a href="javascript:;" class="btn-four">Показать еще</a>
                                     </div>
-                                </div>
-                                <div class="representatives-list__line">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="representatives-list__item position-relative">
-                                                <div class="representatives-list__pict">
-                                                    <img class="representatives-list__img" src="./local/uploads/representatives.3.jpg" alt="" />
-                                                </div>
-                                                <div class="representatives-list__region h2">Оренбургская область</div>
-                                                <div class="representatives-list__name">Дивизион 40+</div>
-                                                <b>Макаров Игорь Евгеньевич</b><br />
-                                                <a href="tel:+79058964922">+7 (905) 896-49-22</a><br />
-                                                <a href="mailto:56@nhliga.com">56@nhliga.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="representatives-list__item position-relative">
-                                                <div class="representatives-list__pict">
-                                                    <img class="representatives-list__img" src="./local/uploads/representatives.4.jpg" alt="" />
-                                                </div>
-                                                <div class="representatives-list__region h2">Пензенская область</div>
-                                                <div class="representatives-list__name">Любитель 40+, Лига Мечты, Лига Надежды</div>
-                                                <b>Лосев Дмитрий Юрьевич</b><br />
-                                                <a href="tel:+79648707888">+7 (964) 870-78-88</a><br />
-                                                <a href="mailto:penza@nhliga.com">penza@nhliga.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="representatives-list__line">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="representatives-list__item position-relative">
-                                                <div class="representatives-list__pict">
-                                                    <img class="representatives-list__img" src="./local/uploads/representatives.5.jpg" alt="" />
-                                                </div>
-                                                <div class="representatives-list__region h2">Пермский край</div>
-                                                <div class="representatives-list__name">Любитель 40+, Лига Мечты, Лига Надежды</div>
-                                                <b>Зинин Александр Анатольевич</b><br />
-                                                <a href="tel:+79194625147">+7 (919) 462-51-47</a><br />
-                                                <a href="mailto:permkrai@nhliga.com">permkrai@nhliga.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="representatives-list__line">
-                                    <div class="position-relative">
-                                        <div class="representatives-list__pict">
-                                            <img class="representatives-list__img" src="./local/uploads/representatives.6.jpg" alt="" />
-                                        </div>
-                                        <div class="representatives-list__region h2">Республика Башкортостан</div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="representatives-list__item">
-                                                    <div class="representatives-list__name">Дивизион 40+</div>
-                                                    <b>Афиногенов Денис Александрович</b><br />
-                                                    <a href="tel:+79170451888">+7 (917) 045-18-88</a><br />
-                                                    <a href="mailto:rb@nhliga.com">rb@nhliga.com</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="representatives-list__item">
-                                                    <div class="representatives-list__name">Лига Мечты, Лига Надежды</div>
-                                                    <b>Гиндуллин Артур Альбертович</b><br />
-                                                    <a href="tel:+79174245554">+7 (917) 424-55-54</a><br />
-                                                    <a href="mailto:rb@nhliga.com">rb@nhliga.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="representatives-list__line">
-                                    <div class="position-relative">
-                                        <div class="representatives-list__pict">
-                                            <img class="representatives-list__img" src="./local/uploads/representatives.7.jpg" alt="" />
-                                        </div>
-                                        <div class="representatives-list__region h2">Саратовская область</div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="representatives-list__item">
-                                                    <div class="representatives-list__name">Дивизион 40+</div>
-                                                    <b>Козлачков Дмитрий Владимирович</b><br />
-                                                    <a href="tel:+79272776991">+7 (927) 277-69-91</a><br />
-                                                    <a href="mailto:saratov@nhliga.com">saratov@nhliga.com</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="representatives-list__item">
-                                                    <div class="representatives-list__name">Лига Надежды</div>
-                                                    <b>Петраков Вячеслав Алексеевич</b><br />
-                                                    <a href="tel:+79272231187">+7 (927) 223-11-87</a><br />
-                                                    <a href="mailto:saratov40@nhliga.com">saratov40@nhliga.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="team-table__bottom-part">
+                                        <a href="javascript:;" class="link-str">
+                                            Все игроки Ночной Лиги
+                                            <svg class="link-str__icon">
+                                                <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <aside class="aside-right black-link">
-                            <div class="h2">Ночная Лига</div>
-                            <div class="mb-15">
-                                Центральный офис (Москва)
-                            </div>
-                            <p>
-                                <a href="tel:+74957486210">+7 (495) 748-62-10</a>
-                            </p>
-                            <p>
-                                <a href="mailto:liga@nhliga.com">liga@nhliga.com</a>
-                            </p>
-                            <p>
-                                119048, Москва, ул. Усачева, д. 33, стр. 2, 8 этаж
-                            </p>
-                            <hr />
-                            <div class="h2">Сектор по спортивной и региональной работе</div>
-                            <div class="mb-20">
-                                <b>Сергей Пилюгин</b><br />
-                                Руководитель сектора.<br />
-                                Заместитель исполнительного директора по спортивной работе<br />
-                                <a href="mailto:psv@nhliga.com">psv@nhliga.com</a>
-                            </div>
-                            <div class="mb-20">
-                                <b>Вероника Барышева</b><br />
-                                Москва<br />
-                                <a href="mailto:barysheva@nhliga.com">barysheva@nhliga.com</a>
-                            </div>
-                            <div class="mb-20">
-                                <b>Константин Смирнов</b><br />
-                                Центр<br />
-                                <a href="mailto:smirnov@nhliga.com">smirnov@nhliga.com</a>
-                            </div>
-                            <div class="mb-20">
-                                <b>Александр Никульшин</b><br />
-                                Санкт-Петербург, Северо-Запад, Сибирь и Забайкальский край<br />
-                                <a href="mailto:nikula@nhliga.com">nikula@nhliga.com</a>
-                            </div>
-                            <div class="mb-20">
-                                <b>Герман Марьин</b><br />
-                                Приволжье, Юг и Северный Кавказ<br />
-                                <a href="mailto:marin@nhliga.com">marin@nhliga.com</a>
-                            </div>
-                            <div class="mb-20">
-                                <b>Артем Павлов</b><br />
-                                Урал, Дальний Восток<br />
-                                <a href="mailto:pavlov@nhliga.com">pavlov@nhliga.com</a>
-                            </div>
-                            <hr />
-                            <div class="h2">Пресс-служба</div>
-                            <div class="mb-30">
-                                <b>Дарья Костина</b><br />
-                                <a href="mailto:kostina@nhliga.com">kostina@nhliga.com</a>
-                            </div>
-                            <div class="h2">Маркетинг и проведение мероприятий</div>
-                            <div class="mb-30">
-                                <b>Дмитрий Иванов</b><br />
-                                <a href="mailto:dvi@nhliga.com">dvi@nhliga.com</a>
-                            </div>
-                            <div class="h2">Работа со спонсорами и партнёрами</div>
-                            <div>
-                                <b>Марина Богомолова</b><br />
-                                <a href="mailto:bogomolova@nhliga.com">bogomolova@nhliga.com</a>
-                            </div>
-                        </aside>
                     </div>
                 </div>
             </div>
