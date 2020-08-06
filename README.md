@@ -10,6 +10,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/docs.html">Документы</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/archive.html">Архив</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/council.html">Совет</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/regions.html">Регионы</a><br>
 
 <hr>
 
@@ -39,6 +40,7 @@
     <li>.d-*-inline-block</li>
     <li>.d-*-block</li>
     <li>.d-*-flex</li>
+    <li>.d-*-table-cell</li>
 </ul>
 
 <hr>

@@ -17,6 +17,13 @@
             font-size: 13px;
             color: var(--link);
             cursor: pointer;
+
+            &-text {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0 10px;
+            }
         }
         &__dropdown {
             position: absolute;

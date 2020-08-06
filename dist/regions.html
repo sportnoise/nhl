@@ -6,7 +6,7 @@
 
         <title>Ночная Хоккейная Лига - Regions</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?3d33bd67532e561006fe" rel="stylesheet" />
+        <link href="./local/template_styles.css?370aebec8d386cda432d" rel="stylesheet" />
     </head>
 
     <body class="">
@@ -258,8 +258,8 @@
                         <div class="white-block mb-45">
                             <h1>Регионы</h1>
 
-                            <div class="filter-panel">
-                                <div>
+                            <div class="regions-filter filter-panel">
+                                <div class="filter-panel__part filter-panel__part_145 d-none d-xl-block">
                                     <select class="select-btn">
                                         <option selected="selected" disabled="disabled">Конференция</option>
                                         <option value="">Конференция #1</option>
@@ -267,7 +267,7 @@
                                         <option value="">Конференция с очень длинным названием</option>
                                     </select>
                                 </div>
-                                <div>
+                                <div class="filter-panel__part filter-panel__part_145">
                                     <div class="checkbox-icon">
                                         <label class="checkbox-icon__label">
                                             <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked="checked" />
@@ -289,7 +289,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="filter-panel__part regions-filter__calc">
                                     <select class="select-btn">
                                         <option selected="selected" disabled="disabled">Статус</option>
                                         <option value="">Старт турнира</option>
@@ -297,7 +297,7 @@
                                         <option value="">Турнир завершен</option>
                                     </select>
                                 </div>
-                                <div>
+                                <div class="filter-panel__part filter-panel__part_110 d-none d-md-block">
                                     <select class="select-btn">
                                         <option selected="selected" disabled="disabled">Все команды</option>
                                         <option value="">Команда</option>
@@ -305,7 +305,7 @@
                                         <option value="">Команда с очень длинным названием</option>
                                     </select>
                                 </div>
-                                <div>
+                                <div class="filter-panel__part filter-panel__part_110 d-none d-md-block">
                                     <select class="select-btn">
                                         <option selected="selected" disabled="disabled">Тип</option>
                                         <option value="">Тип №1</option>
@@ -313,15 +313,18 @@
                                         <option value="">Тип №3</option>
                                     </select>
                                 </div>
-                                <div>
+                                <div class="filter-panel__part filter-panel__part_80 d-none d-md-block">
                                     <div class="filter-panel__date">
                                         <input type="text" class="filter-panel__date-input our-datepicker" value="" />
                                         <svg class="filter-panel__date-icon">
                                             <use xlink:href="./local/img/sprite.svg#date"></use>
                                         </svg>
+                                        <script>
+                                            var eventDates = ["02.08.20", "05.08.20", "18.08.20", "22.08.20", "01.09.20", "10.09.20", "21.09.20", "23.09.20"];
+                                        </script>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="filter-panel__part filter-panel__part_50">
                                     <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
                                 </div>
                             </div>
@@ -336,20 +339,20 @@
                                     <thead>
                                         <tr>
                                             <th>Регион</th>
-                                            <th>
+                                            <th class="d-none d-md-table-cell">
                                                 <span class="table-one__rotate">Дивизион</span>
                                             </th>
                                             <th>
                                                 <span class="table-one__rotate">Команд</span>
                                             </th>
-                                            <th>
+                                            <th class="d-none d-md-table-cell">
                                                 <span class="table-one__rotate">Игроков</span>
                                             </th>
-                                            <th>
+                                            <th class="d-none d-md-table-cell">
                                                 <span class="table-one__rotate">Игр</span>
                                             </th>
-                                            <th>Начало</th>
-                                            <th>Конец</th>
+                                            <th class="d-none d-md-table-cell">Начало</th>
+                                            <th class="d-none d-md-table-cell">Конец</th>
                                             <th class="table-one__text-left">Статус</th>
                                         </tr>
                                     </thead>
@@ -361,7 +364,7 @@
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell">
                                                 <div class="table-sort">
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
@@ -373,25 +376,25 @@
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell">
                                                 <div class="table-sort">
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up table-sort__link_active"></a>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell">
                                                 <div class="table-sort">
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell">
                                                 <div class="table-sort">
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell">
                                                 <div class="table-sort">
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
                                                     <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
@@ -409,12 +412,12 @@
                                                 <span class="table-one__num">1</span>
                                                 Алтайский край
                                             </td>
-                                            <td>40+</td>
+                                            <td class="d-none d-md-table-cell">40+</td>
                                             <td>3</td>
-                                            <td>64</td>
-                                            <td>24</td>
-                                            <td>19.10.19</td>
-                                            <td>15.03.20</td>
+                                            <td class="d-none d-md-table-cell">64</td>
+                                            <td class="d-none d-md-table-cell">24</td>
+                                            <td class="d-none d-md-table-cell">19.10.19</td>
+                                            <td class="d-none d-md-table-cell">15.03.20</td>
                                             <td class="table-one__text-left">Старт турнира</td>
                                         </tr>
                                         <tr>
@@ -422,12 +425,12 @@
                                                 <span class="table-one__num">2</span>
                                                 Амурская область
                                             </td>
-                                            <td>ЛМ</td>
+                                            <td class="d-none d-md-table-cell">ЛМ</td>
                                             <td>4</td>
-                                            <td>64</td>
-                                            <td>24</td>
-                                            <td>28.10.19</td>
-                                            <td>15.03.20</td>
+                                            <td class="d-none d-md-table-cell">64</td>
+                                            <td class="d-none d-md-table-cell">24</td>
+                                            <td class="d-none d-md-table-cell">28.10.19</td>
+                                            <td class="d-none d-md-table-cell">15.03.20</td>
                                             <td class="table-one__text-left">Старт турнира</td>
                                         </tr>
                                         <tr>
@@ -435,12 +438,12 @@
                                                 <span class="table-one__num">3</span>
                                                 Архангельская область
                                             </td>
-                                            <td>ЛН</td>
+                                            <td class="d-none d-md-table-cell">ЛН</td>
                                             <td>7</td>
-                                            <td>64</td>
-                                            <td>24</td>
-                                            <td>19.10.19</td>
-                                            <td>28.10.19</td>
+                                            <td class="d-none d-md-table-cell">64</td>
+                                            <td class="d-none d-md-table-cell">24</td>
+                                            <td class="d-none d-md-table-cell">19.10.19</td>
+                                            <td class="d-none d-md-table-cell">28.10.19</td>
                                             <td class="table-one__text-left">Турнир запущен</td>
                                         </tr>
                                         <tr>
@@ -448,12 +451,12 @@
                                                 <span class="table-one__num">4</span>
                                                 Кабардино-Балкарская
                                             </td>
-                                            <td>40+</td>
+                                            <td class="d-none d-md-table-cell">40+</td>
                                             <td>5</td>
-                                            <td>64</td>
-                                            <td>24</td>
-                                            <td>24.10.19</td>
-                                            <td>15.03.20</td>
+                                            <td class="d-none d-md-table-cell">64</td>
+                                            <td class="d-none d-md-table-cell">24</td>
+                                            <td class="d-none d-md-table-cell">24.10.19</td>
+                                            <td class="d-none d-md-table-cell">15.03.20</td>
                                             <td class="table-one__text-left">Старт турнира</td>
                                         </tr>
                                         <tr>
@@ -461,12 +464,12 @@
                                                 <span class="table-one__num">5</span>
                                                 Северная Осетия
                                             </td>
-                                            <td>ЛМ</td>
+                                            <td class="d-none d-md-table-cell">ЛМ</td>
                                             <td>2</td>
-                                            <td>64</td>
-                                            <td>24</td>
-                                            <td>19.10.19</td>
-                                            <td>24.10.19</td>
+                                            <td class="d-none d-md-table-cell">64</td>
+                                            <td class="d-none d-md-table-cell">24</td>
+                                            <td class="d-none d-md-table-cell">19.10.19</td>
+                                            <td class="d-none d-md-table-cell">24.10.19</td>
                                             <td class="table-one__text-left">Старт турнира</td>
                                         </tr>
                                     </tbody>
@@ -686,6 +689,6 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="./local/js/script.js?3d33bd67532e561006fe"></script>
+        <script type="text/javascript" src="./local/js/script.js?370aebec8d386cda432d"></script>
     </body>
 </html>
