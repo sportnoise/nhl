@@ -45,7 +45,7 @@
         transform: rotate(-90deg) translate(0, -50%);
         display: block;
         position: absolute;
-        bottom: -5px;
+        bottom: -10px;
         left: 50%;
         transform-origin: 0 0;
     }
@@ -71,7 +71,7 @@
         line-height: 24px;
     }
     &__bold {
-        font-weight: 600;
+        font-weight: 600 !important;
     }
 
     @include media-breakpoint-down(lg)

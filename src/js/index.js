@@ -9,6 +9,7 @@ window.$ = $;
 import a from './jquery.mousewheel.js';
 import b from './jquery.jscrollpane.js';
 import с from './datepicker.js';
+import TableSlider from './table.slider.js';
 
 function formatDate(date)
 {
@@ -205,4 +206,6 @@ $(function() {
             speed: 60000,
         });
     }
+
+    new TableSlider();
 });
