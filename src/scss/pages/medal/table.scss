@@ -26,5 +26,14 @@
         &__icon {
             top: -5px;
         }
+        &_sub th {
+
+            &:not(:nth-child(2)) {
+                width: 50px;
+            }
+            &:first-child {
+                width: 60px;
+            }
+        }
     }
 }
