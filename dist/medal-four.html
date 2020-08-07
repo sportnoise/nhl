@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>Ночная Хоккейная Лига - Team table</title>
+        <title>Ночная Хоккейная Лига - Medal four</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <link href="./local/template_styles.css?eb879a0108cf7219e659" rel="stylesheet" />
     </head>
@@ -231,22 +231,16 @@
                 <div class="container">
                     <div class="menu-section__block">
                         <a href="javascript:;" class="menu-section__link">
-                            Регионы
-                        </a>
-                        <a href="javascript:;" class="menu-section__link">
-                            Таблица
+                            Фестиваль хоккея
                         </a>
                         <a href="javascript:;" class="menu-section__link">
                             Призёры
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Победители
+                            Итоговое положение команд
                         </a>
                         <a href="javascript:;" class="menu-section__link menu-section__link_active">
-                            Все команды
-                        </a>
-                        <a href="javascript:;" class="menu-section__link">
-                            Все игроки
+                            Медальный зачёт
                         </a>
                     </div>
                 </div>
@@ -256,206 +250,186 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="white-block mb-45">
-                            <h1>Все команды Ночной Лиги</h1>
+                            <h1>Медальный зачёт</h1>
 
-                            <div class="search-panel">
-                                <form>
-                                    <div class="search-panel__form">
-                                        <input class="search-panel__input" type="text" value="" />
-                                        <button class="search-panel__submit">
-                                            <svg class="search-panel__submit-icon">
-                                                <use xlink:href="./local/img/sprite.svg#loop"></use>
-                                            </svg>
-                                        </button>
-                                        <label class="search-panel__label">Укажите название команды или город</label>
-                                    </div>
-                                </form>
+                            <div class="panel-btn">
+                                <a href="javascript:;" class="panel-btn__link">По командам</a>
+                                <a href="javascript:;" class="panel-btn__link">По субъектам</a>
+                                <a href="javascript:;" class="panel-btn__link">По игрокам</a>
+                                <a href="javascript:;" class="panel-btn__link panel-btn__link_active">По трофеям</a>
                             </div>
 
-                            <div class="letters-panel d-none d-sm-flex">
-                                <a href="javascript:;" class="letters-panel__link">А</a>
-                                <a href="javascript:;" class="letters-panel__link">Б</a>
-                                <a href="javascript:;" class="letters-panel__link letters-panel__link_active">В</a>
-                                <a href="javascript:;" class="letters-panel__link">Г</a>
-                                <a href="javascript:;" class="letters-panel__link">Д</a>
-                                <a href="javascript:;" class="letters-panel__link">Е</a>
-                                <a href="javascript:;" class="letters-panel__link">Ж</a>
-                                <a href="javascript:;" class="letters-panel__link">З</a>
-                                <a href="javascript:;" class="letters-panel__link">И</a>
-                                <a href="javascript:;" class="letters-panel__link">К</a>
-                                <a href="javascript:;" class="letters-panel__link">Л</a>
-                                <a href="javascript:;" class="letters-panel__link">М</a>
-                                <a href="javascript:;" class="letters-panel__link">Н</a>
-                                <a href="javascript:;" class="letters-panel__link">О</a>
-                                <a href="javascript:;" class="letters-panel__link">П</a>
-                                <a href="javascript:;" class="letters-panel__link">Р</a>
-                                <a href="javascript:;" class="letters-panel__link">С</a>
-                                <a href="javascript:;" class="letters-panel__link">Т</a>
-                                <a href="javascript:;" class="letters-panel__link">У</a>
-                                <a href="javascript:;" class="letters-panel__link">Ф</a>
-                                <a href="javascript:;" class="letters-panel__link">Х</a>
-                                <a href="javascript:;" class="letters-panel__link">Ц</a>
-                                <a href="javascript:;" class="letters-panel__link">Ч</a>
-                                <a href="javascript:;" class="letters-panel__link">Ш</a>
-                                <a href="javascript:;" class="letters-panel__link">Щ</a>
-                                <a href="javascript:;" class="letters-panel__link">Э</a>
-                                <a href="javascript:;" class="letters-panel__link">Ю</a>
-                                <a href="javascript:;" class="letters-panel__link">Я</a>
+                            <div class="h2">
+                                Обладатели трофеев Ночной Лиги.<br />
+                                Любители 40+
                             </div>
 
-                            <div class="team-filter filter-panel">
-                                <div class="filter-panel__part filter-panel__part_90">
-                                    <select class="select-btn">
-                                        <option selected="selected" disabled="disabled">IX. 19/20</option>
-                                        <option value="">VIII. 18/19</option>
-                                        <option value="">VII. 17/18</option>
-                                        <option value="">VI. 16/17</option>
-                                    </select>
-                                </div>
-                                <div class="filter-panel__part filter-panel__part_145 d-none d-md-block">
-                                    <select class="select-btn">
-                                        <option selected="selected" disabled="disabled">Конференция</option>
-                                        <option value="">Конференция #1</option>
-                                        <option value="">Конференция с названием</option>
-                                        <option value="">Конференция с очень длинным названием</option>
-                                    </select>
-                                </div>
-                                <div class="filter-panel__part team-filter__calc d-none d-md-block">
-                                    <select class="select-btn">
-                                        <option selected="selected" disabled="disabled">Регион</option>
-                                        <option value="">Регион #1</option>
-                                        <option value="">Регион #2</option>
-                                        <option value="">Регион #3</option>
-                                    </select>
-                                </div>
-                                <div class="filter-panel__part filter-panel__part_145">
-                                    <div class="checkbox-icon">
-                                        <label class="checkbox-icon__label">
-                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked="checked" />
-                                            <svg class="checkbox-icon__icon checkbox-icon__icon_f">
-                                                <use xlink:href="./local/img/sprite.num.svg#f"></use>
-                                            </svg>
-                                        </label>
-                                        <label class="checkbox-icon__label">
-                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
-                                            <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
-                                                <use xlink:href="./local/img/sprite.num.svg#lm"></use>
-                                            </svg>
-                                        </label>
-                                        <label class="checkbox-icon__label">
-                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
-                                            <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
-                                                <use xlink:href="./local/img/sprite.num.svg#ln"></use>
-                                            </svg>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="filter-panel__part regions-filter__calc d-md-none"></div>
-                                <div class="filter-panel__part filter-panel__part_50">
-                                    <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                            <div class="medal-table">
+                                <div class="medal-table__nowrap">
+                                    <table class="table-one">
+                                        <thead>
+                                            <tr>
+                                                <th>Сезоны</th>
+                                                <th>
+                                                    Кубок<br />
+                                                    Чемпионов
+                                                </th>
+                                                <th>
+                                                    Кубок Крутова
+                                                    <div class="table-one__small table-one__light">до 2015 — Кубок Победителя Фестиваля</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">IX.</div>
+                                                    <div class="table-one__small table-one__light">2019 — 2020</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-one__small table-one__light">Сovid 19</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-one__small table-one__light">Сovid 19</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">VIII.</div>
+                                                    <div class="table-one__small table-one__light">2018 — 2019</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Неоплан</div>
+                                                    <div class="table-one__light">Екатеринбург</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Неоплан</div>
+                                                    <div class="table-one__light">Екатеринбург</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">VII.</div>
+                                                    <div class="table-one__small table-one__light">2017 — 2018</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Казанские Драконы</div>
+                                                    <div class="table-one__light">Казань</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Казанские Драконы</div>
+                                                    <div class="table-one__light">Казань</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">VI.</div>
+                                                    <div class="table-one__small table-one__light">2016 — 2017</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Центурион, Орион</div>
+                                                    <div class="table-one__light">Челябинск</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Центурион, Орион</div>
+                                                    <div class="table-one__light">Челябинск</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">V.</div>
+                                                    <div class="table-one__small table-one__light">2015 — 2016</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">
+                                                        Авто
+                                                        <div class="table-one__light">СПб</div>
+                                                    </div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Авто</div>
+                                                    <div class="table-one__light">СПб</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
-                            <div class="teams-table">
-                                <table class="table-one">
-                                    <thead>
-                                        <tr>
-                                            <th class="d-none d-md-table-cell"></th>
-                                            <th>Команда</th>
-                                            <th class="d-none d-md-table-cell">Город</th>
-                                            <th>
-                                                Регион
-                                                <div class="d-md-none">Город</div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="table-one__sort">
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">40+</td>
-                                            <td>А Мега</td>
-                                            <td class="d-none d-md-table-cell">Южно-Сахалинск</td>
-                                            <td>
-                                                Тюменская область
-                                                <div class="table-one__light d-md-none">Город</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">40+</td>
-                                            <td>Баня на Карбышева</td>
-                                            <td class="d-none d-md-table-cell">Черноголовка</td>
-                                            <td>
-                                                Республика Северная Осетия
-                                                <div class="table-one__light d-md-none">Черноголовка</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">ЛМ</td>
-                                            <td>Ак Барс страхование</td>
-                                            <td class="d-none d-md-table-cell">Великий Новгород</td>
-                                            <td>
-                                                Забайкальский край
-                                                <div class="table-one__light d-md-none">Великий Новгород</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">40+</td>
-                                            <td>Башкирские Беркуты</td>
-                                            <td class="d-none d-md-table-cell">Железногорск</td>
-                                            <td>
-                                                Республика Башкортостан
-                                                <div class="table-one__light d-md-none">Железногорск</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">ЛН</td>
-                                            <td>Белый Шквал Север</td>
-                                            <td class="d-none d-md-table-cell">пгт. Шексна</td>
-                                            <td>
-                                                Новосибирская область
-                                                <div class="table-one__light d-md-none">пгт. Шексна</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="teams-table__bottom">
-                                    <div class="teams-table__bottom-left"></div>
-                                    <div class="teams-table__bottom-center">
-                                        <a href="javascript:;" class="btn-four">Показать еще</a>
-                                    </div>
-                                    <div class="teams-table__bottom-right">
-                                        <a href="javascript:;" class="link-str">
-                                            Все игроки Ночной Лиги
-                                            <svg class="link-str__icon">
-                                                <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
+                            <div class="mb-45"></div>
+
+                            <div class="h2">
+                                Обладатели трофеев Ночной Лиги.<br />
+                                Лига Мечты, Лига Надежды
+                            </div>
+
+                            <div class="medal-table">
+                                <div class="medal-table__nowrap">
+                                    <table class="table-one">
+                                        <thead>
+                                            <tr>
+                                                <th>Сезоны</th>
+                                                <th>
+                                                    Кубок<br />
+                                                    Надежды
+                                                </th>
+                                                <th>
+                                                    Кубок Крутова<br />
+                                                    Мечты
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">IX.</div>
+                                                    <div class="table-one__small table-one__light">2019 — 2020</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-one__small table-one__light">Сovid 19</div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-one__small table-one__light">Сovid 19</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">VIII.</div>
+                                                    <div class="table-one__small table-one__light">2018 — 2019</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Вольфрам-А</div>
+                                                    <div class="table-one__light">п. Восток, Приморский край</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Марс Волхов</div>
+                                                    <div class="table-one__light">Волхов, Ленинградская область</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-one__big table-one__bold">VII.</div>
+                                                    <div class="table-one__small table-one__light">2017 — 2018</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Тимерхан</div>
+                                                    <div class="table-one__light">пгт. Богатые Сабы, Татарстан</div>
+                                                </td>
+                                                <td class="table-one__small medal-table__cup">
+                                                    <div class="table-one__bold">Вольфрам-Б</div>
+                                                    <div class="table-one__light">п. Восток, Приморский край</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="medal-table__bottom">
+                                    <a href="javascript:;" class="link-str">
+                                        Подробнее о трофеях Ночной Лиги
+                                        <svg class="link-str__icon">
+                                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -58,13 +58,17 @@
         top: 50%;
         transform: translate(0, -50%);
     }
-    &__light {
-        color: var(--link);
-    }
     &__small {
         color: var(--blacksuper);
         font-size: 13px;
         line-height: 17px;
+    }
+    &__light {
+        color: var(--link);
+    }
+    &__big {
+        font-size: 17px;
+        line-height: 24px;
     }
     &__bold {
         font-weight: 600;

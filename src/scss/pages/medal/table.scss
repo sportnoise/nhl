@@ -1,5 +1,9 @@
 .medal-table {
 
+    &__nowrap {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
     &__icon {
         width: 25px;
         height: 38px;
@@ -20,6 +24,11 @@
     &__bottom {
         margin: 20px 0 0;
     }
+    &__cup {
+        background: url(img/icon.cup.png) no-repeat 5px center;
+        padding-left: 30px !important;
+    }
+
 
     @include media-breakpoint-up(lg)
     {
