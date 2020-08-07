@@ -30,6 +30,7 @@
 @import "./elem/filter.panel"; // Панель фильтров
 @import "./elem/search.panel"; // Панель фильтров
 @import "./elem/letters.panel"; // Поиск во буквам
+@import "./elem/panel.btn"; // Панель кнопок
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -91,3 +92,6 @@
 
 // Команды / Игроки
 @import "./pages/teams/table"; // Таблица
+
+// Медальный зачёт
+@import "./pages/medal/table"; // Таблица

@@ -61,6 +61,14 @@
     &__light {
         color: var(--link);
     }
+    &__small {
+        color: var(--blacksuper);
+        font-size: 13px;
+        line-height: 17px;
+    }
+    &__bold {
+        font-weight: 600;
+    }
 
     @include media-breakpoint-down(lg)
     {

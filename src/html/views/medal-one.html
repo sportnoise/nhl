@@ -1,0 +1,196 @@
+<% var data = {
+    title: "Team table",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Призёры
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Итоговое положение команд
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Медальный зачёт
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Медальный зачёт</h1>
+
+                <div class="panel-btn">
+                    <a href="javascript:;" class="panel-btn__link panel-btn__link_active">По командам</a>
+                    <a href="javascript:;" class="panel-btn__link">По субъектам</a>
+                    <a href="javascript:;" class="panel-btn__link">По игрокам</a>
+                    <a href="javascript:;" class="panel-btn__link">По трофеям</a>
+                </div>
+
+                <div class="h2">Медальный зачёт по командам</div>
+
+                <div class="medal-table">
+                    <table class="table-one table-one_center">
+                        <thead>
+                            <tr>
+                                <th>Место</th>
+                                <th class="table-one__text-left">Команда</th>
+                                <th class="table-one__text-left d-none d-md-table-cell">Город, регион</th>
+                                <th>
+                                    <img class="medal-table__icon" src="./local/img/icon.bronze.svg" alt="">
+                                </th>
+                                <th>
+                                    <img class="medal-table__icon" src="./local/img/icon.silver.svg" alt="">
+                                </th>
+                                <th>
+                                    <img class="medal-table__icon" src="./local/img/icon.gold.svg" alt="">
+                                </th>
+                                <th>
+                                    <span class="table-one__rotate">Всего</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-one__sort">
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="table-one__text-left">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="table-one__text-left d-none d-md-table-cell">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table-one__text-left">«Неоплан» / «Авто»</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">Екатеринбург</td>
+                                <td class="medal-table__bronze">1</td>
+                                <td class="medal-table__silver">2</td>
+                                <td class="medal-table__gold">3</td>
+                                <td class="table-one__bold">6</td>
+                            </tr>
+                            <tr>
+                                <td>2-3</td>
+                                <td class="table-one__text-left">«Вольфрам-Б»</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">п. Восток, Приморский край</td>
+                                <td class="medal-table__bronze">1</td>
+                                <td class="medal-table__silver">1</td>
+                                <td class="medal-table__gold">1</td>
+                                <td class="table-one__bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>2-3</td>
+                                <td class="table-one__text-left">«Сталкер»</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">Москва</td>
+                                <td class="medal-table__bronze">1</td>
+                                <td class="medal-table__silver"></td>
+                                <td class="medal-table__gold">1</td>
+                                <td class="table-one__bold">2</td>
+                            </tr>
+                            <tr>
+                                <td>4-6</td>
+                                <td class="table-one__text-left">«Аизовец»</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">Южноуральск, Челябинская область</td>
+                                <td class="medal-table__bronze"></td>
+                                <td class="medal-table__silver">1</td>
+                                <td class="medal-table__gold">1</td>
+                                <td class="table-one__bold">2</td>
+                            </tr>
+                            <tr>
+                                <td>4-6</td>
+                                <td class="table-one__text-left">«Невский Легион»</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">Санкт-Петербург</td>
+                                <td class="medal-table__bronze">2</td>
+                                <td class="medal-table__silver">1</td>
+                                <td class="medal-table__gold">1</td>
+                                <td class="table-one__bold">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="medal-table__bottom">
+                        <a href="javascript:;" class="link-str">
+                            Победители всех Фестивалей
+                            <svg class="link-str__icon">
+                                <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

@@ -1,0 +1,30 @@
+.medal-table {
+
+    &__icon {
+        width: 25px;
+        height: 38px;
+        position: relative;
+    }
+    &__bronze {
+        font-weight: 600;
+        color: var(--bronze);
+    }
+    &__silver {
+        font-weight: 600;
+        color: var(--silver);
+    }
+    &__gold {
+        font-weight: 600;
+        color: var(--gold);
+    }
+    &__bottom {
+        margin: 20px 0 0;
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        &__icon {
+            top: -5px;
+        }
+    }
+}
