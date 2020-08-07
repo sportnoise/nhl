@@ -1,106 +1,101 @@
-export default class TableSlider {
-
-    constructor(name) {
+export default class TableSlider
+{
+    constructor()
+    {
+        /* Номера Левого и Правого активного столбцов */
+        this.tsLeft = false;
+        this.tsRight = false;
 
         let len = $('.table-slider__item').length;
 
         let i = 2;
 
-        let tsLeft = false;
-        let tsRight = false;
+        /* Скрываем все столбцы кроме последних двух, их номера запоминаем */
+        $('.table-slider__item').each((n, e) => {
 
-        $('.table-slider__item').each(function(){
+            let ind = $(e).index();
 
-            let ind = $(this).index();
-
-            if (i < len)
-            {
-                $(this).hide();
-
-                $('.table-slider tr').each(function(){
-
-                    $(this).find('td').eq(ind).hide();
-                });
-            }
-
-            if (i == len) tsLeft = ind;
-            if (i > len) tsRight = ind;
+            if (i < len) this.hideOne(ind);
+            if (i == len) this.tsLeft = ind;
+            if (i > len) this.tsRight = ind;
 
             i++;
         });
 
-        this.setStr(tsLeft, tsRight);
+        this.setStrActive();
 
-        $('.table-slider__prev').click((e) => this.goPrev(e));
+        $('.table-slider__prev').click(e => this.goPrev(e));
 
-        $('.table-slider__next').click((e) => this.goNext(e));
+        $('.table-slider__next').click(e => this.goNext(e));
     }
 
-    setStr(tsLeft, tsRight)
+    /* Проверяем активность стрелок */
+    setStrActive()
     {
-        if ($('.table-slider th').eq(tsLeft - 1).hasClass('table-slider__item')) $('.table-slider__prev').addClass('table-slider__str_active');
-        else $('.table-slider__prev').removeClass('table-slider__str_active');
+        if ($('.table-slider th').eq(this.tsLeft - 1).hasClass('table-slider__item'))
+            $('.table-slider__prev').addClass('table-slider__str_active');
+        else
+            $('.table-slider__prev').removeClass('table-slider__str_active');
 
-        if ($('.table-slider th').eq(tsRight + 1).hasClass('table-slider__item')) $('.table-slider__next').addClass('table-slider__str_active');
-        else $('.table-slider__next').removeClass('table-slider__str_active');
-
-        $('.table-slider__prev').data('num', tsLeft);
-        $('.table-slider__next').data('num', tsRight);
+        if ($('.table-slider th').eq(this.tsRight + 1).hasClass('table-slider__item'))
+            $('.table-slider__next').addClass('table-slider__str_active');
+        else
+            $('.table-slider__next').removeClass('table-slider__str_active');
     }
 
+    /* Переходи к предыдущему столбцу */
     goPrev(e)
     {
-        let elem = e.target;
-
-        if ($(elem).hasClass('table-slider__str_active'))
+        if ($(e.target).hasClass('table-slider__str_active'))
         {
-            let tsLeft = $(elem).data('num') - 1;
+            this.tsLeft--;
 
-            $('.table-slider th').eq(tsLeft).show();
+            this.shwoOne(this.tsLeft);
 
-            $('.table-slider tr').each(function(){
+            this.hideOne(this.tsRight);
 
-                $(this).find('td').eq(tsLeft).show();
-            });
+            this.tsRight--;
 
-            let tsRight = $('.table-slider__next').data('num');
-
-            $('.table-slider th').eq(tsRight).hide();
-
-            $('.table-slider tr').each(function(){
-
-                $(this).find('td').eq(tsRight).hide();
-            });
-
-            this.setStr(tsLeft, tsRight - 1);
+            this.setStrActive();
         }
     }
 
+    /* Переходи к следующему столбцу */
     goNext(e)
     {
-        let elem = e.target;
-
-        if ($(elem).hasClass('table-slider__str_active'))
+        if ($(e.target).hasClass('table-slider__str_active'))
         {
-            let tsRight = $(elem).data('num') + 1;
+            this.tsRight++;
 
-            $('.table-slider th').eq(tsRight).show();
+            this.shwoOne(this.tsRight);
 
-            $('.table-slider tr').each(function(){
+            this.hideOne(this.tsLeft);
 
-                $(this).find('td').eq(tsRight).show();
-            });
+            this.tsLeft++;
 
-            let tsLeft = $('.table-slider__prev').data('num');
-
-            $('.table-slider th').eq(tsLeft).hide();
-
-            $('.table-slider tr').each(function(){
-
-                $(this).find('td').eq(tsLeft).hide();
-            });
-
-            this.setStr(tsLeft + 1, tsRight);
+            this.setStrActive();
         }
+    }
+
+    /* Показываем один столбец (num) */
+    shwoOne(num)
+    {
+        $('.table-slider th').eq(num).show();
+
+        $('.table-slider tr').each((n, e) => {
+
+            $(e).find('td').eq(num).show();
+        });
+    }
+
+    /* Скрываем один столбец (num) */
+    hideOne(num)
+    {
+        $('.table-slider th').eq(num).hide();
+
+        $('.table-slider tr').each((n, e) => {
+
+            $(e).find('td').eq(num).hide();
+        });
     }
 }
