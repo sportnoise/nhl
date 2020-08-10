@@ -3,6 +3,7 @@
 @import "./main/variables"; // Переменные
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
+@import "./main/margin"; // Отступы
 
 // Общие элементы
 @import "./elem/swiper"; // Общие стили сайдера
@@ -34,6 +35,7 @@
 @import "./elem/panel.btn"; // Панель кнопок
 @import "./elem/panel.rubric"; // Панель рубрик
 @import "./elem/page.navigation"; // Постраничная навигация
+@import "./elem/form.one"; // Стиль формы №1
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -112,3 +114,6 @@
 // Фото и видео
 @import "./pages/photo.video/head"; // Шапка страницы
 @import "./pages/photo.video/list"; // Список
+
+// Вопрос ответ
+@import "./pages/faq/form"; // Форма

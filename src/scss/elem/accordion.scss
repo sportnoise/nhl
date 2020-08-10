@@ -28,7 +28,7 @@
             right: 0;
             top: 50%;
             margin: -2px 0 0;
-            transition: all .3s;
+            transition: border-color .3s;
         }
         &:hover {
             color: var(--link);
@@ -54,6 +54,17 @@
 
         &_open {
             display: block;
+        }
+    }
+
+    &_small &__link {
+        padding: 25px 15px 25px 0;
+        font-size: 17px;
+        line-height: 24px;
+
+        &_open {
+            font-size: 19px;
+            line-height: 26px;
         }
     }
 

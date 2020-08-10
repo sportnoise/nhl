@@ -20,6 +20,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/news-list.html">Все новости (Список новостей)</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/photo-list.html">Все фото (Список фото)</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/video-list.html">Все видео (Список видео)</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/faq.html">Вопрос/Ответ</a><br>
 
 <hr>
 

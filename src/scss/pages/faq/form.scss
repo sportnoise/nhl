@@ -1,0 +1,14 @@
+.faq-form {
+    max-width: 600px;
+    margin: 0 0 40px;
+
+    &__desc {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        margin: 0 0 30px;
+    }
+    &__bottom {
+        text-align: right;
+    }
+}
