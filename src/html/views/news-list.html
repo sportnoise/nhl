@@ -1,0 +1,638 @@
+<% var data = {
+    title: "News list",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Чемпионат
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Протоколы СДК
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Платежи
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Документы
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Контакты
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="white-bg">
+    <div class="container">
+
+        <div class="news-list-head">
+            <h1 class="h-no-margin">Все новости</h1>
+            <div class="news-list-head__btn">
+                <a href="javascript:;" class="rss-link">
+                    <svg class="rss-link__icon">
+                        <use xlink:href="./local/img/sprite.svg#rss"></use>
+                    </svg>
+                    RSS
+                </a>
+            </div>
+        </div>
+
+        <div class="mb-50">
+            <div class="panel-btn">
+                <a href="javascript:;" class="panel-btn__link panel-btn__link_active">Все материалы</a>
+                <a href="javascript:;" class="panel-btn__link">Официально</a>
+                <a href="javascript:;" class="panel-btn__link">Лига</a>
+                <a href="javascript:;" class="panel-btn__link">Свердловская область</a>
+                <a href="javascript:;" class="panel-btn__link">Все регионы</a>
+            </div>
+        </div>
+
+        <div class="h2">Рубрики</div>
+
+        <div class="mb-50">
+            <div class="panel-rubric">
+                <a href="javascript:;" class="panel-rubric__link">Звёзды</a>
+                <a href="javascript:;" class="panel-rubric__link">Путь личности</a>
+                <a href="javascript:;" class="panel-rubric__link panel-rubric__link_active">Больше чем игра</a>
+                <a href="javascript:;" class="panel-rubric__link">Новинки</a>
+                <a href="javascript:;" class="panel-rubric__link">Звёзды</a>
+                <a href="javascript:;" class="panel-rubric__link">Путь личности</a>
+                <a href="javascript:;" class="panel-rubric__link">Больше чем игра</a>
+                <a href="javascript:;" class="panel-rubric__link">Новинки</a>
+                <a href="javascript:;" class="panel-rubric__link">Звёзды</a>
+                <a href="javascript:;" class="panel-rubric__link">Путь личности</a>
+                <a href="javascript:;" class="panel-rubric__link">Больше чем игра</a>
+                <a href="javascript:;" class="panel-rubric__link">Новинки</a>
+            </div>
+        </div>
+
+        <div class="h1">Официально</div>
+
+        <div class="news-index-top">
+            <div class="news-index-top__item">
+                <div class="news-index-top__date">12 августа, 14:30</div>
+                <a href="javascript:;" class="news-index-top__name">Официальные оповещения о деятельности Лиги составляются официальным коммуникационным органом — пресс-служба</a>
+            </div>
+            <div class="news-index-top__item">
+                <div class="news-index-top__date">12 августа, 14:30</div>
+                <a href="javascript:;" class="news-index-top__name">Оперативные решения, протокольные и организационные оповещения, отчёты собраний, ключевые соглашения</a>
+            </div>
+            <div class="news-index-top__item">
+                <div class="news-index-top__date">12 августа, 14:30</div>
+                <a href="javascript:;" class="news-index-top__name">Решения руководства, официальные заявления первых лиц, структурные изменения, пресс-релизы</a>
+            </div>
+            <div class="news-index-top__item">
+                <div class="news-index-top__date">12 августа, 14:30</div>
+                <a href="javascript:;" class="news-index-top__name">Официальные оповещения о деятельности Лиги составляются официальным коммуникационным органом — пресс-служба</a>
+            </div>
+            <div class="news-index-top__item">
+                <div class="news-index-top__date">12 августа, 14:30</div>
+                <a href="javascript:;" class="news-index-top__name">Оперативные решения, протокольные и организационные оповещения, отчёты собраний, ключевые соглашения</a>
+            </div>
+            <div class="news-index-top__item">
+                <div class="news-index-top__date">12 августа, 14:30</div>
+                <a href="/" class="news-index-top__name">Решения руководства, официальные заявления первых лиц, структурные изменения, пресс-релизы</a>
+            </div>
+            <div class="news-index-top__btn">
+                <a href="javascript:;" class="btn-four">Показать больше</a>
+            </div>
+        </div>
+
+        <div class="h1">Новости Лиги</div>
+
+        <div class="news-index-middle">
+            <div class="news-index-left">
+                <a href="javascript:;" class="news-index-left__link pict-shadow">
+                    <img class="news-index-left__img" src="./local/uploads/news.left.jpg" alt="">
+                    <div class="news-index-left__block">
+                        <span class="news-index-left__name">Самая свежая новость дифференцируется — оформляется по-другому. Лид в новости не указывается. Заголовок больше 90 знаков</span>
+                        <span class="news-index-left__date">Сегодня, 14:45</span>
+                    </div>
+                </a>
+            </div>
+            <div class="news-index-right">
+                <a href="javascript:;" class="news-index-right__pict pict-shadow">
+                    <img class="news-index-right__img" src="./local/uploads/news.right.1.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-right__name">Заголовок для новостей не больше четырёх строк. Общее количеством знаках с пробелами: девяносто буквенных символов</a>
+                <div class="news-index-right__text">Лид — ведущий или главный абзац статье. В аннотации, кратко формулируется проблема, раскрывается суть заголовка. Не больше 110 знаков</div>
+                <div class="news-index-right__date">Вчера, 14:45</div>
+            </div>
+            <div class="news-index-right">
+                <a href="javascript:;" class="news-index-right__pict pict-shadow">
+                    <span class="lighthouse-label">звезда</span>
+                    <img class="news-index-right__img" src="./local/uploads/news.right.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-right__name">Лучше делать заголовки не больше двух или трех строк, в конце заголовки и лида не ставятся точки</a>
+                <div class="news-index-right__text">Лучше делать Лид не больше трех, четырех строк. Лиды усиливают заголовок, но так же могут оттолкнуть от прочтения статьи</div>
+                <div class="news-index-right__date">
+                    Вчера, 10:00
+                    <svg class="icon-video">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-index-bottom d-none d-sm-flex">
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новостные блоки могут содержать любой вид контента: новость, видео и фото
+                </a>
+                <div class="news-index-bottom__text">
+                    Новости могут дополнительно «тегироваться» по рубрикам и помечаются соответствующей иконкой
+                </div>
+                <div class="news-index-bottom__date">12 августа, 14:30</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Если новость содержит большое количество фотографий, но при этом не является отдельными альбомом
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">
+                    3 августа, 11:00
+                    <svg class="icon-photo">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.3.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    В статье есть вставка «видео», но при этом новость не состоит из одного видео
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">23 июля, 17:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.4.jpg" alt="">
+                    <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новость которая содержит только альбом или видео с небольшим описанием
+                </a>
+                <div class="news-index-bottom__text">
+                    Маркируется значком «видео» или «фото» в левом нижнем углу на фотографии
+                </div>
+                <div class="news-index-bottom__date">15 июля, 14:45</div>
+            </div>
+            <div class="news-index-bottom__btn">
+                <a href="javascript:;" class="btn-four">Все новости Лиги</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="grey-bg">
+    <div class="container">
+
+        <div class="info-index">
+            <div class="info-index__item">
+                <a href="javascript:;" class="info-index__link pict-shadow">
+                    <img src="./local/uploads/info.1.jpg" alt="" class="info-index__img">
+                    <div class="info-index__block">
+                        <div class="info-index__name">
+                            Эдуард Нестеров: чтобы уметь выигрывать, нужно уметь и проигрывать
+                        </div>
+                        <div class="info-index__text">
+                            Сезон Ночной лиги в Ленинградской области получился не очень длинным из-за пандемии новой коронавирусной инфекции
+                        </div>
+                    </div>
+                    <div class="lighthouse-label lighthouse-label_big">Звёзды</div>
+                    <svg class="info-index__icon">
+                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="info-index__item">
+                <a href="javascript:;" class="info-index__link pict-shadow">
+                    <img src="./local/uploads/info.2.jpg" alt="" class="info-index__img">
+                    <div class="info-index__block">
+                        <div class="info-index__name">
+                            Алексей Касатонов: «Забота о здоровье игроков и их близких является для нас приоритетом»
+                        </div>
+                        <div class="info-index__text">
+                            Сезон Ночной лиги в Ленинградской области получился не очень длинным из-за пандемии
+                        </div>
+                    </div>
+                    <div class="lighthouse-label lighthouse-label_big">Путь личности</div>
+                    <svg class="info-index__icon">
+                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="info-index__item">
+                <a href="javascript:;" class="info-index__link pict-shadow">
+                    <img src="./local/uploads/info.3.jpg" alt="" class="info-index__img">
+                    <div class="info-index__block">
+                        <div class="info-index__name">
+                            Чем больше трудностей в борьбе, тем и победа краше
+                        </div>
+                        <div class="info-index__text">
+                            Сезон Ночной лиги в Ленинградской области получился не очень длинным из-за пандемии новой коронавирусной инфекции коронавирусной инфекции
+                        </div>
+                    </div>
+                    <div class="lighthouse-label lighthouse-label_big">Больше чем игра</div>
+                    <svg class="info-index__icon">
+                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="info-index__item">
+                <a href="javascript:;" class="info-index__link pict-shadow">
+                    <img src="./local/uploads/info.4.jpg" alt="" class="info-index__img">
+                    <div class="info-index__block">
+                        <div class="info-index__name">
+                            Обзор новых коньков от Bauer. Модель Supreme 3S PRO YTH
+                        </div>
+                        <div class="info-index__text">
+                            Сезон Ночной лиги в Ленинградской области получился не очень длинным из-за пандемии новой коронавирусной инфекции
+                        </div>
+                    </div>
+                    <div class="lighthouse-label lighthouse-label_big">Новинки</div>
+                    <svg class="info-index__icon">
+                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="white-bg">
+    <div class="container">
+
+        <div class="h1">Свердловская область</div>
+
+        <div class="news-index-middle">
+            <div class="news-index-left">
+                <a href="javascript:;" class="news-index-left__link pict-shadow">
+                    <img class="news-index-left__img" src="./local/uploads/news.left.jpg" alt="">
+                    <div class="news-index-left__block">
+                        <span class="news-index-left__name">Новостная журналистика — развлекательные редакционные материалы, которые отражают события всего любительского сообщества</span>
+                        <span class="news-index-left__date">Сегодня, 14:45</span>
+                    </div>
+                </a>
+            </div>
+            <div class="news-index-right">
+                <a href="javascript:;" class="news-index-right__pict pict-shadow">
+                    <img class="news-index-right__img" src="./local/uploads/news.right.1.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-right__name">Заголовок для новостей не больше четырёх строк. Общее количеством знаках с пробелами: девяносто буквенных символов</a>
+                <div class="news-index-right__text">Лид — ведущий или главный абзац статье. В аннотации, кратко формулируется проблема, раскрывается суть заголовка. Не больше 110 знаков</div>
+                <div class="news-index-right__date">Вчера, 14:45</div>
+            </div>
+            <div class="news-index-right">
+                <a href="javascript:;" class="news-index-right__pict pict-shadow">
+                    <span class="lighthouse-label">звезда</span>
+                    <img class="news-index-right__img" src="./local/uploads/news.right.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-right__name">Лучше делать заголовки не больше двух или трех строк, в конце заголовки и лида не ставятся точки</a>
+                <div class="news-index-right__text">Лучше делать Лид не больше трех, четырех строк. Лиды усиливают заголовок, но так же могут оттолкнуть от прочтения статьи</div>
+                <div class="news-index-right__date">
+                    Вчера, 10:00
+                    <svg class="icon-video">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-index-bottom d-none d-sm-flex">
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новостные блоки могут содержать любой вид контента: новость, видео и фото
+                </a>
+                <div class="news-index-bottom__text">
+                    Новости могут дополнительно «тегироваться» по рубрикам и помечаются соответствующей иконкой
+                </div>
+                <div class="news-index-bottom__date">12 августа, 14:30</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Если новость содержит большое количество фотографий, но при этом не является отдельными альбомом
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">
+                    3 августа, 11:00
+                    <svg class="icon-photo">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.3.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    В статье есть вставка «видео», но при этом новость не состоит из одного видео
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">23 июля, 17:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.4.jpg" alt="">
+                    <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новость которая содержит только альбом или видео с небольшим описанием
+                </a>
+                <div class="news-index-bottom__text">
+                    Маркируется значком «видео» или «фото» в левом нижнем углу на фотографии
+                </div>
+                <div class="news-index-bottom__date">15 июля, 14:45</div>
+            </div>
+            <div class="news-index-bottom__btn">
+                <a href="javascript:;" class="btn-four">Все новости</a>
+            </div>
+        </div>
+
+        <div class="mb-50"></div>
+
+        <div class="h1">Все регионы</div>
+
+        <div class="news-index-middle">
+            <div class="news-index-left">
+                <a href="javascript:;" class="news-index-left__link pict-shadow">
+                    <img class="news-index-left__img" src="./local/uploads/news.left.jpg" alt="">
+                    <div class="news-index-left__block">
+                        <span class="news-index-left__name">Новостная журналистика — развлекательные редакционные материалы, которые отражают события всего любительского сообщества</span>
+                        <span class="news-index-left__date">Сегодня, 14:45</span>
+                    </div>
+                </a>
+            </div>
+            <div class="news-index-right">
+                <a href="javascript:;" class="news-index-right__pict pict-shadow">
+                    <img class="news-index-right__img" src="./local/uploads/news.right.1.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-right__name">Заголовок для новостей не больше четырёх строк. Общее количеством знаках с пробелами: девяносто буквенных символов</a>
+                <div class="news-index-right__text">Лид — ведущий или главный абзац статье. В аннотации, кратко формулируется проблема, раскрывается суть заголовка. Не больше 110 знаков</div>
+                <div class="news-index-right__date">Вчера, 14:45</div>
+            </div>
+            <div class="news-index-right">
+                <a href="javascript:;" class="news-index-right__pict pict-shadow">
+                    <span class="lighthouse-label">звезда</span>
+                    <img class="news-index-right__img" src="./local/uploads/news.right.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-right__name">Лучше делать заголовки не больше двух или трех строк, в конце заголовки и лида не ставятся точки</a>
+                <div class="news-index-right__text">Лучше делать Лид не больше трех, четырех строк. Лиды усиливают заголовок, но так же могут оттолкнуть от прочтения статьи</div>
+                <div class="news-index-right__date">
+                    Вчера, 10:00
+                    <svg class="icon-video">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-index-bottom d-none d-sm-flex">
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новостные блоки могут содержать любой вид контента: новость, видео и фото
+                </a>
+                <div class="news-index-bottom__text">
+                    Новости могут дополнительно «тегироваться» по рубрикам и помечаются соответствующей иконкой
+                </div>
+                <div class="news-index-bottom__date">12 августа, 14:30</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Если новость содержит большое количество фотографий, но при этом не является отдельными альбомом
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">
+                    3 августа, 11:00
+                    <svg class="icon-photo">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.3.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    В статье есть вставка «видео», но при этом новость не состоит из одного видео
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">23 июля, 17:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.4.jpg" alt="">
+                    <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новость которая содержит только альбом или видео с небольшим описанием
+                </a>
+                <div class="news-index-bottom__text">
+                    Маркируется значком «видео» или «фото» в левом нижнем углу на фотографии
+                </div>
+                <div class="news-index-bottom__date">15 июля, 14:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новостные блоки могут содержать любой вид контента: новость, видео и фото
+                </a>
+                <div class="news-index-bottom__text">
+                    Новости могут дополнительно «тегироваться» по рубрикам и помечаются соответствующей иконкой
+                </div>
+                <div class="news-index-bottom__date">12 августа, 14:30</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Если новость содержит большое количество фотографий, но при этом не является отдельными альбомом
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">
+                    3 августа, 11:00
+                    <svg class="icon-photo">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.3.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    В статье есть вставка «видео», но при этом новость не состоит из одного видео
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">23 июля, 17:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.4.jpg" alt="">
+                    <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новость которая содержит только альбом или видео с небольшим описанием
+                </a>
+                <div class="news-index-bottom__text">
+                    Маркируется значком «видео» или «фото» в левом нижнем углу на фотографии
+                </div>
+                <div class="news-index-bottom__date">15 июля, 14:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новостные блоки могут содержать любой вид контента: новость, видео и фото
+                </a>
+                <div class="news-index-bottom__text">
+                    Новости могут дополнительно «тегироваться» по рубрикам и помечаются соответствующей иконкой
+                </div>
+                <div class="news-index-bottom__date">12 августа, 14:30</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.2.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Если новость содержит большое количество фотографий, но при этом не является отдельными альбомом
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">
+                    3 августа, 11:00
+                    <svg class="icon-photo">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.3.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    В статье есть вставка «видео», но при этом новость не состоит из одного видео
+                </a>
+                <div class="news-index-bottom__text">
+                    На таком типе новостей указывается соответствующая иконка после даты и времени
+                </div>
+                <div class="news-index-bottom__date">23 июля, 17:45</div>
+            </div>
+            <div class="news-index-bottom__item">
+                <a href="javascript:;" class="news-index-bottom__pict pict-shadow">
+                    <img class="news-index-bottom__img" src="./local/uploads/news.bottom.4.jpg" alt="">
+                    <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#photo"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="news-index-bottom__name">
+                    Новость которая содержит только альбом или видео с небольшим описанием
+                </a>
+                <div class="news-index-bottom__text">
+                    Маркируется значком «видео» или «фото» в левом нижнем углу на фотографии
+                </div>
+                <div class="news-index-bottom__date">15 июля, 14:45</div>
+            </div>
+            <div class="news-index-bottom__btn">
+                <a href="javascript:;" class="btn-four">Все новости</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

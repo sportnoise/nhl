@@ -32,6 +32,7 @@
 @import "./elem/search.panel"; // Панель фильтров
 @import "./elem/letters.panel"; // Поиск во буквам
 @import "./elem/panel.btn"; // Панель кнопок
+@import "./elem/panel.rubric"; // Панель рубрик
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -103,3 +104,6 @@
 
 // Медальный зачёт
 @import "./pages/medal/table"; // Таблица
+
+// Все новости
+@import "./pages/news.list/head"; // Шапка страницы

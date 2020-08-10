@@ -24,11 +24,19 @@
             font-size: 19px;
             line-height: 26px;
             letter-spacing: .19px;
+            display: block;
 
+            &:visited {
+                color: var(--link);
+            }
             &:hover {
                 color: var(--black);
                 text-decoration: underline;
             }
+        }
+        &__btn {
+            text-align: center;
+            width: 100%;
         }
     }
     &-middle {
@@ -157,6 +165,10 @@
             letter-spacing: .2px;
             display: flex;
             align-items: center;
+        }
+        &__btn {
+            width: 100%;
+            text-align: center;
         }
     }
     &__btns {

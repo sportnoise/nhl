@@ -3,6 +3,14 @@
     padding: 35px 35px 45px 105px;
     border-radius: 4px;
 }
+.white-bg {
+    background-color: var(--white);
+    padding: 35px 0 80px;
+}
+.grey-bg {
+    background-color: var(--blacksuper);
+    padding: 60px 0;
+}
 
 @include media-breakpoint-down(lg)
 {
