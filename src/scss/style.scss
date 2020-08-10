@@ -47,7 +47,6 @@
 @import "./template/menu.footer"; // Меню подвала
 @import "./template/window"; // Всплывающие окна
 @import "./template/menu.mobile"; // Меню на мобильнике
-@import "./template/aside.right"; // Правая область
 
 // Главная страница
 @import "./pages/index/slider"; // Главный слайдер
@@ -60,6 +59,14 @@
 @import "./pages/index/video"; // Видео
 @import "./pages/index/photo"; // Альбомы
 @import "./pages/index/we.hockey"; // Мы — хоккейная страна
+
+// Правый блок
+@import "./aside/main"; // Общий стиль
+@import "./aside/table"; // Таблицы
+@import "./aside/news"; // Новости
+@import "./aside/article"; // Статьи
+@import "./aside/photo"; // Фото
+@import "./aside/subscription"; // Подписка
 
 // Скоро всё заработает
 @import "./pages/soon/block"; // Блок

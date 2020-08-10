@@ -3,16 +3,22 @@
     line-height: 20px;
     letter-spacing: .23px;
     margin: 0 0 50px;
-    padding: 40px 0 0;
 
+    &_pt {
+        padding: 40px 0 0;
+    }
     p {
         margin: 0 0 8px;
+    }
+    hr {
+        height: 1px;
+        margin: 20px 0;
     }
 
     @include media-breakpoint-down(md)
     {
         & {
-            padding: 0;
+            display: none;
         }
     }
 }
