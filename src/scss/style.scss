@@ -33,6 +33,7 @@
 @import "./elem/letters.panel"; // Поиск во буквам
 @import "./elem/panel.btn"; // Панель кнопок
 @import "./elem/panel.rubric"; // Панель рубрик
+@import "./elem/page.navigation"; // Постраничная навигация
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -107,3 +108,7 @@
 
 // Все новости
 @import "./pages/news.list/head"; // Шапка страницы
+
+// Фото и видео
+@import "./pages/photo.video/head"; // Шапка страницы
+@import "./pages/photo.video/list"; // Список

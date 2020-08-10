@@ -18,6 +18,8 @@
 <a href="https://sportnoise.github.io/nhl/dist/medal-three.html">Медальный зачёт по игрокам</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/medal-four.html">Медальный зачёт по трофеям</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/news-list.html">Все новости (Список новостей)</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/photo-list.html">Все фото (Список фото)</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/video-list.html">Все видео (Список видео)</a><br>
 
 <hr>
 

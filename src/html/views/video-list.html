@@ -1,0 +1,275 @@
+<% var data = {
+    title: "Video list",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Новости
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Видео
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Фото
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="white-bg mb-45">
+    <div class="container">
+
+        <div class="mb-20">
+            <h1 class="h-no-margin">Видео</h1>
+        </div>
+
+        <div class="photo-video-head">
+
+            <div class="tabs-panel">
+                <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Новые видео</a>
+                <a href="javascript:;" class="tabs-panel__link">Хоккейная страна</a>
+                <a href="javascript:;" class="tabs-panel__link">Сторона хоккея</a>
+                <a href="javascript:;" class="tabs-panel__link">Моя команда</a>
+                <a href="javascript:;" class="tabs-panel__link">Студёный Лёд</a>
+                <a href="javascript:;" class="tabs-panel__link">Гала-Матч</a>
+            </div>
+
+            <a href="javascript:;" class="link-str d-none d-lg-block">
+                Трансляции
+                <svg class="link-str__icon">
+                    <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                </svg>
+            </a>
+
+        </div>
+
+        <div class="photo-video-list">
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">27 августа, 22:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">2 июля, 9:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">26 июля, 17:15</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">27 августа, 22:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">2 июля, 9:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">26 июля, 17:15</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">27 августа, 22:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">2 июля, 9:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">26 июля, 17:15</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">27 августа, 22:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">2 июля, 9:00</div>
+            </div>
+            <div class="photo-video-list__item">
+                <a href="javascript:;" class="photo-video-list__pict pict-shadow">
+                    <img class="photo-video-list__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                    <svg class="icon-video icon-all_white icon-all_left-bottom">
+                        <use xlink:href="./local/img/sprite.svg#video"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="photo-video-list__name">
+                    Все тематические фотоальбомы, кроме альбомов матчей, которые собраны на другой странице
+                </a>
+                <div class="photo-video-list__text">
+                    Альбомы должны содержать краткое описание, подводку, пояснение
+                </div>
+                <div class="photo-video-list__date">26 июля, 17:15</div>
+            </div>
+        </div>
+
+        <div class="page-navigation">
+            <a href="javascript:;" class="page-navigation__link">1</a>
+            <span class="page-navigation__current">2</span>
+            <a href="javascript:;" class="page-navigation__link">3</a>
+            <a href="javascript:;" class="page-navigation__link">4</a>
+            <a href="javascript:;" class="page-navigation__link">5</a>
+            <a href="javascript:;" class="page-navigation__link d-none d-md-flex">6</a>
+            <a href="javascript:;" class="page-navigation__link d-none d-md-flex">7</a>
+            <a href="javascript:;" class="page-navigation__link d-none d-md-flex">8</a>
+            <a href="javascript:;" class="page-navigation__link d-none d-md-flex">9</a>
+            <a href="javascript:;" class="page-navigation__link d-none d-md-flex">10</a>
+            <a href="javascript:;" class="page-navigation__link page-navigation__link_dot">. . .</a>
+            <a href="javascript:;" class="page-navigation__link">25</a>
+        </div>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

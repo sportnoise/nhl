@@ -1,0 +1,13 @@
+.photo-video-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 50px;
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 0 0 30px;
+        }
+    }
+}
