@@ -38,6 +38,13 @@
             text-align: center;
             width: 100%;
         }
+
+        @include media-breakpoint-down(lg)
+        {
+            &__btn {
+                margin: 0 0 40px;
+            }
+        }
     }
     &-middle {
         display: flex;
