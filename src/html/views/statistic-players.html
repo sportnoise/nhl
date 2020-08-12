@@ -1,0 +1,330 @@
+<% var data = {
+    title: "Statistic players",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Регионы
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Рейтинг
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Все команды
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Все игроки
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Относительная статистика</h1>
+
+                <div class="teams-filter filter-panel mb-20">
+                    <div class="filter-panel__part filter-panel__part_90">
+                        <select class="select-btn">
+                            <option selected disabled>IX. 19/20</option>
+                            <option value="">VIII. 18/19</option>
+                            <option value="">VII. 17/18</option>
+                            <option value="">VI. 16/17</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_145 d-none d-md-block">
+                        <select class="select-btn">
+                            <option selected disabled>Конференция</option>
+                            <option value="">Конференция #1</option>
+                            <option value="">Конференция с названием</option>
+                            <option value="">Конференция с очень длинным названием</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part teams-filter__calc d-none d-md-block">
+                        <select class="select-btn">
+                            <option selected disabled>Регион</option>
+                            <option value="">Регион #1</option>
+                            <option value="">Регион #2</option>
+                            <option value="">Регион #3</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_145">
+                        <div class="checkbox-icon">
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked>
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                    <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                    <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                    <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-panel__part regions-filter__calc d-md-none"></div>
+                    <div class="filter-panel__part filter-panel__part_50">
+                        <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                    </div>
+                </div>
+
+                <div class="panel-btn">
+                    <a href="javascript:;" class="panel-btn__link">По командам</a>
+                    <a href="javascript:;" class="panel-btn__link panel-btn__link_active">По игрокам</a>
+                </div>
+
+                <div class="h2">Общая рейтинговая таблица по игрокам</div>
+
+                <div class="statistic-table">
+                    <table class="table-one table-one_center">
+                        <thead>
+                            <tr>
+                                <th class="table-one__text-center">
+                                    <span class="table-one__rotate">Рейтинг</span>
+                                </th>
+                                <th class="table-one__text-left">
+                                    Игрок
+                                </th>
+                                <th class="table-one__text-left d-none d-md-table-cell">
+                                    Регион<br>
+                                    Город
+                                </th>
+                                <th class="d-none d-md-table-cell">
+                                    <span class="table-one__rotate">Дивизион</span>
+                                </th>
+                                <th class="d-none d-md-table-cell">
+                                    Ш
+                                </th>
+                                <th class="d-none d-md-table-cell">
+                                    П
+                                </th>
+                                <th>
+                                    Г
+                                </th>
+                                <th>
+                                    О
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-one__sort">
+                                <td class="table-one__text-center">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="table-one__text-left">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="table-one__text-left d-none d-md-table-cell">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-sort">
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                        <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">1</td>
+                                <td class="table-one__text-left table-one__bold">Абадонов Михаил</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Алтайский край
+                                    <div class="table-one__light">Южно-Сахалинск</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">2</td>
+                                <td class="table-one__text-left table-one__bold">Бабайлов Андрей</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Алтайский край
+                                    <div class="table-one__light">Александровский р-н</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">3</td>
+                                <td class="table-one__text-left table-one__bold">Вавилов Владимир</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Алтайский край
+                                    <div class="table-one__light">Южно-Сахалинск</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">4</td>
+                                <td class="table-one__text-left table-one__bold">Вавренюк Михаил</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Амурская область
+                                    <div class="table-one__light">Железногорск</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">5</td>
+                                <td class="table-one__text-left table-one__bold">Габдрахманов Артём</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Архангельская область
+                                    <div class="table-one__light">Комсомольск-на-Амуре</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
