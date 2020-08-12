@@ -1,0 +1,17 @@
+.final-position-head {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 35px 0 60px;
+
+    &__pict {
+        width: 185px;
+    }
+    &__img {
+        display: block;
+        margin: auto;
+    }
+    &__text {
+        width: calc(100% - 210px);
+    }
+}

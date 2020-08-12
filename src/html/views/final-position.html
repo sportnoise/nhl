@@ -1,0 +1,248 @@
+<% var data = {
+    title: "Final position",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль Хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Призёры
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Итоговое положение команд
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Медальный зачёт
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Итоговое положение команд</h1>
+
+                <div class="panel-btn">
+                    <a href="javascript:;" class="panel-btn__link">IX.</a>
+                    <a href="javascript:;" class="panel-btn__link panel-btn__link_active">VIII.</a>
+                    <a href="javascript:;" class="panel-btn__link">VII.</a>
+                    <a href="javascript:;" class="panel-btn__link">VI.</a>
+                    <a href="javascript:;" class="panel-btn__link">V.</a>
+                    <a href="javascript:;" class="panel-btn__link">IV.</a>
+                    <a href="javascript:;" class="panel-btn__link">III.</a>
+                    <a href="javascript:;" class="panel-btn__link">II.</a>
+                    <a href="javascript:;" class="panel-btn__link">I.</a>
+                </div>
+
+                <div class="final-position-head">
+                    <div class="final-position-head__pict">
+                        <img class="final-position-head__img" src="./local/uploads/final.position.jpg" alt="">
+                    </div>
+                    <div class="final-position-head__text">
+                        <div class="h2">VIII Всероссийский Фестиваль по хоккею среди любительских команд</div>
+                    </div>
+                </div>
+
+                <div class="h2">Лига Чемпионов</div>
+
+                <table class="table-one">
+                    <thead>
+                        <tr>
+                            <th>Место</th>
+                            <th>Команда</th>
+                            <th class="d-none d-md-table-cell">Регион</th>
+                            <th>
+                                <div class="d-md-none">Регион</div>
+                                Город
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                                <span class="table-one__num">
+                                    <img class="medal-table__icon" src="./local/img/icon.gold.c.svg" alt="">
+                                </span>
+                            </td>
+                            <td class="table-one__bold">А Мега</td>
+                            <td class="table-one__small d-none d-md-table-cell">Южно-Сахалинск</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Тюменская область</div>
+                                <div class="d-md-none">Черноголовка</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2-3
+                                <span class="table-one__num">
+                                    <img class="medal-table__icon" src="./local/img/icon.silver.c.svg" alt="">
+                                </span>
+                            </td>
+                            <td class="table-one__bold">Баня на Карбышева</td>
+                            <td class="table-one__small d-none d-md-table-cell">Черноголовка</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Республика Северная Осетия</div>
+                                <div class="d-md-none">Черноголовка</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2-3
+                                <span class="table-one__num">
+                                    <img class="medal-table__icon" src="./local/img/icon.bronze.c.svg" alt="">
+                                </span>
+                            </td>
+                            <td class="table-one__bold">Ак Барс страхование</td>
+                            <td class="table-one__small d-none d-md-table-cell">Великий Новгород</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Забайкальский край</div>
+                                <div class="d-md-none">Великий Новгород</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4-6</td>
+                            <td class="table-one__bold">Башкирские Беркуты</td>
+                            <td class="table-one__small d-none d-md-table-cell">Железногорск</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Республика Башкортостан</div>
+                                <div class=" d-md-none">Железногорск</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="table-one__bold">Белый Шквал Север</td>
+                            <td class="table-one__small d-none d-md-table-cell">пгт. Шексна</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Новосибирская область</div>
+                                <div class="d-md-none">пгт. Шексна</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mb-50"></div>
+
+                <div class="h2">Лига Чемпионов — малый кубок</div>
+
+                <table class="table-one">
+                    <thead>
+                        <tr>
+                            <th>Место</th>
+                            <th>Команда</th>
+                            <th class="d-none d-md-table-cell">Регион</th>
+                            <th>
+                                <div class="d-md-none">Регион</div>
+                                Город
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                                <span class="table-one__num">
+                                    <img class="medal-table__icon" src="./local/img/icon.gold.c.svg" alt="">
+                                </span>
+                            </td>
+                            <td class="table-one__bold">А Мега</td>
+                            <td class="table-one__small d-none d-md-table-cell">Южно-Сахалинск</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Тюменская область</div>
+                                <div class="d-md-none">Черноголовка</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2-3
+                                <span class="table-one__num">
+                                    <img class="medal-table__icon" src="./local/img/icon.silver.c.svg" alt="">
+                                </span>
+                            </td>
+                            <td class="table-one__bold">Баня на Карбышева</td>
+                            <td class="table-one__small d-none d-md-table-cell">Черноголовка</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Республика Северная Осетия</div>
+                                <div class="d-md-none">Черноголовка</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2-3
+                                <span class="table-one__num">
+                                    <img class="medal-table__icon" src="./local/img/icon.bronze.c.svg" alt="">
+                                </span>
+                            </td>
+                            <td class="table-one__bold">Ак Барс страхование</td>
+                            <td class="table-one__small d-none d-md-table-cell">Великий Новгород</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Забайкальский край</div>
+                                <div class="d-md-none">Великий Новгород</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4-6</td>
+                            <td class="table-one__bold">Башкирские Беркуты</td>
+                            <td class="table-one__small d-none d-md-table-cell">Железногорск</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Республика Башкортостан</div>
+                                <div class=" d-md-none">Железногорск</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="table-one__bold">Белый Шквал Север</td>
+                            <td class="table-one__small d-none d-md-table-cell">пгт. Шексна</td>
+                            <td class="table-one__small">
+                                <div class="table-one__light">Новосибирская область</div>
+                                <div class="d-md-none">пгт. Шексна</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
