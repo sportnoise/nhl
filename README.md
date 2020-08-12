@@ -24,6 +24,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/broadcast.html">Трансляции</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/album.html">Альбомы матчей</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/arbitrators.html">Арбитры</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/statistic-teams.html">Общая рейтинговая таблица по командам</a><br>
 
 <hr>
 
