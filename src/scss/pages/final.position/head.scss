@@ -14,4 +14,20 @@
     &__text {
         width: calc(100% - 210px);
     }
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            flex-direction: column;
+            margin: 20px 0 40px;
+
+            &__pict {
+                width: 100%;
+                margin: 0 0 15px;
+            }
+            &__text {
+                width: 100%;
+            }
+        }
+    }
 }

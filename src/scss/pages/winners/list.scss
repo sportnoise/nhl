@@ -1,0 +1,69 @@
+.winners-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 20px;
+
+    &__item {
+        width: 25%;
+        padding: 0 15px;
+        margin: 0 0 50px;
+    }
+    &__title {
+        margin: 0 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon {
+        height: 32px;
+        width: 32px;
+    }
+    &__place {
+        color: var(--link);
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        width: calc(100% - 45px);
+    }
+    &__pict {
+        height: 110px;
+        margin: 0 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        display: block;
+        max-height: 100%;
+    }
+    &__name {
+        color: var(--blacksuper);
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: .26px;
+        line-height: 20px;
+    }
+    &__desc {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: .2px;
+    }
+    &__team {
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: .2px;
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        &__item {
+            width: calc(100% / 3);
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__item {
+            width: 50%;
+        }
+    }
+}

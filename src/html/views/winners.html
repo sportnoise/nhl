@@ -1,0 +1,395 @@
+<% var data = {
+    title: "Winners",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль Хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Призёры
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Итоговое положение команд
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Медальный зачёт
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Призёры</h1>
+
+                <div class="panel-btn">
+                    <a href="javascript:;" class="panel-btn__link">IX.</a>
+                    <a href="javascript:;" class="panel-btn__link panel-btn__link_active">VIII.</a>
+                    <a href="javascript:;" class="panel-btn__link">VII.</a>
+                    <a href="javascript:;" class="panel-btn__link">VI.</a>
+                    <a href="javascript:;" class="panel-btn__link">V.</a>
+                    <a href="javascript:;" class="panel-btn__link">IV.</a>
+                    <a href="javascript:;" class="panel-btn__link">III.</a>
+                    <a href="javascript:;" class="panel-btn__link">II.</a>
+                    <a href="javascript:;" class="panel-btn__link">I.</a>
+                </div>
+
+                <div class="final-position-head">
+                    <div class="final-position-head__pict">
+                        <img class="final-position-head__img" src="./local/uploads/final.position.jpg" alt="">
+                    </div>
+                    <div class="final-position-head__text">
+                        <div class="h2 mb-0">VIII Всероссийский Фестиваль по хоккею среди любительских команд</div>
+                    </div>
+                </div>
+
+                <div class="h1">Лига Чемпионов 40+</div>
+
+                <div class="winners-list">
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.gold.c.svg" alt="">
+                            <div class="winners-list__place">Золотой<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.1.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Скон-Урал
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            Екатеринбург
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев<br>
+                            Евгений Фуголь<br>
+                            Павел Шайкин
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.silver.c.svg" alt="">
+                            <div class="winners-list__place">Серебряный<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.2.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Запад России
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            Калининград
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев<br>
+                            Евгений Фуголь<br>
+                            Павел Шайкин
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.bronze.c.svg" alt="">
+                            <div class="winners-list__place">Бронзовый<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.3.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Торнадо
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            Казань
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев<br>
+                            Евгений Фуголь<br>
+                            Павел Шайкин
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.bronze.c.svg" alt="">
+                            <div class="winners-list__place">Бронзовый<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.4.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Монолит
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            Нижний Новгород
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h1">Лига Мечты</div>
+
+                <div class="winners-list">
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.gold.c.svg" alt="">
+                            <div class="winners-list__place">Золотой<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.5.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Марс Волхов
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            Волхов<br>
+                            Ленинградская область
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев<br>
+                            Евгений Фуголь<br>
+                            Павел Шайкин
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.silver.c.svg" alt="">
+                            <div class="winners-list__place">Серебряный<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.6.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Вольфрам-Б
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            п. Восток<br>
+                            Приморский край
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев<br>
+                            Евгений Фуголь<br>
+                            Павел Шайкин
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                    <div class="winners-list__item">
+                        <div class="winners-list__title">
+                            <img class="winners-list__icon" src="./local/img/icon.bronze.c.svg" alt="">
+                            <div class="winners-list__place">Бронзовый<br>призёр</div>
+                        </div>
+                        <div class="winners-list__pict">
+                            <img class="winners-list__img" src="./local/uploads/winners.7.jpg" alt="">
+                        </div>
+                        <div class="winners-list__name">
+                            Стальные Топоры
+                        </div>
+                        <div class="winners-list__desc mb-30">
+                            Магнитогорск<br>
+                            &nbsp;
+                        </div>
+                        <div class="winners-list__team mb-30">
+                            Эдуард Акмалутдинов<br>
+                            Владимир Александров<br>
+                            Олег Асеев<br>
+                            Иван Банных<br>
+                            Василий Букетов<br>
+                            Вадим Елсаков<br>
+                            Константин Колясников<br>
+                            Роман Королев<br>
+                            Денис Мельников<br>
+                            Андрей Немытых<br>
+                            Денис Николаев<br>
+                            Алексей Патрушев<br>
+                            Андрей Попов<br>
+                            Евгений Скоринов<br>
+                            Евгений Сыропятов<br>
+                            Владимир Тропицын<br>
+                            Алексей Тютяев<br>
+                            Евгений Фуголь<br>
+                            Павел Шайкин
+                        </div>
+                        <div class="winners-list__desc">
+                            Тренер
+                        </div>
+                        <div class="winners-list__team">
+                            Василий Желтышев
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
