@@ -9,6 +9,11 @@
         margin: 0 0 30px;
     }
     &__bottom {
-        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__file {
+        margin: 0 15px 0 0;
     }
 }

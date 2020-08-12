@@ -29,6 +29,7 @@ $(function() {
 
     // Стилизация элементов
     $('.select-btn').styler();
+    $('.file-input').styler();
 
     // Выбор даты
     $('.our-datepicker').datepicker({
