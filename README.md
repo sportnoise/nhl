@@ -26,6 +26,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/arbitrators.html">Арбитры</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/statistic-teams.html">Общая рейтинговая таблица по командам</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/statistic-players.html">Общая рейтинговая таблица по игрокам</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/final-position.html">Итоговое положение команд</a><br>
 
 <hr>
 
