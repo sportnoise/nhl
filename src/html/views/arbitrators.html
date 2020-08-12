@@ -1,0 +1,218 @@
+<% var data = {
+    title: "Arbitrators",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Матчи
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Трансляции
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Альбомы матчей
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Арбитры
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Арбитры</h1>
+
+                <div class="arbitrators-region">
+                    <div class="arbitrators-region__pict">
+                        <img class="arbitrators-region__img" src="./local/uploads/arbitrators.region.jpg" alt="">
+                    </div>
+                    <div class="arbitrators-region__right">
+                        <select id="region-select" class="arbitrators-region__select">
+                            <option selected>Свердловская область</option>
+                            <option>Свердловская область</option>
+                            <option>Свердловская область</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="arbitrators-list">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Букин Владимир<br>
+                                        Валентинович
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        17 февраля 1976
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Бирюков Андрей<br>
+                                        Николаевич
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        10 июня 1977
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Букин Владимир<br>
+                                        Валентинович
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        17 февраля 1976
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Бирюков Андрей<br>
+                                        Николаевич
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        10 июня 1977
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Букин Владимир<br>
+                                        Валентинович
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        17 февраля 1976
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Бирюков Андрей<br>
+                                        Николаевич
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        10 июня 1977
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Букин Владимир<br>
+                                        Валентинович
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        17 февраля 1976
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="arbitrators-list__item">
+                                <div class="arbitrators-list__pict">
+                                    <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="">
+                                </div>
+                                <div class="arbitrators-list__info">
+                                    <div class="arbitrators-list__name">
+                                        Бирюков Андрей<br>
+                                        Николаевич
+                                    </div>
+                                    <div class="arbitrators-list__date">
+                                        10 июня 1977
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arbitrators-list__btn">
+                        <a href="javascript:;" class="btn-four">Показать еще</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

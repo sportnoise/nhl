@@ -1,0 +1,19 @@
+.arbitrators-region {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px;
+
+    &__pict {
+        margin: 0 25px 0 0;
+    }
+    &__img {
+        display: block;
+    }
+    &__select {
+        color: var(--link);
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        border: none;
+    }
+}

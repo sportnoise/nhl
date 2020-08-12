@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>Ночная Хоккейная Лига - Players table</title>
+        <title>Ночная Хоккейная Лига - Arbitrators</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <link href="./local/template_styles.css?e7848c4eab64704c1f56" rel="stylesheet" />
     </head>
@@ -231,22 +231,16 @@
                 <div class="container">
                     <div class="menu-section__block">
                         <a href="javascript:;" class="menu-section__link">
-                            Регионы
+                            Матчи
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Таблица
+                            Трансляции
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Призёры
-                        </a>
-                        <a href="javascript:;" class="menu-section__link">
-                            Победители
-                        </a>
-                        <a href="javascript:;" class="menu-section__link">
-                            Все команды
+                            Альбомы матчей
                         </a>
                         <a href="javascript:;" class="menu-section__link menu-section__link_active">
-                            Все игроки
+                            Арбитры
                         </a>
                     </div>
                 </div>
@@ -256,206 +250,154 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="white-block mb-45">
-                            <h1>Все игроки Ночной Лиги</h1>
+                            <h1>Арбитры</h1>
 
-                            <div class="search-panel">
-                                <form>
-                                    <div class="search-panel__form">
-                                        <input class="search-panel__input" type="text" value="" />
-                                        <button class="search-panel__submit">
-                                            <svg class="search-panel__submit-icon">
-                                                <use xlink:href="./local/img/sprite.svg#loop"></use>
-                                            </svg>
-                                        </button>
-                                        <label class="search-panel__label">Укажите фамилию или имя игрока</label>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="letters-panel d-none d-sm-flex">
-                                <a href="javascript:;" class="letters-panel__link">А</a>
-                                <a href="javascript:;" class="letters-panel__link">Б</a>
-                                <a href="javascript:;" class="letters-panel__link letters-panel__link_active">В</a>
-                                <a href="javascript:;" class="letters-panel__link">Г</a>
-                                <a href="javascript:;" class="letters-panel__link">Д</a>
-                                <a href="javascript:;" class="letters-panel__link">Е</a>
-                                <a href="javascript:;" class="letters-panel__link">Ж</a>
-                                <a href="javascript:;" class="letters-panel__link">З</a>
-                                <a href="javascript:;" class="letters-panel__link">И</a>
-                                <a href="javascript:;" class="letters-panel__link">К</a>
-                                <a href="javascript:;" class="letters-panel__link">Л</a>
-                                <a href="javascript:;" class="letters-panel__link">М</a>
-                                <a href="javascript:;" class="letters-panel__link">Н</a>
-                                <a href="javascript:;" class="letters-panel__link">О</a>
-                                <a href="javascript:;" class="letters-panel__link">П</a>
-                                <a href="javascript:;" class="letters-panel__link">Р</a>
-                                <a href="javascript:;" class="letters-panel__link">С</a>
-                                <a href="javascript:;" class="letters-panel__link">Т</a>
-                                <a href="javascript:;" class="letters-panel__link">У</a>
-                                <a href="javascript:;" class="letters-panel__link">Ф</a>
-                                <a href="javascript:;" class="letters-panel__link">Х</a>
-                                <a href="javascript:;" class="letters-panel__link">Ц</a>
-                                <a href="javascript:;" class="letters-panel__link">Ч</a>
-                                <a href="javascript:;" class="letters-panel__link">Ш</a>
-                                <a href="javascript:;" class="letters-panel__link">Щ</a>
-                                <a href="javascript:;" class="letters-panel__link">Э</a>
-                                <a href="javascript:;" class="letters-panel__link">Ю</a>
-                                <a href="javascript:;" class="letters-panel__link">Я</a>
-                            </div>
-
-                            <div class="team-filter filter-panel">
-                                <div class="filter-panel__part filter-panel__part_90">
-                                    <select class="select-btn">
-                                        <option selected="selected" disabled="disabled">IX. 19/20</option>
-                                        <option value="">VIII. 18/19</option>
-                                        <option value="">VII. 17/18</option>
-                                        <option value="">VI. 16/17</option>
+                            <div class="arbitrators-region">
+                                <div class="arbitrators-region__pict">
+                                    <img class="arbitrators-region__img" src="./local/uploads/arbitrators.region.jpg" alt="" />
+                                </div>
+                                <div class="arbitrators-region__right">
+                                    <select id="region-select" class="arbitrators-region__select">
+                                        <option selected="selected">Свердловская область</option>
+                                        <option>Свердловская область</option>
+                                        <option>Свердловская область</option>
                                     </select>
-                                </div>
-                                <div class="filter-panel__part filter-panel__part_145 d-none d-md-block">
-                                    <select class="select-btn">
-                                        <option selected="selected" disabled="disabled">Конференция</option>
-                                        <option value="">Конференция #1</option>
-                                        <option value="">Конференция с названием</option>
-                                        <option value="">Конференция с очень длинным названием</option>
-                                    </select>
-                                </div>
-                                <div class="filter-panel__part team-filter__calc d-none d-md-block">
-                                    <select class="select-btn">
-                                        <option selected="selected" disabled="disabled">Регион</option>
-                                        <option value="">Регион #1</option>
-                                        <option value="">Регион #2</option>
-                                        <option value="">Регион #3</option>
-                                    </select>
-                                </div>
-                                <div class="filter-panel__part filter-panel__part_145">
-                                    <div class="checkbox-icon">
-                                        <label class="checkbox-icon__label">
-                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked="checked" />
-                                            <svg class="checkbox-icon__icon checkbox-icon__icon_f">
-                                                <use xlink:href="./local/img/sprite.num.svg#f"></use>
-                                            </svg>
-                                        </label>
-                                        <label class="checkbox-icon__label">
-                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
-                                            <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
-                                                <use xlink:href="./local/img/sprite.num.svg#lm"></use>
-                                            </svg>
-                                        </label>
-                                        <label class="checkbox-icon__label">
-                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
-                                            <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
-                                                <use xlink:href="./local/img/sprite.num.svg#ln"></use>
-                                            </svg>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="filter-panel__part regions-filter__calc d-md-none"></div>
-                                <div class="filter-panel__part filter-panel__part_50">
-                                    <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
                                 </div>
                             </div>
 
-                            <div class="teams-table">
-                                <table class="table-one">
-                                    <thead>
-                                        <tr>
-                                            <th class="d-none d-md-table-cell"></th>
-                                            <th>Игрок</th>
-                                            <th class="d-none d-md-table-cell">Команда</th>
-                                            <th>
-                                                Регион
-                                                <div class="d-md-none">Команда</div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="table-one__sort">
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                            <div class="arbitrators-list">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Букин Владимир<br />
+                                                    Валентинович
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                <div class="arbitrators-list__date">
+                                                    17 февраля 1976
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-sort">
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
-                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">40+</td>
-                                            <td>Абадонов Михаил</td>
-                                            <td class="d-none d-md-table-cell">А Мега</td>
-                                            <td>
-                                                Тюменская область
-                                                <div class="table-one__light d-md-none">А Мега</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">40+</td>
-                                            <td>Бабайлов Андрей</td>
-                                            <td class="d-none d-md-table-cell">Баня на Карбышева</td>
-                                            <td>
-                                                Республика Северная Осетия
-                                                <div class="table-one__light d-md-none">Баня на Карбышева</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">ЛМ</td>
-                                            <td>Вавилов Владимир</td>
-                                            <td class="d-none d-md-table-cell">Ак Барс страхование</td>
-                                            <td>
-                                                Забайкальский край
-                                                <div class="table-one__light d-md-none">Ак Барс страхование</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">40+</td>
-                                            <td>Вавренюк Михаил</td>
-                                            <td class="d-none d-md-table-cell">Башкирские Беркуты</td>
-                                            <td>
-                                                Республика Башкортостан
-                                                <div class="table-one__light d-md-none">Башкирские Беркуты</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-none d-md-table-cell">ЛН</td>
-                                            <td>Габдрахманов Артём</td>
-                                            <td class="d-none d-md-table-cell">Белый Шквал Север</td>
-                                            <td>
-                                                Новосибирская область
-                                                <div class="table-one__light d-md-none">Белый Шквал Север</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="teams-table__bottom">
-                                    <div class="teams-table__bottom-left"></div>
-                                    <div class="teams-table__bottom-center">
-                                        <a href="javascript:;" class="btn-four">Показать еще</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="teams-table__bottom-right">
-                                        <a href="javascript:;" class="link-str">
-                                            Все команды Ночной Лиги
-                                            <svg class="link-str__icon">
-                                                <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                                            </svg>
-                                        </a>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Бирюков Андрей<br />
+                                                    Николаевич
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    10 июня 1977
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Букин Владимир<br />
+                                                    Валентинович
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    17 февраля 1976
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Бирюков Андрей<br />
+                                                    Николаевич
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    10 июня 1977
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Букин Владимир<br />
+                                                    Валентинович
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    17 февраля 1976
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Бирюков Андрей<br />
+                                                    Николаевич
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    10 июня 1977
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.1.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Букин Владимир<br />
+                                                    Валентинович
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    17 февраля 1976
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="arbitrators-list__item">
+                                            <div class="arbitrators-list__pict">
+                                                <img class="arbitrators-list__img" src="./local/uploads/arbitrators.2.jpg" alt="" />
+                                            </div>
+                                            <div class="arbitrators-list__info">
+                                                <div class="arbitrators-list__name">
+                                                    Бирюков Андрей<br />
+                                                    Николаевич
+                                                </div>
+                                                <div class="arbitrators-list__date">
+                                                    10 июня 1977
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="arbitrators-list__btn">
+                                    <a href="javascript:;" class="btn-four">Показать еще</a>
                                 </div>
                             </div>
                         </div>
