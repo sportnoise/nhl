@@ -1,0 +1,13 @@
+.teams-filter {
+
+    &__calc {
+        width: calc(100% - 430px);
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__calc {
+            width: calc(100% - 285px);
+        }
+    }
+}

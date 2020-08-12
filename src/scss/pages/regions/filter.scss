@@ -1,0 +1,19 @@
+.regions-filter {
+
+    &__calc {
+        width: calc(100% - 640px);
+    }
+
+    @include media-breakpoint-between(md, lg)
+    {
+        &__calc {
+            width: calc(100% - 495px);
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__calc {
+            width: calc(100% - 195px);
+        }
+    }
+}
