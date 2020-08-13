@@ -1,0 +1,14 @@
+.news-detail-about {
+    color: var(--link);
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: .2px;
+    margin: 0 0 35px;
+
+    &__line {
+        display: flex;
+    }
+    &__first {
+        margin: 0 20px 0 0;
+    }
+}

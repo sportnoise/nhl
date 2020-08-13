@@ -1,0 +1,345 @@
+<% var data = {
+    title: "News list",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Новости
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Видео
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Фото
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+               <div class="title-back h1-and-link mb-30">
+                    <a href="javascript:;" class="title-back__back">
+                        <svg class="title-back__back-icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                    <div>
+                        <div class="lighthouse-label lighthouse-label_xl lighthouse-label_no-abs">Звезда</div>
+                    </div>
+                    <a href="javascript:;" class="link-str d-none d-lg-flex">
+                        Следующий материал
+                        <svg class="link-str__icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="block-width-md">
+                    <h1 class="mb-15">Игорь Николаенков: «Людей не обманешь. Они идут на зрелище, посмотреть на тех, кто играет с огоньком»</h1>
+                </div>
+
+                <div class="news-detail-about">
+                    <div class="news-detail-about__line">
+                        <span class="news-detail-about__first">Клуб: Алания</span>
+                        <span>Текст: Олег Морозов</span>
+                    </div>
+                    <div class="news-detail-about__line">
+                        <span class="news-detail-about__first">Ульяновская область</span>
+                        <span>6 июня, 11:00</span>
+                    </div>
+                </div>
+
+                <div class="tags-block">
+                    <div class="tags-block__title">Теги</div>
+                    <div class="tags-block__items">
+                        <a href="javascript:;" class="tags-block__item">Коронавирус</a>
+                        <a href="javascript:;" class="tags-block__item">Рекорд</a>
+                        <a href="javascript:;" class="tags-block__item">Традиции</a>
+                        <a href="javascript:;" class="tags-block__item">Чемпионы</a>
+                        <a href="javascript:;" class="tags-block__item">Капитан</a>
+                        <a href="javascript:;" class="tags-block__item">Легенда</a>
+                        <a href="javascript:;" class="tags-block__item">Кубок Крутова</a>
+                        <a href="javascript:;" class="tags-block__item">Александр Якушев</a>
+                        <a href="javascript:;" class="tags-block__item">Победитель</a>
+                        <a href="javascript:;" class="tags-block__item">Любительский хоккей</a>
+                        <a href="javascript:;" class="tags-block__item">Ночная Лига</a>
+                        <a href="javascript:;" class="tags-block__item">Тренер</a>
+                    </div>
+                </div>
+
+                <div class="block-width-lg mb-10">
+                    <img src="./local/uploads/news.detail.xl.jpg" alt="">
+                </div>
+
+                <div class="text-xs color-link mb-35">
+                    Фото: Николай Сафронов
+                </div>
+
+                <div class="block-width-md">
+
+                    <h2>«Рекорд» из Александрова Владимирской области — больше, чем просто любительская команда. Это настоящий спортивный клуб со своими традициями, многочисленными болельщиками и спортивными успехами</h2>
+
+                    <p>Рассказываем о взрослении одного из самых хоккейных посёлков России, где «второй папа» <a href="javascript:;">Альберт Акберов</a> открыл лучшую игру мира для десятков местных пацанов. Татарстан называют «хоккейным регионом», прежде всего, из-за таких фанатов, как основатель и капитан «Нефтяника» из Джалиля.</p>
+
+                    <p>Хоккейная команда «Нефтяник» с востока Татарстана довольно известна в Ночной Лиге. <span class="text-bg">На Финал Фестиваля в Сочи команда ездила трижды, один раз вернувшись в Джалиль с золотыми медалями победителей «Лиги Мечты».</span> Этих успехов не было бы без Альберта Мансафовича Акберова, который в 1994-м году начал на общественных началах тренировать команду семилетних мальчишек. Многие из них играют в «Нефтянике» до сих пор.</p>
+
+                    <p>Мы попросили игроков из Джалиля поделиться своими первыми хоккейными воспоминаниями и рассказать о том, как на них повлиял 60-летний капитан команды.</p>
+
+                    <div class="question-block">
+                        <div class="question-block__question">
+                            Вячеслав Николаевич, вы один из героев девятого сезона Ночной лиги.
+                        </div>
+                        <div class="question-block__answer">
+                            Да, мне передавали, звонили ребята из команды. Позвонили, сказали. А я: «Ну ладно, чего уж» (усмехается).
+                        </div>
+                        <div class="question-block__question">
+                            В матчах Ночной лиги перед этим сезоном вы давненько не забрасывали. Было ощущение «наконец-то»?
+                        </div>
+                        <div class="question-block__answer">
+                            (смеётся) Моё дело — не дать сопернику забросить! А забивать — этим другие люди занимаются. Это раньше, по молодости, где-то атакующим защитником был.
+                        </div>
+                        <div class="question-block__question">
+                            Ощущаете себя эдаким хоккейным долгожителем? Или на льду все равны?
+                        </div>
+                        <div class="question-block__answer">
+                            Мне без разницы! Я же со своими играю, катаюсь. Если бы чувствовал, что я хуже кого-то другого, то закончил бы выступать. Встал бы тогда за бортиком, командовал и всё. Но пока есть что-то, пока тянет на лёд… Легче быть на льду, в этой среде. Когда играешь — легче воспринимается всё, чем если со стороны стоишь и смотришь, интереснее.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="block-width-sm">
+
+                    <div class="slider-inner">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="slider-inner__item swiper-slide">
+                                    <img class="slider-inner__img" src="./local/uploads/slider.inner.jpg" alt="">
+                                </div>
+                                <div class="slider-inner__item swiper-slide">
+                                    <img class="slider-inner__img" src="./local/uploads/slider.inner.jpg" alt="">
+                                </div>
+                                <div class="slider-inner__item swiper-slide">
+                                    <img class="slider-inner__img" src="./local/uploads/slider.inner.jpg" alt="">
+                                </div>
+                                <div class="slider-inner__item swiper-slide">
+                                    <img class="slider-inner__img" src="./local/uploads/slider.inner.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-inner__bottom">
+                            <div class="slider-inner__titles">
+                                <div class="slider-inner__title js-title-1 slider-inner__title_active">Вратарь Дмитрий Гринин</div>
+                                <div class="slider-inner__title js-title-2">Дмитрий Гринин</div>
+                                <div class="slider-inner__title js-title-3">Фестиваль Ночной хоккейной лиги в Сочи продолжается</div>
+                                <div class="slider-inner__title js-title-4">Фестиваль Ночной хоккейной лиги в Сочи продолжается — на площадки пяти олимпийских арен на смену командам дивизионов</div>
+                            </div>
+                            <div class="slider-inner__count"></div>
+                            <div class="slider-inner__str">
+                                <a href="javascript:;" class="slider-inner__prev"></a>
+                                <a href="javascript:;" class="slider-inner__next"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="block-width-md">
+
+                    <h2 class="no-bold">Фестиваль Ночной хоккейной лиги в Сочи продолжается — на площадки пяти олимпийских арен на смену командам дивизионов «40+» теперь вышла молодежь «18+».</h2>
+
+                    <p>Но традиционно главное уже состоялось 10 мая: определены новые чемпионы и обладатели главного трофея любительского чемпионата страны - Кубка Крутова, которым перед началом Гала-матча сам Президент России</p>
+
+                    <div class="on-topic">
+                        <div class="on-topic__title">Материал по теме</div>
+                        <a href="javascript:;" class="on-topic__pict">
+                            <img class="on-topic__img" src="./local/uploads/news.detail.xs.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="on-topic__name">
+                            И вратарь! Самые надёжные голкиперы Ночной Лиги в IX сезоне
+                        </a>
+                    </div>
+
+                    <p>Владимир Путин вручил заветный «сертификат» на строительство ледовой арены в их городе. А затем глава Российского государства забросил девять шайб - словно отметив каждый из восьми прошедших сезонов Ночной Лиги и дав пас в будущее, в девятый сезон. «Спасибо вам за то, что вы своим примером вдохновляете миллионы людей на занятия спортом, физической культурой. Хочу поздравить победителей: команды - в третий раз из одного города, сегодня мы это обсуждали - из Екатеринбурга. Хочу пожелать вам успехов и сказать, что это действительно успех.</p>
+
+                    <p>Называемую «финальную пульку». Это большая конкуренция. Я видел, как играют так называемые любители - здорово, просто здорово!» - обратился со льда главной арены Фестиваля, в Ледовом дворце «Большой», Президент.</p>
+
+                </div>
+
+                <div class="block-width-lg">
+                    <blockquote>
+                        <p>
+                            Были надежды, что финал IX Всероссийского фестиваля Ночной хоккейной лиги в Сочи будет сдвинут на другие, более поздние сроки. К сожалению, после пресс-конференции исполнительного директора Фонда «НХЛ» Алексея Патракова, состоявшейся 2&nbsp;апреля, они исчезли
+                        </p>
+                        <div class="text-xs color-link">
+                            Нападающий «СМП» Андрей Георгиевич
+                        </div>
+                    </blockquote>
+                </div>
+
+                <div class="h2 no-bold bg-bg">
+                    Кстати, их противостояние получилось захватывающим и очень интересным. Как всегда, на матчах этих команд Дворец спорта в Архангельске был почти полон
+                </div>
+
+                <div class="block-width-md">
+
+                    <p>Называемую «финальную пульку». Это большая конкуренция. Я видел, как играют так называемые любители - здорово, просто здорово!» - обратился со льда главной арены Фестиваля, в Ледовом дворце «Большой», Президент.</p>
+
+                    <p>Называемую «финальную пульку». Это большая конкуренция. Я видел, как играют так называемые любители - здорово, просто здорово!» - обратился со льда главной арены Фестиваля, в Ледовом дворце «Большой», Президент.</p>
+
+                    <br><br><br><br><br><br><br>
+
+                    <h2 class="no-bold">
+                        Лучшие игроки сезона НХЛ в Архангельской области
+                    </h2>
+
+                    <b>Дивизион «Любитель 40+»</b>
+                    <p class="text-sm">
+                        Нападающий - Алексей Сайгин («Спартак»)<br>
+                        Защитник - Сергей Бытю («Беломорец»)<br>
+                        Вратарь - Лев Филатов («Спартак»)<br>
+                        Бомбардир - Андрей Щелоков («Спартак»)<br>
+                        Снайпер - Александр Харьков («Двина»)
+                    </p>
+                    <b>Дивизион «Лига Мечты»</b>
+                    <p class="text-sm">
+                        Нападающий - Владимир Мандрик («Соломбалец»)<br>
+                        Защитник - Андрей Суминов («Соломбалец»)<br>
+                        Вратарь - Юрий Пешков («СМП»)<br>
+                        Бомбардир - Даниил Лобанов («СМП»)<br>
+                        Снайпер - Антон Воронин («СМП»)
+                    </p>
+                    <b>Дивизион «Лига Надежды»</b>
+                    <p class="text-sm">
+                        Нападающий - Александр Ермилов («Ледокол»)<br>
+                        Защитник - Данила Клинков («Ледокол»)<br>
+                        Вратарь - Денис Нефедов («Ледокол»)<br>
+                        Бомбардир - Александр Загурский («УЛК»)<br>
+                        Снайпер - Виктор Ананьин («Ледокол»)
+                    </p>
+                    <p class="text-sm">
+                        Лучший арбитр - Александр Курбатов<br>
+                        Лучший арбитр в поле - Юрий Перхуров<br>
+                        Лучший арбитр за бортом - Илюс Султаншин
+                    </p>
+                </div>
+
+                <div class="find-error text-xs color-link">
+                    Нашли ошибку в тексте? — выделите нужный фрагмент и нажмите ctrl+enter
+                </div>
+
+                <div class="tags-block">
+                    <div class="tags-block__title">Теги</div>
+                    <div class="tags-block__items">
+                        <a href="javascript:;" class="tags-block__item">Коронавирус</a>
+                        <a href="javascript:;" class="tags-block__item">Рекорд</a>
+                        <a href="javascript:;" class="tags-block__item">Традиции</a>
+                        <a href="javascript:;" class="tags-block__item">Чемпионы</a>
+                        <a href="javascript:;" class="tags-block__item">Капитан</a>
+                        <a href="javascript:;" class="tags-block__item">Легенда</a>
+                        <a href="javascript:;" class="tags-block__item">Кубок Крутова</a>
+                        <a href="javascript:;" class="tags-block__item">Александр Якушев</a>
+                        <a href="javascript:;" class="tags-block__item">Победитель</a>
+                        <a href="javascript:;" class="tags-block__item">Любительский хоккей</a>
+                        <a href="javascript:;" class="tags-block__item">Ночная Лига</a>
+                        <a href="javascript:;" class="tags-block__item">Тренер</a>
+                    </div>
+                </div>
+
+                <div class="share-block">
+                    <div class="share-block__title">Поделиться материалом</div>
+                    <div class="share-block__items">
+
+                        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                        <script src="https://yastatic.net/share2/share.js"></script>
+
+                        <div class="ya-share2" data-services="facebook,vkontakte,odnoklassniki,whatsapp,telegram"></div>
+
+                    </div>
+                </div>
+
+                <div class="subscription-form">
+                    <div class="subscription-form__title">Подписка</div>
+                    <div class="subscription-form__desc">Рассылка только самых интересных новостей и важных события Ночной Лиги</div>
+                    <form>
+                        <div class="subscription-form__form">
+                            <input type="email" class="subscription-form__input" value="" placeholder="Оставьте ваш e-mail">
+                            <button type="submit" class="subscription-form__submit">Подписаться</button>
+                        </div>
+                    </form>
+                    <div class="subscription-form__info">Вы можете отписаться в любой момент, но тогда не узнаете главного</div>
+                </div>
+
+                <div class="news-list-short">
+                    <div class="news-list-short__title">Читай также</div>
+                    <div class="news-list-short__items">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="javascript:;" class="news-list-short__link">
+                                    Вячеслав Стетюха: «Пока есть силы, надо двигать шайбу к чужим воротам!»
+                                </a>
+                                <a href="javascript:;" class="news-list-short__link">
+                                    Ночная Лига представляет фильм «Сторона хоккейная: Удмуртская Республика» и рассказывает о его съемках. «Приезжайте к нам еще, ребята!»
+                                </a>
+                                <a href="javascript:;" class="news-list-short__link">
+                                    «Правила есть правила. Мы хотим, чтобы наш чемпионат был действительно любительским» - отчет о первой конференции Ночной Лиги
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="javascript:;" class="news-list-short__link">
+                                    Максим Клименко и «Марс-Волхов»: В Волхове просто с ума сходят по нашей команде!
+                                </a>
+                                <a href="javascript:;" class="news-list-short__link">
+                                    Алексей Смирнов: «В том году мы выиграли Малый Кубок. И за него нам будут строить дворец. Что нам будет за Кубок Мечты? Не знаю…»
+                                </a>
+                                <a href="javascript:;" class="news-list-short__link">
+                                    Игорь Бахмутов: На нашем Фестивале каждый раз - как в первый раз. Приглашаем всех!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

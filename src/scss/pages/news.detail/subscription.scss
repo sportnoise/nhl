@@ -1,0 +1,98 @@
+.subscription-form {
+    background: url(img/bg.subscription.jpg) no-repeat 50%;
+    margin: 0 0 50px -30px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 380px;
+    border-radius: 4px;
+
+    &__title {
+        color: var(--blacksuper);
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: .26px;
+        margin: 0 0 5px;
+    }
+    &__desc {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        margin: 0 0 25px;
+    }
+    &__form {
+        display: flex;
+        margin: 0 0 10px;
+    }
+    &__input {
+        width: 235px;
+        height: 40px;
+        background-color: var(--white);
+        font-size: 13px;
+        line-height: 17px;
+        color: var(--blacksuper);
+        padding: 0 15px;
+        border: 1px solid var(--white);
+        transition: all .3s;
+        margin: 0 10px 0 0;
+
+        &:focus,
+        &:hover {
+            border-color: var(--white_contur);
+        }
+    }
+    &__submit {
+        background-color: var(--blacksuper);
+        border-radius: 4px;
+        height: 40px;
+        position: relative;
+        border: none;
+        padding: 0 15px;
+        transition: all .3s;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        color: var(--white_contur);
+
+        &:hover {
+            background-color: var(--link);
+        }
+    }
+    &__info {
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+        color: var(--link);
+        max-width: 270px;
+    }
+
+    @include media-breakpoint-between(md, lg)
+    {
+        & {
+            padding: 0 0 0 300px;
+            margin: 0 0 50px;
+
+            &__input {
+                width: 180px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            padding: 20px;
+            margin: 0 -20px 30px;
+            height: auto;
+            background: var(--background);
+
+            &__desc {
+                margin: 0 0 15px;
+            }
+            &__input {
+                width: calc(100% - 145px);
+            }
+        }
+    }
+}

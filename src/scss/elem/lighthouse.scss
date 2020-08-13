@@ -12,10 +12,22 @@
     height: 16px;
     z-index: 2;
 
-    &_big {
+    &_lg {
         font-size: 15px;
         line-height: 24px;
         height: 26px;
         border-radius: 13px;
+    }
+    &_xl {
+        font-size: 15px;
+        line-height: 28px;
+        height: 30px;
+        border-radius: 15px;
+        padding: 0 15px;
+    }
+    &_no-abs {
+        position: static;
+        top: auto;
+        left: auto;
     }
 }

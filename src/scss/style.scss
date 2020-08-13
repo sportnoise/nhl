@@ -37,6 +37,8 @@
 @import "./elem/panel.rubric"; // Панель рубрик
 @import "./elem/page.navigation"; // Постраничная навигация
 @import "./elem/form.one"; // Стиль формы №1
+@import "./elem/tags.block"; // Облако тегов
+@import "./elem/share.block"; // Поделиться
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -113,6 +115,12 @@
 
 // Все новости
 @import "./pages/news.list/head"; // Шапка страницы
+
+// Новость детально
+@import "./pages/news.detail/about"; // Информация о новости
+@import "./pages/news.detail/subscription"; // Форма подписки
+@import "./pages/news.detail/news.list.short"; // Короткий список новостей
+@import "./pages/news.detail/slider.inner"; // Слайдер
 
 // Фото и видео
 @import "./pages/photo.video/head"; // Шапка страницы

@@ -208,5 +208,37 @@ $(function() {
         });
     }
 
+    // Слайдер таблиц
     new TableSlider();
+
+    $('.slider-inner').each(function(){
+
+        let elem = $(this);
+
+        let count = elem.find('.slider-inner__item').length;
+
+        elem.find('.slider-inner__count').text('1 из ' + count);
+
+        let sliderInner = new Swiper(elem.children('.swiper-container'), {
+            loop: true,
+            navigation: {
+                prevEl: elem.find('.slider-inner__prev'),
+                nextEl: elem.find('.slider-inner__next'),
+            },
+            on: {
+                slideChange: function () {
+
+                    let step = sliderInner.activeIndex;
+
+                    if (step > count) step = 1;
+                    if (step < 1) step = count;
+
+                    elem.find('.slider-inner__count').text(step + ' из ' + count);
+
+                    elem.find('.slider-inner__title_active').removeClass('slider-inner__title_active');
+                    elem.find('.js-title-' + step).addClass('slider-inner__title_active');
+                },
+            }
+        })
+    });
 });
