@@ -85,21 +85,40 @@ p {
 	margin: 0 0 10pt;
 }
 
-ol,
-ul,
-dl {
+ol {
 	margin: 0 0 10pt;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-	margin: 0;
 }
 
 ol {
     padding: 0 0 0 20px;
+}
+
+.title-for-ul {
+    padding: 0 0 0 30px;
+    font-weight: 600;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0 0 10pt;
+    position: relative;
+    padding: 0 0 0 30px;
+
+    &:before {
+        content: "";
+        background-color: var(--black);
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        transform: rotate(45deg);
+        top: 8pt;
+        left: 5px;
+    }
 }
 
 b,

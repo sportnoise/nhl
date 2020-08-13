@@ -1,0 +1,21 @@
+.news-link-str {
+    stroke: var(--link-abs);
+    color: var(--link-abs);
+    display: flex;
+    max-width: 380px;
+    margin: 25px 0 0;
+
+    &__icon {
+        fill: none;
+        width: 22px;
+        height: 13px;
+        transition: all .3s;
+        margin: 4px 15px 0 0;
+    }
+    &__text {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        width: calc(100% - 37px);
+    }
+}
