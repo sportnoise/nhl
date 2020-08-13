@@ -1,0 +1,94 @@
+.club-list {
+    margin: 0 0 40px;
+
+    &__item {
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 4px;
+        margin: 0 0 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__pict {
+        width: 150px;
+    }
+    &__img {
+        display: block;
+    }
+    &__center {
+        width: 80px;
+        text-align: center;
+    }
+    &__num {
+        font-size: 17px;
+        line-height: 33px;
+        font-weight: 600;
+    }
+    &__logo {
+        margin: auto;
+        width: 40px;
+        height: 40px;
+
+        &-img {
+            border-radius: 50%;
+        }
+    }
+    &__block {
+        width: calc(100% - 230px);
+    }
+    &__name {
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: 600;
+        letter-spacing: -.14px;
+        margin: 0 0 10px;
+    }
+    &__team {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 600;
+        letter-spacing: .2px;
+        margin: 0 0 20px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__item {
+            padding: 30px 40px 30px 80px;
+        }
+        &__center {
+            padding: 10px 0 0 10px;
+        }
+        &__name {
+            margin: 10px 0;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0;
+
+            &__item {
+                flex-direction: column;
+            }
+            &__pict {
+                margin: 0 0 15px;
+            }
+            &__center {
+                display: none;
+            }
+            &__block {
+                width: 100%;
+            }
+            &__name {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}

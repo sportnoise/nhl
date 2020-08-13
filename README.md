@@ -30,6 +30,7 @@
 <a href="https://sportnoise.github.io/nhl/dist/statistic-players.html">Общая рейтинговая таблица по игрокам</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/final-position.html">Итоговое положение команд</a><br>
 <a href="https://sportnoise.github.io/nhl/dist/winners.html">Призёры</a><br>
+<a href="https://sportnoise.github.io/nhl/dist/club.html">Клуб Сергея Макарова</a><br>
 
 <hr>
 

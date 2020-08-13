@@ -1,0 +1,298 @@
+<% var data = {
+    title: "Club",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Клуб Макарова
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Приз Якушева
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Студёный лёд
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block">
+
+                <h1>Клуб Сергея Макарова</h1>
+
+                <div class="block-width-lg mb-35">
+                    <img src="./local/uploads/club.jpg" alt="">
+                </div>
+
+                <div class="block-width-md">
+                    <p class="h2">В богатой истории Всероссийского Фестиваля по хоккею среди любительских команд есть особая страница — игроки, многие из которых выступают в Ночной Хоккейной Лиге с первого сезона, добившиеся за это время впечатляющего по меркам даже профессионального хоккея результата — 150 шайб в любительском чемпионате страны.</p>
+                    <p>Именно для этих героев Ночная Лига учредила в 2015 году символический клуб лучших снайперов, забросивших 150 и более шайб в матчах регионального Отборочного этапа и Финала Всероссийского Фестиваля в Сочи — «Клуб Сергея Макарова». По аналогии с «Клубом Всеволода Боброва», существующем в отечественном профессиональном хоккее.</p>
+                    <p>Двукратный Олимпийский чемпион и восьмикратный чемпион мира Сергей Михайлович Макаров на протяжении карьеры забил 714 голов в официальных матчах за клубы и сборные СССР, России и NHL, и является рекордсменом отечественного хоккея по этому показателю. Сергей Михайлович с первого дня принимает самого активное участие в развитии любительского чемпионата страны и входит в Совет Легенд Ночной Хоккейной Лиги.</p>
+                    <p>Сергей Макаров: «Наша Лига действительно стала настоящим любительским чемпионатом России со своей историей и героями. А своих героев нужно знать: лидеров команд, лучших хоккеистов. Именно для этого мы учредили Клуб лучших снайперов Ночной Хоккейной Лиги. Решили, что порогом вступления в него станут 150 шайб — в любительском хоккее, все-таки, игроки проводят не так много матчей за сезон, как в профессиональном. Хотя забивают, бывает, и побольше, чем в КХЛ».</p>
+                </div>
+
+            </div>
+
+            <div class="block-padding">
+                <div class="h1">Участники Клуба Макарова</div>
+            </div>
+
+            <div class="club-list">
+                <div class="club-list__item">
+                    <div class="club-list__pict pict-shadow">
+                        <img class="club-list__img" src="/local/uploads/club.face.jpg" alt="">
+                    </div>
+                    <div class="club-list__center">
+                        <div class="club-list__num">1.</div>
+                        <div class="club-list__logo">
+                            <img class="club-list__logo-img" src="/local/uploads/club.logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="club-list__block">
+                        <div class="club-list__name">Вадим Протасов</div>
+                        <div class="club-list__team">«Виктория Плюс» (г. Ставрополь), сезон 2015/16, 21.01.16</div>
+                        <div class="club-list__text">
+                            Стать первым человеком: кто забил 150 голов в такой огромной лиге, как Ночная, которая охватывает всю нашу страну — это просто здорово! Это определенно успех для меня. Горжусь. Мне вообще очень приятно быть частью такого замечательного турнира, как чемпионат Ночной Хоккейной Лиги.
+                        </div>
+                    </div>
+                </div>
+                <div class="club-list__item">
+                    <div class="club-list__pict pict-shadow">
+                        <img class="club-list__img" src="/local/uploads/club.face.jpg" alt="">
+                    </div>
+                    <div class="club-list__center">
+                        <div class="club-list__num">2.</div>
+                        <div class="club-list__logo">
+                            <img class="club-list__logo-img" src="/local/uploads/club.logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="club-list__block">
+                        <div class="club-list__name">Вадим Протасов</div>
+                        <div class="club-list__team">«Пингвины» (г. Нарьян-Мар-2), сезон 2015/16, 01.03.16</div>
+                        <div class="club-list__text">
+                            Я когда играю, эти шайбы не считаю. Просто делаю свою работу на льду, и все. И вот совсем недавно мне региональный представитель сказал, что у меня уже — 154 гола в официальных матчах Ночной Хоккейной Лиги. Это очень приятно, ведь я — самоучка. Вообще нигде не занимался, катался на замерзшем озере, во дворе играл. И вот, совсем недавно, исполнилась моя давняя мечта — мы добились постройки крытого ледового катка в Нарьян-Маре.
+                        </div>
+                    </div>
+                </div>
+                <div class="club-list__item">
+                    <div class="club-list__pict pict-shadow">
+                        <img class="club-list__img" src="/local/uploads/club.face.jpg" alt="">
+                    </div>
+                    <div class="club-list__center">
+                        <div class="club-list__num">3.</div>
+                        <div class="club-list__logo">
+                            <img class="club-list__logo-img" src="/local/uploads/club.logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="club-list__block">
+                        <div class="club-list__name">Вадим Протасов</div>
+                        <div class="club-list__team">«Сталкер» (г. Москва), сезон 2015/16, 14.03.16</div>
+                        <div class="club-list__text">
+                            Клуб Макарова был учрежден совсем недавно, а мы сколько лет уже в Ночной Лиге играем, что никогда не думали — кто сколько забил. Не считали просто. Сама идея, конечно, хорошая. Но для меня это некая символика, наверное, не больше того. Я же не Кубок Стэнли выиграл.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-block mb-45">
+
+                <h2>Ближайшие кандидаты вступления в клуба Макарова</h2>
+
+                <div class="statistic-table">
+                    <table class="table-one table-one_center">
+                        <thead>
+                            <tr>
+                                <th class="table-one__text-center">
+                                    <span class="table-one__rotate">Рейтинг</span>
+                                </th>
+                                <th class="table-one__text-left">
+                                    Игрок
+                                </th>
+                                <th class="table-one__text-left d-none d-md-table-cell">
+                                    Регион<br>
+                                    Город
+                                </th>
+                                <th class="d-none d-md-table-cell">
+                                    <span class="table-one__rotate">Дивизион</span>
+                                </th>
+                                <th class="d-none d-md-table-cell">
+                                    Ш
+                                </th>
+                                <th class="d-none d-md-table-cell">
+                                    П
+                                </th>
+                                <th>
+                                    Г
+                                </th>
+                                <th>
+                                    О
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-one__text-center">1</td>
+                                <td class="table-one__text-left table-one__bold">Абадонов Михаил</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Алтайский край
+                                    <div class="table-one__light">Южно-Сахалинск</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">2</td>
+                                <td class="table-one__text-left table-one__bold">Бабайлов Андрей</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Алтайский край
+                                    <div class="table-one__light">Александровский р-н</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">3</td>
+                                <td class="table-one__text-left table-one__bold">Вавилов Владимир</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Алтайский край
+                                    <div class="table-one__light">Южно-Сахалинск</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">4</td>
+                                <td class="table-one__text-left table-one__bold">Вавренюк Михаил</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Амурская область
+                                    <div class="table-one__light">Железногорск</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-one__text-center">5</td>
+                                <td class="table-one__text-left table-one__bold">Габдрахманов Артём</td>
+                                <td class="table-one__text-left table-one__small d-none d-md-table-cell">
+                                    Архангельская область
+                                    <div class="table-one__light">Комсомольск-на-Амуре</div>
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    40+
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    0′
+                                </td>
+                                <td class="table-one__small d-none d-md-table-cell">
+                                    10
+                                </td>
+                                <td class="table-one__small">
+                                    10
+                                </td>
+                                <td class="table-one__small table-one__bold">
+                                    10
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
