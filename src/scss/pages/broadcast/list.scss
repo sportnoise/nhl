@@ -38,7 +38,12 @@
     }
     &__btn {
         width: 100%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        & a:not(:first-child) {
+            margin: 0 0 0 20px;
+        }
     }
 
     @include media-breakpoint-between(sm, md)
@@ -55,6 +60,13 @@
             &__item {
                 width: 100%;
                 padding: 0;
+            }
+            &__btn {
+                flex-direction: column;
+
+                & a:not(:first-child) {
+                    margin: 10px 0 0;
+                }
             }
         }
     }

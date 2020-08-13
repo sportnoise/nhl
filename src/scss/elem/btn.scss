@@ -70,9 +70,13 @@
             color: var(--white);
         }
     }
+
     &-fixed {
         padding: 0;
         width: 130px;
+    }
+    &-short {
+        padding: 0 15px;
     }
 }
 

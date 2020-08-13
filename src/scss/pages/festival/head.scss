@@ -1,0 +1,71 @@
+.festival-head {
+    display: flex;
+    max-width: 600px;
+    margin: 35px 0 60px;
+
+    &__pict {
+        width: 185px;
+    }
+    &__img {
+        display: block;
+        margin: auto;
+    }
+    &__text {
+        width: calc(100% - 210px);
+        padding: 10px 0 0;
+    }
+    &__desc {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .23px;
+        margin: 0 0 25px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        max-width: 340px;
+        margin: 0 0 30px;
+    }
+    &__num {
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: 600;
+        letter-spacing: -.14px;
+        color: var(--blacksuper);
+    }
+    &__txt {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    &__bottom {
+        padding: 15px 0 0 15px;
+
+        &-link {
+            font-size: 15px;
+            line-height: 20px;
+            color: var(--link);
+
+            &:hover {
+                color: var(--link);
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            flex-direction: column;
+            margin: 20px 0 40px;
+
+            &__pict {
+                width: 100%;
+                margin: 0 0 15px;
+            }
+            &__text {
+                width: 100%;
+            }
+        }
+    }
+}
