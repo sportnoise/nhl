@@ -1,0 +1,157 @@
+<% var data = {
+    title: "Search",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<div class="mb-50"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Поиск</h1>
+
+                <div class="search-form">
+                    <form>
+                        <input class="search-form__input" type="text" value="Россия" placeholder="Поиск">
+                        <button class="search-form__btn btn-four" type="submit" value="">
+                            <svg class="search-form__btn-icon">
+                                <use xlink:href="./local/img/sprite.svg#loop"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="search-popular">
+                    <div class="search-popular__title">Популярные запросы</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="search-popular__link" href="javascript:;">Популярные запросы</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="search-popular__link" href="javascript:;">Популярные запросы</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="search-popular__link" href="javascript:;">Популярные запросы</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="search-popular__link" href="javascript:;">Популярные запросы</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="search-popular__link" href="javascript:;">Популярные запросы</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="search-popular__link" href="javascript:;">Популярные запросы</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h2">Найдено (62) материалов</div>
+
+                <div class="search-result">
+                    <div class="search-result__item">
+                        <div class="search-result__pict">
+                            <img src="./local/uploads/search.jpg" alt="" class="search-result__img">
+                        </div>
+                        <div class="search-result__block">
+                            <div class="search-result__name">
+                                Подведение итогов в дивизионе «Лига Надежды»: «СВ-Металл» - «Чемпион»!
+                            </div>
+                            <div class="search-result__text">
+                                Рассказываем о взрослении одного из самых хоккейных посёлков <span class="search-result__word">России</span>, где «второй папа» Альберт Акберов открыл лучшую игру
+                            </div>
+                            <div class="search-result__bottom">
+                                <span class="search-result__place">Республика Татарстан</span>
+                                <span class="search-result__date">12 августа, 14:30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__item">
+                        <div class="search-result__pict">
+                            <img src="./local/uploads/search.jpg" alt="" class="search-result__img">
+                        </div>
+                        <div class="search-result__block">
+                            <div class="search-result__name">
+                                Подведение итогов в дивизионе «Лига Надежды»: «СВ-Металл» - «Чемпион»!
+                            </div>
+                            <div class="search-result__text">
+                                Рассказываем о взрослении одного из самых хоккейных посёлков <span class="search-result__word">России</span>, где «второй папа» Альберт Акберов открыл лучшую игру
+                            </div>
+                            <div class="search-result__bottom">
+                                <span class="search-result__place">Республика Татарстан</span>
+                                <span class="search-result__date">12 августа, 14:30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__item">
+                        <div class="search-result__pict">
+                            <img src="./local/uploads/search.jpg" alt="" class="search-result__img">
+                        </div>
+                        <div class="search-result__block">
+                            <div class="search-result__name">
+                                Подведение итогов в дивизионе «Лига Надежды»: «СВ-Металл» - «Чемпион»!
+                            </div>
+                            <div class="search-result__text">
+                                Рассказываем о взрослении одного из самых хоккейных посёлков <span class="search-result__word">России</span>, где «второй папа» Альберт Акберов открыл лучшую игру
+                            </div>
+                            <div class="search-result__bottom">
+                                <span class="search-result__place">Республика Татарстан</span>
+                                <span class="search-result__date">12 августа, 14:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-navigation">
+                    <a href="javascript:;" class="page-navigation__link">1</a>
+                    <span class="page-navigation__current">2</span>
+                    <a href="javascript:;" class="page-navigation__link">3</a>
+                    <a href="javascript:;" class="page-navigation__link">4</a>
+                    <a href="javascript:;" class="page-navigation__link">5</a>
+                    <a href="javascript:;" class="page-navigation__link d-none d-md-flex">6</a>
+                    <a href="javascript:;" class="page-navigation__link d-none d-md-flex">7</a>
+                    <a href="javascript:;" class="page-navigation__link d-none d-md-flex">8</a>
+                    <a href="javascript:;" class="page-navigation__link d-none d-md-flex">9</a>
+                    <a href="javascript:;" class="page-navigation__link d-none d-md-flex">10</a>
+                    <a href="javascript:;" class="page-navigation__link page-navigation__link_dot">. . .</a>
+                    <a href="javascript:;" class="page-navigation__link">25</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

@@ -44,7 +44,8 @@
 @import "./template/region.selection"; // Выбор региона
 @import "./template/region.select"; // Окно выбора региона
 @import "./template/header"; // Шапка сайта
-@import "./template/search.form"; // Строка поиска
+@import "./template/search.window"; // Окно поиска
+@import "./template/search.form"; // Форма поиска
 @import "./template/menu.top"; // Главное меню
 @import "./template/menu.top.btn"; // Главное меню
 @import "./template/main"; // Рабочая область
@@ -155,3 +156,7 @@
 
 // Матчи
 @import "./pages/match/calendar"; // Шапка страницы
+
+// Поиск
+@import "./pages/search/popular"; // Популярные запросы
+@import "./pages/search/result"; // Результат поиска

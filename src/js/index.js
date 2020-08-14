@@ -90,14 +90,14 @@ $(function() {
     // Показать / Скрыть Поиск
     $('.header-bottom__search').click(function(){
 
-        $('.search-form').fadeIn(300);
+        $('.search-window').fadeIn(300);
         $('.main-body').addClass('main-body_shadow');
         $('#search-input').focus();
     });
 
-    $('.search-form__close').click(function(){
+    $('.search-window__close').click(function(){
 
-        $('.search-form').fadeOut(300);
+        $('.search-window').fadeOut(300);
         $('.main-body').removeClass('main-body_shadow');
     });
 
@@ -105,7 +105,7 @@ $(function() {
 
         if (e.which == 27 && $(this).hasClass('main-body_shadow'))
         {
-            $('.search-form').fadeOut(300);
+            $('.search-window').fadeOut(300);
             $('.main-body').removeClass('main-body_shadow');
 
             return false;
