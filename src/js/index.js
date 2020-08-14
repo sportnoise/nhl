@@ -90,13 +90,27 @@ $(function() {
     // Показать / Скрыть Поиск
     $('.header-bottom__search').click(function(){
 
-        $('.search-form').slideToggle();
+        $('.search-form').fadeIn(300);
+        $('.main-body').addClass('main-body_shadow');
+        $('#search-input').focus();
     });
 
     $('.search-form__close').click(function(){
 
-        $('.search-form').slideUp();
+        $('.search-form').fadeOut(300);
+        $('.main-body').removeClass('main-body_shadow');
     });
+
+     $("body").keyup(function(e) {
+
+        if (e.which == 27 && $(this).hasClass('main-body_shadow'))
+        {
+            $('.search-form').fadeOut(300);
+            $('.main-body').removeClass('main-body_shadow');
+
+            return false;
+        }
+     });
 
     // Полоса прокрутки
     if ($(window).width() > 575)

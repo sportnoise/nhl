@@ -326,7 +326,13 @@
         border-color: var(--white);
     }
 
-    @include media-breakpoint-down(md)
+    @include media-breakpoint-only(md)
+    {
+        & {
+            display: none;
+        }
+    }
+    @include media-breakpoint-down(sm)
     {
         & {
             height: 40px;

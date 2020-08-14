@@ -3,8 +3,9 @@
     z-index: 100;
     left: 0;
     right: 0;
-    background-color: var(--black);
     display: none;
+    top: 190px;
+    z-index: 101;
 
     &__block {
         position: relative;
@@ -13,7 +14,7 @@
         height: 100px;
         align-items: center;
         display: flex;
-        margin: 0 45px 0 75px;
+        margin: 0 75px;
         position: relative;
     }
     &__input {
@@ -21,50 +22,55 @@
         background-color: var(--white);
         border-radius: 4px;
         padding: 0 120px 0 30px;
-        color: var(--gray_contur);
+        color: var(--blacksuper);
         font-weight: 600;
-        font-size: 20px;
+        font-size: 19px;
         letter-spacing: .2px;
         width: 100%;
-        border: none;
+        transition: all .3s;
+        border: 2px solid var(--white_contur);
+
+        &:hover,
+        &:focus {
+            border-color: var(--gray_contur);
+        }
     }
     &__btn {
-        border: none;
-        background: transparent;
         position: absolute;
-        right: 45px;
-        padding: 0;
+        right: 15px;
         top: 50%;
-        transform: translate(0, -50%);
+        transform: translateY(-50%);
         stroke: var(--black);
         transition: all .3s;
+        fill: transparent;
 
         &:hover {
-            stroke: var(--link);
+            stroke: var(--white);
         }
         &-icon {
-            width: 45px;
-            height: 19px;
-            fill: none;
-            stroke-width: 2px;
+            width: 19px;
+            height: 20px;
         }
     }
     &__close {
         right: 0;
         top: 20px;
     }
-}
 
-@include media-breakpoint-down(lg)
-{
-    .search-form__inner {
-        margin: 0 45px 0 0;
+    @include media-breakpoint-only(xl)
+    {
+        &__close {
+            right: 35px;
+        }
     }
-}
-@include media-breakpoint-only(xs)
-{
-    .search-form {
-
+    @include media-breakpoint-down(lg)
+    {
+        &__inner {
+            margin: 0 45px 0 0;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
         &__input {
             height: 50px;
             padding: 0 70px 0 15px;
