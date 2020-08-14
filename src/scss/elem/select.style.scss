@@ -1,4 +1,4 @@
-.select-btn {
+.select-style {
     position: relative;
 
     select {
@@ -13,17 +13,34 @@
     .jq-selectbox {
 
         &__select {
-            line-height: 50px;
-            font-size: 13px;
-            color: var(--link);
+            font-size: 17px;
+            line-height: 24px;
+            letter-spacing: .26px;
+            font-weight: 600;
+            color: var(--gray_contur);
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: all .3s;
 
+            &:hover {
+                color: var(--black);
+            }
             &-text {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                padding: 0 10px;
+                max-width: calc(100% - 15px);
             }
+        }
+        &__trigger {
+            content: "";
+            border: 4px solid transparent;
+            border-top: 6px solid var(--black);
+            display: block;
+            width: 0;
+            height: 0;
+            margin: 5px 0 0 10px;
         }
         &__dropdown {
             position: absolute;
@@ -39,7 +56,6 @@
 
             ul {
                 margin: 0;
-                padding: 5px 0 10px;
                 list-style: none;
             }
             li {
@@ -65,5 +81,8 @@
                 }
             }
         }
+    }
+    &.changed .jq-selectbox__select {
+        color: var(--black);
     }
 }

@@ -29,6 +29,7 @@
 @import "./elem/table.slider"; // Слайдер в таблице
 @import "./elem/checkbox.icon"; // Чекбоксы в виде иконок
 @import "./elem/select.btn"; // Селекты в виде кнопок
+@import "./elem/select.style"; // Селекты обычные
 @import "./elem/file.input"; // Поле выбора файла
 @import "./elem/filter.panel"; // Панель фильтров
 @import "./elem/search.panel"; // Панель фильтров
@@ -37,6 +38,7 @@
 @import "./elem/panel.rubric"; // Панель рубрик
 @import "./elem/page.navigation"; // Постраничная навигация
 @import "./elem/form.one"; // Стиль формы №1
+@import "./elem/form.two"; // Стиль формы №2
 @import "./elem/tags.block"; // Облако тегов
 @import "./elem/share.block"; // Поделиться
 
@@ -160,3 +162,6 @@
 // Поиск
 @import "./pages/search/popular"; // Популярные запросы
 @import "./pages/search/result"; // Результат поиска
+
+// Платежи
+@import "./pages/payments/form"; // Форма

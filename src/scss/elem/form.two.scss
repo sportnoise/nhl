@@ -1,0 +1,53 @@
+.form-two {
+
+    &__label {
+        color: var(--blacksuper);
+        font-size: 19px;
+        line-height: 26px;
+        letter-spacing: .19px;
+        margin: 0 0 15px;
+    }
+    &__line {
+        margin: 0 0 10px;
+    }
+    &__input {
+        border: 1px solid var(--gray_contur);
+        background-color: var(--background);
+        border-radius: 4px;
+        width: 100%;
+        font-size: 15px;
+        letter-spacing: .23px;
+        height: 40px;
+        padding: 0 10px;
+        transition: all .3s;
+
+        &:hover,
+        &:focus {
+            border-color: var(--link);
+        }
+    }
+}
+
+.radio-one {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__name {
+        color: var(--gray_contur);
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: .26px;
+        font-weight: 600;
+        transition: all .3s;
+    }
+    &:hover &__name,
+    &__input:checked + &__name {
+        color: var(--black);
+    }
+}

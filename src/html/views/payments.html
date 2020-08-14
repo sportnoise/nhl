@@ -1,0 +1,143 @@
+<% var data = {
+    title: "Payments",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<div class="mb-50"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Платежи</h1>
+
+                <div class="payments-form form-two">
+                    <div class="payments-form__block">
+                        <div class="payments-form__num">1.</div>
+                        <div class="form-two__label">Выберите категорию оплаты</div>
+                        <div class="form-two__line">
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" value="" name="cat" checked>
+                                <span class="radio-one__name">Оплатить членство</span>
+                            </label>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" value="" name="cat">
+                                <span class="radio-one__name">Оплатить штраф СДК</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payments-form__block">
+                        <div class="payments-form__num">2.</div>
+                        <div class="mb-40">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="form-two__label">Ваш регион</div>
+                                    <div class="form-two__line">
+                                        <select name="" class="select-style">
+                                            <option value="" selected disabled>Регион</option>
+                                            <option value="">Свердловская область</option>
+                                            <option value="">Свердловская область</option>
+                                            <option value="">Свердловская область</option>
+                                            <option value="">Свердловская область</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-two__label">Укажите дивизион</div>
+                                    <div class="form-two__line">
+                                        <label class="radio-one">
+                                            <input type="radio" class="radio-one__input" value="" name="dev" checked>
+                                            <span class="radio-one__name">Любитель 40+</span>
+                                        </label>
+                                        <label class="radio-one">
+                                            <input type="radio" class="radio-one__input" value="" name="dev">
+                                            <span class="radio-one__name">Лига Надежды</span>
+                                        </label>
+                                        <label class="radio-one">
+                                            <input type="radio" class="radio-one__input" value="" name="dev">
+                                            <span class="radio-one__name">Лига Мечты</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="form-two__label">Выберите свою команду</div>
+                                <div class="form-two__line">
+                                    <select name="" class="select-style">
+                                        <option value="" selected disabled>Команда</option>
+                                        <option value="">Команда #1</option>
+                                        <option value="">Команда #2</option>
+                                        <option value="">Команда #3</option>
+                                        <option value="">Команда #4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payments-form__block">
+                        <div class="payments-form__num">3.</div>
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="form-two__label">Персональные данные</div>
+                                <div class="payments-form__three">
+                                    <div class="payments-form__three-part">
+                                        <div class="form-two__line">
+                                            <input class="form-two__input" type="text" value="" placeholder="Фамилия">
+                                        </div>
+                                    </div>
+                                    <div class="payments-form__three-part">
+                                        <div class="form-two__line">
+                                            <input class="form-two__input" type="text" value="" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="payments-form__three-part">
+                                        <div class="form-two__line">
+                                            <input class="form-two__input" type="text" value="" placeholder="Отчество">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

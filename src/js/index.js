@@ -29,6 +29,7 @@ $(function() {
 
     // Стилизация элементов
     $('.select-btn').styler();
+    $('.select-style').styler();
     $('.file-input').styler();
 
     // Выбор даты
