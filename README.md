@@ -33,6 +33,7 @@
 <a href="https://sportnoise.github.io/nhl/club.html">Клуб Сергея Макарова</a><br>
 <a href="https://sportnoise.github.io/nhl/festival.html">Фестиваль Хоккея</a><br>
 <a href="https://sportnoise.github.io/nhl/match-calendar.html">Матчи Ближайшие</a><br>
+<a href="https://sportnoise.github.io/nhl/match-result.html">Матчи Результаты</a><br>
 
 <hr>
 
