@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+        <title>Ночная Хоккейная Лига - Medal one</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="./local/template_styles.css?abb4abce955797361f36" rel="stylesheet" />
+    </head>
+
+    <body class="">
+        <!-- Шапка сайта -->
+        <header class="main-header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="/" class="header-top__logo">
+                        <img src="./local/img/logo.svg" alt="" class="header-top__logo-img" />
+                    </a>
+                    <div class="header-top__info">
+                        <div class="header-top__name">
+                            <img src="./local/img/logo.words.svg" alt="" class="header-top__name-img" />
+                        </div>
+                        <div class="header-top__season">Сезон 10</div>
+                    </div>
+                    <a href="javascript:;" class="header-top__subscription">
+                        Подписка
+                    </a>
+                    <a href="javascript:;" class="header-top__region-selection">
+                        <span class="header-top__region-selection-text">
+                            Свердловская область
+                        </span>
+                    </a>
+                    <div class="header-top__region">
+                        <img class="header-top__region-img" src="./local/img/obl.png" alt="" />
+                    </div>
+
+                    <a href="javascript:;" class="menu-top-btn">
+                        <span class="menu-top-btn__icon"></span>
+                    </a>
+                </div>
+
+                <!-- Окно выбора региона -->
+                <div class="region-select">
+                    <div class="container">
+                        <div class="region-select__block">
+                            <a class="region-select__close btn-close btn-close_dark" href="javascript:;"></a>
+                            <div class="region-select__head">
+                                <a class="region-select__head-link" href="javascript:;">Москва</a>
+                                <a class="region-select__head-link" href="javascript:;">Санкт-Петербург</a>
+                            </div>
+                            <div class="region-select__items">
+                                <div class="region-select__item">
+                                    <div class="region-select__title">Центр</div>
+                                    <a class="region-select__link" href="javascript:;">Белгородская область</a>
+                                    <a class="region-select__link" href="javascript:;">Брянская область</a>
+                                    <a class="region-select__link" href="javascript:;">Владимирская область</a>
+                                    <a class="region-select__link" href="javascript:;">Воронежская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ивановская область</a>
+                                    <a class="region-select__link" href="javascript:;">Калужская область</a>
+                                    <a class="region-select__link" href="javascript:;">Костромская область</a>
+                                    <a class="region-select__link" href="javascript:;">Курская область</a>
+                                    <a class="region-select__link" href="javascript:;">Липецкая область</a>
+                                    <a class="region-select__link" href="javascript:;">Московская область</a>
+                                    <a class="region-select__link" href="javascript:;">Орловская область</a>
+                                    <a class="region-select__link" href="javascript:;">Рязанская область</a>
+                                    <a class="region-select__link" href="javascript:;">Смоленская область</a>
+                                    <a class="region-select__link" href="javascript:;">Тамбовская область</a>
+                                    <a class="region-select__link" href="javascript:;">Тверская область</a>
+                                    <a class="region-select__link" href="javascript:;">Тульская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ярославская область</a>
+                                </div>
+                                <div class="region-select__item">
+                                    <div class="region-select__title">Северо-Запад</div>
+                                    <a class="region-select__link" href="javascript:;">Архангельская область</a>
+                                    <a class="region-select__link" href="javascript:;">Вологодская область</a>
+                                    <a class="region-select__link" href="javascript:;">Калининградская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ленинградская область</a>
+                                    <a class="region-select__link" href="javascript:;">Мурманская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ненецкий АО</a>
+                                    <a class="region-select__link" href="javascript:;">Новгородская область</a>
+                                    <a class="region-select__link" href="javascript:;">Псковская область</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Карелия</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Коми</a>
+                                </div>
+                                <div class="region-select__item">
+                                    <div class="region-select__title">Поволжье</div>
+                                    <a class="region-select__link" href="javascript:;">Кировская область</a>
+                                    <a class="region-select__link" href="javascript:;">Нижегородская область</a>
+                                    <a class="region-select__link" href="javascript:;">Оренбургская область</a>
+                                    <a class="region-select__link" href="javascript:;">Пензенская область</a>
+                                    <a class="region-select__link" href="javascript:;">Пермский край</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Башкортостан</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Марий Эл</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Мордовия</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Татарстан</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Удмуртия</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Чувашия</a>
+                                    <a class="region-select__link" href="javascript:;">Самарская область</a>
+                                    <a class="region-select__link" href="javascript:;">Саратовская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ульяновская область</a>
+                                </div>
+                                <div class="region-select__item">
+                                    <div class="region-select__title">Юг и Северный Кавказ</div>
+                                    <a class="region-select__link" href="javascript:;">Астраханская область</a>
+                                    <a class="region-select__link" href="javascript:;">Волгоградская область</a>
+                                    <a class="region-select__link" href="javascript:;">Кабардино-Балкарская</a>
+                                    <a class="region-select__link" href="javascript:;">Краснодарский край</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Адыгея</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Ингушетия</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Крым</a>
+                                    <a class="region-select__link" href="javascript:;">Северная Осетия</a>
+                                    <a class="region-select__link" href="javascript:;">Ростовская область</a>
+                                    <a class="region-select__link" href="javascript:;">Сочи</a>
+                                    <a class="region-select__link" href="javascript:;">Ставропольский край</a>
+                                    <a class="region-select__link" href="javascript:;">Чеченская Республика</a>
+                                </div>
+                                <div class="region-select__item">
+                                    <div class="region-select__title">Урал</div>
+                                    <a class="region-select__link" href="javascript:;">Курганская область</a>
+                                    <a class="region-select__link" href="javascript:;">Свердловская область</a>
+                                    <a class="region-select__link" href="javascript:;">Тюменская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ханты-Мансийский округ</a>
+                                    <a class="region-select__link" href="javascript:;">Челябинская область</a>
+                                    <a class="region-select__link" href="javascript:;">Ямало-Ненецкий АО</a>
+                                    <div class="region-select__title">Сибирь</div>
+                                    <a class="region-select__link" href="javascript:;">Алтайский край</a>
+                                    <a class="region-select__link" href="javascript:;">Иркутская область</a>
+                                    <a class="region-select__link" href="javascript:;">Кемеровская область</a>
+                                    <a class="region-select__link" href="javascript:;">Красноярский край</a>
+                                    <a class="region-select__link" href="javascript:;">Новосибирская область</a>
+                                    <a class="region-select__link" href="javascript:;">Норильск</a>
+                                    <a class="region-select__link" href="javascript:;">Омская область</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Алтай</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Тыва</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Хакасия</a>
+                                    <a class="region-select__link" href="javascript:;">Томская область</a>
+                                </div>
+                                <div class="region-select__item">
+                                    <div class="region-select__title">Дальний Восток</div>
+                                    <a class="region-select__link" href="javascript:;">Амурская область</a>
+                                    <a class="region-select__link" href="javascript:;">Еврейская АО</a>
+                                    <a class="region-select__link" href="javascript:;">Забайкальский край</a>
+                                    <a class="region-select__link" href="javascript:;">Камчатский край</a>
+                                    <a class="region-select__link" href="javascript:;">Магаданская область</a>
+                                    <a class="region-select__link" href="javascript:;">Приморский край</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Бурятия</a>
+                                    <a class="region-select__link" href="javascript:;">Республика Саха</a>
+                                    <a class="region-select__link" href="javascript:;">Сахалинская область</a>
+                                    <a class="region-select__link" href="javascript:;">Хабаровский край</a>
+                                    <a class="region-select__link" href="javascript:;">Чукотский АО</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="header-bottom__menu">
+                        <!-- Главное меню -->
+                        <nav class="menu-top">
+                            <a href="javascript:;" class="menu-top__link">
+                                Все новости
+                            </a>
+                            <a href="javascript:;" class="menu-top__link">
+                                Матчи
+                            </a>
+                            <a href="javascript:;" class="menu-top__link menu-top__link_active">
+                                Чемпионат
+                            </a>
+                            <a href="javascript:;" class="menu-top__link">
+                                Трансляции
+                            </a>
+                            <a href="javascript:;" class="menu-top__link">
+                                Регионы
+                            </a>
+                            <a href="javascript:;" class="menu-top__link">
+                                О Лиге
+                            </a>
+                            <a href="javascript:;" class="menu-top__link">
+                                Контакты
+                            </a>
+                        </nav>
+                    </div>
+                    <a href="javascript:;" class="header-bottom__search">
+                        <svg class="header-bottom__search-icon">
+                            <use xlink:href="./local/img/sprite.svg#loop"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:;" class="header-bottom__broadcast">
+                        <svg class="header-bottom__broadcast-icon">
+                            <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                        </svg>
+                        ЭФИР
+                    </a>
+
+                    <!-- Соц сети -->
+                    <div class="header-social">
+                        <a href="javascript:;" class="header-social__link header-social__link_fb"></a>
+                        <a href="javascript:;" class="header-social__link header-social__link_vk"></a>
+                        <a href="javascript:;" class="header-social__link header-social__link_ig"></a>
+                        <a href="javascript:;" class="header-social__link header-social__link_yt"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Строка поиска -->
+        <div class="search-form">
+            <div class="container">
+                <form>
+                    <div class="search-form__block">
+                        <div class="search-form__inner">
+                            <input class="search-form__input" type="text" value="" placeholder="Поиск" />
+                            <button class="search-form__btn" type="submit" value="">
+                                <svg class="search-form__btn-icon">
+                                    <use xlink:href="./local/img/sprite.svg#enter"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="javascript:;" class="search-form__close btn-close btn-close_white"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Рабочая область -->
+        <main class="main-main">
+            <!-- Меню раздела -->
+            <nav class="menu-section">
+                <div class="container">
+                    <div class="menu-section__block">
+                        <a href="javascript:;" class="menu-section__link">
+                            Фестиваль хоккея
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Призёры
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Итоговое положение команд
+                        </a>
+                        <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                            Медальный зачёт
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="white-block mb-45">
+                            <h1>Медальный зачёт</h1>
+
+                            <div class="panel-btn">
+                                <a href="javascript:;" class="panel-btn__link panel-btn__link_active">По командам</a>
+                                <a href="javascript:;" class="panel-btn__link">По субъектам</a>
+                                <a href="javascript:;" class="panel-btn__link">По игрокам</a>
+                                <a href="javascript:;" class="panel-btn__link">По трофеям</a>
+                            </div>
+
+                            <div class="h2">Медальный зачёт по командам</div>
+
+                            <div class="medal-table">
+                                <table class="table-one table-one_center">
+                                    <thead>
+                                        <tr>
+                                            <th>Место</th>
+                                            <th class="table-one__text-left">Команда</th>
+                                            <th class="table-one__text-left d-none d-md-table-cell">Город, регион</th>
+                                            <th>
+                                                <img class="medal-table__icon" src="./local/img/icon.bronze.svg" alt="" />
+                                            </th>
+                                            <th>
+                                                <img class="medal-table__icon" src="./local/img/icon.silver.svg" alt="" />
+                                            </th>
+                                            <th>
+                                                <img class="medal-table__icon" src="./local/img/icon.gold.svg" alt="" />
+                                            </th>
+                                            <th>
+                                                <span class="table-one__rotate">Всего</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-one__sort">
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down table-sort__link_active"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td class="table-one__text-left">
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td class="table-one__text-left d-none d-md-table-cell">
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-sort">
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_down"></a>
+                                                    <a href="javascript:;" class="table-sort__link table-sort__link_up"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="table-one__text-left table-one__bold">«Неоплан» / «Авто»</td>
+                                            <td class="table-one__text-left table-one__small d-none d-md-table-cell">Екатеринбург</td>
+                                            <td class="medal-table__bronze">1</td>
+                                            <td class="medal-table__silver">2</td>
+                                            <td class="medal-table__gold">3</td>
+                                            <td class="table-one__bold">6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2-3</td>
+                                            <td class="table-one__text-left table-one__bold">«Вольфрам-Б»</td>
+                                            <td class="table-one__text-left table-one__small d-none d-md-table-cell">п. Восток, Приморский край</td>
+                                            <td class="medal-table__bronze">1</td>
+                                            <td class="medal-table__silver">1</td>
+                                            <td class="medal-table__gold">1</td>
+                                            <td class="table-one__bold">3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2-3</td>
+                                            <td class="table-one__text-left table-one__bold">«Сталкер»</td>
+                                            <td class="table-one__text-left table-one__small d-none d-md-table-cell">Москва</td>
+                                            <td class="medal-table__bronze">1</td>
+                                            <td class="medal-table__silver"></td>
+                                            <td class="medal-table__gold">1</td>
+                                            <td class="table-one__bold">2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4-6</td>
+                                            <td class="table-one__text-left table-one__bold">«Аизовец»</td>
+                                            <td class="table-one__text-left table-one__small d-none d-md-table-cell">Южноуральск, Челябинская область</td>
+                                            <td class="medal-table__bronze"></td>
+                                            <td class="medal-table__silver">1</td>
+                                            <td class="medal-table__gold">1</td>
+                                            <td class="table-one__bold">2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4-6</td>
+                                            <td class="table-one__text-left table-one__bold">«Невский Легион»</td>
+                                            <td class="table-one__text-left table-one__small d-none d-md-table-cell">Санкт-Петербург</td>
+                                            <td class="medal-table__bronze">2</td>
+                                            <td class="medal-table__silver">1</td>
+                                            <td class="medal-table__gold">1</td>
+                                            <td class="table-one__bold">3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="medal-table__bottom">
+                                    <a href="javascript:;" class="link-str">
+                                        Победители всех Фестивалей
+                                        <svg class="link-str__icon">
+                                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <aside class="aside-right">
+                            <div class="h4">Турнирная таблица</div>
+
+                            <div class="tabs-num mb-15">
+                                <a href="javascript:;" class="tabs-num__link tabs-num__link_active">
+                                    <svg class="tabs-num__icon tabs-num__icon_f">
+                                        <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="tabs-num__link">
+                                    <svg class="tabs-num__icon tabs-num__icon_lm">
+                                        <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="tabs-num__link">
+                                    <svg class="tabs-num__icon tabs-num__icon_ln">
+                                        <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <table class="aside-table">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>И</th>
+                                    <th>В</th>
+                                    <th>П</th>
+                                    <th>О</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="aside-table__name">Н. Эд Машина</div>
+                                    </td>
+                                    <td>15</td>
+                                    <td>14</td>
+                                    <td>0</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="aside-table__name">Джентльмены с очень длинным названием</div>
+                                    </td>
+                                    <td>15</td>
+                                    <td>7</td>
+                                    <td>0</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="aside-table__name">ЯкутскЭнерго М</div>
+                                    </td>
+                                    <td>15</td>
+                                    <td>14</td>
+                                    <td>13</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="aside-table__name">Северная Звезда</div>
+                                    </td>
+                                    <td>15</td>
+                                    <td>14</td>
+                                    <td>0</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="aside-table__name">Казанские Драконы</div>
+                                    </td>
+                                    <td>15</td>
+                                    <td>24</td>
+                                    <td>0</td>
+                                    <td>43</td>
+                                </tr>
+                            </table>
+
+                            <hr />
+
+                            <div class="h4">Официально</div>
+
+                            <div class="aside-news">
+                                <div class="aside-news__item">
+                                    <div class="aside-news__date">16 июля 14:00</div>
+                                    <a href="javascript::" class="aside-news__name">Александр Зайцев покинул пост главного судьи Ночной хоккейной лиги</a>
+                                </div>
+                                <div class="aside-news__item">
+                                    <div class="aside-news__date">16 июля 14:00</div>
+                                    <a href="javascript::" class="aside-news__name">Старт регистрации заявок кандидатов в региональные представители</a>
+                                </div>
+                                <div class="aside-news__item">
+                                    <div class="aside-news__date">16 июля 14:00</div>
+                                    <a href="javascript::" class="aside-news__name">Задай вопрос Исполнительному директору Ночной Лиги</a>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="h4">Лиги</div>
+
+                            <div class="aside-article">
+                                <div class="aside-article__item">
+                                    <a href="javascript::" class="aside-article__name">Алексей Касатонов: «Забота о здоровье игроков и их близких является для нас приоритетом»</a>
+                                    <div class="aside-article__date">Вчера, 10:00</div>
+                                </div>
+                                <div class="aside-article__item">
+                                    <a href="javascript::" class="aside-article__name">Не холодно! Весь «Студёный Лёд» IX сезона</a>
+                                    <div class="aside-article__date">15 июля, 14:45</div>
+                                </div>
+                                <div class="aside-article__item">
+                                    <a href="javascript::" class="aside-article__name">И вратарь! Самые надёжные голкиперы Ночной Лиги в IX сезоне</a>
+                                    <div class="aside-article__place">23 июля, 17:45</div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="h4">Регионы</div>
+
+                            <div class="aside-article">
+                                <div class="aside-article__item">
+                                    <a href="javascript::" class="aside-article__name">Один из героев фильма «О чём говорят мужчины» задавался вопросом «Почему кинологи занимаются не кино, а собаками?»</a>
+                                    <div class="aside-article__date">Северная Осетия</div>
+                                    <div class="aside-article__date">3 августа, 11:00</div>
+                                </div>
+                                <div class="aside-article__item">
+                                    <a href="javascript::" class="aside-article__name">Клуб «Белый Шквал» уже давно позиционирует себя как любительскую команду с профессиональным подходом к делу</a>
+                                    <div class="aside-article__place">Республика Татарстан</div>
+                                    <div class="aside-article__date">23 июля, 17:45</div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="h4">Последнее видео</div>
+
+                            <div class="aside-photo">
+                                <a href="javascript::" class="aside-photo__item">
+                                    <span class="aside-photo__pict">
+                                        <img src="./local/uploads/aside.img.jpg" alt="" class="aside-photo__img" />
+                                    </span>
+                                    <span class="aside-photo__name">
+                                        «Скон-Урал. Путь к успеху». Документальный фильм о победителе VIII Фестиваля
+                                    </span>
+                                </a>
+                                <a href="javascript::" class="aside-photo__item">
+                                    <span class="aside-photo__pict">
+                                        <img src="./local/uploads/aside.img.jpg" alt="" class="aside-photo__img" />
+                                    </span>
+                                    <span class="aside-photo__name">
+                                        Парад на льду в честь 75-летия Победы! Республика Тыва
+                                    </span>
+                                </a>
+                                <a href="javascript::" class="aside-photo__item">
+                                    <span class="aside-photo__pict">
+                                        <img src="./local/uploads/aside.img.jpg" alt="" class="aside-photo__img" />
+                                    </span>
+                                    <span class="aside-photo__name">
+                                        Трейлер фильма «Сторона хоккейная: Омская область»
+                                    </span>
+                                </a>
+                            </div>
+
+                            <hr />
+
+                            <div class="h4">Последнее фото</div>
+
+                            <div class="aside-photo">
+                                <a href="javascript::" class="aside-photo__item">
+                                    <span class="aside-photo__pict">
+                                        <img src="./local/uploads/aside.img.jpg" alt="" class="aside-photo__img" />
+                                    </span>
+                                    <span class="aside-photo__name">
+                                        Владимиру Мышкину - 65!
+                                    </span>
+                                </a>
+                                <a href="javascript::" class="aside-photo__item">
+                                    <span class="aside-photo__pict">
+                                        <img src="./local/uploads/aside.img.jpg" alt="" class="aside-photo__img" />
+                                    </span>
+                                    <span class="aside-photo__name">
+                                        Алтайский край. Закрытие Отборочного этапа IX Фестиваля
+                                    </span>
+                                </a>
+                                <a href="javascript::" class="aside-photo__item">
+                                    <span class="aside-photo__pict">
+                                        <img src="./local/uploads/aside.img.jpg" alt="" class="aside-photo__img" />
+                                    </span>
+                                    <span class="aside-photo__name">
+                                        Студеный лед. Cosmos Collection Altay Resort
+                                    </span>
+                                </a>
+                            </div>
+
+                            <hr />
+
+                            <div class="h4">Общий рейтинг команд</div>
+
+                            <div class="tabs-num mb-15">
+                                <a href="javascript:;" class="tabs-num__link tabs-num__link_active">
+                                    <svg class="tabs-num__icon tabs-num__icon_f">
+                                        <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="tabs-num__link">
+                                    <svg class="tabs-num__icon tabs-num__icon_lm">
+                                        <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="tabs-num__link">
+                                    <svg class="tabs-num__icon tabs-num__icon_ln">
+                                        <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <table class="aside-table aside-table_short mb-30">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Прж</th>
+                                    <th>Пбд</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="aside-table__name">А Мега</div>
+                                    </td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="aside-table__name">Баня на Карбышева</div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="aside-table__name">Ак Барс страхование</div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="aside-table__name">Башкирские Беркуты</div>
+                                    </td>
+                                    <td>14</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="aside-table__name">Белый Шквал Север</div>
+                                    </td>
+                                    <td>32</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <div class="aside-table__name">Вуктылские Медведи</div>
+                                    </td>
+                                    <td>53</td>
+                                    <td>53</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <div class="aside-table__name">Железобетон 18+ЛН</div>
+                                    </td>
+                                    <td>21</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <div class="aside-table__name">Ледяные Волки Восточный</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <div class="aside-table__name">Летучие Пингвины</div>
+                                    </td>
+                                    <td>23</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <div class="aside-table__name">Уфимские снайперы</div>
+                                    </td>
+                                    <td>35</td>
+                                    <td>35</td>
+                                </tr>
+                            </table>
+
+                            <div class="aside-subscription">
+                                <div class="aside-subscription__title h4">Новостная рассылка</div>
+                                <div class="aside-subscription__desc">
+                                    Только самые интересные новостей и важных события Ночной Лиги
+                                </div>
+                                <form>
+                                    <div class="aside-subscription__form">
+                                        <input type="email" class="aside-subscription__input" value="" placeholder="Оставьте ваш e-mail" />
+                                        <button type="submit" class="aside-subscription__submit"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Партнеры в подвале -->
+        <div class="footer-partner-list">
+            <div class="container">
+                <div class="footer-partner-list__items">
+                    <a href="javascript:;" class="footer-partner-list__item">
+                        <div class="footer-partner-list__pict">
+                            <img src="./local/uploads/footer.partner.1.jpg" alt="" class="footer-partner-list__img" />
+                        </div>
+                        <div class="footer-partner-list__name">
+                            Генеральный партнёр
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="footer-partner-list__item">
+                        <div class="footer-partner-list__pict">
+                            <img src="./local/uploads/footer.partner.2.jpg" alt="" class="footer-partner-list__img" />
+                        </div>
+                        <div class="footer-partner-list__name">
+                            Генеральный партнёр
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="footer-partner-list__item">
+                        <div class="footer-partner-list__pict">
+                            <img src="./local/uploads/footer.partner.3.jpg" alt="" class="footer-partner-list__img" />
+                        </div>
+                        <div class="footer-partner-list__name">
+                            Соорганизатор
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="footer-partner-list__item">
+                        <div class="footer-partner-list__pict">
+                            <img src="./local/uploads/footer.partner.4.jpg" alt="" class="footer-partner-list__img" />
+                        </div>
+                        <div class="footer-partner-list__name">
+                            Соорганизатор
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал сайта -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-middle">
+                    <!-- Меню подвала -->
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Новости</div>
+                        <a href="javascript:;" class="menu-footer__link">Все материалы</a>
+                        <a href="javascript:;" class="menu-footer__link">Новости</a>
+                        <a href="javascript:;" class="menu-footer__link">Официально</a>
+                        <a href="javascript:;" class="menu-footer__link">Видео</a>
+                        <a href="javascript:;" class="menu-footer__link">Фото</a>
+                        <a href="javascript:;" class="menu-footer__link">Поиск</a>
+                    </nav>
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Матчи</div>
+                        <a href="javascript:;" class="menu-footer__link">Календарь</a>
+                        <a href="javascript:;" class="menu-footer__link">Результаты</a>
+                        <a href="javascript:;" class="menu-footer__link">Трансляции<br />матчей</a>
+                        <a href="javascript:;" class="menu-footer__link">Альбомы<br />матчей</a>
+                        <a href="javascript:;" class="menu-footer__link">Арбитры</a>
+                    </nav>
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Чемпионат</div>
+                        <a href="javascript:;" class="menu-footer__link">Турнирная таблица</a>
+                        <a href="javascript:;" class="menu-footer__link">Лидеры</a>
+                        <a href="javascript:;" class="menu-footer__link">Команды</a>
+                        <a href="javascript:;" class="menu-footer__link">Протоколы СДК</a>
+                        <a href="javascript:;" class="menu-footer__link">Платежи</a>
+                        <a href="javascript:;" class="menu-footer__link">Документы</a>
+                        <a href="javascript:;" class="menu-footer__link">Архив документов</a>
+                    </nav>
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Спецпроекты</div>
+                        <a href="javascript:;" class="menu-footer__link">Фестиваль хоккея</a>
+                        <a href="javascript:;" class="menu-footer__link">Кубок Легенд</a>
+                        <a href="javascript:;" class="menu-footer__link">Клуб Макарова</a>
+                        <a href="javascript:;" class="menu-footer__link">Приз Якушева</a>
+                        <a href="javascript:;" class="menu-footer__link">Студёный лёд</a>
+                    </nav>
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Информация</div>
+                        <a href="javascript:;" class="menu-footer__link">О Лиге</a>
+                        <a href="javascript:;" class="menu-footer__link">Трофеи</a>
+                        <a href="javascript:;" class="menu-footer__link">Управление</a>
+                        <a href="javascript:;" class="menu-footer__link">Совет Легенд</a>
+                        <a href="javascript:;" class="menu-footer__link">Сотрудничество</a>
+                        <a href="javascript:;" class="menu-footer__link">Вопрос-ответ</a>
+                    </nav>
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Регионы</div>
+                        <a href="javascript:;" class="menu-footer__link">Статус турнира</a>
+                        <a href="javascript:;" class="menu-footer__link">Таблица</a>
+                        <a href="javascript:;" class="menu-footer__link">Призёры</a>
+                        <a href="javascript:;" class="menu-footer__link">Победители</a>
+                        <a href="javascript:;" class="menu-footer__link">Все команды</a>
+                        <a href="javascript:;" class="menu-footer__link">Все игроки</a>
+                    </nav>
+                    <nav class="menu-footer">
+                        <div class="menu-footer__title">Контакты</div>
+                        <a href="javascript:;" class="menu-footer__link">Региональные<br />представители</a>
+                        <a href="javascript:;" class="menu-footer__link">Арены</a>
+                        <a href="javascript:;" class="menu-footer__link">Медицина</a>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom__left">
+                        © 2011–2020, Фонд развития любительского хоккея «Ночная Хоккейная Лига».
+                    </div>
+                    <div class="footer-bottom__right">
+                        <div class="footer-social-inner">
+                            <a href="javascript:;" class="footer-social-inner__link footer-social-inner__link_fb"></a>
+                            <a href="javascript:;" class="footer-social-inner__link footer-social-inner__link_vk"></a>
+                            <a href="javascript:;" class="footer-social-inner__link footer-social-inner__link_ig"></a>
+                            <a href="javascript:;" class="footer-social-inner__link footer-social-inner__link_yt"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Подвал на мобильнике -->
+        <footer class="main-footer-mobile">
+            <div class="container">
+                <!-- Меню подвала (на мобильнике) -->
+                <nav class="menu-footer">
+                    <a href="javascript:;" class="menu-footer__link">Новости</a>
+                    <a href="javascript:;" class="menu-footer__link">Регионы</a>
+                    <a href="javascript:;" class="menu-footer__link">Официально</a>
+                    <a href="javascript:;" class="menu-footer__link">О Лиге</a>
+                    <a href="javascript:;" class="menu-footer__link">Матчи</a>
+                    <a href="javascript:;" class="menu-footer__link">Документы</a>
+                    <a href="javascript:;" class="menu-footer__link">Чемпионат</a>
+                    <a href="javascript:;" class="menu-footer__link">Сотрудничество</a>
+                    <a href="javascript:;" class="menu-footer__link">Протоколы СДК</a>
+                    <a href="javascript:;" class="menu-footer__link">Контакты</a>
+                </nav>
+
+                <div class="main-footer-mobile__btn">
+                    <a href="javascript:;" class="btn-five">Полная версия сайта</a>
+                    <a href="javascript:;" class="to-top"></a>
+                </div>
+
+                <div class="main-footer-mobile__copy">
+                    © 2011–2020, Фонд развития любительского хоккея «Ночная&nbsp;Хоккейная&nbsp;Лига».
+                </div>
+            </div>
+        </footer>
+
+        <!-- Меню на мобильнике -->
+        <div class="menu-mobile">
+            <a href="javascript:;" class="menu-mobile__close"></a>
+
+            <!-- Выбор региона (на мобильнике) -->
+            <div class="menu-mobile__region">
+                <div class="menu-mobile__region-pict">
+                    <img class="menu-mobile__region-img" src="./local/img/obl.1.png" alt="" />
+                </div>
+                <div class="menu-mobile__region-box">
+                    <select class="menu-mobile__region-select">
+                        <option value="">Амурская область</option>
+                        <option value="" selected="selected">Свердловская область</option>
+                        <option value="">Ульяновская область</option>
+                        <option value="">Воронежская область</option>
+                        <option value="">Ярославская область</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Главное меню (на мобильнике) -->
+            <nav class="menu-top">
+                <a href="javascript:;" class="menu-top__link">
+                    Новости
+                </a>
+                <a href="javascript:;" class="menu-top__link">
+                    Матчи
+                </a>
+                <a href="javascript:;" class="menu-top__link menu-top__link_active">
+                    Чемпионат
+                </a>
+                <a href="javascript:;" class="menu-top__link">
+                    Трансляции
+                </a>
+                <a href="javascript:;" class="menu-top__link">
+                    Регионы
+                </a>
+                <a href="javascript:;" class="menu-top__link">
+                    О Лиге
+                </a>
+            </nav>
+
+            <!-- Соц сети (на мобильнике) -->
+            <div class="header-social">
+                <a href="javascript:;" class="header-social__link header-social__link_fb"></a>
+                <a href="javascript:;" class="header-social__link header-social__link_vk"></a>
+                <a href="javascript:;" class="header-social__link header-social__link_ig"></a>
+                <a href="javascript:;" class="header-social__link header-social__link_yt"></a>
+            </div>
+
+            <div class="menu-mobile__desc">
+                Делитесь новыми победами и жаркими эмоциями с хештэгом #NHLIGA
+            </div>
+            <div class="menu-mobile__btn">
+                <a href="javascript:;" class="btn-one">Полная версия сайта</a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./local/js/script.js?abb4abce955797361f36"></script>
+    </body>
+</html>
