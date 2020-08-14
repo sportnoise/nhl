@@ -1,0 +1,148 @@
+.match-calendar {
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--white);
+        padding: 10px 0;
+        margin: 0 0 20px;
+        border-radius: 4px;
+        position: relative;
+    }
+    &__pict {
+        width: 105px;
+        padding: 0 30px;
+    }
+    &__logo {
+        display: block;
+        margin: auto;
+    }
+    &__team {
+        width: 210px;
+
+        &_right {
+            text-align: right;
+        }
+        &-name {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        &-city {
+            color: var(--link);
+            font-size: 13px;
+            line-height: 17px;
+            letter-spacing: .2px;
+        }
+    }
+    &__center {
+        width: 240px;
+        text-align: center;
+    }
+    &__info {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+        margin: 0 0 5px;
+        display: flex;
+        justify-content: center;
+
+        &-part {
+            margin: 0 5px;
+        }
+    }
+    &__time {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &__place {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        &__btns {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 1px;
+            background-color: rgba(255, 255, 255, .7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            opacity: 0;
+            transition: all .3s;
+        }
+        &__item:hover &__btns {
+            opacity: 1;
+        }
+        &__btn {
+            fill: var(--link);
+            margin: 0 20px;
+
+            &:hover {
+                fill: var(--black);
+            }
+        }
+        &__icon {
+
+            &_1 {
+                width: 43px;
+                height: 30px;
+            }
+            &_2 {
+                width: 37px;
+                height: 39px;
+            }
+            &_3 {
+                width: 39px;
+                height: 32px;
+            }
+            &_4 {
+                width: 38px;
+                height: 30px;
+            }
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        &__btns {
+            display: none;
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        &__pict {
+            width: 75px;
+            padding: 0 15px;
+        }
+        &__team {
+            width: 150px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__item {
+            flex-wrap: wrap;
+            padding: 15px 0;
+            align-items: flex-start;
+        }
+        &__pict,
+        &__team {
+            width: 50%;
+            text-align: center;
+            padding: 0 15px 15px;
+        }
+        &__center {
+            width: 100%;
+        }
+    }
+}
