@@ -1,38 +1,38 @@
-<a href="/elem.html">Элементы дизайна</a><br>
-<a href="/index.html">Главная страница</a><br>
-<a href="/index-window.html">Главная страница (с окнами)</a><br>
-<a href="/soon.html">Скоро всё заработает</a><br>
-<a href="/404.html">404</a><br>
-<a href="/protocols.html">Протоколы СДК</a><br>
-<a href="/protocol.html">Протокол</a><br>
-<a href="/contacts.html">Контакты</a><br>
-<a href="/representatives.html">Представители всех регионов</a><br>
-<a href=".html">Документы</a><br>
-<a href="/archive.html">Архив</a><br>
-<a href="/council.html">Совет</a><br>
-<a href="/regions.html">Регионы</a><br>
-<a href="/teams.html">Команды</a><br>
-<a href="/players.html">Игроки</a><br>
-<a href="/medal-one.html">Медальный зачёт по командам</a><br>
-<a href="/medal-two.html">Медальный зачёт по субъектам</a><br>
-<a href="/medal-three.html">Медальный зачёт по игрокам</a><br>
-<a href="/medal-four.html">Медальный зачёт по трофеям</a><br>
-<a href="/news-list.html">Все новости (Список новостей)</a><br>
-<a href="/news-detail.html">Новость детальная</a><br>
-<a href="/news-officially.html">Новость официально</a><br>
-<a href="/photo-list.html">Все фото (Список фото)</a><br>
-<a href="/video-list.html">Все видео (Список видео)</a><br>
-<a href="/faq.html">Вопрос/Ответ</a><br>
-<a href="/broadcast.html">Трансляции</a><br>
-<a href="/album.html">Альбомы матчей</a><br>
-<a href="/arbitrators.html">Арбитры</a><br>
-<a href="/statistic-teams.html">Общая рейтинговая таблица по командам</a><br>
-<a href="/statistic-players.html">Общая рейтинговая таблица по игрокам</a><br>
-<a href="/final-position.html">Итоговое положение команд</a><br>
-<a href="/winners.html">Призёры</a><br>
-<a href="/club.html">Клуб Сергея Макарова</a><br>
-<a href="/festival.html">Фестиваль Хоккея</a><br>
-<a href="/match-calendar.html">Матчи Ближайшие</a><br>
+<a href="https://sportnoise.github.io/nhl/elem.html">Элементы дизайна</a><br>
+<a href="https://sportnoise.github.io/nhl/index.html">Главная страница</a><br>
+<a href="https://sportnoise.github.io/nhl/index-window.html">Главная страница (с окнами)</a><br>
+<a href="https://sportnoise.github.io/nhl/soon.html">Скоро всё заработает</a><br>
+<a href="https://sportnoise.github.io/nhl/404.html">404</a><br>
+<a href="https://sportnoise.github.io/nhl/protocols.html">Протоколы СДК</a><br>
+<a href="https://sportnoise.github.io/nhl/protocol.html">Протокол</a><br>
+<a href="https://sportnoise.github.io/nhl/contacts.html">Контакты</a><br>
+<a href="https://sportnoise.github.io/nhl/representatives.html">Представители всех регионов</a><br>
+<a href="https://sportnoise.github.io/nhl.html">Документы</a><br>
+<a href="https://sportnoise.github.io/nhl/archive.html">Архив</a><br>
+<a href="https://sportnoise.github.io/nhl/council.html">Совет</a><br>
+<a href="https://sportnoise.github.io/nhl/regions.html">Регионы</a><br>
+<a href="https://sportnoise.github.io/nhl/teams.html">Команды</a><br>
+<a href="https://sportnoise.github.io/nhl/players.html">Игроки</a><br>
+<a href="https://sportnoise.github.io/nhl/medal-one.html">Медальный зачёт по командам</a><br>
+<a href="https://sportnoise.github.io/nhl/medal-two.html">Медальный зачёт по субъектам</a><br>
+<a href="https://sportnoise.github.io/nhl/medal-three.html">Медальный зачёт по игрокам</a><br>
+<a href="https://sportnoise.github.io/nhl/medal-four.html">Медальный зачёт по трофеям</a><br>
+<a href="https://sportnoise.github.io/nhl/news-list.html">Все новости (Список новостей)</a><br>
+<a href="https://sportnoise.github.io/nhl/news-detail.html">Новость детальная</a><br>
+<a href="https://sportnoise.github.io/nhl/news-officially.html">Новость официально</a><br>
+<a href="https://sportnoise.github.io/nhl/photo-list.html">Все фото (Список фото)</a><br>
+<a href="https://sportnoise.github.io/nhl/video-list.html">Все видео (Список видео)</a><br>
+<a href="https://sportnoise.github.io/nhl/faq.html">Вопрос/Ответ</a><br>
+<a href="https://sportnoise.github.io/nhl/broadcast.html">Трансляции</a><br>
+<a href="https://sportnoise.github.io/nhl/album.html">Альбомы матчей</a><br>
+<a href="https://sportnoise.github.io/nhl/arbitrators.html">Арбитры</a><br>
+<a href="https://sportnoise.github.io/nhl/statistic-teams.html">Общая рейтинговая таблица по командам</a><br>
+<a href="https://sportnoise.github.io/nhl/statistic-players.html">Общая рейтинговая таблица по игрокам</a><br>
+<a href="https://sportnoise.github.io/nhl/final-position.html">Итоговое положение команд</a><br>
+<a href="https://sportnoise.github.io/nhl/winners.html">Призёры</a><br>
+<a href="https://sportnoise.github.io/nhl/club.html">Клуб Сергея Макарова</a><br>
+<a href="https://sportnoise.github.io/nhl/festival.html">Фестиваль Хоккея</a><br>
+<a href="https://sportnoise.github.io/nhl/match-calendar.html">Матчи Ближайшие</a><br>
 
 <hr>
 
@@ -67,4 +67,4 @@
 
 <hr>
 
-Tab-панели (.tabs-num и .tabs-panel) могут применться как простые ссылки, допустим для подгрузки ajax контента, так и для переключения вкладок. Для этого должны иметь класс *_active (.tabs-num_active и .tabs-panel_active) Пример кода <a href="/elem.html">здесь</a>
+Tab-панели (.tabs-num и .tabs-panel) могут применться как простые ссылки, допустим для подгрузки ajax контента, так и для переключения вкладок. Для этого должны иметь класс *_active (.tabs-num_active и .tabs-panel_active) Пример кода <a href="https://sportnoise.github.io/nhl/elem.html">здесь</a>
