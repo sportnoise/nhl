@@ -1,0 +1,250 @@
+<% var data = {
+    title: "Championship",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Чемпионат
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Протоколы СДК
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Платежи
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Документы
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Контакты
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-30">
+
+                <div class="h1-and-link">
+                    <h1 class="mb-0">Чемпионат</h1>
+                    <a href="javascript:;" class="link-str d-none d-lg-flex">
+                        Статистика по всем регионам
+                        <svg class="link-str__icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="championship-filter filter-panel mb-0">
+                    <div class="filter-panel__part filter-panel__part_90">
+                        <select class="select-btn">
+                            <option selected disabled>IX. 19/20</option>
+                            <option value="">VIII. 18/19</option>
+                            <option value="">VII. 17/18</option>
+                            <option value="">VI. 16/17</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_145">
+                        <div class="checkbox-icon">
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked>
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                    <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                    <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                    <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-panel__part championship-filter__calc"></div>
+                    <div class="filter-panel__part filter-panel__part_50">
+                        <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="white-block mb-30">
+                <h2 class="mb-25">II стадия – Плей-офф</h2>
+                <div class="championship-minus-margin">
+                    <div class="championship-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="championship-slider__item swiper-slide">
+                                <div class="championship-slider__step championship-step mb-60">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Максимум</div>
+                                        <div class="championship-step__second">Н. Эд Машина</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        14 : <span class="championship-step__lose">0</span>
+                                    </div>
+                                </div>
+                                <div class="championship-slider__step championship-step">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Сокол</div>
+                                        <div class="championship-step__second">Союз</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        8 : <span class="championship-step__lose">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="championship-slider__item swiper-slide">
+                                <div class="championship-slider__step championship-step mb-60">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Сокол</div>
+                                        <div class="championship-step__second">Казанские Драконы</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        17 : <span class="championship-step__lose">0</span>
+                                    </div>
+                                </div>
+                                <div class="championship-slider__step championship-step">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Усмань</div>
+                                        <div class="championship-step__second">Максимум</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        3 : <span class="championship-step__lose">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="championship-slider__item swiper-slide">
+                                <div class="championship-slider__step championship-step mb-60">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Максимум</div>
+                                        <div class="championship-step__second">Н. Эд Машина</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        14 : <span class="championship-step__lose">0</span>
+                                    </div>
+                                </div>
+                                <div class="championship-slider__step championship-step">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Сокол</div>
+                                        <div class="championship-step__second">Союз</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        8 : <span class="championship-step__lose">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="championship-slider__item swiper-slide">
+                                <div class="championship-slider__step championship-step mb-60">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Сокол</div>
+                                        <div class="championship-step__second">Казанские Драконы</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        17 : <span class="championship-step__lose">0</span>
+                                    </div>
+                                </div>
+                                <div class="championship-slider__step championship-step">
+                                    <div class="championship-step__box">
+                                        <div class="championship-step__first">Усмань</div>
+                                        <div class="championship-step__second">Максимум</div>
+                                    </div>
+                                    <div class="championship-step__score">
+                                        3 : <span class="championship-step__lose">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="championship-slider__item swiper-slide">
+                                <div class="championship-final">
+                                    <div class="championship-final__winner-name">
+                                        Казанские Драконы
+                                    </div>
+                                    <div class="championship-final__winner-logo">
+                                        Казанские Драконы
+                                    </div>
+                                    <div class="championship-final__score">
+                                        <div>
+                                            18 : <span class="championship-final__lose">4</span>
+                                        </div>
+                                        <div>
+                                            15 : <span class="championship-final__lose">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="championship-final__loser-logo">
+                                        Казанские Драконы
+                                    </div>
+                                    <div class="championship-final__loser-name">
+                                        Казанские Драконы
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-block mb-30">
+                <h2 class="mb-15">Матч за 3 место</h2>
+                <div class="championship-minus-margin">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="championship-step">
+                                <div class="championship-step__box">
+                                    <div class="championship-step__first">Союз</div>
+                                    <div class="championship-step__second">Максимум</div>
+                                </div>
+                                <div class="championship-step__score">
+                                    <span class="championship-step__lose">3</span> : 12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

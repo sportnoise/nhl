@@ -226,6 +226,7 @@ $(function() {
     // Слайдер таблиц
     new TableSlider();
 
+    // Внутренние слайдеры картинок
     $('.slider-inner').each(function(){
 
         let elem = $(this);
@@ -256,4 +257,17 @@ $(function() {
             }
         })
     });
+
+    // Слайдер Чемпионат
+    let championshipSliderCount = $('.championship-slider__item').length;
+
+    let championshipSlider = new Swiper('.championship-slider', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+    });
+
+    if (championshipSliderCount)
+    {
+        championshipSlider.slideTo(championshipSliderCount, 0);
+    }
 });

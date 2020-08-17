@@ -1,0 +1,18 @@
+.championship-slider {
+
+    &__step {
+        position: relative;
+
+        &:after {
+            content: "";
+            border: 4px solid transparent;
+            border-left: 6px solid var(--white_contur);
+            position: absolute;
+            width: 0;
+            height: 0;
+            right: -25px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+}

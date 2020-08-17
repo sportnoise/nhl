@@ -165,3 +165,9 @@
 
 // Платежи
 @import "./pages/payments/form"; // Форма
+
+// Чемпионат
+@import "./pages/championship/filter"; // Фильтр
+@import "./pages/championship/minus.margin"; // Отрицательный отступ
+@import "./pages/championship/step"; // Одна плашка
+@import "./pages/championship/slider"; // Слайдер

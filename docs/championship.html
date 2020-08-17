@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>Ночная Хоккейная Лига - News officially</title>
+        <title>Ночная Хоккейная Лига - Championship</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <link href="./local/template_styles.css?e0637d309c6fe5718656" rel="stylesheet" />
     </head>
@@ -233,13 +233,19 @@
                 <div class="container">
                     <div class="menu-section__block">
                         <a href="javascript:;" class="menu-section__link menu-section__link_active">
-                            Новости
+                            Чемпионат
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Видео
+                            Протоколы СДК
                         </a>
                         <a href="javascript:;" class="menu-section__link">
-                            Фото
+                            Платежи
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Документы
+                        </a>
+                        <a href="javascript:;" class="menu-section__link">
+                            Контакты
                         </a>
                     </div>
                 </div>
@@ -248,158 +254,163 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="white-block mb-60">
-                            <div class="title-back h1-and-link mb-30 d-none d-lg-flex">
-                                <a href="javascript:;" class="title-back__back">
-                                    <svg class="title-back__back-icon">
-                                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                                    </svg>
-                                </a>
-                                <div></div>
+                        <div class="white-block mb-30">
+                            <div class="h1-and-link">
+                                <h1 class="mb-0">Чемпионат</h1>
                                 <a href="javascript:;" class="link-str d-none d-lg-flex">
-                                    Следующий материал
+                                    Статистика по всем регионам
                                     <svg class="link-str__icon">
                                         <use xlink:href="./local/img/sprite.svg#str-next"></use>
                                     </svg>
                                 </a>
                             </div>
 
-                            <div class="block-width-md">
-                                <h1 class="mb-15">Ночная Хоккейная Лига<br />приостанавливает сезон</h1>
-                            </div>
-
-                            <div class="news-detail-about">
-                                Пресс-служба<br />
-                                6 июня, 11:00
-                            </div>
-
-                            <div class="block-width-md">
-                                <p>
-                                    В связи с распространением пандемии коронавируса и в целях обеспечения безопасности участников турнира Ночная Лига приостанавливает матчи Отборочного этапа IX Всероссийского Фестиваля по хоккею среди
-                                    любительских команд с 19 марта до 10 апреля 2020 года.
-                                </p>
-                                <p>
-                                    Решение о продолжении Отборочного этапа и проведении Финального этапа в Сочи будет объявлено в отдельном порядке и опубликовано на официальных ресурсах Лиги.
-                                </p>
+                            <div class="championship-filter filter-panel mb-0">
+                                <div class="filter-panel__part filter-panel__part_90">
+                                    <select class="select-btn">
+                                        <option selected="selected" disabled="disabled">IX. 19/20</option>
+                                        <option value="">VIII. 18/19</option>
+                                        <option value="">VII. 17/18</option>
+                                        <option value="">VI. 16/17</option>
+                                    </select>
+                                </div>
+                                <div class="filter-panel__part filter-panel__part_145">
+                                    <div class="checkbox-icon">
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked="checked" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                                <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                            </svg>
+                                        </label>
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                                <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                            </svg>
+                                        </label>
+                                        <label class="checkbox-icon__label">
+                                            <input class="checkbox-icon__input" type="checkbox" value="" name="check" />
+                                            <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                                <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter-panel__part championship-filter__calc"></div>
+                                <div class="filter-panel__part filter-panel__part_50">
+                                    <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="white-block mb-60">
-                            <div class="mb-45 d-none d-lg-flex"></div>
-
-                            <div class="block-width-md">
-                                <h1 class="mb-15">Продлен срок регистрации заявок кандидатов в региональные представители</h1>
+                        <div class="white-block mb-30">
+                            <h2 class="mb-25">II стадия – Плей-офф</h2>
+                            <div class="championship-minus-margin">
+                                <div class="championship-slider swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="championship-slider__item swiper-slide">
+                                            <div class="championship-slider__step championship-step mb-60">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Максимум</div>
+                                                    <div class="championship-step__second">Н. Эд Машина</div>
+                                                </div>
+                                                <div class="championship-step__score">14 : <span class="championship-step__lose">0</span></div>
+                                            </div>
+                                            <div class="championship-slider__step championship-step">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Сокол</div>
+                                                    <div class="championship-step__second">Союз</div>
+                                                </div>
+                                                <div class="championship-step__score">8 : <span class="championship-step__lose">4</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="championship-slider__item swiper-slide">
+                                            <div class="championship-slider__step championship-step mb-60">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Сокол</div>
+                                                    <div class="championship-step__second">Казанские Драконы</div>
+                                                </div>
+                                                <div class="championship-step__score">17 : <span class="championship-step__lose">0</span></div>
+                                            </div>
+                                            <div class="championship-slider__step championship-step">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Усмань</div>
+                                                    <div class="championship-step__second">Максимум</div>
+                                                </div>
+                                                <div class="championship-step__score">3 : <span class="championship-step__lose">2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="championship-slider__item swiper-slide">
+                                            <div class="championship-slider__step championship-step mb-60">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Максимум</div>
+                                                    <div class="championship-step__second">Н. Эд Машина</div>
+                                                </div>
+                                                <div class="championship-step__score">14 : <span class="championship-step__lose">0</span></div>
+                                            </div>
+                                            <div class="championship-slider__step championship-step">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Сокол</div>
+                                                    <div class="championship-step__second">Союз</div>
+                                                </div>
+                                                <div class="championship-step__score">8 : <span class="championship-step__lose">4</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="championship-slider__item swiper-slide">
+                                            <div class="championship-slider__step championship-step mb-60">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Сокол</div>
+                                                    <div class="championship-step__second">Казанские Драконы</div>
+                                                </div>
+                                                <div class="championship-step__score">17 : <span class="championship-step__lose">0</span></div>
+                                            </div>
+                                            <div class="championship-slider__step championship-step">
+                                                <div class="championship-step__box">
+                                                    <div class="championship-step__first">Усмань</div>
+                                                    <div class="championship-step__second">Максимум</div>
+                                                </div>
+                                                <div class="championship-step__score">3 : <span class="championship-step__lose">2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="championship-slider__item swiper-slide">
+                                            <div class="championship-final">
+                                                <div class="championship-final__winner-name">
+                                                    Казанские Драконы
+                                                </div>
+                                                <div class="championship-final__winner-logo">
+                                                    Казанские Драконы
+                                                </div>
+                                                <div class="championship-final__score">
+                                                    <div>18 : <span class="championship-final__lose">4</span></div>
+                                                    <div>15 : <span class="championship-final__lose">2</span></div>
+                                                </div>
+                                                <div class="championship-final__loser-logo">
+                                                    Казанские Драконы
+                                                </div>
+                                                <div class="championship-final__loser-name">
+                                                    Казанские Драконы
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
 
-                            <div class="news-detail-about">
-                                Пресс-служба<br />
-                                6 июня, 11:00
-                            </div>
-
-                            <div class="block-width-md">
-                                <p>
-                                    Срок регистрации заявок кандидатов в региональные представители для следующих регионов продлен до 24 июля включительно:
-                                </p>
-                            </div>
-
-                            <div class="text-sm mb-35">
+                        <div class="white-block mb-30">
+                            <h2 class="mb-15">Матч за 3 место</h2>
+                            <div class="championship-minus-margin">
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <b>Центр</b><br />
-                                        Брянская область<br />
-                                        Калужская область<br />
-                                        Смоленская область<br />
-                                        <br />
-                                        <b>Санкт-Петербург</b><br />
-                                        <br />
-                                        <b>Северо-Запад</b><br />
-                                        Ленинградская область<br />
-                                        Новгородская область<br />
-                                        Псковская область<br />
-                                        Ненецкий автономный округ<br />
-                                        <br />
-                                        <b>Юг и Северный Кавказ</b><br />
-                                        Республика Калмыкия<br />
-                                        Астраханская область<br />
-                                        Волгоградская область<br />
-                                        Республика Дагестан<br />
-                                        Республика Ингушетия<br />
-                                        Карачаево-Черкесская<br />
-                                        Республика Республика<br />
-                                        Северная Осетия<br />
-                                        Чеченская Республика<br />
-                                        Ставропольский край
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <b>Приволжье</b><br />
-                                        Республика Марий Эл<br />
-                                        Кировская область<br />
-                                        Оренбургская область<br />
-                                        Пензенская область<br />
-                                        Конференция СИБИРЬ<br />
-                                        Иркутская область<br />
-                                        Республика Алтай<br />
-                                        Новосибирская область<br />
-                                        Томская область<br />
-                                        <br />
-                                        <b>Дальний Восток</b><br />
-                                        Республика Саха (Якутия)<br />
-                                        Хабаровский край<br />
-                                        Чукотский автономный округ
+                                    <div class="col-4">
+                                        <div class="championship-step">
+                                            <div class="championship-step__box">
+                                                <div class="championship-step__first">Союз</div>
+                                                <div class="championship-step__second">Максимум</div>
+                                            </div>
+                                            <div class="championship-step__score"><span class="championship-step__lose">3</span> : 12</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="block-width-md">
-                                <p class="mb-30">
-                                    Данное решение обосновано ограничительными мерами из-за распространения новой коронавирусной инфекции, ввиду которых подача заявок затруднена. Продление срока подачи заявок не распространяется на регионы
-                                    вне списка, указанного выше.
-                                </p>
-                                <div class="text-sm mb-30">
-                                    <p class="title-for-ul">
-                                        При подаче заявок просим обратить внимание на следующее
-                                    </p>
-                                    <ul>
-                                        <li>Необходимо внимательно ознакомиться с <a href="javascript:;">Положением о региональном представителе Фонда «НХЛ»</a>;</li>
-                                        <li>Официальный представитель команды, входящий в состав инициативной группы, может заполнить заявление о выдвижении только одного кандидата;</li>
-                                        <li>
-                                            Выдвижение командами регионального представителя в соответствующем дивизионе осуществляется инициативной группой, состоящей: — для дивизионов «Любитель 40+» и «Лига Надежды» из шести и более
-                                            официальных представителей команд (по одному от каждой команды) — для дивизиона «Лига Мечты» из пяти и более официальных представителей команд (по одному от каждой команды);
-                                        </li>
-                                        <li>Установленные формы заявлений являются обязательными при регистрации заявки. Заявления, написанные от руки и перепечатанные в произвольной форме, к рассмотрению не принимаются;</li>
-                                        <li>
-                                            Согласно п.2.1.8. Положения о региональном представителе Фонда «НХЛ» региональный представитель обязан утверждать с инициативной группой размер командной платы за участие в регулярном чемпионате в
-                                            соответствии с порядком расчета размера командной платы за участие.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>Лига благодарит кандидатов, которые подали <span class="text-bg">заявки в срок до 14 июля</span>. Итоги выдвижения и самовыдвижения региональных представителей будут опубликованы на нашем сайте.</p>
-                                <p>Электронный адрес почты для вопросов по регистрации заявок кандидатов в региональные представители: <a href="mailto:season10@nhliga.com">season10@nhliga.com</a></p>
-                                <a href="javascript:;" class="news-link-str">
-                                    <svg class="news-link-str__icon">
-                                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
-                                    </svg>
-                                    <span class="news-link-str__text">Подробнее о процедуре регистрации заявок можно ознакомиться по ссылке</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="white-block mb-60">
-                            <div class="mb-45 d-none d-lg-flex"></div>
-
-                            <div class="block-width-md">
-                                <h1>Александр Зайцев покинул пост главного судьи Ночной хоккейной лиги</h1>
-                            </div>
-
-                            <div class="block-width-lg mb-35">
-                                <img src="./local/uploads/news.officially.jpg" alt="" />
-                            </div>
-
-                            <div class="block-width-sm">
-                                <h2>Лига благодарит его за многолетний вклад в развитие любительского хоккея и судейского сектора Ночной лиги и желает успехов в дальнейшей карьере</h2>
-                                <p>Александр Владимирович Зайцев — судья Всероссийской категории. Работал на многих матчах Чемпионата СССР и России.</p>
-                                <p>На Чемпионате мира по хоккею среди мужских команд в 1992 году судил в пяти матчах, в том числе в финальном матче мирового первенства.</p>
-                                <p>Принимал активное участие в подготовке специалистов в Школе молодых арбитров, выпускники которой сегодня обслуживают помимо матчей Ночной хоккейной лиги, матчи КХЛ, ВХЛ и других профессиональных лиг.</p>
                             </div>
                         </div>
                     </div>
