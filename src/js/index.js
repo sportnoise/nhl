@@ -2,6 +2,7 @@ import $ from "jquery";
 import tippy from 'tippy.js';
 import Swiper from './swiper.js';
 import formstyler from './jquery.formstyler.js';
+import dataTables from './jquery.dataTables.js';
 
 window.jQuery = $;
 window.$ = $;
@@ -270,4 +271,58 @@ $(function() {
     {
         championshipSlider.slideTo(championshipSliderCount, 0);
     }
+
+
+ /*   $.fn.dataTableExt.oSort['math-path-asc']  = function(a,b) {
+                        var ruDatea=$.trim(a).split('.');
+            var ruDateb=$.trim(b).split('.');
+
+            if (ruDatea[2]*1<ruDateb[2]*1) return 1;
+            if (ruDatea[2]*1>ruDateb[2]*1) return -1;
+            if (ruDatea[2]*1 == ruDateb[2]*1) 
+            {
+                if (ruDatea[1]*1<ruDateb[1]*1) return 1;
+                if (ruDatea[1]*1>ruDateb[1]*1) return -1;
+                if (ruDatea[1]*1 == ruDateb[1]*1) 
+                {
+                    if (ruDatea[0]*1<ruDateb[0]*1) return 1;
+                    if (ruDatea[0]*1>ruDateb[0]*1) return -1;
+                }
+                else return 0;
+            }
+    };
+
+    $.fn.dataTableExt.oSort['math-path-desc'] = function(a,b) {
+          var ruDatea=$.trim(a).split('.');
+          var ruDateb=$.trim(b).split('.');
+
+            if (ruDatea[2]*1<ruDateb[2]*1) return -1;
+            if (ruDatea[2]*1>ruDateb[2]*1) return 1;
+            if (ruDatea[2]*1 == ruDateb[2]*1) 
+            {
+                if (ruDatea[1]*1<ruDateb[1]*1) return -1;
+                if (ruDatea[1]*1>ruDateb[1]*1) return 1;
+                if (ruDatea[1]*1 == ruDateb[1]*1) 
+                {
+                    if (ruDatea[0]*1<ruDateb[0]*1) return -1;
+                    if (ruDatea[0]*1>ruDateb[0]*1) return 1;
+                }
+                else return 0;
+            }
+    };
+
+    $('#myTable').dataTable({
+
+        "columns": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {"sType": "math-path"},
+            null,
+            null,
+        ],
+        "sDom": '<t>'
+    });*/
 });
