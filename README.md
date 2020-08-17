@@ -36,6 +36,7 @@
 <a href="https://sportnoise.github.io/nhl/match-result.html">Матчи Результаты</a><br>
 <a href="https://sportnoise.github.io/nhl/search.html">Поиск</a><br>
 <a href="https://sportnoise.github.io/nhl/payments-one.html">Платежи (Оплатить членство)</a><br>
+<a href="https://sportnoise.github.io/nhl/payments-two.html">Платежи (Оплатить штраф)</a><br>
 
 <hr>
 

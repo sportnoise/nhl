@@ -103,6 +103,7 @@
 .check-two {
     position: relative;
     margin: 0 0 5px;
+    padding: 0 0 0 20px;
 
     &__input {
         position: absolute;
@@ -130,7 +131,6 @@
     }
 
     &_yes {
-        padding: 0 0 0 20px;
 
         &:before {
             content: '';
@@ -147,7 +147,6 @@
         }
     }
     &_no {
-        padding: 0 0 0 20px;
 
         &:before,
         &:after {
