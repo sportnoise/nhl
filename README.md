@@ -35,7 +35,7 @@
 <a href="https://sportnoise.github.io/nhl/match-calendar.html">Матчи Ближайшие</a><br>
 <a href="https://sportnoise.github.io/nhl/match-result.html">Матчи Результаты</a><br>
 <a href="https://sportnoise.github.io/nhl/search.html">Поиск</a><br>
-<a href="https://sportnoise.github.io/nhl/payments.html">Платежи</a><br>
+<a href="https://sportnoise.github.io/nhl/payments-one.html">Платежи (Оплатить членство)</a><br>
 
 <hr>
 
