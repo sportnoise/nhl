@@ -95,7 +95,13 @@ $(function() {
 
     // Окна (Показ)
     $('.window-cookies').addClass('window-cookies_active');
-    $('.window-question').addClass('window-question_active');
+    $('#window-location').addClass('window-question_active');
+    $('#window-notice').addClass('window-question_active');
+
+    $('.js-show-subscription').click(function(){
+
+        $('#window-subscription').addClass('window-question_active');
+    });
 
     // Окна (Скрытие)
     $('.window-question .js-close-window').click(function(){

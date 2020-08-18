@@ -6,7 +6,7 @@
 
         <title>Ночная Хоккейная Лига - Search</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?7ee732428894afa69985" rel="stylesheet" />
+        <link href="./local/template_styles.css?caa96b4f64e3731b120a" rel="stylesheet" />
     </head>
 
     <body class="main-body">
@@ -23,7 +23,7 @@
                         </div>
                         <div class="header-top__season">Сезон 10</div>
                     </div>
-                    <a href="javascript:;" class="header-top__subscription">
+                    <a href="javascript:;" class="header-top__subscription js-show-subscription">
                         Подписка
                     </a>
                     <a href="javascript:;" class="header-top__region-selection">
@@ -880,6 +880,27 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="./local/js/script.js?7ee732428894afa69985"></script>
+        <div class="window-question window-question_subscription window-question_right" id="window-subscription">
+            <div class="window-question__left">
+                <svg class="window-question__icon window-question__icon_letter">
+                    <use xlink:href="./local/img/sprite.svg#letter"></use>
+                </svg>
+            </div>
+            <div class="window-question__right">
+                <div class="window-question__title">Новостная рассылка</div>
+                <div class="window-question__text">Только самые интересные новости и важных события Ночной Лиги</div>
+                <div>
+                    <form>
+                        <div class="subscription-window-form">
+                            <input type="email" class="subscription-window-form__input" value="" placeholder="Оставьте ваш e-mail" />
+                            <button type="submit" class="subscription-window-form__submit"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="javascript:;" class="window-question__close btn-close btn-close_grey js-close-window"></a>
+        </div>
+
+        <script type="text/javascript" src="./local/js/script.js?caa96b4f64e3731b120a"></script>
     </body>
 </html>
