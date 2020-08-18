@@ -8,8 +8,14 @@
         margin: 0 0 30px;
         padding: 0 15px;
     }
-    &__pict {
+    &__link {
         display: block;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__pict {
         position: relative;
         margin: 0 0 15px;
     }
@@ -23,7 +29,7 @@
         line-height: 20px;
         letter-spacing: .23px;
         margin: 0 0 10px;
-        display: block;
+        transition: all .3s;
 
         &:hover {
             color: var(--link);

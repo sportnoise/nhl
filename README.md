@@ -7,7 +7,7 @@
 <a href="https://sportnoise.github.io/nhl/protocol.html">Протокол</a><br>
 <a href="https://sportnoise.github.io/nhl/contacts.html">Контакты</a><br>
 <a href="https://sportnoise.github.io/nhl/representatives.html">Представители всех регионов</a><br>
-<a href="https://sportnoise.github.io/nhl.html">Документы</a><br>
+<a href="https://sportnoise.github.io/nhl/docs.html">Документы</a><br>
 <a href="https://sportnoise.github.io/nhl/archive.html">Архив</a><br>
 <a href="https://sportnoise.github.io/nhl/council.html">Совет</a><br>
 <a href="https://sportnoise.github.io/nhl/regions.html">Регионы</a><br>

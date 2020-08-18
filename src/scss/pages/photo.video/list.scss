@@ -8,8 +8,14 @@
         margin: 0 0 35px;
         padding: 0 15px;
     }
-    &__pict {
+    &__link {
         display: block;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__pict {
         position: relative;
         margin: 0 0 15px;
     }
@@ -24,10 +30,10 @@
         line-height: 20px;
         letter-spacing: .23px;
         margin: 0 0 10px;
-        display: block;
 
         &:hover {
             color: var(--black);
+            text-decoration: underline;
         }
     }
     &__text {

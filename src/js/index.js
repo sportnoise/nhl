@@ -2,10 +2,12 @@ import $ from "jquery";
 import tippy from 'tippy.js';
 import Swiper from './swiper.js';
 import formstyler from './jquery.formstyler.js';
-import dataTables from './jquery.dataTables.js';
 
 window.jQuery = $;
 window.$ = $;
+
+require('@fancyapps/fancybox');
+require('datatables.net');
 
 import a from './jquery.mousewheel.js';
 import b from './jquery.jscrollpane.js';
@@ -32,6 +34,19 @@ $(function() {
     $('.select-btn').styler();
     $('.select-style').styler();
     $('.file-input').styler();
+
+    /* - - - Подключение fancybox - - - */
+    $('[data-fancybox]').fancybox({
+        buttons: [
+            "zoom",
+            //"share",
+            "slideShow",
+            "fullScreen",
+            //"download",
+            //"thumbs",
+            "close"
+        ],
+    });
 
     // Выбор даты
     $('.our-datepicker').datepicker({
@@ -282,57 +297,60 @@ $(function() {
         championshipSlider.slideTo(championshipSliderCount, 0);
     }
 
+    // Сортировка таблиц по датам
+    $.fn.dataTableExt.oSort['math-path-asc'] = function(a,b) {
+        let ruDatea=$.trim(a).split('.');
+        let ruDateb=$.trim(b).split('.');
 
- /*   $.fn.dataTableExt.oSort['math-path-asc']  = function(a,b) {
-                        var ruDatea=$.trim(a).split('.');
-            var ruDateb=$.trim(b).split('.');
-
-            if (ruDatea[2]*1<ruDateb[2]*1) return 1;
-            if (ruDatea[2]*1>ruDateb[2]*1) return -1;
-            if (ruDatea[2]*1 == ruDateb[2]*1) 
+        if (ruDatea[2]*1<ruDateb[2]*1) return 1;
+        if (ruDatea[2]*1>ruDateb[2]*1) return -1;
+        if (ruDatea[2]*1 == ruDateb[2]*1) 
+        {
+            if (ruDatea[1]*1<ruDateb[1]*1) return 1;
+            if (ruDatea[1]*1>ruDateb[1]*1) return -1;
+            if (ruDatea[1]*1 == ruDateb[1]*1) 
             {
-                if (ruDatea[1]*1<ruDateb[1]*1) return 1;
-                if (ruDatea[1]*1>ruDateb[1]*1) return -1;
-                if (ruDatea[1]*1 == ruDateb[1]*1) 
-                {
-                    if (ruDatea[0]*1<ruDateb[0]*1) return 1;
-                    if (ruDatea[0]*1>ruDateb[0]*1) return -1;
-                }
-                else return 0;
+                if (ruDatea[0]*1<ruDateb[0]*1) return 1;
+                if (ruDatea[0]*1>ruDateb[0]*1) return -1;
             }
+            else return 0;
+        }
     };
 
     $.fn.dataTableExt.oSort['math-path-desc'] = function(a,b) {
-          var ruDatea=$.trim(a).split('.');
-          var ruDateb=$.trim(b).split('.');
+        let ruDatea=$.trim(a).split('.');
+        let ruDateb=$.trim(b).split('.');
 
-            if (ruDatea[2]*1<ruDateb[2]*1) return -1;
-            if (ruDatea[2]*1>ruDateb[2]*1) return 1;
-            if (ruDatea[2]*1 == ruDateb[2]*1) 
+        if (ruDatea[2]*1<ruDateb[2]*1) return -1;
+        if (ruDatea[2]*1>ruDateb[2]*1) return 1;
+        if (ruDatea[2]*1 == ruDateb[2]*1) 
+        {
+            if (ruDatea[1]*1<ruDateb[1]*1) return -1;
+            if (ruDatea[1]*1>ruDateb[1]*1) return 1;
+            if (ruDatea[1]*1 == ruDateb[1]*1) 
             {
-                if (ruDatea[1]*1<ruDateb[1]*1) return -1;
-                if (ruDatea[1]*1>ruDateb[1]*1) return 1;
-                if (ruDatea[1]*1 == ruDateb[1]*1) 
-                {
-                    if (ruDatea[0]*1<ruDateb[0]*1) return -1;
-                    if (ruDatea[0]*1>ruDateb[0]*1) return 1;
-                }
-                else return 0;
+                if (ruDatea[0]*1<ruDateb[0]*1) return -1;
+                if (ruDatea[0]*1>ruDateb[0]*1) return 1;
             }
+            else return 0;
+        }
     };
 
-    $('#myTable').dataTable({
+    // Сортировка таблиц
+    $('.js-table-sort').each(function(){
 
-        "columns": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {"sType": "math-path"},
-            null,
-            null,
-        ],
-        "sDom": '<t>'
-    });*/
+        let col = [];
+
+        $(this).find('th').each(function(){
+
+            if ($(this).data('type') === 'date') col.push({"sType": "math-path"});
+            else col.push(null);
+        });
+
+        $(this).dataTable({
+
+            "columns": col,
+            "sDom": '<t>'
+        });
+    });
 });

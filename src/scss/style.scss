@@ -6,6 +6,7 @@
 @import "./main/margin"; // Отступы
 
 // Общие элементы
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
 @import "./elem/swiper"; // Общие стили сайдера
 @import "./elem/datepicker"; // Календарь
 @import "./elem/elem"; // Незначительные элементы
