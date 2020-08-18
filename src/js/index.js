@@ -294,8 +294,21 @@ $(function() {
     let championshipSliderCount = $('.championship-slider__item').length;
 
     let championshipSlider = new Swiper('.championship-slider', {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
+        breakpoints: {
+            576: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            }
+        },
+        navigation: {
+            nextEl: '.championship-slider__next',
+            prevEl: '.championship-slider__prev',
+            disabledClass: 'slider-str_disabled'
+        },
     });
 
     if (championshipSliderCount)

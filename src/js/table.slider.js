@@ -24,29 +24,29 @@ export default class TableSlider
 
         this.setStrActive();
 
-        $('.table-slider__prev').click(e => this.goPrev(e));
+        $('.slider-str__prev').click(e => this.goPrev(e));
 
-        $('.table-slider__next').click(e => this.goNext(e));
+        $('.slider-str__next').click(e => this.goNext(e));
     }
 
     /* Проверяем активность стрелок */
     setStrActive()
     {
         if ($('.table-slider th').eq(this.tsLeft - 1).hasClass('table-slider__item'))
-            $('.table-slider__prev').addClass('table-slider__str_active');
+            $('.slider-str__prev').removeClass('slider-str_disabled');
         else
-            $('.table-slider__prev').removeClass('table-slider__str_active');
+            $('.slider-str__prev').addClass('slider-str_disabled');
 
         if ($('.table-slider th').eq(this.tsRight + 1).hasClass('table-slider__item'))
-            $('.table-slider__next').addClass('table-slider__str_active');
+            $('.slider-str__next').removeClass('slider-str_disabled');
         else
-            $('.table-slider__next').removeClass('table-slider__str_active');
+            $('.slider-str__next').addClass('slider-str_disabled');
     }
 
     /* Переходи к предыдущему столбцу */
     goPrev(e)
     {
-        if ($(e.target).hasClass('table-slider__str_active'))
+        if (!$(e.target).hasClass('slider-str_disabled'))
         {
             this.tsLeft--;
 
@@ -63,7 +63,7 @@ export default class TableSlider
     /* Переходи к следующему столбцу */
     goNext(e)
     {
-        if ($(e.target).hasClass('table-slider__str_active'))
+        if (!$(e.target).hasClass('slider-str_disabled'))
         {
             this.tsRight++;
 

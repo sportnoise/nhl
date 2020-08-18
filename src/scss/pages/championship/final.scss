@@ -1,0 +1,49 @@
+.championship-final {
+    border: 2px solid var(--white_contur);
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+
+    &__cup {
+        display: block;
+        margin: 0 auto 5px;
+    }
+    &__pict {
+        height: 90px;
+    }
+    &__logo {
+        display: block;
+        margin: auto;
+        max-height: 100%;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: .26px;
+
+        &_winner {
+            color: var(--blacksuper);
+            margin: 0 0 10px;
+        }
+        &_loser {
+            color: var(--link);
+            margin: 10px 0 0;
+        }
+    }
+    &__score {
+        display: flex;
+        max-width: 170px;
+        margin: 10px auto;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33px;
+        color: var(--blacksuper);
+
+        &-lose {
+            color: var(--link);
+        }
+    }
+}

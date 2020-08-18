@@ -11,10 +11,19 @@
         line-height: 20px;
         font-weight: 600;
         color: var(--black);
+        max-width: calc(100% - 50px);
     }
     &__first {
         color: var(--link);
         margin: 0 0 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__second {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__score {
         font-size: 17px;

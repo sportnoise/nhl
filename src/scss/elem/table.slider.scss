@@ -4,46 +4,4 @@
         width: 40px;
         min-width: 40px;
     }
-    &__str {
-        border: 1px solid var(--gray_contur);
-        background-color: var(--background);
-        cursor: default;
-        opacity: .5;
-        transition: all .3s;
-        height: 40px;
-        width: 28px;
-        border-radius: 4px;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-
-        &_active {
-            opacity: 1;
-            cursor: pointer;
-        }
-    }
-    &__prev:before {
-        content: '';
-        border: 5px solid transparent;
-        width: 0;
-        height: 0;
-        position: absolute;
-        border-right: 8px solid var(--blacksuper);
-        top: 50%;
-        left: 50%;
-        transform: translate(0, -50%);
-        margin: 0 0 0 -10px;
-    }
-    &__next:before {
-        content: '';
-        border: 5px solid transparent;
-        width: 0;
-        height: 0;
-        position: absolute;
-        border-left: 8px solid var(--blacksuper);
-        top: 50%;
-        left: 50%;
-        transform: translate(0, -50%);
-        margin: 0 0 0 -3px;
-    }
 }
