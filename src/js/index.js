@@ -78,6 +78,16 @@ $(function() {
         $('body').css({'overflow': 'auto'});
     });
 
+    // Окна (Показ)
+    $('.window-cookies').addClass('window-cookies_active');
+    $('.window-question').addClass('window-question_active');
+
+    // Окна (Скрытие)
+    $('.window-question .js-close-window').click(function(){
+
+        $(this).parents('.window-question').removeClass('window-question_active');
+    });
+
     // Показать / Скрыть Выбор региона
     $('.header-top__region-selection').click(function(){
 

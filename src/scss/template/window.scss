@@ -6,7 +6,12 @@
     bottom: 0;
     left: 0;
     right: 0;
+    transform: translate(0, 100%);
+    transition: all .3s linear .5s;
 
+    &_active {
+        transform: translate(0);
+    }
     &__block {
         display: flex;
         flex-wrap: wrap;
@@ -61,20 +66,31 @@
     position: fixed;
     z-index: 200;
     top: 15px;
-    left: 15px;
+    left: -400px;
     border-radius: 4px;
     padding: 20px 30px 20px 15px;
     width: 390px;
     display: flex;
+    transition: all .3s linear .5s;
 
     &_right {
         left: auto;
-        right: 15px;
+        right: -400px;
     }
     &__left {
         width: 65px;
         text-align: center;
         padding: 0 15px 0 0;
+    }
+    &_active {
+
+        &.window-question {
+            left: 15px;
+        }
+        &.window-question_right {
+            left: auto;
+            right: 15px;
+        }
     }
     &__icon {
         fill: var(--background);
