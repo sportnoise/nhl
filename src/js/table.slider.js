@@ -8,6 +8,11 @@ export default class TableSlider
 
         let len = $('.table-slider__item').length;
 
+        if ($('.table-slider').data('slider-plus'))
+        {
+            len -= $('.table-slider').data('slider-plus');
+        }
+
         let i = 2;
 
         /* Скрываем все столбцы кроме последних двух, их номера запоминаем */
@@ -33,14 +38,22 @@ export default class TableSlider
     setStrActive()
     {
         if ($('.table-slider th').eq(this.tsLeft - 1).hasClass('table-slider__item'))
+        {
             $('.slider-str__prev').removeClass('slider-str_disabled');
+        }
         else
+        {
             $('.slider-str__prev').addClass('slider-str_disabled');
+        }
 
         if ($('.table-slider th').eq(this.tsRight + 1).hasClass('table-slider__item'))
+        {
             $('.slider-str__next').removeClass('slider-str_disabled');
+        }
         else
+        {
             $('.slider-str__next').addClass('slider-str_disabled');
+        }
     }
 
     /* Переходи к предыдущему столбцу */
