@@ -41,6 +41,10 @@
     &_hover-bold tr:hover {
         font-weight: 600;
     }
+    &__tr-active:hover {
+        color: var(--black);
+        cursor: pointer;
+    }
     &__sort {
         height: auto !important;
         vertical-align: top;

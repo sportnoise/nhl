@@ -22,4 +22,10 @@
             margin: 0 0 0 -70px;
         }
     }
+    @include media-breakpoint-down(sm)
+    {
+        &__hidden-sm {
+            display: none;
+        }
+    }
 }
