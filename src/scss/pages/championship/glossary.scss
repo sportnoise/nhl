@@ -1,0 +1,49 @@
+.window-glossary {
+    display: none;
+    background-color: var(--white);
+    padding: 25px 30px;
+    box-shadow: 0px 8px 12px var(--gray_contur);
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin: 0 0 30px;
+
+        &-icon {
+            width: 45px;
+            height: 40px;
+            margin: 0 15px 0 0;
+            fill: none;
+            stroke: var(--blacksuper);
+        }
+        &-text {
+            color: var(--blacksuper);
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.26px;
+            width: 250px;
+            max-width: calc(100% - 80px);
+        }
+    }
+    &__body {
+        color: var(--blacksuper);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+        max-width: 615px;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        & {
+            width: 765px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 15px;
+        }
+    }
+}

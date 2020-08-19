@@ -5,7 +5,8 @@
     align-items: center;
     flex-wrap: wrap;
 
-    &__name {
+    &__name,
+    &__title {
         color: var(--blacksuper);
         font-weight: 600;
         font-size: 28px;
@@ -13,11 +14,10 @@
         letter-spacing: -.14px;
         display: flex;
         align-items: center;
-
-        &:hover {
-            color: var(--link);
-            text-decoration: none;
-        }
+    }
+    &__name:hover {
+        color: var(--link);
+        text-decoration: none;
     }
     &__icon {
         margin: 0 10px 0 0;
@@ -57,7 +57,7 @@
         stroke: var(--link);
     }
 
-    @include media-breakpoint-down(xs)
+    @include media-breakpoint-only(xs)
     {
         &__name {
             letter-spacing: 0;

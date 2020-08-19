@@ -38,6 +38,9 @@
             }
         }
     }
+    &_hover-bold tr:hover {
+        font-weight: 600;
+    }
     &__sort {
         height: auto !important;
         vertical-align: top;

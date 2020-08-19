@@ -1,0 +1,46 @@
+@include media-breakpoint-only(xl)
+{
+    .championship-leaders-title {
+        margin: 0 0 35px -35px;
+
+        &__links {
+            width: 620px;
+            justify-content: space-between;
+        }
+    }
+}
+
+.championship-leaders-table {
+
+    &__img {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        & {
+            width: 620px;
+            margin: 0 0 0 auto;
+
+            &__relative {
+                position: relative;
+            }
+            &__img {
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                max-width: 74px;
+                max-height: 74px;
+                left: -190px;
+
+                &_second {
+                    left: -115px;
+                }
+            }
+            &__bottom {
+                margin: 30px 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.championship-teams {
+    text-align: center;
+    margin: 0 0 15px;
+
+    &__item {
+        margin: 0 0 20px;
+    }
+    &__pict {
+        height: 114px;
+        display: flex;
+    }
+    &__logo {
+        display: block;
+        margin: auto;
+        max-height: 100%;
+    }
+    &__name {
+        color: var(--black);
+        font-size: 17px;
+        line-height: 1.1;
+        letter-spacing: .26px;
+        margin: 5px 0;
+    }
+    &__city {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+    }
+}
