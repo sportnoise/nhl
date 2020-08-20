@@ -214,31 +214,38 @@ $(function() {
     });
     
     // Главный слайдер
-    $('.slider-index__progressbar-count_last').text('0' + $('.slider-index__item').length);
+    if ($('.slider-index__item').length > 1)
+    {
+        $('.slider-index__progressbar-count_last').text('0' + $('.slider-index__item').length);
 
-    let mainSlider = new Swiper('.slider-index__slider', {
-        spaceBetween: 10,
-        loop: true,
-        loopAdditionalSlides: 1,
-        slideActiveClass: 'slider-index__item_active',
-        autoplay: {
-            delay: 10000,
-        },
-        breakpoints: {
-            576: {
-                spaceBetween: 30
-            }
-        },
-        pagination: {
-            el: '.slider-index__progressbar',
-            type: 'progressbar',
-            progressbarFillClass: 'slider-index__progressbar-full'
-        },
-        navigation: {
-            nextEl: '.slider-index__next',
-            prevEl: '.slider-index__prev',
-        },
-    });
+        let mainSlider = new Swiper('.slider-index__slider', {
+            spaceBetween: 10,
+            loop: true,
+            loopAdditionalSlides: 1,
+            slideActiveClass: 'slider-index__item_active',
+            autoplay: {
+                delay: 10000,
+            },
+            breakpoints: {
+                576: {
+                    spaceBetween: 30
+                }
+            },
+            pagination: {
+                el: '.slider-index__progressbar',
+                type: 'progressbar',
+                progressbarFillClass: 'slider-index__progressbar-full'
+            },
+            navigation: {
+                nextEl: '.slider-index__next',
+                prevEl: '.slider-index__prev',
+            },
+        });
+    }
+    else
+    {
+        $('.slider-index__progressbar-block').remove();
+    }
 
     // Линия фотографий
     if ($(window).width() > 767)
