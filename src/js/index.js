@@ -258,7 +258,7 @@ $(function() {
                 delay: 0,
             },
             width: 2560,
-            speed: 60000,
+            speed: 100000,
         });
     }
 
