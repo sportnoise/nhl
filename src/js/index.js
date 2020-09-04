@@ -77,6 +77,10 @@ $(function() {
                     }
                 }
             },
+			onSelect: function (formattedDate, date, inst) {
+
+				$(inst.el).trigger("change");
+            },
         });
     }
 

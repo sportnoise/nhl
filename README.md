@@ -52,7 +52,7 @@
     <li>Swiper - для слайдеров (https://swiperjs.com/)</li>
     <li>jScrollPane - для полосы прокрутки (http://jscrollpane.kelvinluck.com/)</li>
     <li>formStyler - для стилизации select и input[type="file"] (http://dimox.name/jquery-form-styler/)</li>
-    <li>datePicker - для выбора даты (http://t1m0n.name/air-datepicker/index-ru.html)</li>
+    <li>datePicker - для выбора даты (http://t1m0n.name/air-datepicker/docs/index-ru.html)</li>
     <li>FancyBox - для окон (https://fancyapps.com/fancybox/3/)</li>
 </ul>
 
