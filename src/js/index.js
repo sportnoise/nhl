@@ -378,9 +378,8 @@ $(function() {
         });
 
         $(this).dataTable({
-
             "columns": col,
-            "sDom": '<t>'
+          //  "sDom": '<t>'
         });
     });
 });
