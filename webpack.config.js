@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const webpack = require('webpack');
 
 function generateHtmlPlugins(templateDir)
 {
@@ -123,6 +124,13 @@ module.exports = (env, argv) => {
     {
         config.plugins.push(new CleanWebpackPlugin());
     }
+
+	config.plugins.push(new webpack.ProvidePlugin({
+		'window.jQuery': 'jquery',
+		'window.$': 'jquery',
+		$: 'jquery',
+		jQuery: 'jquery'
+	}));
 
     return config;
 };

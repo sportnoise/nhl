@@ -1,10 +1,6 @@
-import $ from "jquery";
 import tippy from 'tippy.js';
 import Swiper from './swiper.js';
 import formstyler from './jquery.formstyler.js';
-
-window.jQuery = $;
-window.$ = $;
 
 require('@fancyapps/fancybox');
 require('datatables.net');
