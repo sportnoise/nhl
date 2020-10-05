@@ -1,0 +1,57 @@
+.ice-list {
+    padding: 0 0 20px;
+
+    &__item {
+        display: flex;
+        margin: 0 0 25px;
+    }
+    &__pict {
+        width: 180px;
+    }
+    &__img {
+        display: block;
+    }
+    &__block {
+        width: calc(100% - 210px);
+        margin: 0 0 0 auto;
+        padding: 15px 0 0;
+    }
+    &__name {
+        margin: 0 0 20px;
+    }
+
+    @include media-breakpoint-only(sm)
+    {
+        &__pict {
+            width: 100px;
+        }
+        &__block {
+            width: calc(100% - 120px);
+            padding: 0;
+        }
+        &__name {
+            margin: 0 0 10px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 0;
+
+            &__item {
+                display: block;
+            }
+            &__pict {
+                width: 100%;
+                margin: 0 0 15px;
+            }
+            &__block {
+                width: 100%;
+                padding: 0;
+            }
+            &__name {
+                margin: 0 0 10px;
+            }
+        }
+    }
+}
