@@ -1,0 +1,263 @@
+<% var data = {
+    title: "Albums",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Матчи
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Трансляции
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Альбомы матчей
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Арбитры
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-45">
+
+                <h1>Альбомы матчей</h1>
+
+                <div class="broadcast-filter filter-panel">
+                    <div class="filter-panel__part filter-panel__part_145">
+                        <div class="checkbox-icon">
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked>
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                    <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                    <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                    <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_110">
+                        <select class="select-btn">
+                            <option selected disabled>Группа</option>
+                            <option value="">Группа с названием</option>
+                            <option value="">Группа с очень длинным названием</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_110 d-none d-md-block">
+                        <select class="select-btn">
+                            <option selected disabled>Команда</option>
+                            <option value="">Команда с названием</option>
+                            <option value="">Команда с очень длинным названием</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part broadcast-filter__calc d-none d-md-block">
+                        <select class="select-btn">
+                            <option selected disabled>Регион</option>
+                            <option value="">Регион #1</option>
+                            <option value="">Регион #2</option>
+                            <option value="">Регион #3</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part broadcast-filter__calc d-md-none"></div>
+                    <div class="filter-panel__part filter-panel__part_80 d-none d-md-block">
+                        <div class="filter-panel__date">
+                            <input type="text" class="filter-panel__date-input our-datepicker" value="">
+                            <svg class="filter-panel__date-icon">
+                                <use xlink:href="./local/img/sprite.svg#date"></use>
+                            </svg>
+                            <script>
+                                var eventDates = ['02.08.20', '05.08.20', '18.08.20', '22.08.20', '01.09.20', '10.09.20', '21.09.20', '23.09.20'];
+                            </script>
+                        </div>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_50">
+                        <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                    </div>
+                </div>
+
+                <div class="broadcasts-list">
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images1" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 6. Финал. Арсенал - Прохоккей</div>
+                        </a>
+                        <a data-fancybox="images1" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Санкт-Петербург</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images2" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 8. Полуфинал. Ягуар 2</div>
+                        </a>
+                        <a data-fancybox="images2" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Хабаровский край</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images3" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 5. Финал. Литостар - Урфин</div>
+                        </a>
+                        <a data-fancybox="images3" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Сочи</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images4" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.4.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 8. Полуфинал. Доктора - Арсенал</div>
+                        </a>
+                        <a data-fancybox="images4" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Сочи</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images5" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 6. Финал. Арсенал - Прохоккей</div>
+                        </a>
+                        <a data-fancybox="images5" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Санкт-Петербург</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images6" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 8. Полуфинал. Ягуар 2</div>
+                        </a>
+                        <a data-fancybox="images6" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Хабаровский край</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images7" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 5. Финал. Литостар - Урфин</div>
+                        </a>
+                        <a data-fancybox="images7" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Сочи</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images8" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.4.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 8. Полуфинал. Доктора - Арсенал</div>
+                        </a>
+                        <a data-fancybox="images8" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Сочи</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__item">
+                        <a class="broadcasts-list__link" data-fancybox="images9" href="./local/uploads/news.detail.xl.jpg">
+                            <div class="broadcasts-list__pict pict-shadow">
+                                <img class="broadcasts-list__img" src="./local/uploads/broadcasts.top.4.jpg" alt="">
+                                <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                    <use xlink:href="./local/img/sprite.svg#photo"></use>
+                                </svg>
+                            </div>
+                            <div class="broadcasts-list__name">18+ Лига Надежды. Группа 8. Полуфинал. Доктора - Арсенал</div>
+                        </a>
+                        <a data-fancybox="images9" href="./local/uploads/festival.xs.jpg"></a>
+                        <div class="broadcasts-list__place">Сочи</div>
+                        <div class="broadcasts-list__date">Сейчас</div>
+                    </div>
+                    <div class="broadcasts-list__btn">
+                        <a href="javascript:;" class="btn-four">Показать еще</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
