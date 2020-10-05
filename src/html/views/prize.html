@@ -1,0 +1,99 @@
+<% var data = {
+    title: "Prize",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Клуб Макарова
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Приз Якушева
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Студёный лёд
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-35">
+
+                <h1>Приз Якушева</h1>
+
+                <div class="block-width-lg mb-35">
+                    <img src="./local/uploads/prize.jpg" alt="">
+                </div>
+
+                <div class="block-width-md">
+                    <p class="h2">Тут будет небольшой вводдный текст про приз Якушева. Что это за приз, зачем он, для чего и что даёт (статус, привелегии и т.д.).</p>
+                    <p>Много текста не нужно, т.к. он постояннос будет показываться вверху страницы. Ниже будет ссылка на заявку и селектор по сезонами. В сезонах будут представлены призёры.</p>
+                </div>
+
+                <div class="mb-30">
+                    <a href="javascript:;" class="news-link-str">
+                        <svg class="news-link-str__icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                        <span class="news-link-str__text">Подать заявку по получаение приза</span>
+                    </a>
+                </div>
+
+                <div class="panel-btn mb-0">
+                    <a href="javascript:;" class="panel-btn__link">IX.</a>
+                    <a href="javascript:;" class="panel-btn__link panel-btn__link_active">VIII.</a>
+                    <a href="javascript:;" class="panel-btn__link">VII.</a>
+                    <a href="javascript:;" class="panel-btn__link">VI.</a>
+                    <a href="javascript:;" class="panel-btn__link">V.</a>
+                    <a href="javascript:;" class="panel-btn__link">IV.</a>
+                    <a href="javascript:;" class="panel-btn__link">III.</a>
+                    <a href="javascript:;" class="panel-btn__link">II.</a>
+                    <a href="javascript:;" class="panel-btn__link">I.</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
