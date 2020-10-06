@@ -1,13 +1,14 @@
 import tippy from 'tippy.js';
-import Swiper from './swiper.js';
-import formstyler from './jquery.formstyler.js';
+import Swiper from './lib/swiper.js';
+import formstyler from './lib/jquery.formstyler.js';
 
 require('@fancyapps/fancybox');
 require('datatables.net');
 
-import a from './jquery.mousewheel.js';
-import b from './jquery.jscrollpane.js';
-import с from './datepicker.js';
+import a from './lib/jquery.mousewheel.js';
+import b from './lib/jquery.jscrollpane.js';
+import с from './lib/datepicker.js';
+import d from './lib/jquery.photobox.js';
 import TableSlider from './table.slider.js';
 
 function formatDate(date)
@@ -378,4 +379,7 @@ $(function() {
           //  "sDom": '<t>'
         });
     });
+
+    // Фотогалерея
+    $('#album-gallery').photobox('a', { time: 3000 });
 });

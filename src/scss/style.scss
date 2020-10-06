@@ -5,11 +5,16 @@
 @import "./main/reboot"; // Сброс стилей
 @import "./main/margin"; // Отступы
 
-// Общие элементы
+// Библиотеки
 @import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
-@import "./elem/swiper"; // Общие стили сайдера
-@import "./elem/datepicker"; // Календарь
-@import "./elem/data.tables"; // Сортируемые таблицы
+@import "./lib/swiper"; // Общие стили сайдера
+@import "./lib/datepicker"; // Календарь
+@import "./lib/data.tables"; // Сортируемые таблицы
+@import "./lib/jquery.jscrollpane"; // Полоса прокрутки
+@import "./lib/tippy"; // Подсказки
+@import "./lib/photobox"; // Слайдер фото
+
+// Общие элементы
 @import "./elem/elem"; // Незначительные элементы
 @import "./elem/pict.shadow"; // Тень на картинках
 @import "./elem/btn"; // Кнопки
@@ -22,8 +27,6 @@
 @import "./elem/lighthouse"; // Маяк
 @import "./elem/icons"; // Иконки
 @import "./elem/tabs"; // Вкладки
-@import "./elem/jquery.jscrollpane"; // Полоса прокрутки
-@import "./elem/tippy"; // Подсказки
 @import "./elem/h1.and.link"; // H1 с ссылкой
 @import "./elem/accordion"; // Аккордеон
 @import "./elem/table.sort"; // Сортировка таблиц
@@ -186,3 +189,6 @@
 
 // Студёный Лёд
 @import "./pages/ice/list"; // Список
+
+// Фото
+@import "./pages/album/gallery"; // Список фотографий

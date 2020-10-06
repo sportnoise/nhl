@@ -1,0 +1,27 @@
+.album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 25px;
+
+    &__link {
+        max-width: 25%;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    @include media-breakpoint-only(sm)
+    {
+        &__link {
+            max-width: calc(100% / 3);
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__link {
+            max-width: 100%;
+            width: 50%;
+        }
+    }
+}
