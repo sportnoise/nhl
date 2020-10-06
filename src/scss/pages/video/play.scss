@@ -1,0 +1,18 @@
+.video-play {
+    display: block;
+    position: relative;
+    fill: none;
+    stroke: var(--white);
+
+    &:hover {
+        stroke: var(--link-abs);
+    }
+    &__icon {
+        width: 93px;
+        height: 76px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}

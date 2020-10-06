@@ -22,6 +22,7 @@
 <a href="https://sportnoise.github.io/nhl/news-officially.html">Новость официально</a><br>
 <a href="https://sportnoise.github.io/nhl/photo-list.html">Все фото (Список фото)</a><br>
 <a href="https://sportnoise.github.io/nhl/video-list.html">Все видео (Список видео)</a><br>
+<a href="https://sportnoise.github.io/nhl/video.html">Видео детально</a><br>
 <a href="https://sportnoise.github.io/nhl/faq.html">Вопрос/Ответ</a><br>
 <a href="https://sportnoise.github.io/nhl/broadcast.html">Трансляции</a><br>
 <a href="https://sportnoise.github.io/nhl/albums.html">Альбомы матчей</a><br>
