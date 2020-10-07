@@ -14,4 +14,12 @@
     &__fix-width {
         max-width: 210px;
     }
+
+    @include media-breakpoint-only(xs)
+    {
+        &__title {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 }
