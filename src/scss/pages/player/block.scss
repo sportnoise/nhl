@@ -1,0 +1,79 @@
+.player-block {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        width: 185px;
+    }
+    &__pict {
+        margin: 0 0 20px;
+    }
+    &__img {
+        border: 5px solid var(--yellow);
+        border-radius: 50%;
+        display: block;
+    }
+    &__num {
+        text-align: center;
+    }
+
+    &__right {
+        width: calc(100% - 210px);
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 35px;
+
+        &-left {
+            width: calc(100% - 170px);
+        }
+        &-right {
+            width: 150px;
+        }
+    }
+    &__role {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &__logo {
+        display: block;
+    }
+    &__aside {
+        width: 150px;
+        float: right;
+    }
+    &__line {
+        display: flex;
+        margin: 0 0 10px;
+    }
+    &__label {
+        width: 80px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &__value {
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    &__info {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0 0 20px;
+    }
+    &__bottom {
+        display: flex;
+        font-size: 15px;
+        line-height: 20px;
+
+        &-item {
+            margin: 0 20px 0 0;
+        }
+        &-value {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+}

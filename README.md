@@ -13,6 +13,7 @@
 <a href="https://sportnoise.github.io/nhl/regions.html">Регионы</a><br>
 <a href="https://sportnoise.github.io/nhl/teams.html">Команды</a><br>
 <a href="https://sportnoise.github.io/nhl/players.html">Игроки</a><br>
+<a href="https://sportnoise.github.io/nhl/player.html">Игрок (Карточка игрока)</a><br>
 <a href="https://sportnoise.github.io/nhl/medal-one.html">Медальный зачёт по командам</a><br>
 <a href="https://sportnoise.github.io/nhl/medal-two.html">Медальный зачёт по субъектам</a><br>
 <a href="https://sportnoise.github.io/nhl/medal-three.html">Медальный зачёт по игрокам</a><br>

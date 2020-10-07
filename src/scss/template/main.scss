@@ -17,8 +17,8 @@
     }
 }
 
-.white-block {
-    background-color: var(--white);
+.white-block,
+.black-block {
     padding: 35px 35px 45px 105px;
     border-radius: 4px;
 
@@ -28,6 +28,15 @@
             padding: 30px 20px;
         }
     }
+}
+
+.white-block {
+    background-color: var(--white);
+}
+
+.black-block {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .white-bg {
