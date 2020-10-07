@@ -1,0 +1,25 @@
+.protocol-links {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        fill: none;
+        stroke: var(--black);
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin: 0 0 0 15px;
+
+        &:hover {
+            stroke: var(--link);
+            color: var(--link);
+            text-decoration: none;
+        }
+    }
+    &__icon {
+        width: 18px;
+        height: 26px;
+        margin: 0 10px 0 0;
+    }
+}

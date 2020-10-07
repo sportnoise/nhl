@@ -163,9 +163,6 @@
 // Фестиваль
 @import "./pages/festival/head"; // Шапка страницы
 
-// Матчи
-@import "./pages/match/calendar"; // Шапка страницы
-
 // Поиск
 @import "./pages/search/popular"; // Популярные запросы
 @import "./pages/search/result"; // Результат поиска
@@ -200,3 +197,9 @@
 @import "./pages/player/block"; // Информация
 @import "./pages/player/achievements"; // Достижения
 @import "./pages/player/statistics"; // Статистика
+
+// Матчи
+@import "./pages/match/calendar"; // Шапка страницы
+
+// Карточка матча
+@import "./pages/match/protocol.links"; // Ссылки на протоколы

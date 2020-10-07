@@ -112,4 +112,12 @@
     <symbol id="video-play" viewBox="0 0 93 76">
         <g transform="translate(1.5 1.5)"><path d="M68.375,85.755H51.935a36.625,36.625,0,1,1,0-73.25H68.375a36.625,36.625,0,1,1,0,73.25ZM49,33.778V64.527L74.113,49.152Z" transform="translate(-15.311 -12.505)" stroke-miterlimit="10" stroke-width="3"/></g>
     </symbol>
+    <symbol id="protocol" viewBox="0 0 18 26">
+        <g transform="translate(5967.951 48.863)">
+            <path d="M-5963.74-42.644h-3.21v18.9h11.075l4.523-4.523v-14.38h-3.486" stroke-miterlimit="10" stroke-width="2"/>
+            <path d="M-5957.309-23.86v-5.858h5.3" stroke-miterlimit="10" stroke-width="2"/>
+            <path d="M-5953.834-45.128l-2.7-.91-.417-1.825h-4.4l-.417,1.825-2.7.91v2.479h10.635Z" stroke-miterlimit="10" stroke-width="2"/>
+            <path d="M-5963.433-36.307l3.352,3.068,5.557-5.274" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+    </symbol>
 </svg>

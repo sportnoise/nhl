@@ -1,0 +1,88 @@
+<% var data = {
+    title: "Match",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Матчи
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Трансляции
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Альбомы матчей
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Арбитры
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="block-padding">
+                <div class="title-back h1-and-link mb-30">
+                    <a href="javascript:;" class="title-back__back">
+                        <svg class="title-back__back-icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                    <div class="h2 mb-0">Карточка матча</div>
+                    <div class="protocol-links">
+                        <a href="javascript:;" class="protocol-links__link">
+                            <svg class="protocol-links__icon">
+                                <use xlink:href="./local/img/sprite.svg#protocol"></use>
+                            </svg>
+                            Протокол № 1
+                        </a>
+                        <a href="javascript:;" class="protocol-links__link">
+                            <svg class="protocol-links__icon">
+                                <use xlink:href="./local/img/sprite.svg#protocol"></use>
+                            </svg>
+                            Протокол № 1
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
