@@ -213,7 +213,19 @@ $(function() {
             });
         }
     });
-    
+
+    $('.accordion-list__btn').click(function(){
+
+        var parentBlock = $(this).parents('.accordion-list__item');
+
+        parentBlock.children('.accordion-list__link_open').removeClass('accordion-list__link_open');
+
+        parentBlock.children('.accordion-list__block').slideUp(300, function(){
+
+            $(this).removeClass('accordion-list__block_open');
+        });
+    });
+
     // Главный слайдер
     if ($('.slider-index__item').length > 1)
     {

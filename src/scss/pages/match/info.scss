@@ -1,0 +1,16 @@
+.match-protocol-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 40px;
+
+    &__logo {
+    }
+    &__img {
+        display: block;
+    }
+    &__text {
+        font-size: 13px;
+        color: var(--link);
+    }
+}

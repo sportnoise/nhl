@@ -203,3 +203,6 @@
 
 // Карточка матча
 @import "./pages/match/protocol.links"; // Ссылки на протоколы
+@import "./pages/match/head"; // Шапка страницы
+@import "./pages/match/protocol"; // Протокол таблица
+@import "./pages/match/info"; // Короткая информация о команде
