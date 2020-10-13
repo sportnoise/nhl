@@ -249,13 +249,10 @@ $(function() {
                 }
             },
             pagination: {
-                el: '.slider-index__progressbar',
-                type: 'progressbar',
-                progressbarFillClass: 'slider-index__progressbar-full'
-            },
-            navigation: {
-                nextEl: '.slider-index__next',
-                prevEl: '.slider-index__prev',
+                el: '.slider-index__pagination',
+                clickable: true,
+                bulletClass: 'slider-index__bullet',
+                bulletActiveClass:  'slider-index__bullet_active',
             },
         });
     }
