@@ -1,5 +1,4 @@
 .match-head {
-    padding: 0 70px 0 0;
 
     &__top {
         text-align: center;
@@ -24,9 +23,6 @@
     &__right {
         width: 245px;
     }
-    &__right {
-        text-align: right;
-    }
     &__center {
         padding: 45px 0 0;
     }
@@ -35,10 +31,6 @@
         display: flex;
         align-items: center;
         margin: 0 0 5px;
-
-        &_right {
-            justify-content: flex-end;
-        }
     }
     &__img {
         max-height: 100%;
@@ -55,7 +47,7 @@
         line-height: 15px;
     }
     &__score-full {
-        font-size: 71px;
+        font-size: 70px;
         font-weight: 600;
         line-height: 1;
     }
@@ -77,5 +69,45 @@
         text-align: center;
         font-size: 13px;
         line-height: 15px;
+    }
+
+    @include media-breakpoint-up(md)
+    {
+        &__right {
+            text-align: right;
+        }
+        &__logo {
+
+            &_right {
+                justify-content: flex-end;
+            }
+        }
+    }
+    @include media-breakpoint-only(xl)
+    {
+        & {
+            padding: 0 70px 0 0;
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        &__score-full {
+            font-size: 50px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__middle {
+            flex-direction: column;
+            margin: 20px 0;
+            align-items: center;
+            text-align: center;
+        }
+        &__center {
+            padding: 15px 0;
+        }
+        &__logo {
+            justify-content: center;
+        }
     }
 }

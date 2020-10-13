@@ -4,13 +4,23 @@
     justify-content: space-between;
     margin: 0 0 40px;
 
-    &__logo {
-    }
     &__img {
         display: block;
     }
     &__text {
         font-size: 13px;
+        line-height: 17px;
         color: var(--link);
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            justify-content: flex-start;
+
+            &__text {
+                padding: 0 0 0 15px;
+            }
+        }
     }
 }

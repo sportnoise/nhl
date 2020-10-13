@@ -1,6 +1,7 @@
 .protocol-links {
     display: flex;
     align-items: center;
+    margin: 0 -15px 0 0;
 
     &__link {
         fill: none;
@@ -9,7 +10,7 @@
         display: flex;
         align-items: center;
         font-size: 15px;
-        margin: 0 0 0 15px;
+        margin: 0 15px 0 0;
 
         &:hover {
             stroke: var(--link);
@@ -21,5 +22,12 @@
         width: 18px;
         height: 26px;
         margin: 0 10px 0 0;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 15px 0 0;
+        }
     }
 }
