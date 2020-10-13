@@ -125,12 +125,5 @@ module.exports = (env, argv) => {
         config.plugins.push(new CleanWebpackPlugin());
     }
 
-	config.plugins.push(new webpack.ProvidePlugin({
-		'window.jQuery': 'jquery',
-		'window.$': 'jquery',
-		$: 'jquery',
-		jQuery: 'jquery'
-	}));
-
     return config;
 };
