@@ -21,7 +21,7 @@
         height: 35px;
         display: flex;
         align-items: center;
-        width: calc(100% - 22px);
+        width: calc(100% - 10px);
 
         &-span {
             margin: 0 auto 0 0;
@@ -38,7 +38,7 @@
         }
     }
     &__block {
-        height: 290px;
+        height: 325px;
         overflow: auto;
     }
     &__table {
@@ -112,18 +112,14 @@
             &__head {
                 justify-content: flex-end;
                 width: 100%;
-
-                &-span {
-                    display: none;
-                }
-            }
-            &__block {
-                height: auto;
             }
             &__table {
                 width: 100%;
-                margin: 0;
+                margin: 0 0 15px;
 
+                &:last-child {
+                    margin: 0;
+                }
                 tr {
                     height: 31px;
                 }
