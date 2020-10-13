@@ -3,7 +3,7 @@
     margin: 0 0 50px;
 
     &__block {
-        max-width: 1020px;
+        max-width: 740px;
         margin: auto;
     }
     &__slider {
@@ -13,7 +13,7 @@
         position: relative;
         display: block;
 
-        &_shadow:before {
+/*        &_shadow:before {
             content: "";
             position: absolute;
             z-index: 1;
@@ -22,7 +22,7 @@
             right: 0;
             left: 0;
             background-image: linear-gradient(to bottom, transparent, var(--black));
-        }
+        }*/
     }
     &__img {
         display: block;
