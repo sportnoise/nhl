@@ -395,4 +395,10 @@ $(function() {
 
     // Фотогалерея
     $('#album-gallery').photobox('a', { time: 3000 });
+
+    // Показ скрытого текста
+    $('.js-open-hide-text').click(function(){
+
+        $(this).parents('.hide-text').toggleClass('hide-text_open');
+    });
 });

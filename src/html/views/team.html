@@ -1,0 +1,1297 @@
+<% var data = {
+    title: "Team",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Регионы
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Таблица
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Призёры
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Победители
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Все команды
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Все игроки
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block">
+
+                <div class="title-back h1-and-link">
+                    <a href="javascript:;" class="title-back__back">
+                        <svg class="title-back__back-icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                    <div class="h2 mb-0">Карточка команды</div>
+                    <div class="team-links">
+                        <a href="javascript:;" class="team-links__link">
+                            Распечатать заявку команды
+                        </a>
+                        <a href="javascript:;" class="btn-one btn-short">
+                            Оплатить участие
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-head">
+                    <div class="team-head__inner">
+                        <div class="team-head__logo">
+                            <img src="./local/uploads/team.logo.png" alt="" class="team-head__logo-img">
+                        </div>
+                        <div class="team-head__block">
+                            <h1 class="mb-0">Н. Эд Машина</h1>
+                            <div class="team-head__text mb-15">Любитель 40+ группа Б</div>
+                            <div class="h2 mb-0">Москва</div>
+                            <div class="team-head__text">Москва</div>
+                        </div>
+                    </div>
+                    <div class="team-head__pict">
+                        <img src="./local/uploads/team.pict.jpg" alt="" class="team-head__img">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team-leadership block-padding">
+                <h2>Руководящий состав</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="team-leadership__item">
+                            <div class="team-leadership__pict">
+                                <img src="./local/uploads/team.leadership.jpg" alt="" class="team-leadership__img">
+                            </div>
+                            <div class="team-leadership__inner">
+                                <div class="team-leadership__name">Алексеев Сергей</div>
+                                <div class="team-leadership__text">Президент</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="team-leadership__item">
+                            <div class="team-leadership__pict">
+                                <img src="./local/uploads/team.leadership.jpg" alt="" class="team-leadership__img">
+                            </div>
+                            <div class="team-leadership__inner">
+                                <div class="team-leadership__name">Алексеев Сергей</div>
+                                <div class="team-leadership__text">Начальник команды</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="team-leadership__item">
+                            <div class="team-leadership__pict">
+                                <img src="./local/uploads/team.leadership.jpg" alt="" class="team-leadership__img">
+                            </div>
+                            <div class="team-leadership__inner">
+                                <div class="team-leadership__name">Алексеев Сергей</div>
+                                <div class="team-leadership__text">Главный тренер</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="team-leadership__item">
+                            <div class="team-leadership__pict">
+                                <img src="./local/uploads/team.leadership.jpg" alt="" class="team-leadership__img">
+                            </div>
+                            <div class="team-leadership__inner">
+                                <div class="team-leadership__name">Алексеев Сергей</div>
+                                <div class="team-leadership__text">Тренер</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="team-leadership__item">
+                            <div class="team-leadership__pict">
+                                <img src="./local/uploads/team.leadership.jpg" alt="" class="team-leadership__img">
+                            </div>
+                            <div class="team-leadership__inner">
+                                <div class="team-leadership__name">Алексеев Сергей</div>
+                                <div class="team-leadership__text">Администратор</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-block mb-15">
+                <h2>Информация о команде</h2>
+                <div class="hide-text">
+                    <div class="hide-text__inner">
+                        <p>
+                            Дата основания команды июль 2016 год. Усилиями Эдуарда Нестерова который стал идейным вдохновителем, организатором, тренером и капитаном, была организована хоккейная коман да «Скоростная Машина». В августе 2018 года команда была переименована в Хоккейный клуб «Н. ЭД МАШИНА». Состав команды остался практически неизменным. Достижения команды:
+                        </p>
+                        <p>
+                            Сезон 2016/17 Команда стала финалистом Ночной лиги регион Москва: дивизион любитель 40+, где заняла второе место. Команда получила путевку от Ночной лиги для принятия участие в Финале розыгрыша кубка Крутова, в городе Сочи.
+                        </p>
+                        <p>
+                            Дата основания команды июль 2016 год. Усилиями Эдуарда Нестерова который стал идейным вдохновителем, организатором, тренером и капитаном, была организована хоккейная коман да «Скоростная Машина». В августе 2018 года команда была переименована в Хоккейный клуб «Н. ЭД МАШИНА». Состав команды остался практически неизменным. Достижения команды:
+                        </p>
+                        <p>
+                            Сезон 2016/17 Команда стала финалистом Ночной лиги регион Москва: дивизион любитель 40+, где заняла второе место. Команда получила путевку от Ночной лиги для принятия участие в Финале розыгрыша кубка Крутова, в городе Сочи.
+                        </p>
+                    </div>
+                    <div class="hide-text__btn-block">
+                        <a href="javascript:;" class="hide-text__btn btn-one btn-short js-open-hide-text">
+                            <span class="hide-text__btn_open">Развернуть описание</span>
+                            <span class="hide-text__btn_close">Свернуть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-list accordion-list_small mb-20">
+                <div class="accordion-list__item">
+                    <a href="javascript:;" class="accordion-list__link">Статистика</a>
+                    <div class="accordion-list__block">
+                        <div class="match-protocol-info">
+                            <div class="match-protocol-info__logo">
+                                <img src="./local/uploads/match.logo.2.jpg" alt="" class="match-protocol-info__img">
+                            </div>
+                            <div class="match-protocol-info__text">
+                                Средний возраст игроков команды: 44.05
+                            </div>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Вратари</span>
+                                        </th>
+                                        <th>И</th>
+                                        <th>Время</th>
+                                        <th>БР</th>
+                                        <th>ПШ</th>
+                                        <th>КН</th>
+                                        <th>%ОБ</th>
+                                        <th>Г</th>
+                                        <th>П</th>
+                                        <th>Ш</th>
+                                        <th>И(0)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">30</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Куванов Владимир</span>
+                                        </td>
+                                        <td>15</td>
+                                        <td>
+                                            <span class="table-one__bold">500:43</span>
+                                        </td>
+                                        <td>116</td>
+                                        <td>11</td>
+                                        <td>1,32</td>
+                                        <td>91</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">39</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Куванов Владимир</span>
+                                        </td>
+                                        <td>15</td>
+                                        <td>
+                                            <span class="table-one__bold">500:43</span>
+                                        </td>
+                                        <td>116</td>
+                                        <td>11</td>
+                                        <td>1,32</td>
+                                        <td>91</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Защитники</span>
+                                        </th>
+                                        <th>И</th>
+                                        <th>Г</th>
+                                        <th>П</th>
+                                        <th>О</th>
+                                        <th>Ш</th>
+                                        <th>БЛ+</th>
+                                        <th>БЛ-</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">8</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">18</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Суфияров Дмитрий</span>
+                                            <svg class="match-icon match-icon_a match-icon_red">
+                                                <use xlink:href="./local/img/sprite.match.svg#a"></use>
+                                            </svg>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">28</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Карельский Иван</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">38</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Усачев Денис</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Нападающие</span>
+                                        </th>
+                                        <th>И</th>
+                                        <th>Г</th>
+                                        <th>П</th>
+                                        <th>О</th>
+                                        <th>Ш</th>
+                                        <th>БЛ+</th>
+                                        <th>БЛ-</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">8</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                            <svg class="match-icon match-icon_b match-icon_grey">
+                                                <use xlink:href="./local/img/sprite.match.svg#b"></use>
+                                            </svg>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">18</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Суфияров Дмитрий</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">28</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                            <svg class="match-icon match-icon_c match-icon_grey">
+                                                <use xlink:href="./local/img/sprite.match.svg#c"></use>
+                                            </svg>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Карельский Иван</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">38</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Усачев Денис</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-45">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Отзаявленные игроки</span>
+                                        </th>
+                                        <th>И</th>
+                                        <th>Г</th>
+                                        <th>П</th>
+                                        <th>О</th>
+                                        <th>Ш</th>
+                                        <th>БЛ+</th>
+                                        <th>БЛ-</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">8</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table-one__bold">5</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="accordion-list__bottom">
+                            <a href="javascript:;" class="accordion-list__btn btn-one">Скрыть статистику</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-list__item">
+                    <a href="javascript:;" class="accordion-list__link">Штрафы</a>
+                    <div class="accordion-list__block">
+                        <div class="team-fine-table match-protocol-table table-one-visible mb-45">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th>Участник</th>
+                                        <th>Пункт</th>
+                                        <th>Дата оплаты</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-one__small">
+                                    <tr class="team-fine-table__danger">
+                                        <td>
+                                            <span class="team-fine-table__big">8</span>
+                                        </td>
+                                        <td class="team-fine-table__name">
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>5.3.6</td>
+                                        <td>—.—.—</td>
+                                        <td>
+                                            <span class="team-fine-table__icon-danger"></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="team-fine-table__danger">
+                                        <td>
+                                            <span class="team-fine-table__big">15</span>
+                                        </td>
+                                        <td class="team-fine-table__name">
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>5.3.7</td>
+                                        <td>—.—.—</td>
+                                        <td>
+                                            <span class="team-fine-table__icon-danger"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="team-fine-table__big">20</span>
+                                        </td>
+                                        <td class="team-fine-table__name">
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>5.3.8</td>
+                                        <td>21.02.20</td>
+                                        <td>
+                                            <span class="team-fine-table__icon-correct"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="team-fine-table__big">24</span>
+                                        </td>
+                                        <td class="team-fine-table__name">
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>5.3.9</td>
+                                        <td>21.02.20</td>
+                                        <td>
+                                            <span class="team-fine-table__icon-correct"></span>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="accordion-list__bottom">
+                            <a href="javascript:;" class="accordion-list__btn btn-one">Скрыть штрафы</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-list__item">
+                    <a href="javascript:;" class="accordion-list__link">Недопущенные игроки</a>
+                    <div class="accordion-list__block">
+                        <div class="match-protocol-table table-one-visible mb-45">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Игрок</span>
+                                        </th>
+                                        <th>Информация</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">8</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>Не оплачено участие</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">8</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>Не предоставлен скан паспорта</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">8</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Буйневич Павел</span>
+                                        </td>
+                                        <td>Дисквалифицирован</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="accordion-list__bottom">
+                            <a href="javascript:;" class="accordion-list__btn btn-one">Скрыть состав</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-list__item">
+                    <a href="javascript:;" class="accordion-list__link">Заявленные игроки</a>
+                    <div class="accordion-list__block">
+                        <div class="match-protocol-info">
+                            <div class="match-protocol-info__logo">
+                                <img src="./local/uploads/match.logo.2.jpg" alt="" class="match-protocol-info__img">
+                            </div>
+                            <div class="match-protocol-info__text">
+                                Средний возраст игроков команды: 44.05
+                            </div>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Вратари</span>
+                                        </th>
+                                        <th>Возраст</th>
+                                        <th>Квалификация</th>
+                                        <th>Рост</th>
+                                        <th>Вес</th>
+                                        <th>Хват</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">30</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Куванов Владимир</span>
+                                        </td>
+                                        <td>147 лет</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Правый</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">39</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Карельский Иван</span>
+                                        </td>
+                                        <td>44 года</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Левый</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Защитники</span>
+                                        </th>
+                                        <th>Возраст</th>
+                                        <th>Квалификация</th>
+                                        <th>Рост</th>
+                                        <th>Вес</th>
+                                        <th>Хват</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">30</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Куванов Владимир</span>
+                                        </td>
+                                        <td>147 лет</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Правый</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">39</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Карельский Иван</span>
+                                        </td>
+                                        <td>44 года</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Левый</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Нападающие</span>
+                                        </th>
+                                        <th>Возраст</th>
+                                        <th>Квалификация</th>
+                                        <th>Рост</th>
+                                        <th>Вес</th>
+                                        <th>Хват</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">30</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Куванов Владимир</span>
+                                        </td>
+                                        <td>147 лет</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Правый</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">39</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Карельский Иван</span>
+                                        </td>
+                                        <td>44 года</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Левый</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="match-protocol-table table-one-visible mb-60">
+                            <table class="table-one">
+                                <thead>
+                                    <tr>
+                                        <th class="match-protocol-table__first">№</th>
+                                        <th colspan="2">
+                                            <span class="match-protocol-table__big-bold">Отзаявленные игроки</span>
+                                        </th>
+                                        <th>Возраст</th>
+                                        <th>Квалификация</th>
+                                        <th>Рост</th>
+                                        <th>Вес</th>
+                                        <th>Хват</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">30</span>
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                            <span class="match-protocol-table__line"></span>
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Куванов Владимир</span>
+                                        </td>
+                                        <td>147 лет</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Правый</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="match-protocol-table__big-bold">39</span>
+                                        </td>
+                                        <td class="match-protocol-table__ava-box">
+                                            <img src="./local/uploads/match.img.jpg" alt="" class="match-protocol-table__ava">
+                                        </td>
+                                        <td>
+                                            <span class="table-one__bold">Карельский Иван</span>
+                                        </td>
+                                        <td>44 года</td>
+                                        <td>Любитель</td>
+                                        <td>175</td>
+                                        <td>90</td>
+                                        <td>Левый</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="accordion-list__bottom">
+                            <a href="javascript:;" class="accordion-list__btn btn-one">Скрыть состав</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-filter white-block mb-20">
+                <div class="h1 mb-20">Матчи</div>
+                <div class="broadcast-filter filter-panel mb-15">
+                    <div class="filter-panel__part filter-panel__part_145">
+                        <div class="checkbox-icon">
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check" checked>
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_f">
+                                    <use xlink:href="./local/img/sprite.num.svg#f"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_lm">
+                                    <use xlink:href="./local/img/sprite.num.svg#lm"></use>
+                                </svg>
+                            </label>
+                            <label class="checkbox-icon__label">
+                                <input class="checkbox-icon__input" type="checkbox" value="" name="check">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon_ln">
+                                    <use xlink:href="./local/img/sprite.num.svg#ln"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_110">
+                        <select class="select-btn">
+                            <option selected disabled>Группа</option>
+                            <option value="">Группа с названием</option>
+                            <option value="">Группа с очень длинным названием</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_110 d-none d-md-block">
+                        <select class="select-btn">
+                            <option selected disabled>Команда</option>
+                            <option value="">Команда с названием</option>
+                            <option value="">Команда с очень длинным названием</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part broadcast-filter__calc d-none d-md-block">
+                        <select class="select-btn">
+                            <option selected disabled>Регион</option>
+                            <option value="">Регион #1</option>
+                            <option value="">Регион #2</option>
+                            <option value="">Регион #3</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__part broadcast-filter__calc d-md-none"></div>
+                    <div class="filter-panel__part filter-panel__part_80 d-none d-md-block">
+                        <div class="filter-panel__date">
+                            <input type="text" class="filter-panel__date-input our-datepicker" value="">
+                            <svg class="filter-panel__date-icon">
+                                <use xlink:href="./local/img/sprite.svg#date"></use>
+                            </svg>
+                            <script>
+                                var eventDates = ['02.08.20', '05.08.20', '18.08.20', '22.08.20', '01.09.20', '10.09.20', '21.09.20', '23.09.20'];
+                            </script>
+                        </div>
+                    </div>
+                    <div class="filter-panel__part filter-panel__part_50">
+                        <a href="javascript:;" class="filter-panel__close btn-close btn-close_grey"></a>
+                    </div>
+                </div>
+
+                <div class="panel-btn mb-0">
+                    <a href="javascript:;" class="panel-btn__link">Ближайшие</a>
+                    <a href="javascript:;" class="panel-btn__link panel-btn__link_active">Результаты</a>
+                </div>
+
+            </div>
+
+            <div class="match-calendar mb-25">
+                <div class="match-calendar__item">
+                    <div class="match-calendar__score match-calendar__score_fly d-md-none">
+                        <span class="match-calendar__score-winner">8</span> : 2
+                    </div>
+                    <div class="match-calendar__pict order-1">
+                        <img class="match-calendar__logo" src="./local/uploads/match.calendar.2.png" alt="">
+                    </div>
+                    <div class="match-calendar__team order-3 order-md-2">
+                        <div class="match-calendar__team-name">Седые Волки</div>
+                        <div class="match-calendar__team-city">Москва</div>
+                    </div>
+                    <div class="match-calendar__score match-calendar__score_wr d-none d-md-block order-md-3">
+                        8
+                    </div>
+                    <div class="match-calendar__center order-5 order-md-4">
+                        <div class="match-calendar__info">
+                            <span class="match-calendar__info-part">40+ (А)</span>
+                            <span class="match-calendar__info-part">№24</span>
+                            <span class="match-calendar__info-part">6 тур</span>
+                        </div>
+                        <div class="match-calendar__time">0:0 0:5 1:3</div>
+                        <div class="match-calendar__place">13 октября 2020, Чт. 19:00</div>
+                    </div>
+                    <div class="match-calendar__score d-none d-md-block order-md-5">
+                        2
+                    </div>
+                    <div class="match-calendar__team match-calendar__team_right order-4 order-md-6">
+                        <div class="match-calendar__team-name">Казанские Драконы</div>
+                        <div class="match-calendar__team-city">Москва</div>
+                    </div>
+                    <div class="match-calendar__pict order-2 order-md-7">
+                        <img class="match-calendar__logo" src="./local/uploads/match.calendar.1.png" alt="">
+                    </div>
+                    <div class="match-calendar__btns">
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_1">
+                                <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_2">
+                                <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_3">
+                                <use xlink:href="./local/img/sprite.svg#video"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_4">
+                                <use xlink:href="./local/img/sprite.svg#photo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="match-calendar__item">
+                    <div class="match-calendar__score match-calendar__score_fly d-md-none">
+                        2 : <span class="match-calendar__score-winner">7</span>
+                    </div>
+                    <div class="match-calendar__pict order-1">
+                        <img class="match-calendar__logo" src="./local/uploads/match.calendar.3.png" alt="">
+                    </div>
+                    <div class="match-calendar__team order-3 order-md-2">
+                        <div class="match-calendar__team-name">Юрские бобры</div>
+                        <div class="match-calendar__team-city">Липецк</div>
+                    </div>
+                    <div class="match-calendar__score d-none d-md-block order-md-3">
+                        2
+                    </div>
+                    <div class="match-calendar__center order-5 order-md-4">
+                        <div class="match-calendar__info">
+                            <span class="match-calendar__info-part">40+ (А)</span>
+                            <span class="match-calendar__info-part">№24</span>
+                            <span class="match-calendar__info-part">6 тур</span>
+                        </div>
+                        <div class="match-calendar__time">1:2 1:3 0:2</div>
+                        <div class="match-calendar__place">24 сентября 2020, Ср. 22:30</div>
+                    </div>
+                    <div class="match-calendar__score match-calendar__score_wl d-none d-md-block order-md-5">
+                        7
+                    </div>
+                    <div class="match-calendar__team match-calendar__team_right order-4 order-md-6">
+                        <div class="match-calendar__team-name">Усмань</div>
+                        <div class="match-calendar__team-city">Усмань</div>
+                    </div>
+                    <div class="match-calendar__pict order-2 order-md-7">
+                        <img class="match-calendar__logo" src="./local/uploads/match.calendar.4.png" alt="">
+                    </div>
+                    <div class="match-calendar__btns">
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_1">
+                                <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_2">
+                                <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_3">
+                                <use xlink:href="./local/img/sprite.svg#video"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_4">
+                                <use xlink:href="./local/img/sprite.svg#photo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="match-calendar__item">
+                    <div class="match-calendar__score match-calendar__score_fly d-md-none">
+                        <span class="match-calendar__score-winner">5</span> : 3
+                    </div>
+                    <div class="match-calendar__pict order-1">
+                        <img class="match-calendar__logo" src="./local/uploads/match.calendar.5.png" alt="">
+                    </div>
+                    <div class="match-calendar__team order-3 order-md-2">
+                        <div class="match-calendar__team-name">Шторм</div>
+                        <div class="match-calendar__team-city">Ванино</div>
+                    </div>
+                    <div class="match-calendar__score match-calendar__score_wr d-none d-md-block order-md-3">
+                        5
+                    </div>
+                    <div class="match-calendar__center order-5 order-md-4">
+                        <div class="match-calendar__info">
+                            <span class="match-calendar__info-part">40+ (А)</span>
+                            <span class="match-calendar__info-part">№24</span>
+                            <span class="match-calendar__info-part">6 тур</span>
+                        </div>
+                        <div class="match-calendar__time">2:2 1:0 2:0</div>
+                        <div class="match-calendar__place">2 августа 2020, Вс. 21:45</div>
+                    </div>
+                    <div class="match-calendar__score d-none d-md-block order-md-5">
+                        3
+                    </div>
+                    <div class="match-calendar__team match-calendar__team_right order-4 order-md-6">
+                        <div class="match-calendar__team-name">Таёжный</div>
+                        <div class="match-calendar__team-city">Переяславка</div>
+                    </div>
+                    <div class="match-calendar__pict order-2 order-md-7">
+                        <img class="match-calendar__logo" src="./local/uploads/match.calendar.6.png" alt="">
+                    </div>
+                    <div class="match-calendar__btns">
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_1">
+                                <use xlink:href="./local/img/sprite.svg#match-icon1"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_2">
+                                <use xlink:href="./local/img/sprite.svg#match-icon2"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_3">
+                                <use xlink:href="./local/img/sprite.svg#video"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="match-calendar__btn">
+                            <svg class="match-calendar__icon match-calendar__icon_4">
+                                <use xlink:href="./local/img/sprite.svg#photo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-link mb-35">
+                <a href="javascript:;" class="link-str">
+                    Все матчи
+                    <svg class="link-str__icon">
+                        <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="photo-index">
+
+                <div class="h2 mb-25">Трансляции</div>
+
+                <div class="photo-index__items">
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                            <svg class="icon-broadcasts icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Мастер-класс для воспитанников хоккейной школы в Лужках</a>
+                        <div class="photo-index__place">Крым</div>
+                        <div class="photo-index__date">27 августа, 22:00</div>
+                    </div>
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                            <svg class="icon-broadcasts icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Московская область. Кубок Открытия сезона. Любитель 40+. Витязь - Богородск</a>
+                        <div class="photo-index__place">Коми</div>
+                        <div class="photo-index__date">2 июля, 9:00</div>
+                    </div>
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                            <svg class="icon-broadcasts icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#broadcast"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Лига Чемпионов. Полуфинал Кубка Крутова. Запад России - Торнадо</a>
+                        <div class="photo-index__place">Удмуртия</div>
+                        <div class="photo-index__date">26 июля, 17:15</div>
+                    </div>
+                </div>
+
+                <div class="team-btn-more">
+                    <a href="javascript:;" class="team-btn-more__btn btn-one">Показать еще</a>
+                </div>
+
+                <div class="h2 mb-25">Видео</div>
+
+                <div class="photo-index__items">
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                            <svg class="icon-video icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#video"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Мастер-класс для воспитанников хоккейной школы в Лужках</a>
+                        <div class="photo-index__place">Крым</div>
+                        <div class="photo-index__date">27 августа, 22:00</div>
+                    </div>
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                            <svg class="icon-video icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#video"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Московская область. Кубок Открытия сезона. Любитель 40+. Витязь - Богородск</a>
+                        <div class="photo-index__place">Коми</div>
+                        <div class="photo-index__date">2 июля, 9:00</div>
+                    </div>
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                            <svg class="icon-video icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#video"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Лига Чемпионов. Полуфинал Кубка Крутова. Запад России - Торнадо</a>
+                        <div class="photo-index__place">Удмуртия</div>
+                        <div class="photo-index__date">26 июля, 17:15</div>
+                    </div>
+                </div>
+
+                <div class="team-btn-more">
+                    <a href="javascript:;" class="team-btn-more__btn btn-one">Смотреть еще</a>
+                </div>
+
+                <div class="h2 mb-25">Альбомы</div>
+
+                <div class="photo-index__items">
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.1.jpg" alt="">
+                            <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#photo"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Мастер-класс для воспитанников хоккейной школы в Лужках</a>
+                        <div class="photo-index__place">Крым</div>
+                        <div class="photo-index__date">27 августа, 22:00</div>
+                    </div>
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.2.jpg" alt="">
+                            <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#photo"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Московская область. Кубок Открытия сезона. Любитель 40+. Витязь - Богородск</a>
+                        <div class="photo-index__place">Коми</div>
+                        <div class="photo-index__date">2 июля, 9:00</div>
+                    </div>
+                    <div class="photo-index__item">
+                        <a href="javascript:;" class="photo-index__pict pict-shadow">
+                            <img class="photo-index__img" src="./local/uploads/broadcasts.top.3.jpg" alt="">
+                            <svg class="icon-photo icon-all_white icon-all_left-bottom">
+                                <use xlink:href="./local/img/sprite.svg#photo"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="photo-index__name">Лига Чемпионов. Полуфинал Кубка Крутова. Запад России - Торнадо</a>
+                        <div class="photo-index__place">Удмуртия</div>
+                        <div class="photo-index__date">26 июля, 17:15</div>
+                    </div>
+                </div>
+
+                <div class="team-btn-more">
+                    <a href="javascript:;" class="team-btn-more__btn btn-one">Еще альбомы</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

@@ -1,0 +1,14 @@
+.team-links {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        fill: none;
+        stroke: var(--black);
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin: 0 25px 0 0;
+    }
+}

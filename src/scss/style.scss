@@ -48,6 +48,7 @@
 @import "./elem/share.block"; // Поделиться
 @import "./elem/slider.str"; // Копки вперед/назад для слайдера в таблице и чемпионате
 @import "./elem/title.book"; // Заголовок с книжкой
+@import "./elem/hide.text"; // Текст скрытый градиентом
 
 // Шаблон
 @import "./template/region.selection"; // Выбор региона
@@ -206,3 +207,12 @@
 @import "./pages/match/head"; // Шапка страницы
 @import "./pages/match/protocol"; // Протокол таблица
 @import "./pages/match/info"; // Короткая информация о команде
+
+// Карточка команды
+@import "./pages/team/links"; // Ссылки в заголовке
+@import "./pages/team/head"; // Шапка
+@import "./pages/team/leadership"; // Руководящий состав
+@import "./pages/team/btn.more"; // Кнопка Показать еще
+@import "./pages/team/filter"; // Фильтр
+@import "./pages/team/link"; // Отступ для ссылки
+@import "./pages/team/fine"; // Таблица штрафов
