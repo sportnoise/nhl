@@ -10,7 +10,7 @@
 
         &:after {
             content: "";
-            background-image: linear-gradient(180deg,transparent,var(--white));
+            background-image: linear-gradient(180deg,rgba(255,255,255,0),var(--white));
             position: absolute;
             height: 100%;
             left: 0;
