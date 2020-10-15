@@ -21,4 +21,15 @@
     &__img {
         display: block;
     }
+
+    @include media-breakpoint-down(md)
+    {
+        &__inner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__block {
+            margin: 20px 0 0;
+        }
+    }
 }

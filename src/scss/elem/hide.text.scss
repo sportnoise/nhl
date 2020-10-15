@@ -3,10 +3,10 @@
 
     &__inner {
         position: relative;
-        max-height: 230px;
+        height: 230px;
         overflow: hidden;
+        padding: 0 0 20px;
         transition: .5s;
-        padding: 0;
 
         &:after {
             content: "";
@@ -39,15 +39,18 @@
             position: relative;
             top: 2px;
         }
-        &_close {
+        &-close {
             display: none;
         }
     }
 
-    &_open &__inner {
-        max-height: 1000px;
-        padding: 0 0 20px;
+    @include media-breakpoint-down(lg)
+    {
+        &__btn-block {
+            bottom: -10px;
+        }
     }
+
     &_open &__inner:after {
         height: 0;
     }
@@ -56,10 +59,10 @@
         border-bottom: 6px solid var(--white_contur);
         border-top: 4px solid transparent;
     }
-    &_open &__btn_close {
+    &_open &__btn-close {
         display: inline;
     }
-    &_open &__btn_open {
+    &_open &__btn-open {
         display: none;
     }
 }

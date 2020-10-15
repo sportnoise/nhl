@@ -399,6 +399,25 @@ $(function() {
     // Показ скрытого текста
     $('.js-open-hide-text').click(function(){
 
-        $(this).parents('.hide-text').toggleClass('hide-text_open');
+        var parentBlock = $(this).parents('.hide-text');
+
+        var innerBlock = parentBlock.children('.hide-text__inner');
+        
+        parentBlock.toggleClass('hide-text_open');
+
+        if (parentBlock.hasClass('hide-text_open'))
+        {
+            innerBlock.css('height', 'auto');
+
+            var height = innerBlock.height();
+
+            innerBlock.removeAttr('style');
+
+            innerBlock.height(height);
+        }
+        else
+        {
+            innerBlock.removeAttr('style');
+        }
     });
 });
