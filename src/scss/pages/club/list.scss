@@ -1,19 +1,17 @@
 .club-list {
-    margin: 0 0 40px;
 
     &__item {
-        background-color: var(--white);
-        padding: 20px;
-        border-radius: 4px;
-        margin: 0 0 20px;
         display: flex;
         align-items: flex-start;
+        margin: 0 0 55px;
     }
     &__pict {
-        width: 150px;
+        width: 185px;
     }
     &__img {
         display: block;
+        border-radius: 50%;
+        border: 5px solid var(--background);
     }
     &__center {
         width: 80px;
@@ -34,11 +32,11 @@
         }
     }
     &__block {
-        width: calc(100% - 230px);
+        width: calc(100% - 275px);
     }
     &__name {
-        font-size: 28px;
-        line-height: 33px;
+        font-size: 23px;
+        line-height: 29px;
         font-weight: 600;
         letter-spacing: -.14px;
         margin: 0 0 10px;
@@ -55,17 +53,21 @@
         line-height: 20px;
         letter-spacing: .23px;
     }
+    &__btn {
+        text-align: center;
+    }
 
     @include media-breakpoint-only(xl)
     {
-        &__item {
-            padding: 30px 40px 30px 80px;
-        }
-        &__center {
-            padding: 10px 0 0 10px;
-        }
-        &__name {
-            margin: 10px 0;
+        & {
+            margin: 0 0 0 -60px;
+
+            &__center {
+                padding: 10px 0 0 10px;
+            }
+            &__name {
+                margin: 10px 0;
+            }
         }
     }
     @include media-breakpoint-down(sm)
@@ -75,6 +77,7 @@
 
             &__item {
                 flex-direction: column;
+                margin: 0 0 25px;
             }
             &__pict {
                 margin: 0 0 15px;
