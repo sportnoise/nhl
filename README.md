@@ -48,6 +48,7 @@
 <a href="https://sportnoise.github.io/nhl/ice.html">Студёный Лёд</a><br>
 <a href="https://sportnoise.github.io/nhl/trophies.html">Трофеи</a><br>
 <a href="https://sportnoise.github.io/nhl/cooperation.html">Сотрудничество</a><br>
+<a href="https://sportnoise.github.io/nhl/contest-one.html">Конкурс (главная)</a><br>
 
 <hr>
 

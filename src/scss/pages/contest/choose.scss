@@ -1,0 +1,21 @@
+.contest-choose {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+
+    &__link {
+        margin: 0px 0 14px;
+        padding: 0 7px;
+        max-width: calc(100% / 3);
+    }
+    &__img {
+        display: block;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__link {
+            max-width: 50%;
+        }
+    }
+}

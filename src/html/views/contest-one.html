@@ -1,0 +1,145 @@
+<% var data = {
+    title: "Contest (One)",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль Хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Клуб Макарова
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Приз Якушева
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Студёный лёд
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Конкурс комментаторов
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-25">
+
+                <h1>Конкурс комментаторов</h1>
+                <div class="h1 mb-15">«Хочу в Сочи!». Сезон 2019/20</div>
+                <div class="h2 mb-25">Конкурс комментаторов «Хочу в Сочи!» — ежегодный шанс для всех желающих стать участником главного любительского чемпионата страны в составе команды профессиональных журналистов!</div>
+                <p class="mb-60">«Хочу в Сочи!» — твоя уникальная возможность проявить себя и выиграть индивидуальную путевку в Олимпийский парк прямо к побережью Черного моря, услышать свой голос в трансляциях на КХЛ-ТВ, поработать в студии и принять участие в освещении самого грандиозного хоккейного праздника!</p>
+
+                <div class="h1 mb-35">Экспертное жюри</div>
+
+                <div class="contest-jury">
+                    <div class="contest-jury__item">
+                        <div class="contest-jury__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury__img">
+                        </div>
+                        <div class="contest-jury__name">Денис Казанский</div>
+                        <div class="contest-jury__info">НТВ-Плюс</div>
+                    </div>
+                    <div class="contest-jury__item">
+                        <div class="contest-jury__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury__img">
+                        </div>
+                        <div class="contest-jury__name">Владимир Синицын</div>
+                        <div class="contest-jury__info">Евроспорт Россия</div>
+                    </div>
+                    <div class="contest-jury__item">
+                        <div class="contest-jury__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury__img">
+                        </div>
+                        <div class="contest-jury__name">Владимир Синицын</div>
+                        <div class="contest-jury__info">Евроспорт Россия</div>
+                    </div>
+                    <div class="contest-jury__item">
+                        <div class="contest-jury__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury__img">
+                        </div>
+                        <div class="contest-jury__name">Денис Казанский</div>
+                        <div class="contest-jury__info">НТВ-Плюс</div>
+                    </div>
+                    <div class="contest-jury__item">
+                        <div class="contest-jury__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury__img">
+                        </div>
+                        <div class="contest-jury__name">Владимир Синицын</div>
+                        <div class="contest-jury__info">Евроспорт Россия</div>
+                    </div>
+                    <div class="contest-jury__item">
+                        <div class="contest-jury__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury__img">
+                        </div>
+                        <div class="contest-jury__name">Владимир Синицын</div>
+                        <div class="contest-jury__info">Евроспорт Россия</div>
+                    </div>
+                </div>
+
+                <div class="h2 mb-25">Выберите конкурс:</div>
+
+                <div class="contest-choose">
+                    <a href="javascript:;" class="contest-choose__link">
+                        <img src="./local/uploads/contest.choose.jpg" alt="" class="contest-choose__img">
+                    </a>
+                    <a href="javascript:;" class="contest-choose__link">
+                        <img src="./local/uploads/contest.choose.jpg" alt="" class="contest-choose__img">
+                    </a>
+                    <a href="javascript:;" class="contest-choose__link">
+                        <img src="./local/uploads/contest.choose.jpg" alt="" class="contest-choose__img">
+                    </a>
+                    <a href="javascript:;" class="contest-choose__link">
+                        <img src="./local/uploads/contest.choose.jpg" alt="" class="contest-choose__img">
+                    </a>
+                    <a href="javascript:;" class="contest-choose__link">
+                        <img src="./local/uploads/contest.choose.jpg" alt="" class="contest-choose__img">
+                    </a>
+                    <a href="javascript:;" class="contest-choose__link">
+                        <img src="./local/uploads/contest.choose.jpg" alt="" class="contest-choose__img">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>
