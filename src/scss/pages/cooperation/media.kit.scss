@@ -1,0 +1,44 @@
+.cooperation-media-kit {
+    background-image: url(img/cooperation.media.kit.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    &__inner {
+        max-width: 480px;
+        margin: auto;
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 26px;
+        margin: 0 0 25px;
+    }
+    &__link {
+        color: var(--white_contur);
+        font-size: 15px;
+        letter-spacing: .23px;
+        border: 1px solid var(--white);
+        border-radius: 4px;
+        padding: 0 30px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: var(--white_contur);
+            border-color: var(--white_contur);
+            text-decoration: none;
+        }
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__inner {
+            padding: 0 70px 0 0;
+            max-width: 530px;
+            margin: 10px auto 0;
+        }
+    }
+}

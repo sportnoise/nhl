@@ -47,6 +47,7 @@
 <a href="https://sportnoise.github.io/nhl/control.html">Управление</a><br>
 <a href="https://sportnoise.github.io/nhl/ice.html">Студёный Лёд</a><br>
 <a href="https://sportnoise.github.io/nhl/trophies.html">Трофеи</a><br>
+<a href="https://sportnoise.github.io/nhl/cooperation.html">Сотрудничество</a><br>
 
 <hr>
 

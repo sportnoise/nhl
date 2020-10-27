@@ -74,8 +74,8 @@
         }
     }
 
-    &_small &__link {
-        padding: 25px 15px 25px 0;
+    &_small &__link,
+    &_middle &__link {
         font-size: 17px;
         line-height: 24px;
 
@@ -83,6 +83,12 @@
             font-size: 19px;
             line-height: 26px;
         }
+    }
+    &_small &__link {
+        padding: 25px 15px 25px 0;
+    }
+    &_middle &__link {
+        padding: 18px 15px 18px 0;
     }
 
     @include media-breakpoint-down(lg)

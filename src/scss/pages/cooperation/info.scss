@@ -1,0 +1,62 @@
+.cooperation-info {
+    background-image: url(img/cooperation.info.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 33px;
+    letter-spacing: .26px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &__title {
+        margin: 25px 0 30px;
+        display: block;
+    }
+    &__items {
+        display: flex;
+        margin: 0 0 15px;
+    }
+    &__item {
+
+        &_margin {
+            margin: 0 100px 0 0;
+        }
+    }
+    &__count {
+        font-size: 40px;
+        line-height: 1;
+        margin: 0 0 5px;
+    }
+    &__label {
+        text-transform: none;
+        line-height: 1;
+    }
+
+    @include media-breakpoint-only(sm)
+    {
+        &__item {
+
+            &_margin {
+                margin: 0 50px 0 0;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__title {
+            margin: 0 0 20px;
+        }
+        &__items {
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            text-align: center;
+        }
+        &__item {
+
+            &_margin {
+                margin: 0 0 20px;
+            }
+        }
+    }
+}
