@@ -50,6 +50,7 @@
 <a href="https://sportnoise.github.io/nhl/cooperation.html">Сотрудничество</a><br>
 <a href="https://sportnoise.github.io/nhl/contest-one.html">Конкурс (Главная)</a><br>
 <a href="https://sportnoise.github.io/nhl/contest-two.html">Конкурс (Конкурс комментаторов)</a><br>
+<a href="https://sportnoise.github.io/nhl/contest-four.html">Конкурс (Участники конкурса)</a><br>
 
 <hr>
 
