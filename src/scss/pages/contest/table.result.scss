@@ -1,0 +1,24 @@
+.contest-table-result {
+
+    &__bottom {
+        padding: 15px 0 0;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &__comment {
+        color: var(--link);
+        margin: 0 30px 0 0;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__block {
+            margin: 0 0 0 -45px;
+        }
+        &__inner {
+            padding: 0 0 0 45px;
+        }
+    }
+}

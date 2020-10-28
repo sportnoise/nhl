@@ -1,0 +1,49 @@
+.contest-result {
+
+    &__num {
+        color: var(--blacksuper);
+        font-size: 19px;
+        line-height: 26px;
+        letter-spacing: .19px;
+        margin: 0 0 5px;
+    }
+    &__video {
+        max-width: 500px;
+        margin: 0 0 30px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__item {
+        margin: 0 0 30px;
+        width: 25%;
+        padding: 0 15px;
+    }
+    &__pict {
+        margin: 0 0 15px;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    @include media-breakpoint-only(sm)
+    {
+        &__item {
+            width: calc(100% / 3);
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__item {
+            width: 50%;
+        }
+    }
+}

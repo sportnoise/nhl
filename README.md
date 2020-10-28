@@ -52,6 +52,7 @@
 <a href="https://sportnoise.github.io/nhl/contest-two.html">Конкурс (Конкурс комментаторов)</a><br>
 <a href="https://sportnoise.github.io/nhl/contest-three.html">Конкурс (Задания конкурса)</a><br>
 <a href="https://sportnoise.github.io/nhl/contest-four.html">Конкурс (Участники конкурса)</a><br>
+<a href="https://sportnoise.github.io/nhl/contest-five.html">Конкурс (Результаты конкурса)</a><br>
 
 <hr>
 
