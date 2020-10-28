@@ -14,5 +14,10 @@
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
+
+        &_small {
+            width: 42px;
+            height: 35px;
+        }
     }
 }

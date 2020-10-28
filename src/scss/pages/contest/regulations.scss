@@ -1,0 +1,60 @@
+.contest-regulations {
+    margin: 50px 0 0;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 50px;
+
+        &_line {
+            border-top: 1px solid var(--gray_contur);
+            padding: 10px 0 0;
+        }
+    }
+    &__left {
+        width: 160px;
+    }
+    &__step {
+        font-size: 19px;
+        line-height: 27px;
+        color: var(--blacksuper);
+        margin: 0 0 10px;
+    }
+    &__date {
+        color: var(--link);
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: .2px;
+    }
+    &__right {
+        width: calc(100% - 200px);
+    }
+    &__name {
+        margin: 0 0 10px;
+    }
+    &__info {
+        color: var(--blacksuper);
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0;
+
+            &__item {
+                flex-direction: column;
+                margin: 0 0 35px;
+            }
+            &__left {
+                width: 100%;
+                margin: 0 0 10px;
+            }
+            &__right {
+                width: 100%;
+            }
+        }
+    }
+}

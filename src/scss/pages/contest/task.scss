@@ -1,0 +1,44 @@
+.contest-task {
+
+    &__num {
+        color: var(--blacksuper);
+        font-size: 19px;
+        line-height: 26px;
+        letter-spacing: .19px;
+        margin: 0 0 10px;
+    }
+    &__title {
+        margin: 0 0 25px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &__left {
+        width: 285px;
+    }
+    &__video {
+        margin: 0 0 20px;
+    }
+    &__right {
+        width: calc(100% - 315px);
+    }
+    &__text {
+        margin: 0 0 20px;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__block {
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+}
