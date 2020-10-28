@@ -1,0 +1,151 @@
+<% var data = {
+    title: "Contest (Two)",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link">
+                Фестиваль Хоккея
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Клуб Макарова
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Приз Якушева
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Студёный лёд
+            </a>
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                Конкурс комментаторов
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="white-block mb-25">
+
+                <div class="title-back">
+                    <a href="javascript:;" class="title-back__back">
+                        <svg class="title-back__back-icon">
+                            <use xlink:href="./local/img/sprite.svg#str-next"></use>
+                        </svg>
+                    </a>
+                    <div class="protocol-detail__head">
+                        <div class="h1 mb-0">Конкурс комментаторов 2019/20</div>
+                    </div>
+                </div>
+
+                <div class="block-width-sm mb-25">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video-play">
+                        <img src="./local/uploads/video.jpg" alt="" class="d-block">
+                        <svg class="video-play__icon">
+                            <use xlink:href="./local/img/sprite.svg#video-play"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="h1 mb-15">«Хочу в Сочи!». Сезон 2019/20</div>
+                <div class="h2 mb-25">Конкурс комментаторов «Хочу в Сочи!» — ежегодный шанс для всех желающих стать участником главного любительского чемпионата страны в составе команды профессиональных журналистов!</div>
+                <p class="mb-60">«Хочу в Сочи!» — твоя уникальная возможность проявить себя и выиграть индивидуальную путевку в Олимпийский парк прямо к побережью Черного моря, услышать свой голос в трансляциях на КХЛ-ТВ, поработать в студии и принять участие в освещении самого грандиозного хоккейного праздника!</p>
+
+                <div class="h1 mb-20">Экспертное жюри</div>
+                <div class="block-width-md mb-35">
+                    Для оценки ваших умений и талантов мы пригласили известных в сфере спорта профессионалов. Каждый из них будет оценивать каждый из этапов конкурса.
+                </div>
+
+                <div class="contest-jury-list">
+                    <div class="contest-jury-list__item">
+                        <div class="contest-jury-list__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury-list__img">
+                        </div>
+                        <div class="contest-jury-list__block">
+                            <div class="contest-jury-list__name">Антон Верницкий</div>
+                            <div class="contest-jury-list__text">Российский спортивный журналист и телекомментатор, теле- и радиоведущий, блогер, шоумен, актёр. Получил известность как спортивный журналист, будучи ведущим телепередачи «Футбольный клуб»[1]. Бывший совладелец портала sports.ru[2]. Бывший главный редактор спортивных каналов «НТВ-Плюс»</div>
+                        </div>
+                    </div>
+                    <div class="contest-jury-list__item">
+                        <div class="contest-jury-list__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury-list__img">
+                        </div>
+                        <div class="contest-jury-list__block">
+                            <div class="contest-jury-list__name">Роман Скворцов</div>
+                            <div class="contest-jury-list__text">Российский спортивный журналист и телекомментатор, теле- и радиоведущий, блогер, шоумен, актёр. Получил известность как спортивный журналист, будучи ведущим телепередачи «Футбольный клуб»[1]. Бывший совладелец портала sports.ru[2]. Бывший главный редактор спортивных каналов «НТВ-Плюс»</div>
+                        </div>
+                    </div>
+                    <div class="contest-jury-list__item">
+                        <div class="contest-jury-list__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury-list__img">
+                        </div>
+                        <div class="contest-jury-list__block">
+                            <div class="contest-jury-list__name">Наталья Кларк</div>
+                            <div class="contest-jury-list__text">Российский спортивный журналист и телекомментатор, теле- и радиоведущий, блогер, шоумен, актёр. Получил известность как спортивный журналист, будучи ведущим телепередачи «Футбольный клуб»[1]. Бывший совладелец портала sports.ru[2]. Бывший главный редактор спортивных каналов «НТВ-Плюс»</div>
+                        </div>
+                    </div>
+                    <div class="contest-jury-list__item">
+                        <div class="contest-jury-list__pict">
+                            <img src="./local/uploads/contest.jury.jpg" alt="" class="contest-jury-list__img">
+                        </div>
+                        <div class="contest-jury-list__block">
+                            <div class="contest-jury-list__name">Роман Скворцов</div>
+                            <div class="contest-jury-list__text">Российский спортивный журналист и телекомментатор, теле- и радиоведущий, блогер, шоумен, актёр. Получил известность как спортивный журналист, будучи ведущим телепередачи «Футбольный клуб»[1]. Бывший совладелец портала sports.ru[2]. Бывший главный редактор спортивных каналов «НТВ-Плюс»</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contest-information">
+                    <div class="contest-information__block">
+                        <div class="contest-information__text">
+                            Присылайте свои работы не позднее указанных сроков в <a href="javascript:;">задании</a>
+                        </div>
+                        <a href="mailto:konkurs@nhliga.com" class="contest-information__email">konkurs@nhliga.com</a>
+                    </div>
+                    <div class="contest-information__btns">
+                        <a href="javascript:;" class="btn-one btn-short contest-information__btn-first">Задания и регламент конкурса</a>
+                        <a href="javascript:;" class="btn-one btn-short">Результаты конкурса</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+
+            <%= _.template(require('./../includes/aside-page.html'))() %>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/footer-partner-list.html'))() %>
+
+<!-- Подвал сайта -->
+<footer class="main-footer">
+    <div class="container">
+
+        <%= _.template(require('./../includes/footer-middle.html'))() %>
+
+        <%= _.template(require('./../includes/footer-bottom.html'))() %>
+
+    </div>
+</footer>
+
+<%= _.template(require('./../includes/footer-mobile.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

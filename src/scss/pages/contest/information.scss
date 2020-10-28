@@ -1,0 +1,52 @@
+.contest-information {
+
+    &__block {
+        padding: 30px 40px;
+        background-color: var(--background);
+        border-radius: 4px;
+        margin: 0 0 55px;
+    }
+    &__text {
+        margin: 0 0 10px;
+    }
+    &__email {
+        color: var(--blacksuper);
+        font-weight: 600;
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__btn-first {
+        margin: 0 15px 0 0;
+    }
+
+    @include media-breakpoint-up(md)
+    {
+        &__text {
+            font-size: 19px;
+            line-height: 27px;
+            max-width: 370px;
+        }
+        &__email {
+            font-size: 24px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__block {
+            padding: 15px;
+            margin: 0 0 25px;
+        }
+        &__email {
+            font-size: 19px;
+        }
+        &__btns {
+            flex-direction: column;
+        }
+        &__btn-first {
+            margin: 0 0 15px;
+        }
+    }
+}

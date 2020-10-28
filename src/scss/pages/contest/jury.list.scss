@@ -1,0 +1,57 @@
+.contest-jury-list {
+    margin: 0 0 90px;
+
+    &__item {
+        color: var(--blacksuper);
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 45px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__pict {
+        width: 138px;
+    }
+    &__img {
+        display: block;
+        border: 4px solid var(--background);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__block {
+        width: calc(100% - 175px);
+    }
+    &__name {
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: .26px;
+        margin: 0 0 10px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 45px;
+
+            &__item {
+                flex-direction: column;
+                margin: 0 0 25px;
+            }
+            &__pict {
+                margin: 0 0 10px;
+            }
+            &__img {
+                max-width: 100px;
+            }
+            &__block {
+                width: 100%;
+            }
+        }
+    }
+}
