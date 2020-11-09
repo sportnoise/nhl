@@ -1,0 +1,81 @@
+<% var data = {
+    title: "Album",
+    htmlClass: "",
+    bodyClass: ""
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Меню раздела -->
+<nav class="menu-section">
+    <div class="container">
+        <div class="menu-section__block">
+            <a href="javascript:;" class="menu-section__link menu-section__link_active">
+                О Лиге
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Управление
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Совет Легенд
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Сотрудничество
+            </a>
+            <a href="javascript:;" class="menu-section__link">
+                Вопрос-ответ
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="background-black">
+
+    <div class="about-block1">
+        <video playsinline autoplay muted loop poster="./local/img/about/bg.block1.jpg" class="about-block1__video">
+            <source src="./local/video/video.webm" type="video/webm">
+            <source src="./local/video/video.mp4" type="video/mp4">
+        </video>
+        <div class="about-block1__block">
+            <img src="./local/img/about/block1.word1.svg" alt="" class="about-block1__word1">
+            <img src="./local/img/about/block1.word2.svg" alt="" class="about-block1__word2">
+            <a href="javascript:;" class="about-block1__btn">
+                <svg class="about-block1__btn-icon">
+                    <use xlink:href="./local/img/sprite.about.svg#play"></use>
+                </svg>
+                Смотреть видео
+            </a>
+        </div>
+        <a href="javascript:;" class="about-block1__str">
+            <svg class="about-block1__str-icon">
+                <use xlink:href="./local/img/sprite.about.svg#str"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="about-block2">
+        <img src="./local/img/about/bg.block2.jpg" alt="" class="about-block2__img">
+        <div class="about-block2__block">
+            <div class="container">
+                <div class="about-block2__text viewport-сhecker">
+                    <div class="about-title">
+                        САМЫЙ МАСШТАБНЫЙ ПРОЕКТ<br>В ЛЮБИТЕЛЬСКОМ СПОРТЕ
+                    </div>
+                    Ночная хоккейная лига создана в 2011 году по инициативе Президента Российской Федерации Владимира Путина и прославленных хоккеистов с целью развития и популяризации массового любительского хоккея, пропаганды здорового образа жизни и создания условий для организации спортивного досуга населения.
+                    <div class="about-block2__inner">
+                        Соревнования Ночной лиги проходят при поддержке Министерства спорта Российской Федерации и Федерации хоккея России. Всероссийский турнир по хоккею среди любительских команд внесен в Единый календарный план межрегиональных, всероссийских и международных физкультурных и спортивных мероприятий.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<%= _.template(require('./../includes/footer-before.html'))() %>
+
+<%= _.template(require('./../includes/menu-mobile.html'))() %>
+
+<%= _.template(require('./../includes/foot.html'))() %>

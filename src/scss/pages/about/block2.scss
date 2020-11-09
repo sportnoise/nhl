@@ -1,0 +1,53 @@
+.about-block2 {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+    &__block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    &__text {
+        width: 50%;
+        float: right;
+        margin: 160px 0 0;
+        padding: 0 120px 0 0;
+        transition: 1s;
+
+        &:not(.viewport-visible) {
+            transform: translate(50%, 0);
+            opacity: 0;
+        }
+    }
+    &__inner {
+        margin: 20px 0 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        border-left: 3px solid var(--red-middle);
+        padding: 0 0 0 22px;
+    }
+
+    @media (min-width: 1400px)
+    {
+        &__text {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        &__inner {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+    @include media-breakpoint-only(lg)
+    {
+        &__text {
+            margin: 80px 0 0;
+            padding: 0;
+        }
+    }
+}

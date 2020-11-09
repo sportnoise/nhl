@@ -13,7 +13,8 @@
 		"datatables.net": "^1.10.22",
 		"jquery": "^3.5.1",
 		"swiper": "^5.4.5",
-		"tippy.js": "^6.2.5"
+		"tippy.js": "^6.2.5",
+		"wow.js": "^1.2.2"
 	},
 	"devDependencies": {
 		"clean-webpack-plugin": "^2.0.1",

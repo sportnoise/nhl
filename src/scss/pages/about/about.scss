@@ -1,0 +1,15 @@
+/* Черный фон */
+.background-black {
+    background-color: var(--black-dark);
+    color: var(--white_contur);
+}
+
+/* Заголовки */
+.about-title {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: .39px;
+    margin: 0 0 20px;
+}

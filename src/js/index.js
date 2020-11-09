@@ -13,6 +13,7 @@ import a from './lib/jquery.mousewheel.js';
 import b from './lib/jquery.jscrollpane.js';
 import с from './lib/datepicker.js';
 import d from './lib/jquery.photobox.js';
+import ViewportChecker from './lib/viewport.checker.js';
 import TableSlider from './table.slider.js';
 
 function formatDate(date)
@@ -419,5 +420,11 @@ $(function() {
         {
             innerBlock.removeAttr('style');
         }
+    });
+
+    // Показ элементов при прокрутке
+    $('.viewport-сhecker').viewportChecker({
+        classToAdd: 'viewport-visible',
+        offset: 100
     });
 });
