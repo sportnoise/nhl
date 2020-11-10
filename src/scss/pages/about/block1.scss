@@ -23,31 +23,6 @@
     &__word2 {
         margin: 0 0 40px;
     }
-    &__btn {
-        display: flex;
-        align-items: center;
-        border: 1px solid var(--gray_contur);
-        border-radius: 5px;
-        color: var(--gray_contur);
-        font-size: 15px;
-        letter-spacing: .23px;
-        height: 40px;
-        padding: 0 15px;
-        fill: none;
-        stroke: var(--gray_contur);
-
-        &:hover {
-            border-color: (--white);
-            color: var(--white);
-            stroke: var(--white);
-            text-decoration: none;
-        }
-        &-icon {
-            height: 23px;
-            width: 32px;
-            margin: 0 15px 0 0;
-        }
-    }
     &__str {
         position: absolute;
         left: 50%;

@@ -23,23 +23,11 @@
             opacity: 0;
         }
     }
-    &__inner {
-        margin: 20px 0 0;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
-        border-left: 3px solid var(--red-middle);
-        padding: 0 0 0 22px;
-    }
 
     @media (min-width: 1400px)
     {
         &__text {
             font-size: 20px;
-            line-height: 1.5;
-        }
-        &__inner {
-            font-size: 16px;
             line-height: 1.5;
         }
     }
