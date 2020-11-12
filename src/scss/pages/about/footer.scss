@@ -31,6 +31,19 @@
         left: 18px;
         top: 15px;
     }
+
+    @include media-breakpoint-only(md)
+    {
+        & {
+            justify-content: space-between;
+
+            &__link {
+                font-size: 18px;
+                margin: 0;
+                width: 47%;
+            }
+        }
+    }
 }
 
 .about-footer-share {

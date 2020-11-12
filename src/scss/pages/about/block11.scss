@@ -54,7 +54,30 @@
     @include media-breakpoint-only(lg)
     {
         & {
-            margin: 0;
+            
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        & {
+            padding: 0;
+
+            &__block {
+                padding: 140px 0 250px;
+            }
+            &__logo {
+                top: 0;
+                left: 0;
+            }
+            &__img {
+                top: auto;
+                left: 0;
+                bottom: 0;
+            }
+            &__text {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 }

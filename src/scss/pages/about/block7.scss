@@ -75,4 +75,14 @@
             width: 290px;
         }
     }
+    @include media-breakpoint-only(md)
+    {
+        & {
+            padding: 80px 0 0;
+
+            &__item {
+                width: 30%;
+            }
+        }
+    }
 }

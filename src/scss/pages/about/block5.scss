@@ -63,4 +63,21 @@
             width: 80%;
         }
     }
+    @include media-breakpoint-only(md)
+    {
+        & {
+            padding: 0 0 80px;
+
+            &__block {
+                background-size: contain;
+                padding: 0;
+            }
+            &__num {
+                margin: 0 30px 0 0;
+            }
+            &__img {
+                width: 70%;
+            }
+        }
+    }
 }
