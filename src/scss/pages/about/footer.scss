@@ -44,6 +44,19 @@
             }
         }
     }
+    @include media-breakpoint-only(sm)
+    {
+        & {
+            flex-direction: column;
+            margin: 0 0 20px;
+
+            &__link {
+                width: 100%;
+                margin: 0 0 20px;
+                height: 80px;
+            }
+        }
+    }
 }
 
 .about-footer-share {

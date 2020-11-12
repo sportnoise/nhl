@@ -54,4 +54,22 @@
             float: none;
         }
     }
+    @include media-breakpoint-only(sm)
+    {
+        &__img {
+            opacity: .5;
+            width: auto;
+            max-width: 120%;
+        }
+        &__block {
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        &__text {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            float: none;
+        }
+    }
 }

@@ -105,4 +105,31 @@
             }
         }
     }
+    @include media-breakpoint-only(sm)
+    {
+        & {
+            margin: 80px 0;
+
+            &__img {
+                max-width: 140%;
+                width: auto;
+                opacity: .5;
+                position: absolute;
+            }
+            &__block {
+                position: relative;
+                top: 0;
+            }
+            &__inner {
+                flex-direction: column;
+            }
+            &__desc {
+                margin: 0 0 30px;
+                width: 100%;
+            }
+            &__text {
+                width: 100%;
+            }
+        }
+    }
 }

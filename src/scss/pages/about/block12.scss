@@ -49,7 +49,7 @@
             line-height: 1.5;
         }
     }
-    @include media-breakpoint-only(md)
+    @include media-breakpoint-between(sm, md)
     {
         & {
             margin: 95px 0 80px;

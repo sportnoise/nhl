@@ -53,4 +53,13 @@
             width: 80%;
         }
     }
+    @include media-breakpoint-only(sm)
+    {
+        &__img {
+            opacity: .5;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
 }

@@ -64,7 +64,7 @@
     @include media-breakpoint-only(md)
     {
         & {
-            padding: 50px;
+            padding: 50px 0;
 
             &__item {
                 height: 55px;
@@ -73,6 +73,26 @@
             }
             &__str {
                 margin: 0 10px;
+            }
+        }
+    }
+    @include media-breakpoint-only(sm)
+    {
+        & {
+            padding: 50px 0;
+
+            &__items {
+                flex-direction: column;
+            }
+            &__item {
+                height: 46px;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+            &__str {
+                margin: 10px 0;
+                transform: rotate(90deg);
             }
         }
     }

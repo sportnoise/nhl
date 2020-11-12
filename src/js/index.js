@@ -427,4 +427,11 @@ $(function() {
         classToAdd: 'viewport-visible',
         offset: 100
     });
+
+    $(".go-to").click(function() {
+
+        $('html, body').animate({
+            scrollTop: $($(this).data('to')).offset().top
+        }, 1000);
+    });
 });

@@ -40,7 +40,7 @@
             padding: 80px 0;
         }
     }
-    @include media-breakpoint-only(md)
+    @include media-breakpoint-between(sm, md)
     {
         &__img {
             height: 340px;

@@ -38,4 +38,15 @@
             width: 13px;
         }
     }
+
+    @include media-breakpoint-only(sm)
+    {
+        &__block {
+            width: 100%;
+            max-width: 510px;
+        }
+        &__str {
+            display: none;
+        }
+    }
 }
