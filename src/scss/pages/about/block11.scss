@@ -5,6 +5,8 @@
 
     &__block {
         position: relative;
+        max-width: 1000px;
+        margin: auto;
     }
     &__logo {
         position: absolute;
@@ -18,8 +20,8 @@
     }
     &__img {
         position: absolute;
-        top: 175px;
-        left: -25px;
+        top: 165px;
+        left: -50px;
         transition: 1s;
 
         &:not(.viewport-visible) {
@@ -30,7 +32,6 @@
     &__text {
         width: 50%;
         margin: 0 0 0 50%;
-        padding: 0 120px 0 0;
         transition: 1s;
 
         &:not(.viewport-visible) {
@@ -48,6 +49,12 @@
         &__text {
             font-size: 20px;
             line-height: 1.5;
+        }
+    }
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            margin: 0;
         }
     }
 }

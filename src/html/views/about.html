@@ -294,18 +294,14 @@
             <div class="container">
                 <div class="about-block8__margin">
                     <img src="./local/img/about/block8.title.svg" alt="" class="about-block8__title mb-40 viewport-сhecker">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="about-block8__desc viewport-сhecker">
-                                Долгожданное событие всего сезона — финал турнира, где собираются победители Региональных чемпионатов
-                            </div>
+                    <div class="about-block8__inner">
+                        <div class="about-block8__desc viewport-сhecker">
+                            Долгожданное событие всего сезона — финал турнира, где собираются победители Региональных чемпионатов
                         </div>
-                        <div class="col-6">
-                            <div class="about-block8__text viewport-сhecker">
-                                <p>Фестиваль проходит в течение двух недель в Сочи на ледовых аренах Олимпийского парка — наследия Олимпиады 2014 года.</p>
-                                <p>Во время Фестиваля традиционно проходит Гала-матч, в котором принимают участие команды «Легенды хоккея» и «Сборная Ночной лиги». В первой команде играют самые выдающиеся хоккеисты отечественного хоккея, государственные деятели и Президент России.</p>
-                                <p>Вторая команда состоит из игроков Ночной лиги из числа выступающих в финале Фестиваля команд, а также российских общественных деятелей и предпринимателей, осуществляющих существенную поддержку российского спорта.</p>
-                            </div>
+                        <div class="about-block8__text viewport-сhecker">
+                            <p>Фестиваль проходит в течение двух недель в Сочи на ледовых аренах Олимпийского парка — наследия Олимпиады 2014 года.</p>
+                            <p>Во время Фестиваля традиционно проходит Гала-матч, в котором принимают участие команды «Легенды хоккея» и «Сборная Ночной лиги». В первой команде играют самые выдающиеся хоккеисты отечественного хоккея, государственные деятели и Президент России.</p>
+                            <p>Вторая команда состоит из игроков Ночной лиги из числа выступающих в финале Фестиваля команд, а также российских общественных деятелей и предпринимателей, осуществляющих существенную поддержку российского спорта.</p>
                         </div>
                     </div>
                 </div>
@@ -318,30 +314,24 @@
         <div class="about-block9__block">
             <div class="container">
                 <div class="about-block9__top">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="about-block9__cup viewport-сhecker">
-                                <img src="./local/img/about/block9.cup.png" alt="" class="about-block9__cup-img">
-                            </div>
+                    <div class="about-block9__cup viewport-сhecker">
+                        <img src="./local/img/about/block9.cup.png" alt="" class="about-block9__cup-img">
+                    </div>
+                    <div class="about-block9__inner about-block9__z-index viewport-сhecker">
+                        <div class="about-title mb-10">
+                            КУБОК КРУТОВА
                         </div>
-                        <div class="col-5">
-                            <div class="about-block9__inner about-block9__z-index viewport-сhecker">
-                                <div class="about-title mb-10">
-                                    КУБОК КРУТОВА
-                                </div>
-                                <div class="about-block9__desc about-description">
-                                    Главный трофей Ночной хоккейной лиги
-                                </div>
-                                <div class="about-block9__text">
-                                    Кубок Крутова учрежден Ночной лигой в 2015 году, главный приз — «грант» Министерства спорта России на строительство крытой ледовой арены в регионе, который представляет команда-победительница Фестиваля. Вручается сильнейшему коллективу страны в самом престижном и представительном дивизионе  — «Любитель 40+».
-                                </div>
-                            </div>
+                        <div class="about-block9__desc about-description">
+                            Главный трофей Ночной хоккейной лиги
+                        </div>
+                        <div class="about-block9__text">
+                            Кубок Крутова учрежден Ночной лигой в 2015 году, главный приз — «грант» Министерства спорта России на строительство крытой ледовой арены в регионе, который представляет команда-победительница Фестиваля. Вручается сильнейшему коллективу страны в самом престижном и представительном дивизионе  — «Любитель 40+».
                         </div>
                     </div>
                 </div>
                 <div class="about-block9__bottom">
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-6">
                             <div class="about-block9__text-small about-block9__z-index viewport-сhecker">
                                 <img src="./local/img/about/block9.icon.svg" alt="" class="about-block9__icon">
                                 В истории Лиги есть восемь победителей Фестиваля, пять из которых, начиная с 2015 года, являются обладателями Кубка Крутова:<br>
@@ -454,6 +444,53 @@
 </div>
 
 <%= _.template(require('./../includes/footer-before.html'))() %>
+
+<footer class="background-black">
+    <div class="container">
+
+        <div class="about-footer-links">
+             <a href="javascript:;" class="about-footer-links__link">
+                <svg class="about-footer-links__icon">
+                    <use xlink:href="./local/img/sprite.about.svg#a"></use>
+                </svg>
+                 Больше информации о Ночной Лиге в разделе «вопросы-ответы»
+             </a>
+             <a href="javascript:;" class="about-footer-links__link">
+                <svg class="about-footer-links__icon">
+                    <use xlink:href="./local/img/sprite.about.svg#b"></use>
+                </svg>
+                 Остались вопросы — воспользуйтесь формой обратной связи
+             </a>
+        </div>
+
+        <div class="about-footer-share">
+            <div class="about-footer-share__title">Рассказать о Ночной Лиге друзьям</div>
+            <div class="about-footer-share__items">
+
+                <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                <script src="https://yastatic.net/share2/share.js"></script>
+
+                <div class="ya-share2" data-services="facebook,vkontakte,odnoklassniki,whatsapp,telegram"></div>
+
+            </div>
+        </div>
+
+        <div class="about-footer-bottom">
+            <div class="about-footer-bottom__slogan">
+                 Увидимся на ледовых аренах страны!
+            </div>
+            <svg class="about-footer-bottom__icon">
+                <use xlink:href="./local/img/sprite.about.svg#logo"></use>
+            </svg>
+            <div>
+                <a href="javascript:;" class="about-btn">
+                    Вернуть на главную
+                </a>
+            </div>
+        </div>
+   
+    </div>
+</footer>
 
 <%= _.template(require('./../includes/menu-mobile.html'))() %>
 

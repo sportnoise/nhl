@@ -68,4 +68,11 @@
             opacity: 0;
         }
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__item {
+            width: 290px;
+        }
+    }
 }
