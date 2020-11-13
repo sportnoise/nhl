@@ -99,7 +99,7 @@
             display: none;
         }
     }
-    @include media-breakpoint-between(sm, md)
+    @include media-breakpoint-down(md)
     {
         & {
             margin: 0 0 50px;

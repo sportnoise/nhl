@@ -14,6 +14,14 @@
     letter-spacing: .39px;
     margin: 0 0 20px;
     text-transform: uppercase;
+
+    @include media-breakpoint-only(xs)
+    {
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0;
+        margin: 0 0 10px;
+    }
 }
 
 /* Описание блоков */
@@ -38,7 +46,7 @@
     stroke: var(--gray_contur);
 
     &:hover {
-        border-color: (--white);
+        border-color: var(--white);
         color: var(--white);
         stroke: var(--white);
         text-decoration: none;

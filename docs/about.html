@@ -6,7 +6,7 @@
 
         <title>Ночная Хоккейная Лига - About</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?39bf019786452d5d05a9" rel="stylesheet" />
+        <link href="./local/template_styles.css?dbcc6c6d383a093d0f23" rel="stylesheet" />
     </head>
 
     <body class="main-body">
@@ -253,13 +253,16 @@
 
             <div class="background-black">
                 <div class="about-block1">
-                    <video playsinline autoplay muted loop poster="./local/img/about/bg.block1.jpg" class="about-block1__video">
+                    <video playsinline autoplay muted loop poster="./local/img/about/bg.block1.jpg" class="about-block1__video d-none d-md-block">
                         <source src="./local/video/video.webm" type="video/webm" />
                         <source src="./local/video/video.mp4" type="video/mp4" />
                     </video>
+                    <img src="./local/img/about/bg.block1.jpg" alt="" class="about-block1__img d-md-none" />
                     <div class="about-block1__block">
-                        <img src="./local/img/about/block1.word1.svg" alt="" class="about-block1__word1" />
-                        <img src="./local/img/about/block1.word2.svg" alt="" class="about-block1__word2" />
+                        <img src="./local/img/about/block1.word1.svg" alt="" class="about-block1__word1 d-none d-sm-block" />
+                        <img src="./local/img/about/block1.word2.svg" alt="" class="about-block1__word2 d-none d-sm-block" />
+                        <img src="./local/img/about/block1.word1.mobile.svg" alt="" class="about-block1__word1 d-sm-none" />
+                        <img src="./local/img/about/block1.word2.mobile.svg" alt="" class="about-block1__word2 d-sm-none" />
                         <a href="javascript:;" class="about-btn">
                             <svg class="about-btn__icon-video">
                                 <use xlink:href="./local/img/sprite.about.svg#play"></use>
@@ -274,12 +277,13 @@
                     </a>
                 </div>
 
-                <div class="about-block2" id="next-block">
+                <div class="about-block2 viewport-сhecker" id="next-block">
                     <img src="./local/img/about/bg.block2.jpg" alt="" class="about-block2__img" />
+                    <img src="./local/img/about/bg.block2.user.png" alt="" class="about-block2__user d-none d-lg-block" />
                     <div class="about-block2__block">
                         <div class="container">
-                            <div class="about-block2__text viewport-сhecker">
-                                <div class="about-title">САМЫЙ МАСШТАБНЫЙ ПРОЕКТ<br />В ЛЮБИТЕЛЬСКОМ СПОРТЕ</div>
+                            <div class="about-block2__text">
+                                <div class="about-title">САМЫЙ МАСШТАБНЫЙ ПРОЕКТ <br class="d-none d-sm-block" />В ЛЮБИТЕЛЬСКОМ СПОРТЕ</div>
                                 <div class="mb-20">
                                     Ночная хоккейная лига создана в 2011 году по инициативе Президента Российской Федерации Владимира Путина и прославленных хоккеистов с целью развития и популяризации массового любительского хоккея,
                                     пропаганды здорового образа жизни и создания условий для организации спортивного досуга населения.
@@ -592,10 +596,10 @@
                                 <div class="about-block10__items">
                                     <div class="about-block10__item about-block10__item_first viewport-сhecker">
                                         <div class="about-block10__pict">
-                                            <img src="./local/img/about/block10.img1.png" alt="" />
+                                            <img src="./local/img/about/block10.img1.png" alt="" class="about-block10__pict-img" />
                                         </div>
                                         <div class="about-block10__text-small">
-                                            <img src="./local/img/about/block10.icon.png" alt="" class="about-block10__icon" />
+                                            <img src="./local/img/about/block10.icon.png" alt="" class="about-block10__icon d-sm-none d-md-block" />
                                             Обладатели Кубка Мечты:<br />
                                             2018 — «Вольфрам-Б» (п. Восток, Приморский край)<br />
                                             2019 — «Марс Волхов» (Волхов, Ленинградская область)
@@ -603,9 +607,10 @@
                                     </div>
                                     <div class="about-block10__item about-block10__item_last viewport-сhecker">
                                         <div class="about-block10__pict">
-                                            <img src="./local/img/about/block10.img2.png" alt="" />
+                                            <img src="./local/img/about/block10.img2.png" alt="" class="about-block10__pict-img" />
                                         </div>
                                         <div class="about-block10__text-small">
+                                            <img src="./local/img/about/block10.icon.png" alt="" class="about-block10__icon d-sm-none" />
                                             Обладатели Кубка Надежды:<br />
                                             2018 — «Тимерхан» (пгт. Богатые Сабы, Республика Татарстан)<br />
                                             2019 — «Вольфрам-А» (п. Восток, Приморский край)
@@ -797,6 +802,6 @@
             <a href="javascript:;" class="window-question__close btn-close btn-close_grey js-close-window"></a>
         </div>
 
-        <script type="text/javascript" src="./local/js/script.js?39bf019786452d5d05a9"></script>
+        <script type="text/javascript" src="./local/js/script.js?dbcc6c6d383a093d0f23"></script>
     </body>
 </html>

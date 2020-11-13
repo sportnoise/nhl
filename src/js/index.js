@@ -425,7 +425,7 @@ $(function() {
     // Показ элементов при прокрутке
     $('.viewport-сhecker').viewportChecker({
         classToAdd: 'viewport-visible',
-        offset: 100
+        offset: 200
     });
 
     $(".go-to").click(function() {

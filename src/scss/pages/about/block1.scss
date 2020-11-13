@@ -1,6 +1,27 @@
 .about-block1 {
     position: relative;
 
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: var(--black-dark);
+        opacity: .15;
+    }
+    &:after {
+        content: "";
+        background: url(img/about/block1.grid.png) repeat center;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
     &__video {
         width: 100%;
         display: block;
@@ -16,6 +37,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 3;
     }
     &__word1 {
         margin: 0 0 30px;
@@ -26,9 +48,11 @@
     &__str {
         position: absolute;
         left: 50%;
-        bottom: 30px;
+        bottom: 50px;
         stroke: var(--gray_contur);
         fill: none;
+        animation: stranimation 3s infinite alternate;
+        z-index: 3;
 
         &:hover {
             stroke: var(--white);
@@ -39,14 +63,43 @@
         }
     }
 
+    @keyframes stranimation
+    {
+        50% {
+            bottom: 10px;
+        }
+    }
+
     @include media-breakpoint-only(sm)
     {
+        &__img {
+            display: block;
+        }
         &__block {
             width: 100%;
             max-width: 510px;
         }
         &__str {
             display: none;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            height: 630px;
+
+            &__img {
+                display: block;
+                height: 100%;
+                max-width: 2000px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-40%, 0);
+            }
+            &__block {
+                width: 100%;
+                padding: 0 15px;
+            }
         }
     }
 }

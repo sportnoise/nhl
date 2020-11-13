@@ -96,4 +96,25 @@
             }
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 50px 0;
+
+            &__items {
+                flex-direction: column;
+            }
+            &__item {
+                height: 46px;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                transition: .5s !important;
+            }
+            &__str {
+                margin: 10px 0;
+                transform: rotate(90deg);
+            }
+        }
+    }
 }
