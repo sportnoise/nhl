@@ -497,6 +497,32 @@
     </div>
 </footer>
 
+<div class="faq-form form-one">
+    <form>
+        <div class="h1 mb-5">Остались вопросы?</div>
+        <div class="faq-form__desc">Мы готовы ответить на любые ваши вопросы и предложения</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-one__line">
+                    <input class="form-one__input" type="text" value="" placeholder="Ваше имя">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-one__line">
+                    <input class="form-one__input" type="email" value="" placeholder="E-mail">
+                </div>
+            </div>
+        </div>
+        <div class="form-one__line">
+            <textarea class="form-one__textarea" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="faq-form__bottom">
+            <input type="file" class="faq-form__file file-input" value="" data-placeholder="Прикрепить файл">
+            <button type="submit" class="btn-one">Отправить</button>
+        </div>
+    </form>
+</div>
+
 <%= _.template(require('./../includes/menu-mobile.html'))() %>
 
 <%= _.template(require('./../includes/foot.html'))() %>
