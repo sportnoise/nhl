@@ -5,6 +5,7 @@
     &__desc {
         max-width: 515px;
         margin: 0 auto 45px;
+        transition: 2s;
     }
     &__items {
         display: flex;
@@ -21,29 +22,36 @@
         align-items: center;
         padding: 0 30px 0 20px;
         border-radius: 10px;
-
-        &:not(.viewport-visible) {
-            transform: translate(-50%, 0);
-            opacity: 0;
-        }
-        &:nth-of-type(1) {
-            transition: .5s;
-        }
-        &:nth-of-type(2) {
-            transition: .5s linear .5s;
-        }
-        &:nth-of-type(3) {
-            transition: .5s linear 1s;
-        }
-        &:nth-of-type(4) {
-            transition: .5s linear 1.5s;
-        }
     }
     &__str {
         margin: 0 25px;
         width: 26px;
         height: 42px;
         stroke: var(--white);
+    }
+    &__slide {
+
+        &:nth-child(1) {
+            transition: 1s;
+        }
+        &:nth-child(2) {
+            transition: .5s linear 1s;
+        }
+        &:nth-child(3) {
+            transition: 1s linear 1.5s;
+        }
+        &:nth-child(4) {
+            transition: .5s linear 2.5s;
+        }
+        &:nth-child(5) {
+            transition: 1s linear 3s;
+        }
+        &:nth-child(6) {
+            transition: .5s linear 4s;
+        }
+        &:nth-child(7) {
+            transition: 1s linear 4.5s;
+        }
     }
     &__text {
         font-weight: 600;
@@ -52,13 +60,21 @@
         letter-spacing: .35px;
         max-width: 490px;
         margin: 0 auto 20px;
+        transition: 1s linear 5.5s;
     }
-    &__opacity {
-        transition: 1s;
+    &__btn {
+        transition: 1s linear 5.5s;
+    }
 
-        &:not(.viewport-visible) {
-            opacity: 0;
-        }
+    &:not(.viewport-visible) &__title,
+    &:not(.viewport-visible) &__desc,
+    &:not(.viewport-visible) &__text,
+    &:not(.viewport-visible) &__btn {
+        opacity: 0;
+    }
+    &:not(.viewport-visible) &__slide {
+        transform: translate(-50%, 0);
+        opacity: 0;
     }
 
     @include media-breakpoint-only(md)

@@ -78,54 +78,50 @@
         </div>
     </div>
 
-    <div class="about-block3">
+    <div class="about-block3 viewport-сhecker">
         <div class="container">
-            <div class="about-block3__opacity viewport-сhecker">
-                <div class="about-title mb-10">
-                    Структура деятельности
-                </div>
-                <div class="about-block3__desc about-description">
-                    Прозрачная структура обеспечивает высокий уровень организации и проведения мероприятий
-                </div>
+            <div class="about-block3__title about-title mb-10">
+                Структура деятельности
+            </div>
+            <div class="about-block3__desc about-description">
+                Прозрачная структура обеспечивает высокий уровень организации и проведения мероприятий
             </div>
             <div class="about-block3__items">
-                <div class="about-block3__item viewport-сhecker">
+                <div class="about-block3__item about-block3__slide">
                     Ночная Лига
                 </div>
-                <svg class="about-block3__str">
+                <svg class="about-block3__str about-block3__slide">
                     <use xlink:href="./local/img/sprite.about.svg#str-double"></use>
                 </svg>
-                <div class="about-block3__item viewport-сhecker">
+                <div class="about-block3__item about-block3__slide">
                     Региональные<br>
                     представители Лиги 
                 </div>
-                <svg class="about-block3__str">
+                <svg class="about-block3__str about-block3__slide">
                     <use xlink:href="./local/img/sprite.about.svg#str-double"></use>
                 </svg>
-                <div class="about-block3__item viewport-сhecker">
+                <div class="about-block3__item about-block3__slide">
                     Представители<br>
                     команд
                 </div>
-                <svg class="about-block3__str">
+                <svg class="about-block3__str about-block3__slide">
                     <use xlink:href="./local/img/sprite.about.svg#str-double"></use>
                 </svg>
-                <div class="about-block3__item viewport-сhecker">
+                <div class="about-block3__item about-block3__slide">
                     Хоккеисты-<br>
                     любители
                 </div>
             </div>
-            <div class="about-block3__opacity viewport-сhecker">
-                <div class="about-block3__text">
-                    Организацией Регионального чемпионата занимаются региональные представители, которым выдается доверенность на проведение турнира в своем регионе
-                </div>
-                <div class="about-block3__btn">
-                    <a href="javascript:;" class="about-btn">
-                        Региональные представители
-                        <svg class="about-btn__icon-str">
-                            <use xlink:href="./local/img/sprite.about.svg#str"></use>
-                        </svg>
-                    </a>
-                </div>
+            <div class="about-block3__text">
+                Организацией Регионального чемпионата занимаются региональные представители, которым выдается доверенность на проведение турнира в своем регионе
+            </div>
+            <div class="about-block3__btn">
+                <a href="javascript:;" class="about-btn">
+                    Региональные представители
+                    <svg class="about-btn__icon-str">
+                        <use xlink:href="./local/img/sprite.about.svg#str"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -460,7 +456,7 @@
                 </svg>
                  Больше информации о Ночной Лиге в разделе «вопросы-ответы»
              </a>
-             <a href="javascript:;" class="about-footer-links__link">
+             <a href="javascript:;" class="about-footer-links__link" data-fancybox data-src="#isQuestion">
                 <svg class="about-footer-links__icon">
                     <use xlink:href="./local/img/sprite.about.svg#b"></use>
                 </svg>
@@ -497,30 +493,32 @@
     </div>
 </footer>
 
-<div class="faq-form form-one">
-    <form>
-        <div class="h1 mb-5">Остались вопросы?</div>
-        <div class="faq-form__desc">Мы готовы ответить на любые ваши вопросы и предложения</div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-one__line">
-                    <input class="form-one__input" type="text" value="" placeholder="Ваше имя">
+<div class="window-one" id="isQuestion">
+    <div class="faq-form form-one mb-0">
+        <form>
+            <div class="h1 mb-5">Остались вопросы?</div>
+            <div class="faq-form__desc">Мы готовы ответить на любые ваши вопросы и предложения</div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-one__line">
+                        <input class="form-one__input" type="text" value="" placeholder="Ваше имя">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-one__line">
+                        <input class="form-one__input" type="email" value="" placeholder="E-mail">
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="form-one__line">
-                    <input class="form-one__input" type="email" value="" placeholder="E-mail">
-                </div>
+            <div class="form-one__line">
+                <textarea class="form-one__textarea" placeholder="Ваш вопрос"></textarea>
             </div>
-        </div>
-        <div class="form-one__line">
-            <textarea class="form-one__textarea" placeholder="Ваш вопрос"></textarea>
-        </div>
-        <div class="faq-form__bottom">
-            <input type="file" class="faq-form__file file-input" value="" data-placeholder="Прикрепить файл">
-            <button type="submit" class="btn-one">Отправить</button>
-        </div>
-    </form>
+            <div class="faq-form__bottom">
+                <input type="file" class="faq-form__file file-input" value="" data-placeholder="Прикрепить файл">
+                <button type="submit" class="btn-one">Отправить</button>
+            </div>
+        </form>
+    </div>
 </div>
 
 <%= _.template(require('./../includes/menu-mobile.html'))() %>

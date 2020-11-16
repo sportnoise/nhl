@@ -229,3 +229,17 @@
         }
     }
 }
+
+.window-one {
+    display: none;
+    background-color: var(--background);
+    border-radius: 4px;
+    padding: 30px;
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 20px;
+        }
+    }
+}

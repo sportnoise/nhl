@@ -25,10 +25,10 @@
             opacity: 0;
         }
         &:nth-child(1) {
-            transition: .5s;
+            transition: 1s;
         }
         &:nth-child(2) {
-            transition: .5s linear .5s;
+            transition: 1s linear 1s;
         }
     }
     &__nums {
@@ -43,13 +43,13 @@
             opacity: 0;
         }
         &:nth-child(1) {
-            transition: .5s;
+            transition: 1s;
         }
         &:nth-child(2) {
-            transition: .5s linear .5s;
+            transition: 1s linear 1s;
         }
         &:nth-child(3) {
-            transition: .5s linear 1s;
+            transition: 1s linear 2s;
         }
     }
     &__img {
