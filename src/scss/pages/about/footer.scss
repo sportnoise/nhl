@@ -114,22 +114,22 @@
         &__item_service_vkontakte .ya-share2__link:after {
             width: 28px;
             height: 17px;
-            background-image: url(img/sprite.share.white.svg#vk);
+            background-image: url(img/share.white.vk.svg);
         }
         &__item_service_odnoklassniki .ya-share2__link:after {
             width: 15px;
             height: 27px;
-            background-image: url(img/sprite.share.white.svg#ok);
+            background-image: url(img/share.white.ok.svg);
         }
         &__item_service_whatsapp .ya-share2__link:after {
             width: 24px;
             height: 24px;
-            background-image: url(img/sprite.share.white.svg#wa);
+            background-image: url(img/share.white.wa.svg);
         }
         &__item_service_telegram .ya-share2__link:after {
             width: 26px;
             height: 22px;
-            background-image: url(img/sprite.share.white.svg#tg);
+            background-image: url(img/share.white.tg.svg);
         }
     }
 }
