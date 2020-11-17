@@ -27,7 +27,8 @@
 
         this.checkElements = function(){
             // Set some vars to check with
-            var viewportTop = $('html').scrollTop(),
+            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html'),
+                viewportTop = $(scrollElem).scrollTop(),
                 viewportBottom = (viewportTop + windowHeight);
 
             $elem.each(function(){
