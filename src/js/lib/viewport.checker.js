@@ -27,10 +27,9 @@
 
         this.checkElements = function(){
             // Set some vars to check with
-            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html'),
-                viewportTop = $(scrollElem).scrollTop(),
+            var viewportTop = $('html').scrollTop() > 0 ? $('html').scrollTop() : $('body').scrollTop(),
                 viewportBottom = (viewportTop + windowHeight);
-
+            
             $elem.each(function(){
                 var $obj = $(this);
                 // If class already exists; quit

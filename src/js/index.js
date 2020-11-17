@@ -158,7 +158,7 @@ $(function() {
     }
 
     // Подсказки
-    tippy('[data-tippy-content]', {
+	tippy('[data-tippy-content]', {
         delay: [800, 200],
         allowHTML: true,
     });
