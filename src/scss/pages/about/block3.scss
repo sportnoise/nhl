@@ -125,7 +125,9 @@
                 width: 100%;
                 justify-content: center;
                 text-align: center;
-                transition: .5s !important;
+            }
+            &__slide {
+                transition: 0 !important;
             }
             &__str {
                 margin: 10px 0;
