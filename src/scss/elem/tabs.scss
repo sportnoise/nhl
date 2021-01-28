@@ -92,6 +92,9 @@
         &_ln {
             width: 35px;
         }
+        &_kch {
+            width: 31px;
+        }
     }
 
     @include media-breakpoint-only(xs)

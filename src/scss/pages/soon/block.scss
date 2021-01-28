@@ -58,7 +58,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
+    flex-wrap: wrap;
 
     &__link {
         font-size: 15px;
@@ -68,7 +69,7 @@
         padding: 0 20px;
         font-weight: 600;
         border-radius: 4px;
-        margin: 0 10px;
+        margin: 0 10px 10px;
         display: flex;
         align-items: center;
 
@@ -102,6 +103,11 @@
             background-image: url(img/social.soon.svg#yt);
             height: 24px;
             width: 31px;
+        }
+        &_tg {
+            background-image: url(img/social.soon.svg#tg);
+            height: 25px;
+            width: 29px;
         }
     }
 

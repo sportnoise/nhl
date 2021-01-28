@@ -277,8 +277,23 @@
                 background-image: url(img/social.header.svg#yt-hover);
             }
         }
+        &_tg {
+            background-image: url(img/social.header.svg#tg);
+            height: 18px;
+            width: 21px;
+
+            &:hover {
+                background-image: url(img/social.header.svg#tg-hover);
+            }
+        }
     }
 
+    @include media-breakpoint-only(lg)
+    {
+        &__link {
+            margin: 0 0 0 10px;
+        }
+    }
     @include media-breakpoint-only(md)
     {
         & {
