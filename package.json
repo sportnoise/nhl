@@ -12,7 +12,7 @@
 		"air-datepicker": "^2.2.3",
 		"datatables.net": "^1.10.23",
 		"jquery": "^3.5.1",
-		"swiper": "^5.4.5",
+		"swiper": "^6.5.1",
 		"tippy.js": "^6.2.7",
 		"wow.js": "^1.2.2"
 	},
