@@ -1,0 +1,110 @@
+.chat-bot-bot {
+    height: 100% !important;
+    width: 100% !important;
+
+    .jspContainer {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    & .jspPane {
+        min-height: 100%;
+        display: flex;
+        align-items: flex-end;
+        width: 100% !important;
+        padding: 0 20px 0 0 !important;
+    }
+    & .jspHorizontalBar {
+        display: none !important;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        min-height: 100%;
+    }
+    &__question {
+        margin: 25px 0 0;
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--chat-text);
+        background-color: var(--chat-grey3);
+        border-radius: 5px;
+        width: 100%;
+        padding: 20px;
+        position: relative;
+
+        &-icon {
+            width: 40px;
+            height: 35px;
+            fill: none;
+            position: absolute;
+            top: -25px;
+            left: 0;
+        }
+    }
+    &__answers {
+        display: flex;
+        align-items: center;
+    }
+    &__answer {
+        font-size: 15px;
+        line-height: 19px;
+        color: var(--chat-blue2);
+        border: 1px solid var(--chat-blue2);
+        border-radius: 5px;
+        margin: 10px 0 0;
+        padding: 5px 20px;
+        min-height: 35px;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover,
+        &_active {
+            background-color: var(--chat-blue2);
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+    &__str {
+        border: 1px solid var(--chat-blue2);
+        height: 35px;
+        width: 35px;
+        border-radius: 5px;
+        position: relative;
+
+        &:before {
+            content: "";
+            border-left: 2px solid var(--chat-blue2);
+            border-bottom: 2px solid var(--chat-blue2);
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 50%;
+            left: 50%;
+            transition: .5s;
+        }
+        &:hover {
+            background-color: var(--chat-blue2);
+        }
+        &:hover:before {
+            border-color: var(--white);
+        }
+        &_prev {
+            margin: 10px 10px 0 0;
+    
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+                margin: 0 0 0 2px;
+            }
+        }
+        &_next {
+            margin: 10px 0 0 10px;
+    
+            &:before {
+                transform: translate(-50%,-50%) rotate(-135deg);
+                margin: 0 0 0 -2px;
+            }
+        }
+    }
+}

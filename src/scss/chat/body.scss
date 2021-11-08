@@ -1,0 +1,11 @@
+.chat-bot-body {
+    height: calc(100% - 60px);
+    display: none;
+    padding: 10px 10px 20px 20px;
+    overflow: hidden;
+    min-width: 346px;
+
+    &_active {
+        display: block;
+    }
+}

@@ -1,0 +1,74 @@
+.chat-bot-btn {
+    position: fixed;
+    z-index: 100;
+    right: 15px;
+    bottom: 15px;
+
+    &__bg,
+    &__shadow {
+        -webkit-clip-path: polygon(30% 0,100% 0,100% 70%,70% 100%,0 100%,0 30%);
+        clip-path: polygon(30% 0,100% 0,100% 70%,70% 100%,0 100%,0 30%);
+        transition: .5s;
+    }
+    &__bg {
+        height: 60px;
+        width: 60px;
+        background-color: var(--chat-blue1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+    &__shadow {
+        height: 90px;
+        width: 90px;
+        background-color: var(--chat-blue2);
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &:hover &__shadow {
+        opacity: .1;
+    }
+    &__icon {
+        height: 42px;
+        width: 34px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+    }
+
+    &_open &__bg {
+        background-color: var(--chat-grey1);
+
+        &:before,
+        &:after {
+            content: "";
+            background-color: var(--chat-white);
+            height: 30px;
+            width: 3px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        &:before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &:after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+    &_open:hover &__bg {
+        background-color: var(--chat-grey2);
+    }
+    &_open:hover &__shadow {
+        opacity: 0;
+    }
+    &_open &__icon {
+        display: none;
+    }
+}

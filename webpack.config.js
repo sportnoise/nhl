@@ -21,7 +21,7 @@ function generateHtmlPlugins(templateDir)
             filename: `${name}.html`,
             template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
             inject: 'body',
-            favicon: 'src/favicon.ico',
+            //icon: 'src/favicon.ico',
             hash: true,
             minify: true
         });
@@ -34,7 +34,7 @@ const config = {
     entry: ["./src/js/index.js", "./src/scss/style.scss"],
     output: {
 		path: path.resolve(__dirname, "./docs"),
-        filename: "./local/js/script.js"
+        filename: "./chat/chat.js"
     },
     //devtool: "source-map", // - создавать ли карту CSS и JS
     mode: "production",
@@ -99,24 +99,16 @@ const config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "./local/template_styles.css"
+            filename: "./chat/chat.css"
         }),
         new CopyWebpackPlugin([
             {
                 from: "./src/img",
-                to: "./local/img"
+                to: "./chat"
             },
             {
-                from: "./src/fonts",
-                to: "./local/fonts"
-            },
-            {
-                from: "./src/uploads",
-                to: "./local/uploads"
-            },
-            {
-                from: "./src/video",
-                to: "./local/video"
+                from: "./src/site",
+                to: "./site"
             }
         ])
     ].concat(htmlPlugins)

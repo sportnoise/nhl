@@ -1,0 +1,33 @@
+:root {
+    --chat-black: #000;
+    --chat-white: #FFF;
+
+    --chat-text: #2A313C;
+
+    --chat-blue1: #026BB2;
+    --chat-blue2: #0394D0;
+
+    --chat-grey1: #dadce1;
+    --chat-grey2: #b5bac3;
+    --chat-grey3: #F3F4F6;
+    --chat-grey4: #7D8D96;
+
+    --chat-shadow: rgba(0,0,0,.1);
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+	xl: 1280px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+	xl: 1260px
+);
+
+$gutter: 30px;

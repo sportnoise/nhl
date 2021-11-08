@@ -1,0 +1,7 @@
+.chat-bot-step {
+    display: none;
+
+    &_active {
+        display: block;
+    }
+}

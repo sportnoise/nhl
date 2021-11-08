@@ -1,0 +1,87 @@
+.chat-bot-msg {
+    height: calc(100% - 60px);
+    width: 100% !important;
+
+    .jspContainer {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    & .jspPane {
+        min-height: 100%;
+        width: 100% !important;
+        padding: 0 20px 0 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    & .jspHorizontalBar {
+        display: none !important;
+    }
+
+    &__date,
+    &__info {
+        font-size: 13px;
+        line-height: 19px;
+        text-align: center;
+        margin: 0 0 10px;
+        color: var(--chat-grey4);
+    }
+    &__line {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px;
+
+        &_end {
+            justify-content: flex-end;
+        }
+    }
+    &__admin {
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--chat-text);
+        background-color: var(--chat-grey3);
+        border-radius: 5px;
+        padding: 20px;
+        position: relative;
+        max-width: calc(100% - 45px);
+        margin: 0 10px 0 0;
+    }
+    &__admin-circle {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: var(--chat-blue2);
+        fill: var(--white);
+        left: 0;
+        top: -25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__admin-icon {
+        height: 21px;
+        width: 21px;
+    }
+    &__time {
+        font-size: 11px;
+        line-height: 19px;
+        color: var(--chat-grey4);
+    }
+    &__user {
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--white);
+        background-color: var(--chat-blue2);
+        border-radius: 5px;
+        padding: 10px 20px;
+        position: relative;
+        max-width: calc(100% - 45px);
+        margin: 0 0 0 10px;
+    }
+
+    & > div:last-child,
+    & .jspPane > div:last-child  {
+        margin: 0;
+    }
+}
