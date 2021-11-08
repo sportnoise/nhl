@@ -1,4 +1,4 @@
-<a href="https://brekot.github.io/chat-nhl-webpack/">Пример чата в странице</a><br>
+<a href="https://sportnoise.github.io/nhl/">Пример чата в странице</a><br>
 
 <hr>
 
