@@ -26,34 +26,12 @@ $(function(){
 
         $(this).addClass('chat-bot-head__link_active');
 
-        api.reinitialise();
         api.scrollToBottom();
     });
 
     $('.js-chat-toggle-zoom').on('click', function(){
 
         $('.chat-bot-window').toggleClass('chat-bot-window_big');
-
-       /*  setTimeout(function(){
-
-            api.reinitialise({
-                autoReinitialise: false,
-                stickToBottom: true
-            });
-
-   
-
-        }, 600);
-
-        setTimeout(function(){
-
-
-            api.reinitialise({
-                autoReinitialise: true,
-                stickToBottom: true
-            });
-
-        }, 700); */
     });
 
     $('.js-step-next').on('click', function(){

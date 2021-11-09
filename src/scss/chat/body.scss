@@ -1,11 +1,14 @@
 .chat-bot-body {
     height: calc(100% - 60px);
-    display: none;
     padding: 10px 10px 20px 20px;
     overflow: hidden;
     min-width: 346px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--white);
 
     &_active {
-        display: block;
+        z-index: 2;
     }
 }
