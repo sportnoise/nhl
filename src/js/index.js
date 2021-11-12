@@ -14,6 +14,11 @@ $(function(){
         $('.chat-bot-btn').toggleClass('chat-bot-btn_open');
 
         $('.chat-bot-window_big').removeClass('chat-bot-window_big');
+
+        if ($(window).width() < 576)
+        {
+            $('body').addClass('overflow-hidden');
+        }
     });
 
     $('.js-chat-toggle-tab').on('click', function(){
