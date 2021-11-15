@@ -62,16 +62,17 @@
             margin: -9px 3px 0 0;
             transition: .5s;
         }
+        &:focus {
+            outline: none;
+        }
         &:hover {
 
             &:before {
                 background-color: var(--chat-blue2);
-                right: -10px;
             }
             &:after {
                 border-top: 2px solid var(--chat-blue2);
                 border-right: 2px solid var(--chat-blue2);
-                right: -10px;
             }
         }
     }

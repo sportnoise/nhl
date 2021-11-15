@@ -2,7 +2,7 @@
     height: calc(100% - 60px);
     width: 100% !important;
 
-    .jspContainer {
+    & .jspContainer {
         width: 100% !important;
         height: 100% !important;
     }
@@ -13,9 +13,13 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        left: 0 !important;
     }
     & .jspHorizontalBar {
         display: none !important;
+    }
+    & .jspDrag {
+        transition: none;
     }
 
     &__date,

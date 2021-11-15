@@ -15,6 +15,8 @@ $(function(){
 
         $('.chat-bot-window_big').removeClass('chat-bot-window_big');
 
+        $('.chat-bot-window').removeAttr('style');
+
         if ($(window).width() < 576)
         {
             $('body').addClass('overflow-hidden');
@@ -37,6 +39,20 @@ $(function(){
     $('.js-chat-toggle-zoom').on('click', function(){
 
         $('.chat-bot-window').toggleClass('chat-bot-window_big');
+
+        var width = $(window).width();
+
+        if (width > 991)
+        {
+            if ($('.chat-bot-window').hasClass('chat-bot-window_big'))
+            {
+                $('.chat-bot-window').css('width', Math.round($(window).width() / 2 - 100));
+            }
+            else
+            {
+                $('.chat-bot-window').removeAttr('style');
+            }
+        }
     });
 
     $('.js-step-next').on('click', function(){
