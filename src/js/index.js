@@ -57,17 +57,17 @@ $(function(){
 
     $('.js-step-next').on('click', function(){
 
-        $(this).parents('.chat-bot-step').fadeOut(200, function() {
+        $(this).parents('.chat-bot-bot__step').fadeOut(200, function() {
 
-            $(this).next('.chat-bot-step').fadeIn(200);
+            $(this).next('.chat-bot-bot__step').fadeIn(200);
         });
     });
 
     $('.js-step-prev').on('click', function(){
 
-        $(this).parents('.chat-bot-step').fadeOut(200, function() {
+        $(this).parents('.chat-bot-bot__step').fadeOut(200, function() {
 
-            $(this).prev('.chat-bot-step').fadeIn(200);
+            $(this).prev('.chat-bot-bot__step').fadeIn(200);
         });
     });
 
